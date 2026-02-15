@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adel Redjemi - Étudiant en informatique</title>
+    <meta name="description" content="Portfolio d'Adel Redjemi, étudiant en informatique spécialisé en développement web, systèmes et réseaux.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Adel <span class="logo-surname">REDJEMI</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li><a href="#formation" class="nav-link">Parcours</a></li>
+                    <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="container hero-container-flex">
+            <div class="hero-text-content">
+                <h1 class="hero-title">Adel Redjemi</h1>
+                <h2 class="hero-subtitle">Étudiant en informatique <br> <span class="highlight">Développement Web • Systèmes & Réseaux</span></h2>
+                <p class="hero-description">
+                    Passionné par la technologie, je construis ma polyvalence entre le développement d'applications web modernes, la conception d'architectures réseaux sécurisées et l'administration de systèmes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="assets/Redjemi_Adel_Curriculum_vitae_letter.pdf" target="_blank" class="btn btn-outline" download>Télécharger mon CV</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <!-- CSS/SVG Tech Illustration -->
+                <div class="tech-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-body">
+                        <div class="code-line"><span class="keyword">const</span> <span class="variable">profile</span> = {</div>
+                        <div class="code-line indent">  <span class="property">name</span>: <span class="string">"Adel Redjemi"</span>,</div>
+                        <div class="code-line indent">  <span class="property">role</span>: <span class="string">"IT Student"</span>,</div>
+                        <div class="code-line indent">  <span class="property">skills</span>: [<span class="string">"Web"</span>, <span class="string">"Network"</span>, <span class="string">"Linux"</span>],</div>
+                        <div class="code-line indent">  <span class="property">hardWorker</span>: <span class="boolean">true</span></div>
+                        <div class="code-line">};</div>
+                        <div class="code-line empty"></div>
+                        <div class="code-line"><span class="function">startProject</span>(<span class="variable">profile</span>);</div>
+                    </div>
+                </div>
+                <div class="visual-bg-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="a-propos" class="section about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Étudiant en <strong>Bachelor Informatique à l’EPSI Paris</strong>, je développe un profil polyvalent en Fullstack, Linux et Réseaux. J’aime les projets concrets, le travail d’équipe et comprendre le fonctionnement complet des systèmes, du code jusqu’au serveur.
+                    </p>
+                    <ul class="about-list">
+                        <li>🎓 <strong>Formation :</strong> Développement Web & Infrastructure</li>
+                        <li>💻 <strong>Focus :</strong> Dev Web, Linux, Réseaux</li>
+                        <li>🚀 <strong>Approche :</strong> Rigueur, curiosité et polyvalence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <p class="section-subtitle">Réalisations académiques et personnelles</p>
+            
+            <!-- Featured Project -->
+            <div class="featured-project">
+                <div class="featured-content">
+                    <span class="project-category highlight">🏆 Projet Gagnant Local 2025</span>
+                    <h3 class="featured-title">Machine de Rube Goldberg : Snack'O'Matic</h3>
+                    <p class="featured-description">
+                        Conception et réalisation collaborative d'une machine à réaction en chaîne complexe.
+                        Gagnant au niveau local (2025) après présentation devant un jury académique, avec participation au niveau national.
+                    </p>
+                    <a href="projects/project-workshop.html" class="btn btn-primary">Voir le projet & Certificat</a>
+                </div>
+                <div class="featured-visual">
+                    <img src="assets/machine.jpeg" alt="Machine de Rube Goldberg réelle" class="project-image-large">
+                    <span class="card-badge academic featured-badge">Académique</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: SmartBike -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                         <img src="assets/smartbike.png" alt="E-commerce SmartBike" class="project-image-large">
+                         <span class="card-badge academic">Académique</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Développement Web</span>
+                        <h3 class="project-title">E-commerce SmartBike</h3>
+                        <p class="project-description">
+                            Site de vente de vélos complet avec système d'inscription, connexion et commande.
+                        </p>
+                        <a href="projects/project-web.html" class="project-link">Voir le détail <span class="arrow">→</span></a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Network Infra -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                         <img src="assets/reseau.png" alt="Infrastructure Réseau Sécurisée" class="project-image">
+                         <span class="card-badge academic">Académique</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Réseaux & Systèmes</span>
+                        <h3 class="project-title">Infrastructure Sécurisée</h3>
+                        <p class="project-description">
+                            Conception (HLD/LLD), segmentation et déploiement d'un réseau d'entreprise sécurisé sur environnement virtuel Linux.
+                        </p>
+                        <a href="projects/project-network.html" class="project-link">Voir le détail <span class="arrow">→</span></a>
+                    </div>
+                </article>
+
+                <!-- Project 3: VR Dream -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                         <img src="assets/vr.png" alt="VR Dream Experience" class="project-image-large">
+                         <span class="card-badge academic">Académique</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Réalité Virtuelle</span>
+                        <h3 class="project-title">VR Dream Experience</h3>
+                        <p class="project-description">
+                            Création de 3 scènes immersives fantastiques pour susciter l'émerveillement et l'évasion chez l'utilisateur.
+                        </p>
+                        <a href="projects/project-vr.html" class="project-link">Voir le détail <span class="arrow">→</span></a>
+                    </div>
+                </article>
+
+                <!-- Project 4: Arduino -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                         <img src="assets/arduino.jpeg" alt="Séquenceur de LED Arduino" class="project-image-large">
+                         <span class="card-badge personal">Personnel</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Électronique & IoT</span>
+                        <h3 class="project-title">Séquenceur de LED</h3>
+                        <p class="project-description">
+                            Projet Arduino Uno : Contrôle séquentiel de LED et découverte de la programmation embarquée (C++).
+                        </p>
+                        <a href="projects/project-arduino.html" class="project-link">Voir le détail <span class="arrow">→</span></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Mini Projects Collection -->
+            <div class="projects-collection-link">
+                <article class="collection-card">
+                    <div class="collection-content">
+                        <div>
+                            <span class="project-category">Informatique Générale (2024-2025)</span>
+                            <h3 class="project-title">Collection : Mini-Projets Académiques</h3>
+                            <p class="project-description">
+                                Retrouvez ici l'ensemble de mes travaux pratiques : Optimisation d'algorithmes Python, Scripts d'automatisation et Sites vitrines.
+                            </p>
+                        </div>
+                        <a href="projects/project-system.html" class="btn btn-outline">Explorer la collection complète <span class="arrow">→</span></a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Développement Web</h3>
+                    <ul class="skill-list">
+                        <li>HTML / CSS / JS</li>
+                        <li>PHP</li>
+                        <li>Déploiement (Vercel/Netlify)</li>
+                        <li>API REST / Postman</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Données & Algorithmique</h3>
+                    <ul class="skill-list">
+                        <li>MySQL / phpMyAdmin</li>
+                        <li>Supabase</li>
+                        <li>Mathématiques pour l'info</li>
+                        <li>Algorithmique</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Systèmes & IoT</h3>
+                    <ul class="skill-list">
+                        <li>Linux (Ubuntu, Debian)</li>
+                        <li>Architecture Réseau</li>
+                        <li>VMware / VirtualBox</li>
+                        <li>Arduino / Électronique</li>
+                        <li>Docker / Node-RED</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Outils & Tech</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>VS Code / PyCharm</li>
+                        <li>Microsoft Visio</li>
+                        <li>VR (Delightex)</li>
+                        <li>Figma / Tinkercad</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Languages Section -->
+            <div class="languages-container">
+                <h3>Langues</h3>
+                <div class="languages-list">
+                    <div class="language-item">
+                        <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2">
+                            <rect width="3" height="2" fill="#ED2939"/>
+                            <rect width="2" height="2" fill="#fff"/>
+                            <rect width="1" height="2" fill="#002395"/>
+                        </svg>
+                        <div class="lang-details">
+                            <strong>Français</strong>
+                            <span class="lang-level">Bilingue</span>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30">
+                            <clipPath id="t">
+                                <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+                            </clipPath>
+                            <path d="M0,0 v30 h60 v-30 z" fill="#00247d"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#cf142b" stroke-width="4"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#cf142b" stroke-width="6"/>
+                        </svg>
+                        <div class="lang-details">
+                            <strong>Anglais</strong>
+                            <span class="lang-level">(Intermédiaire)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Formation Section -->
+    <section id="formation" class="section timeline-section">
+        <div class="container">
+            <h2 class="section-title">Formation & Parcours</h2>
+            <div class="timeline">
+                <!-- Bachelor -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 – 2026</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor 1 Informatique</h3>
+                        <span class="institution">École d’ingénieur EPSI Paris – Courbevoie (92)</span>
+                        <p>Formation polyvalente couvrant le développement logiciel, l'administration systèmes & réseaux et la gestion de projets IT.</p>
+                    </div>
+                </div>
+
+                <!-- Code213 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 – 2026</div>
+                    <div class="timeline-content">
+                        <h3>Formation Développement Web</h3>
+                        <span class="institution">Code213 – El Biar, Alger, Algérie</span>
+                        <p>Formation intensive de 192 heures (HTML, CSS, Introduction JS).</p>
+                        <p style="font-style: italic; margin-top: 0.5rem; color: var(--accent-color);">Formation interrompue pour mobilité internationale en France.</p>
+                    </div>
+                </div>
+
+                <!-- Bac -->
+                <div class="timeline-item">
+                    <div class="timeline-date">Juillet 2025</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat Mathématiques</h3>
+                        <span class="institution">Lycée Amara Rachid – Ben Aknoun, Alger</span>
+                        <p>Diplôme obtenu avec <strong>mention Très Bien (16,28/20)</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title" style="text-align: left; margin-left: 0;">Me contacter</h2>
+                    <p class="contact-text" style="text-align: left; margin: 0;">
+                        Vous voulez discuter d’un projet, collaborer ou juste dire bonjour ?<br>
+                        Je suis toujours ouvert aux échanges !
+                    </p>
+                </div>
+
+                <div class="contact-links">
+                    <!-- Email with Copy Button -->
+                    <div class="contact-item email-box">
+                        <div class="email-content">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>redjemitechkraft@gmail.com</span>
+                        </div>
+                        <button class="copy-btn" aria-label="Copier l'email" onclick="copyEmail()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener noreferrer" class="contact-item linkedin">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/adelred78" target="_blank" rel="noopener noreferrer" class="contact-item github">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Adel Redjemi. Tous droits réservés.</p>
+            <p class="footer-note">Site perso V1.0</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
