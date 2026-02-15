@@ -16,7 +16,7 @@ Visite mon portfolio : [adelredjemi.com](https://adelredjemi.com) _(ou ton domai
 
 Je suis un étudiant en **Bachelor Informatique à l'EPSI Paris**, spécialisé dans :
 
-- ✨ **Développement Web Fullstack** (HTML, CSS, JavaScript, PHP)
+- ✨ **Développement Web** (HTML, CSS, JavaScript(les bases), PHP)
 - 🔒 **Architecture Réseaux & Systèmes** (Linux, VMware, Infrastructure sécurisée)
 - 🤖 **Électronique & IoT** (Arduino, programmation embarquée)
 - 🎮 **Réalité Virtuelle** (création d'expériences immersives)
@@ -134,19 +134,4 @@ _Antigravity permet une présentation visuelle unique qui reflète l'innovation 
 - Navigateur web moderne (Chrome, Firefox, Safari, Edge)
 - Serveur local (optionnel pour développement)
 
-### Installation Locale
-
-```bash
-# Cloner le repository
-git clone https://github.com/adelred78/site-perso.git
-
-# Naviguer dans le répertoire
-cd site-perso
-
-# Ouvrir avec un serveur local
-python -m http.server 8000
-# ou
-npx http-server
-
-# Accéder à http://localhost:8000
-```
+### REDJEMI Adel M.
