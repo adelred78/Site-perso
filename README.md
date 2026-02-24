@@ -8,7 +8,7 @@ Bienvenue sur mon portfolio personnel ! Ce site me représente à travers mes pr
 
 ## 🌐 Live Demo
 
-Visite mon portfolio : [adelredjemi.com](https://adelredjemi.com) _(ou ton domaine)_
+Visite mon portfolio : [adelredjemi.vercel.app](https://adelredjemi.vercel.app)
 
 ---
 
