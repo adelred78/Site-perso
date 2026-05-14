@@ -7,7 +7,6 @@ import { initHeader, highlightActiveNavLink } from './nav.js';
 import { initFeaturedProjects, initProjectsPage, initProjectDetailPage } from './projects.js';
 import { initContactForm } from './contact.js';
 import { initTheme } from './theme.js';
-import { initHero } from './hero.js';
 
 function initLightbox() {
   const triggers = document.querySelectorAll('.lightbox-trigger');
@@ -74,7 +73,6 @@ function init() {
   initProjectDetailPage();
   initContactForm();
   initLightbox();
-  initHero();
 }
 
 if (document.readyState === 'loading') {
