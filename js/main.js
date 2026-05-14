@@ -6,6 +6,7 @@
 import { initHeader, highlightActiveNavLink } from './nav.js';
 import { initFeaturedProjects, initProjectsPage, initProjectDetailPage } from './projects.js';
 import { initContactForm } from './contact.js';
+import { initTheme } from './theme.js';
 
 function initLightbox() {
   const triggers = document.querySelectorAll('.lightbox-trigger');
@@ -64,6 +65,7 @@ function initLightbox() {
 }
 
 function init() {
+  initTheme();
   initHeader();
   highlightActiveNavLink();
   initFeaturedProjects();
