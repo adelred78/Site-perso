@@ -255,19 +255,6 @@
   overflow: hidden;
 }
 
-/* Lueur subtile en arrière-plan */
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -10%;
-  right: -10%;
-  width: 60%;
-  height: 60%;
-  background: radial-gradient(circle, var(--accent-ghost) 0%, transparent 60%);
-  pointer-events: none;
-  z-index: 0;
-}
-
 .hero__inner {
   width: 100%;
   display: flex;
