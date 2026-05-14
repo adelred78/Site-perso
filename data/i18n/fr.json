@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "lang": "fr",
+    "dir": "ltr",
+    "siteName": "Adel Redjemi",
+    "siteDescription": "Adel Redjemi — Étudiant en Bachelor Informatique à l'EPSI Paris. Fullstack, Linux, réseaux. Stage chez Glikt en cours."
+  },
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "cv": "CV",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "switchLang": "Voir en anglais",
+    "switchLangShort": "EN",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Étudiant Bachelor Informatique · EPSI Paris",
+      "name": "Adel Redjemi",
+      "tagline": "Je vise l'excellence en informatique — web, réseaux, embarqué.",
+      "description": "Étudiant en Bachelor Informatique à l'EPSI Paris, je construis ma polyvalence sur trois axes : développement web, architecture réseau, systèmes embarqués. Actuellement en stage chez Glikt.",
+      "ctaPrimary": "Voir mes projets",
+      "ctaSecondary": "Me contacter",
+      "photoAlt": "Portrait d'Adel Redjemi"
+    },
+    "status": {
+      "internship": "🟢 Stagiaire Full Stack chez Glikt (mai – juin 2026)",
+      "search": "🔍 Recherche alternance B2 dès septembre 2026"
+    },
+    "about": {
+      "heading": "Qui je suis",
+      "paragraphs": [
+        "Étudiant en première année de Bachelor Informatique à l'EPSI Paris. Ce qui m'attire en informatique, c'est de comprendre toute la pile — pas juste de bidouiller un framework.",
+        "Côté code, je touche au PHP, au JavaScript, au SQL. Côté infra, je monte des réseaux sur VirtualBox et je manipule Linux au quotidien. Côté concret, j'ai construit une machine à réaction en chaîne qui a gagné un concours, et une plateforme IoT pour suivre l'humidité du sol.",
+        "J'apprends en construisant. Quand un truc casse, je veux savoir pourquoi."
+      ],
+      "stats": [
+        { "value": "9", "label": "projets livrés" },
+        { "value": "2", "label": "awards remportés" },
+        { "value": "16,28", "label": "/20 au bac maths" }
+      ]
+    },
+    "featured": {
+      "heading": "Projets phares",
+      "subheading": "Mes 3 réalisations les plus représentatives",
+      "viewAll": "Voir tous les projets"
+    },
+    "stack": {
+      "heading": "Stack technique",
+      "subheading": "Ce que j'utilise au quotidien",
+      "categories": [
+        { "icon": "🌐", "title": "Web", "items": ["HTML5", "CSS3", "JavaScript", "PHP 8"] },
+        { "icon": "🗄️", "title": "Données", "items": ["MySQL", "PostgreSQL", "Supabase"] },
+        { "icon": "🐧", "title": "Système & réseau", "items": ["Linux (Ubuntu, Debian)", "Docker", "VirtualBox", "VMware"] },
+        { "icon": "🛠️", "title": "Outils", "items": ["Git", "GitHub", "VS Code", "Figma", "Postman"] },
+        { "icon": "🔌", "title": "Embarqué & IoT", "items": ["Arduino", "ESP32", "Node-RED"] }
+      ]
+    },
+    "awards": {
+      "heading": "Awards & reconnaissances",
+      "subheading": "Compétitions et distinctions",
+      "viewCertificate": "Voir le certificat",
+      "items": [
+        {
+          "icon": "🏆",
+          "title": "Workshop Rube Goldberg — 1ère place",
+          "body": "Workshop EPSI 2025. Machine à réaction en chaîne réalisée en équipe de 5. Présentation devant jury académique.",
+          "certificate": "/assets/certificates/rube-goldberg.pdf"
+        },
+        {
+          "icon": "🥇",
+          "title": "Best Data Cleaner — 1ère place",
+          "body": "Atelier nettoyage de données et optimisation des performances. Restauration de la fluidité sur poste de travail.",
+          "certificate": null
+        }
+      ]
+    },
+    "contactCta": {
+      "heading": "Un projet, une alternance, une question ?",
+      "subheading": "Je réponds en 24-48h.",
+      "primary": "Me contacter",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "projectsPage": {
+    "title": "Projets",
+    "subtitle": "9 réalisations · académiques et personnelles",
+    "filters": {
+      "typeLabel": "Type",
+      "categoryLabel": "Catégorie",
+      "type": {
+        "all": "Tous",
+        "academic": "Académique",
+        "personal": "Personnel"
+      },
+      "category": {
+        "all": "Toutes",
+        "web": "Web",
+        "iot": "IoT",
+        "network": "Réseau",
+        "vr": "VR",
+        "embedded": "Embarqué",
+        "algorithm": "Algorithmique",
+        "tools": "Outils"
+      },
+      "reset": "Réinitialiser les filtres",
+      "noResults": "Aucun projet ne correspond. Essaie un autre filtre.",
+      "showing": "{count} projet(s) affiché(s)"
+    },
+    "card": {
+      "viewDetail": "Voir le détail"
+    }
+  },
+  "projectDetail": {
+    "back": "← Retour aux projets",
+    "sections": {
+      "context": "Contexte",
+      "problem": "Problème à résoudre",
+      "solution": "Solution",
+      "myWork": "Ce que j'ai fait",
+      "takeaways": "Apprentissages",
+      "gallery": "Galerie"
+    },
+    "meta": {
+      "team": "Équipe",
+      "duration": "Durée",
+      "role": "Rôle",
+      "result": "Résultat",
+      "stack": "Technologies"
+    },
+    "sidebar": {
+      "linksHeading": "Liens",
+      "techHeading": "Technologies",
+      "github": "Code source (GitHub)",
+      "demo": "Démo en ligne",
+      "certificate": "Certificat (PDF)"
+    },
+    "nav": {
+      "previous": "← Projet précédent",
+      "next": "Projet suivant →"
+    },
+    "notFound": {
+      "title": "Projet introuvable",
+      "body": "Ce projet n'existe pas ou a été déplacé.",
+      "back": "Retour à la liste des projets"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "À propos",
+      "bio": "Étudiant en première année de Bachelor Informatique à l'EPSI Paris. Ce que j'aime : comprendre les systèmes, casser des trucs pour les réparer, et livrer un projet qui marche."
+    },
+    "story": {
+      "heading": "Mon parcours",
+      "blocks": [
+        {
+          "title": "Mon parcours",
+          "body": "J'ai obtenu mon baccalauréat mathématiques avec mention Très Bien (16,28/20) en juillet 2025 au lycée Amara Rachid, à Alger. En parallèle, j'avais déjà commencé à coder : une formation intensive en développement web chez Code213 (Alger), 192 heures de HTML, CSS et introduction au JavaScript. C'est là que j'ai compris que c'était ça que je voulais faire.\n\nJ'ai rejoint l'EPSI Paris en 2025 pour mon Bachelor Informatique. Aujourd'hui, je suis en stage Full Stack chez Glikt à Courbevoie."
+        },
+        {
+          "title": "Pourquoi l'informatique",
+          "body": "Ce qui m'attire, ce n'est pas juste d'écrire du code. C'est de comprendre comment tout tient debout. Du paquet TCP qui voyage, à la requête SQL qui répond, au CSS qui aligne un bouton — tout est connecté. J'aime cette dimension pile complète.\n\nÀ l'EPSI, je n'ai pas voulu me spécialiser trop vite. Je vise l'excellence sur trois axes : web, réseaux, embarqué. Quand je serai plus avancé, j'approfondirai. Pour l'instant, je construis sur les trois."
+        },
+        {
+          "title": "Comment je travaille",
+          "body": "J'apprends en construisant. Théorie le matin, code l'après-midi. Quand un truc casse, je ne le contourne pas — je veux savoir pourquoi. C'est souvent là que j'apprends le plus.\n\nEn équipe, j'aime les rôles concrets. Sur le Rube Goldberg, j'étais responsable de la conception Tinkercad. On a gagné le concours."
+        }
+      ]
+    },
+    "timeline": {
+      "heading": "Parcours",
+      "items": [
+        {
+          "date": "Mai – Juin 2026",
+          "title": "Stage Full Stack",
+          "institution": "Glikt — Courbevoie (92)",
+          "body": "Participation au développement de l'infrastructure globale : idéation, rédaction technique, UI/UX, front-end, back-end, bases de données."
+        },
+        {
+          "date": "2025 – 2026",
+          "title": "Bachelor 1 Informatique",
+          "institution": "EPSI Paris — Courbevoie (92)",
+          "body": "Algorithmique, HTML/CSS, PHP/MySQL, Python, SQL, Virtualisation, IoT, VR, Architecture réseau."
+        },
+        {
+          "date": "2025 – 2026",
+          "title": "Formation Développement Web",
+          "institution": "Code213 — El Biar, Alger",
+          "body": "Formation intensive 192h : HTML, CSS, introduction JavaScript. Interrompue pour mobilité internationale."
+        },
+        {
+          "date": "Juillet 2025",
+          "title": "Baccalauréat Mathématiques",
+          "institution": "Lycée Amara Rachid — Ben Aknoun, Alger",
+          "body": "Diplôme obtenu avec mention Très Bien (16,28/20)."
+        }
+      ]
+    },
+    "softSkills": {
+      "heading": "Soft skills",
+      "subheading": "Avec preuves concrètes",
+      "items": [
+        {
+          "icon": "🤝",
+          "title": "Travail d'équipe",
+          "body": "Coordination d'une équipe de 5 sur le projet Rube Goldberg. Découpage des modules, synchronisation des déclencheurs, présentation jury. Résultat : 1ère place locale."
+        },
+        {
+          "icon": "🔧",
+          "title": "Rigueur technique",
+          "body": "Conception d'une infrastructure réseau d'entreprise sécurisée : documents HLD/LLD, segmentation VLAN, déploiement Linux en environnement virtuel. L'architecture a tenu les tests."
+        },
+        {
+          "icon": "🎯",
+          "title": "Apprentissage rapide",
+          "body": "HydroTrack : je n'avais jamais touché à l'ESP32 ni à Node-RED. En quelques semaines, prototype fonctionnel branché à Supabase, avec croisement des données météo."
+        }
+      ]
+    },
+    "languages": {
+      "heading": "Langues",
+      "items": [
+        { "flag": "🇫🇷", "name": "Français", "level": "Bilingue" },
+        { "flag": "🇬🇧", "name": "Anglais", "level": "Intermédiaire (B1, en progression)" }
+      ]
+    },
+    "interests": {
+      "heading": "Centres d'intérêt",
+      "items": [
+        { "icon": "🥊", "title": "Boxe anglaise", "body": "Ancien pratiquant." },
+        { "icon": "📚", "title": "Lecture", "body": "Romans et ouvrages d'informatique." },
+        { "icon": "🎧", "title": "Podcasts tech", "body": "Underscore_, Hugo Décrypte." },
+        { "icon": "♟️", "title": "Échecs", "body": "Jeu de réflexion stratégique." },
+        { "icon": "🛠️", "title": "Création de projets", "body": "Projets perso, gestion d'applications et de systèmes." }
+      ]
+    },
+    "cv": {
+      "heading": "Mon CV",
+      "subheading": "Téléchargeable en deux langues",
+      "downloadFr": "Télécharger en français ↓",
+      "downloadEn": "Download in English ↓"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Travaillons ensemble",
+      "intro": "Stage, alternance, projet freelance, ou juste un échange tech : je suis ouvert. Le canal qui marche le mieux, c'est l'email — je réponds en 24 à 48 heures."
+    },
+    "form": {
+      "heading": "Envoie-moi un message",
+      "name": "Nom",
+      "namePlaceholder": "Comment tu t'appelles ?",
+      "email": "Email",
+      "emailPlaceholder": "ton.email@exemple.com",
+      "subject": "Sujet",
+      "subjectOptions": {
+        "internship": "Stage",
+        "apprenticeship": "Alternance",
+        "project": "Projet",
+        "other": "Autre"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Dis-moi tout",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Merci ! Ton message est parti, je te réponds vite.",
+      "error": "Oups, l'envoi a échoué. Essaie par email à redjemitechkraft@gmail.com",
+      "consent": "En envoyant, tu acceptes que ton message me soit transmis par email."
+    },
+    "sidebar": {
+      "channelsHeading": "Autres canaux",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "location": "Courbevoie / Paris (92)",
+      "availabilityHeading": "Disponibilité actuelle",
+      "availabilityItems": [
+        "🟢 En stage chez Glikt jusqu'à fin juin 2026",
+        "🔍 Cherche alternance dès septembre 2026"
+      ],
+      "replyTimeHeading": "Délai de réponse",
+      "replyTimeBody": "24-48h en jours ouvrés"
+    }
+  },
+  "footer": {
+    "tagline": "Site fait à la main en HTML, CSS et JavaScript",
+    "hostedOn": "Hébergé sur Vercel",
+    "copyright": "© 2026 Adel Redjemi. Tous droits réservés.",
+    "version": "v2.0"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "subtitle": "Erreur 404",
+    "body": "Cette page n'existe pas (ou plus). Retour à l'accueil.",
+    "cta": "Retour à l'accueil"
+  }
+}

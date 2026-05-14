@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- FR -->
   <url>
-    <loc>https://adelredjemi.vercel.app/</loc>
+    <loc>https://adelredjemi.vercel.app/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adelredjemi.vercel.app/fr/" />
+    <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://adelredjemi.vercel.app/fr/projets</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/projets" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/projects" />
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://adelredjemi.vercel.app/fr/a-propos</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/a-propos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/about" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://adelredjemi.vercel.app/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/contact" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FR — Projets détail -->
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/snack-o-matic</loc><priority>0.7</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/hydrotrack</loc><priority>0.7</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/smartbike</loc><priority>0.7</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/network-infra</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/vr-dream</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/arduino-led</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/epsi-tech</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/python-algo</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/dev-environment</loc><priority>0.6</priority></url>
+
+  <!-- EN -->
+  <url>
+    <loc>https://adelredjemi.vercel.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://adelredjemi.vercel.app/en/projects</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/projets" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/projects" />
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://adelredjemi.vercel.app/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/a-propos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/about" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://adelredjemi.vercel.app/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/contact" />
+    <priority>0.8</priority>
+  </url>
+
+  <url><loc>https://adelredjemi.vercel.app/en/projects/snack-o-matic</loc><priority>0.7</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/hydrotrack</loc><priority>0.7</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/smartbike</loc><priority>0.7</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/network-infra</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/vr-dream</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/arduino-led</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/epsi-tech</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/python-algo</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/dev-environment</loc><priority>0.6</priority></url>
 </urlset>

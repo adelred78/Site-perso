@@ -1,0 +1,716 @@
+{
+  "$schema": "Source de vérité pour tous les projets. Lu par /fr/projets, /en/projects et les templates de détail.",
+  "projects": [
+    {
+      "slug": "snack-o-matic",
+      "featured": true,
+      "order": 1,
+      "type": "academic",
+      "category": "embedded",
+      "date": "2025",
+      "badge": { "fr": "🏆 Gagnant Local 2025", "en": "🏆 Local Winner 2025" },
+      "title": {
+        "fr": "Snack'O'Matic — Machine de Rube Goldberg",
+        "en": "Snack'O'Matic — Rube Goldberg Machine"
+      },
+      "subtitle": {
+        "fr": "Conception et fabrication d'une machine à réaction en chaîne. 1ère place locale, qualification au niveau national.",
+        "en": "Designed and built a chain-reaction machine. 1st place locally, qualified for nationals."
+      },
+      "pitch": {
+        "fr": "Machine à réaction en chaîne réalisée en équipe de 5. 1ère place workshop EPSI, qualification nationale.",
+        "en": "Chain-reaction machine built with a team of 5. 1st place at EPSI workshop, qualified for nationals."
+      },
+      "meta": {
+        "team": { "fr": "5 personnes", "en": "5 people" },
+        "duration": { "fr": "1 semaine intensive", "en": "1 intensive week" },
+        "role": { "fr": "Concepteur & modélisateur 3D", "en": "Designer & 3D modeler" },
+        "result": {
+          "fr": "🏆 1ère place locale → Qualification nationale",
+          "en": "🏆 1st place locally → Qualified for nationals"
+        }
+      },
+      "tech": ["Tinkercad", "Conception mécanique", "Travail d'équipe"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": "/assets/certificates/rube-goldberg.pdf"
+      },
+      "images": {
+        "cover": "/assets/img/projects/snack-o-matic/cover.jpeg",
+        "thumb": "/assets/img/projects/snack-o-matic/cover.jpeg",
+        "og": "/assets/img/projects/snack-o-matic/cover.jpeg",
+        "gallery": [
+          { "src": "/assets/img/projects/snack-o-matic/3d-design.png", "alt": { "fr": "Modélisation 3D Tinkercad", "en": "Tinkercad 3D model" } },
+          { "src": "/assets/img/projects/snack-o-matic/cover.jpeg", "alt": { "fr": "Machine finale", "en": "Final build" } }
+        ]
+      },
+      "content": {
+        "context": {
+          "fr": "Workshop EPSI 2025, format intensif sur une semaine. L'objectif : concevoir une machine de Rube Goldberg — un dispositif qui accomplit une tâche simple via une réaction en chaîne délibérément complexe. Le tout en équipe de 5, avec une présentation finale devant un jury académique.",
+          "en": "EPSI Workshop 2025, one-week intensive format. The goal: design a Rube Goldberg machine — a device that performs a simple task through a deliberately complex chain reaction. All as a team of 5, with a final pitch to an academic jury."
+        },
+        "problem": {
+          "fr": "Faire fonctionner une machine en une dizaine d'étapes mécaniques sans aucune intervention humaine, avec un timing fiable. Chaque module doit déclencher le suivant exactement au bon moment — sinon toute la chaîne s'effondre.",
+          "en": "Get a machine to run through ~10 mechanical steps with zero human intervention, on a reliable timing. Each module must trigger the next at exactly the right moment — otherwise the whole chain collapses."
+        },
+        "solution": {
+          "fr": "Découpage en modules indépendants, chacun testé séparément avant assemblage. Modélisation 3D préalable sur Tinkercad pour valider les trajectoires et les interactions mécaniques avant de construire. Itérations rapides côté physique.",
+          "en": "Modular breakdown, each piece tested independently before assembly. Prior 3D modeling in Tinkercad to validate trajectories and mechanical interactions before building. Fast iteration loops on the physical side."
+        },
+        "myWork": {
+          "fr": [
+            "Conception et modélisation 3D Tinkercad de plusieurs modules clés",
+            "Coordination avec les 4 autres membres pour aligner les jonctions entre modules",
+            "Tests physiques en boucle pour fiabiliser le timing",
+            "Présentation du projet devant le jury académique"
+          ],
+          "en": [
+            "Designed and 3D-modeled several key modules in Tinkercad",
+            "Coordinated with 4 teammates to align module-to-module junctions",
+            "Ran physical test loops to nail the timing",
+            "Pitched the project to the academic jury"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🤝",
+            "title": { "fr": "Coordination d'équipe", "en": "Team coordination" },
+            "body": { "fr": "Un projet à 5 nécessite des points d'avancement fréquents et un découpage clair des responsabilités.", "en": "A 5-person project needs frequent sync points and clear ownership." }
+          },
+          {
+            "icon": "🔁",
+            "title": { "fr": "Itérer vite", "en": "Fast iteration" },
+            "body": { "fr": "La simulation 3D ne remplace pas le test physique, mais elle évite des heures de retouche.", "en": "3D simulation doesn't replace physical tests, but it saves hours of rework." }
+          },
+          {
+            "icon": "🎤",
+            "title": { "fr": "Présenter à un jury", "en": "Pitching to a jury" },
+            "body": { "fr": "Raconter un projet technique de façon claire et convaincante.", "en": "Explaining a technical build clearly and convincingly." }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "hydrotrack",
+      "featured": true,
+      "order": 2,
+      "type": "academic",
+      "category": "iot",
+      "date": "2025",
+      "badge": { "fr": "🌱 IoT", "en": "🌱 IoT" },
+      "title": {
+        "fr": "HydroTrack — Plateforme d'arrosage intelligent",
+        "en": "HydroTrack — Smart Watering Platform"
+      },
+      "subtitle": {
+        "fr": "Capteurs ESP32, flux Node-RED, base Supabase. Croisement des données météo et de l'humidité du sol pour optimiser l'arrosage.",
+        "en": "ESP32 sensors, Node-RED flows, Supabase backend. Cross-references weather data and soil humidity to optimize watering."
+      },
+      "pitch": {
+        "fr": "Plateforme IoT d'arrosage intelligent : ESP32, Node-RED et Supabase combinés à une API météo.",
+        "en": "Smart IoT watering platform: ESP32, Node-RED and Supabase combined with a weather API."
+      },
+      "meta": {
+        "team": { "fr": "Projet académique", "en": "Academic project" },
+        "duration": { "fr": "Plusieurs semaines", "en": "Several weeks" },
+        "role": { "fr": "Dev IoT + Web", "en": "IoT + Web Dev" },
+        "result": { "fr": "Prototype fonctionnel", "en": "Working prototype" }
+      },
+      "tech": ["ESP32", "Node-RED", "Supabase", "PostgreSQL", "API météo"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/hydrotrack/cover.png",
+        "thumb": "/assets/img/projects/hydrotrack/cover.png",
+        "og": "/assets/img/projects/hydrotrack/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Projet académique EPSI orienté agriculture intelligente. L'enjeu : aider les agriculteurs à arroser au bon moment, ni trop, ni trop peu. Un capteur seul ne suffit pas — il faut croiser ce qu'il mesure avec la météo à venir.",
+          "en": "EPSI academic project focused on smart agriculture. The challenge: help farmers water at the right time — neither too much, nor too little. A sensor alone isn't enough — you need to cross what it measures with upcoming weather."
+        },
+        "problem": {
+          "fr": "Comment combiner des données capteurs en temps réel (humidité du sol) avec des prévisions externes (API météo), les stocker proprement, et restituer une décision claire à l'utilisateur ? Le tout sur du matériel embarqué peu coûteux.",
+          "en": "How do you combine real-time sensor data (soil humidity) with external forecasts (weather API), store it cleanly, and surface a clear decision to the user? All on cheap embedded hardware."
+        },
+        "solution": {
+          "fr": "Architecture en 3 couches : (1) ESP32 lit l'humidité et envoie les mesures, (2) Node-RED orchestre, interroge l'API météo, croise avec la mesure et écrit dans Supabase, (3) une interface web lit Supabase et affiche un état + une recommandation d'arrosage.",
+          "en": "Three-layer architecture: (1) ESP32 reads humidity and ships measurements, (2) Node-RED orchestrates, queries the weather API, cross-references with the measurement and writes to Supabase, (3) a web interface reads Supabase and shows status + watering recommendation."
+        },
+        "myWork": {
+          "fr": [
+            "Programmation de l'ESP32 (capteur d'humidité + envoi des données)",
+            "Conception des flux Node-RED (logique métier)",
+            "Intégration de l'API météo (récupération des prévisions)",
+            "Modélisation et alimentation de la base Supabase",
+            "Développement de l'interface web (consultation des mesures + notifications automatiques)"
+          ],
+          "en": [
+            "Programmed the ESP32 (humidity sensor + data shipping)",
+            "Designed Node-RED flows (business logic)",
+            "Integrated the weather API (forecast retrieval)",
+            "Modeled and populated the Supabase database",
+            "Built the web interface (data viewing + automatic notifications)"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🧱",
+            "title": { "fr": "Penser système", "en": "Systems thinking" },
+            "body": { "fr": "Un projet IoT, c'est 5 briques qui doivent tenir ensemble : capteur, transport, traitement, stockage, restitution.", "en": "An IoT project is 5 bricks that have to hold together: sensor, transport, processing, storage, display." }
+          },
+          {
+            "icon": "🔧",
+            "title": { "fr": "Découvrir Node-RED", "en": "Discovering Node-RED" },
+            "body": { "fr": "Un outil low-code étonnamment puissant pour prototyper des flux IoT.", "en": "A low-code tool that's surprisingly powerful for prototyping IoT flows." }
+          },
+          {
+            "icon": "🌐",
+            "title": { "fr": "API externes", "en": "External APIs" },
+            "body": { "fr": "Gérer les erreurs et les limites de requêtes d'une API tierce, ce n'est pas trivial.", "en": "Handling errors and rate limits from a third-party API isn't trivial." }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "smartbike",
+      "featured": true,
+      "order": 3,
+      "type": "academic",
+      "category": "web",
+      "date": "2025",
+      "badge": { "fr": "🚲 Web", "en": "🚲 Web" },
+      "title": {
+        "fr": "SmartBike — E-commerce fullstack",
+        "en": "SmartBike — Fullstack E-commerce"
+      },
+      "subtitle": {
+        "fr": "Boutique en ligne complète pour une marque de vélos connectés : catalogue, authentification, panier, espace admin. Architecture MVC en PHP.",
+        "en": "Complete online store for a smart-bike brand: catalog, auth, cart, admin panel. MVC architecture in PHP."
+      },
+      "pitch": {
+        "fr": "E-commerce complet en PHP/MySQL : inscription, connexion, panier, admin. Architecture MVC.",
+        "en": "Full PHP/MySQL e-commerce: sign-up, login, cart, admin. MVC architecture."
+      },
+      "meta": {
+        "team": { "fr": "5 personnes", "en": "5 people" },
+        "duration": { "fr": "Projet transversal", "en": "Cross-functional project" },
+        "role": { "fr": "Dev Full Stack", "en": "Full Stack Dev" },
+        "result": { "fr": "Plateforme fonctionnelle", "en": "Working platform" }
+      },
+      "tech": ["HTML", "CSS", "PHP 8", "MySQL", "Apache", "XAMPP", "Looping"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/smartbike/cover.png",
+        "thumb": "/assets/img/projects/smartbike/cover.png",
+        "og": "/assets/img/projects/smartbike/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Projet transversal EPSI 2025. La consigne : construire un site e-commerce complet pour une marque fictive de vélos intelligents. On part de zéro — base de données, backend, frontend, espace admin. Tout doit fonctionner de bout en bout.",
+          "en": "EPSI 2025 cross-functional project. The brief: build a complete e-commerce site for a fictional smart-bike brand. From scratch — database, backend, frontend, admin panel. Everything had to work end to end."
+        },
+        "problem": {
+          "fr": "Construire un parcours d'achat complet : un visiteur découvre des vélos, s'inscrit, se connecte, ajoute au panier, commande. Tout en s'assurant que les comptes sont sécurisés, que les commandes sont traçables, et qu'un admin peut gérer le catalogue.",
+          "en": "Build a full purchase journey: a visitor browses bikes, signs up, logs in, adds to cart, places an order. While making sure accounts are secured, orders are traceable, and an admin can manage the catalog."
+        },
+        "solution": {
+          "fr": "Architecture MVC stricte pour séparer modèle (accès BDD), vue (templates) et contrôleur (logique). Base MySQL conçue via Looping (MCD → MLD → schéma SQL). Sessions PHP pour l'auth, hash bcrypt pour les mots de passe, requêtes préparées contre l'injection SQL.",
+          "en": "Strict MVC to split model (DB access), view (templates) and controller (logic). MySQL database modeled with Looping (CDM → LDM → SQL schema). PHP sessions for auth, bcrypt for password hashing, prepared statements against SQL injection."
+        },
+        "myWork": {
+          "fr": [
+            "Modélisation de la base : MCD/MLD sur Looping, puis schéma SQL",
+            "Système d'inscription / connexion (sessions PHP, hash sécurisé)",
+            "Catalogue produits dynamique avec fiches détaillées",
+            "Panier et processus de commande complet",
+            "Espace administrateur pour gérer vélos et commandes"
+          ],
+          "en": [
+            "Database modeling: CDM/LDM in Looping, then SQL schema",
+            "Sign-up / login system (PHP sessions, secure hashing)",
+            "Dynamic product catalog with detail pages",
+            "Cart and full checkout flow",
+            "Admin panel to manage bikes and orders"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🏗️",
+            "title": { "fr": "MVC en pratique", "en": "MVC in practice" },
+            "body": { "fr": "Forcer la séparation au début est pénible, mais c'est ce qui rend le code maintenable.", "en": "Forcing separation upfront is painful, but that's what keeps code maintainable." }
+          },
+          {
+            "icon": "🔒",
+            "title": { "fr": "Sécurité de base", "en": "Security basics" },
+            "body": { "fr": "Requêtes préparées + bcrypt + sessions, ce sont les fondations à ne jamais sauter.", "en": "Prepared statements + bcrypt + sessions are foundations you never skip." }
+          },
+          {
+            "icon": "📊",
+            "title": { "fr": "Concevoir une BDD", "en": "DB design" },
+            "body": { "fr": "Modéliser proprement avant de coder, c'est gagner des heures plus tard.", "en": "Modeling cleanly before coding saves hours later." }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "network-infra",
+      "featured": false,
+      "order": 4,
+      "type": "academic",
+      "category": "network",
+      "date": "2025",
+      "badge": { "fr": "🛡️ Réseau", "en": "🛡️ Network" },
+      "title": {
+        "fr": "Infrastructure réseau sécurisée",
+        "en": "Secure Network Infrastructure"
+      },
+      "subtitle": {
+        "fr": "Conception (HLD/LLD) et déploiement d'un réseau d'entreprise segmenté en environnement virtuel.",
+        "en": "HLD/LLD design and deployment of a segmented corporate network in a virtual environment."
+      },
+      "pitch": {
+        "fr": "Conception HLD/LLD, segmentation VLAN, déploiement de VMs Linux sécurisées.",
+        "en": "HLD/LLD design, VLAN segmentation, secure Linux VM deployment."
+      },
+      "meta": {
+        "team": { "fr": "Projet transversal", "en": "Cross-functional project" },
+        "duration": { "fr": "Plusieurs semaines", "en": "Several weeks" },
+        "role": { "fr": "Architecte réseau & sysadmin", "en": "Network architect & sysadmin" },
+        "result": { "fr": "Infrastructure fonctionnelle", "en": "Working infrastructure" }
+      },
+      "tech": ["Cisco", "VirtualBox", "Linux", "Visio", "VLAN"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/network-infra/cover.png",
+        "thumb": "/assets/img/projects/network-infra/cover.png",
+        "og": "/assets/img/projects/network-infra/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Projet transversal EPSI 2025 — concevoir et déployer une infrastructure réseau d'entreprise sécurisée, depuis les schémas de haut niveau jusqu'à la configuration des machines virtuelles.",
+          "en": "EPSI 2025 cross-functional project — design and deploy a secure corporate network infrastructure, from high-level diagrams to VM configuration."
+        },
+        "problem": {
+          "fr": "Construire un réseau d'entreprise réaliste : segmenter les services, isoler les zones sensibles, documenter l'architecture pour qu'un autre admin puisse la reprendre.",
+          "en": "Build a realistic corporate network: segment services, isolate sensitive zones, document the architecture so another admin can take it over."
+        },
+        "solution": {
+          "fr": "Documents HLD (High Level Design) et LLD (Low Level Design) avant tout déploiement. Segmentation par VLAN, machines virtuelles Linux déployées sous VirtualBox, configuration testée puis validée.",
+          "en": "HLD (High Level Design) and LLD (Low Level Design) docs before any deployment. VLAN segmentation, Linux VMs deployed on VirtualBox, configuration tested and validated."
+        },
+        "myWork": {
+          "fr": [
+            "Rédaction des documents HLD et LLD",
+            "Schémas réseau sur Microsoft Visio",
+            "Déploiement et configuration de VMs Linux",
+            "Mise en place de la segmentation VLAN",
+            "Tests de connectivité et validation"
+          ],
+          "en": [
+            "Wrote HLD and LLD documents",
+            "Network diagrams in Microsoft Visio",
+            "Deployed and configured Linux VMs",
+            "Set up VLAN segmentation",
+            "Connectivity tests and validation"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "📐",
+            "title": { "fr": "Documenter avant de configurer", "en": "Document before configuring" },
+            "body": { "fr": "Un schéma clair évite des heures de troubleshooting en production.", "en": "A clear diagram saves hours of production troubleshooting." }
+          },
+          {
+            "icon": "🐧",
+            "title": { "fr": "Linux en pratique", "en": "Linux in practice" },
+            "body": { "fr": "Manipuler Linux au quotidien sur des VMs, c'est très différent de lire un cours.", "en": "Daily Linux work on VMs is very different from reading a textbook." }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "vr-dream",
+      "featured": false,
+      "order": 5,
+      "type": "academic",
+      "category": "vr",
+      "date": "2025",
+      "badge": { "fr": "🥽 VR", "en": "🥽 VR" },
+      "title": {
+        "fr": "VR Dream Experience",
+        "en": "VR Dream Experience"
+      },
+      "subtitle": {
+        "fr": "3 scènes immersives fantastiques conçues pour faire ressentir évasion et émerveillement.",
+        "en": "3 fantasy immersive scenes designed to evoke wonder and escape."
+      },
+      "pitch": {
+        "fr": "3 environnements VR construits sur Delightex pour explorer le storytelling immersif.",
+        "en": "3 VR environments built on Delightex to explore immersive storytelling."
+      },
+      "meta": {
+        "team": { "fr": "Projet académique", "en": "Academic project" },
+        "duration": { "fr": "Plusieurs séances", "en": "Several sessions" },
+        "role": { "fr": "Concepteur VR", "en": "VR designer" },
+        "result": { "fr": "3 scènes livrées", "en": "3 scenes shipped" }
+      },
+      "tech": ["Delightex", "VR", "Storytelling"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/vr-dream/cover.png",
+        "thumb": "/assets/img/projects/vr-dream/cover.png",
+        "og": "/assets/img/projects/vr-dream/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Atelier réalité virtuelle EPSI : explorer comment un environnement immersif peut susciter une émotion forte chez l'utilisateur.",
+          "en": "EPSI VR workshop: explore how an immersive environment can spark a strong emotional response in the user."
+        },
+        "problem": {
+          "fr": "Au-delà de la technique, comment construire une atmosphère qui transporte vraiment l'utilisateur ?",
+          "en": "Beyond the technical side, how do you build an atmosphere that truly transports the user?"
+        },
+        "solution": {
+          "fr": "Trois scènes complémentaires sur Delightex, chacune travaillant une émotion : émerveillement, évasion, contemplation. Choix d'éclairages, de palettes et de sons en fonction de l'intention.",
+          "en": "Three complementary scenes on Delightex, each working a different emotion: wonder, escape, contemplation. Lighting, palette and sound chosen to match the intent."
+        },
+        "myWork": {
+          "fr": [
+            "Conception narrative des 3 scènes",
+            "Construction des environnements sur Delightex",
+            "Travail des éclairages et des palettes",
+            "Tests utilisateurs informels"
+          ],
+          "en": [
+            "Narrative design for the 3 scenes",
+            "Built environments in Delightex",
+            "Lighting and palette work",
+            "Informal user testing"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🎨",
+            "title": { "fr": "L'atmosphère prime", "en": "Atmosphere first" },
+            "body": { "fr": "En VR, le détail technique compte moins que l'intention émotionnelle.", "en": "In VR, technical detail matters less than emotional intent." }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "arduino-led",
+      "featured": false,
+      "order": 6,
+      "type": "personal",
+      "category": "embedded",
+      "date": "2024",
+      "badge": { "fr": "💡 Personnel", "en": "💡 Personal" },
+      "title": {
+        "fr": "Séquenceur de LED Arduino",
+        "en": "Arduino LED Sequencer"
+      },
+      "subtitle": {
+        "fr": "Premier projet Arduino : contrôle séquentiel de LED en C++ embarqué.",
+        "en": "First Arduino project: sequential LED control in embedded C++."
+      },
+      "pitch": {
+        "fr": "Découverte de la programmation embarquée via un montage simple mais maîtrisé.",
+        "en": "Discovering embedded programming through a simple but well-controlled build."
+      },
+      "meta": {
+        "team": { "fr": "Solo", "en": "Solo" },
+        "duration": { "fr": "Week-end", "en": "Weekend" },
+        "role": { "fr": "Maker", "en": "Maker" },
+        "result": { "fr": "Premier contact réussi avec l'embarqué", "en": "Successful first taste of embedded" }
+      },
+      "tech": ["Arduino Uno", "C++"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/arduino-led/cover.jpeg",
+        "thumb": "/assets/img/projects/arduino-led/cover.jpeg",
+        "og": "/assets/img/projects/arduino-led/cover.jpeg",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Premier vrai contact avec le hardware. Objectif : comprendre la boucle setup/loop d'Arduino, écrire mon premier programme embarqué.",
+          "en": "First real contact with hardware. Goal: understand Arduino's setup/loop, write my first embedded program."
+        },
+        "problem": {
+          "fr": "Faire défiler une séquence de LED avec un timing précis, sans bloquer le programme principal.",
+          "en": "Cycle through an LED sequence with precise timing, without blocking the main program."
+        },
+        "solution": {
+          "fr": "Utilisation de millis() au lieu de delay() pour gérer le timing en non-bloquant. Code modulaire avec fonctions séparées par responsabilité.",
+          "en": "Used millis() instead of delay() for non-blocking timing. Modular code with functions split by responsibility."
+        },
+        "myWork": {
+          "fr": [
+            "Montage électronique (résistances, LED, câblage breadboard)",
+            "Programmation en C++ embarqué",
+            "Gestion du timing non-bloquant"
+          ],
+          "en": [
+            "Electronics wiring (resistors, LEDs, breadboard)",
+            "Embedded C++ programming",
+            "Non-blocking timing logic"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "⚡",
+            "title": { "fr": "Le hardware change tout", "en": "Hardware changes everything" },
+            "body": { "fr": "Un bug ici ne vient pas toujours du code — un câble mal mis, et tout casse.", "en": "A bug here isn't always from the code — a loose wire breaks everything." }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "epsi-tech",
+      "featured": false,
+      "order": 7,
+      "type": "academic",
+      "category": "web",
+      "date": "2025",
+      "badge": { "fr": "💻 Web", "en": "💻 Web" },
+      "title": {
+        "fr": "EPSI Tech — E-commerce informatique",
+        "en": "EPSI Tech — IT Hardware E-commerce"
+      },
+      "subtitle": {
+        "fr": "Site e-commerce de matériel informatique avec catalogue, authentification utilisateur et gestion de commandes en MySQL.",
+        "en": "IT hardware e-commerce site with catalog, user auth and MySQL-backed order management."
+      },
+      "pitch": {
+        "fr": "E-commerce informatique en HTML/CSS/PHP/MySQL.",
+        "en": "IT e-commerce in HTML/CSS/PHP/MySQL."
+      },
+      "meta": {
+        "team": { "fr": "Projet académique", "en": "Academic project" },
+        "duration": { "fr": "Plusieurs semaines", "en": "Several weeks" },
+        "role": { "fr": "Dev Full Stack", "en": "Full Stack Dev" },
+        "result": { "fr": "Site fonctionnel", "en": "Working site" }
+      },
+      "tech": ["HTML", "CSS", "PHP", "MySQL"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/epsi-tech/cover.png",
+        "thumb": "/assets/img/projects/epsi-tech/cover.png",
+        "og": "/assets/img/projects/epsi-tech/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Itération sur les compétences e-commerce avec une autre marque fictive : EPSI Tech, spécialiste du matériel informatique.",
+          "en": "Iteration on e-commerce skills with another fictional brand: EPSI Tech, an IT hardware shop."
+        },
+        "problem": {
+          "fr": "Reproduire un parcours d'achat complet sur un catalogue tech, avec gestion des stocks et statuts de commandes.",
+          "en": "Reproduce a full purchase flow on a tech catalog, with stock and order-status handling."
+        },
+        "solution": {
+          "fr": "Architecture PHP classique, base MySQL relationnelle, interface user + interface admin séparées.",
+          "en": "Classic PHP architecture, relational MySQL database, separate user and admin interfaces."
+        },
+        "myWork": {
+          "fr": [
+            "Conception de la base MySQL (produits, catégories, stocks, commandes)",
+            "Implémentation des pages catalogue et fiches produits",
+            "Authentification utilisateur",
+            "Gestion administrateur du catalogue"
+          ],
+          "en": [
+            "Designed MySQL database (products, categories, stock, orders)",
+            "Implemented catalog and product detail pages",
+            "User authentication",
+            "Admin catalog management"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🔁",
+            "title": { "fr": "Pratiquer renforce", "en": "Practice reinforces" },
+            "body": { "fr": "Reprendre les mêmes patterns sur un nouveau contexte ancre vraiment les acquis.", "en": "Reusing the same patterns in a new context really cements what you learned." }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "python-algo",
+      "featured": false,
+      "order": 8,
+      "type": "academic",
+      "category": "algorithm",
+      "date": "2024",
+      "badge": { "fr": "🐍 Algorithmique", "en": "🐍 Algorithms" },
+      "title": {
+        "fr": "Optimisation d'algorithmes (Python)",
+        "en": "Algorithm Optimization (Python)"
+      },
+      "subtitle": {
+        "fr": "Algorithmes de recherche musicale en Python, avec analyse de complexité.",
+        "en": "Music search algorithms in Python with complexity analysis."
+      },
+      "pitch": {
+        "fr": "Optimisation d'algorithmes de recherche et analyse Big-O.",
+        "en": "Search algorithm optimization and Big-O analysis."
+      },
+      "meta": {
+        "team": { "fr": "Solo", "en": "Solo" },
+        "duration": { "fr": "TP académique", "en": "Academic lab" },
+        "role": { "fr": "Algo & analyse", "en": "Algo & analysis" },
+        "result": { "fr": "Gains de performance mesurés", "en": "Measured performance gains" }
+      },
+      "tech": ["Python", "Big-O", "Algorithmique"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/python-algo/cover.png",
+        "thumb": "/assets/img/projects/python-algo/cover.png",
+        "og": "/assets/img/projects/python-algo/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "TP d'algorithmique : optimiser un moteur de recherche musical naïf et mesurer les gains.",
+          "en": "Algorithm lab: optimize a naive music search engine and measure the gains."
+        },
+        "problem": {
+          "fr": "Une recherche linéaire fonctionne mais devient lente sur une grande base. Comment passer à mieux ?",
+          "en": "Linear search works but slows down on a large dataset. How do you scale up?"
+        },
+        "solution": {
+          "fr": "Refactor avec structures de données adaptées (index, dictionnaires) et analyse de complexité avant/après.",
+          "en": "Refactored with proper data structures (indexes, dictionaries) and before/after complexity analysis."
+        },
+        "myWork": {
+          "fr": [
+            "Implémentation initiale en recherche linéaire",
+            "Refactor avec index hashé",
+            "Mesures de performance comparatives",
+            "Analyse Big-O documentée"
+          ],
+          "en": [
+            "Initial linear-search implementation",
+            "Refactor with hashed index",
+            "Comparative performance benchmarks",
+            "Documented Big-O analysis"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "📈",
+            "title": { "fr": "Mesurer, pas deviner", "en": "Measure, don't guess" },
+            "body": { "fr": "L'intuition d'un dev sur la perf est souvent fausse. Toujours benchmarker.", "en": "A dev's intuition about perf is often wrong. Always benchmark." }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "dev-environment",
+      "featured": false,
+      "order": 9,
+      "type": "academic",
+      "category": "tools",
+      "date": "2024",
+      "badge": { "fr": "🛠️ Outils", "en": "🛠️ Tools" },
+      "title": {
+        "fr": "Setup environnement & Git workflow",
+        "en": "Dev Environment & Git Workflow"
+      },
+      "subtitle": {
+        "fr": "Configuration d'environnements de développement et workflow Git complet.",
+        "en": "Development environment setup and full Git workflow."
+      },
+      "pitch": {
+        "fr": "Linux + Windows + Git + GitHub : la base d'un dev moderne, maîtrisée tôt.",
+        "en": "Linux + Windows + Git + GitHub: the foundation of a modern dev, mastered early."
+      },
+      "meta": {
+        "team": { "fr": "Atelier académique", "en": "Academic workshop" },
+        "duration": { "fr": "Plusieurs séances", "en": "Several sessions" },
+        "role": { "fr": "Élève actif", "en": "Hands-on learner" },
+        "result": { "fr": "Environnement multi-OS opérationnel", "en": "Multi-OS environment up & running" }
+      },
+      "tech": ["Git", "GitHub", "Linux", "Windows", "VS Code"],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/dev-environment/cover.png",
+        "thumb": "/assets/img/projects/dev-environment/cover.png",
+        "og": "/assets/img/projects/dev-environment/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Ateliers EPSI dédiés aux outils du dev : installation Linux & Windows en VM, Cisco, Git, Figma. Acquérir les réflexes que les pros utilisent au quotidien.",
+          "en": "EPSI workshops on dev tools: Linux & Windows VM install, Cisco, Git, Figma. Building the reflexes pros use daily."
+        },
+        "problem": {
+          "fr": "Sortir de l'éditeur isolé : savoir versionner, collaborer, et basculer entre systèmes d'exploitation.",
+          "en": "Get out of the isolated editor: version, collaborate, switch between operating systems."
+        },
+        "solution": {
+          "fr": "Mise en place d'un workflow Git solide (branches, commits clairs, pull requests), pratique de Linux en VM, configuration d'un environnement multi-projets sur VS Code.",
+          "en": "Solid Git workflow (branches, clean commits, pull requests), Linux VM practice, multi-project setup in VS Code."
+        },
+        "myWork": {
+          "fr": [
+            "Installation et configuration de VMs Linux (Ubuntu, Debian)",
+            "Workflow Git : branches, merges, résolution de conflits",
+            "Setup VS Code avec extensions adaptées",
+            "Pratique des commandes shell"
+          ],
+          "en": [
+            "Installed and configured Linux VMs (Ubuntu, Debian)",
+            "Git workflow: branches, merges, conflict resolution",
+            "VS Code setup with relevant extensions",
+            "Shell command practice"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "⚙️",
+            "title": { "fr": "Les outils libèrent", "en": "Tools free you" },
+            "body": { "fr": "Bien maîtriser Git et le shell, c'est gagner du temps sur tous les futurs projets.", "en": "Mastering Git and the shell saves time on every future project." }
+          }
+        ]
+      }
+    }
+  ]
+}

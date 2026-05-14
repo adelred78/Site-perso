@@ -1,137 +1,160 @@
-# Adel Redjemi - Portfolio Personnel
+# Adel Redjemi — Portfolio v2.0
 
-> 🎓 **Étudiant en informatique** | 💻 **Développeur Web & Infrastructure IT** | 🚀 **Passion pour la Tech**
+Portfolio personnel bilingue (FR / EN) d'Adel Redjemi, étudiant en Bachelor Informatique à l'EPSI Paris.
 
-Bienvenue sur mon portfolio personnel ! Ce site me représente à travers mes projets académiques, réalisations personnelles et mes compétences techniques en développement web, systèmes et réseaux.
-
----
-
-## 🌐 Live Demo
-
-Visite mon portfolio : [adelredjemi.vercel.app](https://adelredjemi.vercel.app)
+🌐 **Live** : [adel-redjemi.vercel.app](https://adel-redjemi.vercel.app)
 
 ---
 
-## 📋 À Propos
+## 🧱 Stack
 
-Je suis un étudiant en **Bachelor Informatique à l'EPSI Paris**, spécialisé dans :
-
-- ✨ **Développement Web** (HTML, CSS, JavaScript(les bases), PHP)
-- 🔒 **Architecture Réseaux & Systèmes** (Linux, VMware, Infrastructure sécurisée)
-- 🤖 **Électronique & IoT** (Arduino, programmation embarquée)
-- 🎮 **Réalité Virtuelle** (création d'expériences immersives)
-
-**Formation académique complétée :**
-
-- 🏆 Baccalauréat Mathématiques (Mention Très Bien - 16,28/20)
-- 📚 Formation intensive en développement web (192h - Code213)
-- 🎓 Bachelor 1 Informatique (EPSI Paris, 2025-2026)
+- **HTML5 / CSS3 / JavaScript** vanilla — aucun framework
+- **JSON** comme source unique pour les projets et les traductions
+- **Vercel** pour l'hébergement (rewrites + clean URLs)
+- **Formspree** pour le formulaire de contact (config à compléter)
 
 ---
 
-## 🛠️ Stack Technique
+## 📂 Structure
 
-### Frontend
-
-- **HTML5** - Structure sémantique
-- **CSS3** - Mise en page moderne et responsive
-- **JavaScript** - les bases
-- **Design System** - Google Fonts (Inter, Outfit)
-
-### Backend
-
-- **PHP** - Développement serveur
-- **MySQL / Supabase** - Gestion de bases de données
-- **API REST** - Communication backend
-
-### DevOps & Infrastructure
-
-- **Linux** (Ubuntu, Debian)
-- **Git & GitHub** - Versioning
-- **VMware / VirtualBox** - Virtualisation
-- **Docker / Node-RED** - Conteneurisation
-
-### Outils & Technologies
-
-- **VS Code** et **Antigravity** - Éditeurs principaux
-- **Figma** - Design UI/UX
-- **Microsoft Visio** - Diagrammes architecture
-- **Postman** - Test API
-
----
-
-## 📁 Structure du Projet
-
-## 🎯 Projets Phares
-
-### 🏆 Machine de Rube Goldberg : Snack'O'Matic
-
-**Catégorie :** Projet Académique  
-**Récompense :** 🥇 Gagnant au niveau local (2025)
-
-Conception et réalisation collaborative d'une machine à réaction en chaîne complexe. Présentée devant un jury académique avec participation au niveau national.
-
-### 💻 E-commerce SmartBike
-
-**Catégorie :** Développement Web
-
-Site de vente de vélos complet avec système d'inscription, connexion et commande. Démonstration de compétences en PHP, MySQL et conception UX.
-
-### 🌐 Infrastructure Sécurisée
-
-**Catégorie :** Réseaux & Systèmes
-
-Conception (HLD/LLD), segmentation et déploiement d'un réseau d'entreprise sécurisé sur environnement virtuel Linux.
-
-### 🎮 VR Dream Experience
-
-**Catégorie :** Réalité Virtuelle
-
-Création de 3 scènes immersives fantastiques pour susciter l'émerveillement et l'évasion chez l'utilisateur.
-
-### 🔌 Séquenceur de LED Arduino
-
-**Catégorie :** Électronique & IoT
-
-Projet Arduino Uno : Contrôle séquentiel de LED et découverte de la programmation embarquée (C++).
-
-### 📚 Mini-Projets Académiques
-
-**Catégorie :** Informatique Générale
-
-Collection de travaux pratiques : optimisation d'algorithmes Python, scripts d'automatisation, sites vitrines.
+```
+/
+├── index.html              → Redirection vers la langue navigateur
+├── fr/                     → Site français
+│   ├── index.html          → Accueil
+│   ├── projets.html        → Liste des projets (filtres)
+│   ├── a-propos.html       → À propos / Parcours
+│   ├── contact.html        → Formulaire de contact
+│   └── projets/
+│       └── _template.html  → Template détail projet (rendu via JS)
+├── en/                     → Site anglais (miroir)
+│   ├── index.html
+│   ├── projects.html
+│   ├── about.html
+│   ├── contact.html
+│   └── projects/
+│       └── _template.html
+├── assets/
+│   ├── img/
+│   │   ├── me/             → Photos pro
+│   │   ├── projects/       → Captures projets (par slug)
+│   │   └── og/             → Images Open Graph (1200x630)
+│   ├── icons/              → SVG icônes tech (sprite)
+│   ├── cv/                 → CVs PDF (FR + EN)
+│   └── certificates/       → Certificats des awards
+├── css/
+│   ├── tokens.css          → Variables CSS (à customiser par Gemini)
+│   ├── base.css            → Reset + typo + accessibilité
+│   └── components.css      → Composants (header, card, button, form...)
+├── js/
+│   ├── main.js             → Point d'entrée
+│   ├── nav.js              → Header + i18n switch
+│   ├── projects.js         → Chargement & rendu des projets
+│   └── contact.js          → Soumission du formulaire
+├── data/
+│   ├── projects.json       → Source unique des 9 projets (bilingue)
+│   └── i18n/
+│       ├── fr.json         → Strings d'interface FR
+│       └── en.json         → Strings d'interface EN
+├── vercel.json             → Rewrites pour les détails projet + headers
+├── sitemap.xml             → Sitemap bilingue
+├── robots.txt
+└── favicon.ico
+```
 
 ---
 
-## ✨ Points Forts du Site
+## 🚀 Développement local
 
-✅ **Design Responsive** - Adapté à tous les appareils (mobile, tablette, desktop)  
-✅ **Performance Optimisée** - Chargement rapide et fluide  
-✅ **UX Moderne** - Navigation intuitive et interface épurée  
-✅ **SEO Friendly** - Métadonnées optimisées et structure sémantique  
-✅ **Code Personnel** - Développé sans frameworks
-✅ **Animations Subtiles** - Effets visuels avec Antigravity _[voir détails ci-dessous]_
+```bash
+# Avec n'importe quel serveur statique (le projet n'a pas de build step) :
+npx serve .
 
----
+# Ou avec Python :
+python3 -m http.server 3000
 
-## 🎨 Antigravity Integration
+# Ou avec Vercel CLI (recommandé — respecte vercel.json) :
+npx vercel dev
+```
 
-Ce portfolio intègre **Antigravity**, une approche novatrice de design et d'animation :
-
-- **Animations fluides** - Effets visuels qui défient la gravité
-- **Transitions élégantes** - Navigation sans à-coups entre les sections
-- **Visual Feedback** - Réponse immédiate aux interactions utilisateur
-- **Micro-interactions** - Détails subtils qui enrichissent l'expérience
-
-_Antigravity permet une présentation visuelle unique qui reflète l'innovation et la créativité dans le développement tech._
+> ⚠️ Les URLs propres (`/fr/projets/smartbike`) ne fonctionnent qu'avec `vercel dev` ou en production sur Vercel — le serveur statique simple servira `/fr/projets/_template.html` directement.
 
 ---
 
-## 🚀 Installation & Utilisation
+## 🌍 i18n
 
-### Prérequis
+### URLs
 
-- Navigateur web moderne (Chrome, Firefox, Safari, Edge)
-- Serveur local (optionnel pour développement)
+| FR | EN |
+|----|-----|
+| `/fr/` | `/en/` |
+| `/fr/projets` | `/en/projects` |
+| `/fr/projets/[slug]` | `/en/projects/[slug]` |
+| `/fr/a-propos` | `/en/about` |
+| `/fr/contact` | `/en/contact` |
 
-### REDJEMI Adel M.
+### Switcher
+
+Géré par `js/nav.js`. Le lien dans le header pointe automatiquement vers l'URL équivalente dans l'autre langue.
+
+### Contenu
+
+- **Pages statiques** (home, projets, about, contact) : texte directement dans le HTML, **dupliqué par langue**.
+- **Détail projet** : un seul template par langue (`_template.html`) qui lit `projects.json` et rend le contenu selon le slug dans l'URL et la langue.
+- **Strings d'UI dynamiques** (filtres, labels) : `data/i18n/{lang}.json`.
+
+---
+
+## ➕ Ajouter un projet
+
+1. Ouvre `data/projects.json`.
+2. Ajoute une entrée dans le tableau `projects` en suivant le schéma des projets existants.
+3. Pose les images du projet dans `assets/img/projects/[slug]/`.
+4. Ajoute les URLs FR + EN dans `sitemap.xml`.
+5. Commit + push → Vercel redéploie tout seul.
+
+---
+
+## 🎨 UI (workflow avec Gemini)
+
+- Les classes CSS sont déjà en place dans le HTML.
+- Gemini customise `css/tokens.css` (variables) et peut enrichir `css/components.css`.
+- Pas besoin de toucher au HTML ni au JS pour changer l'apparence.
+
+Voir le brief UI complet : [brief Gemini ci-dessous](#brief-ui-pour-gemini).
+
+---
+
+## 📬 Configuration du formulaire de contact
+
+1. Créer un compte sur [formspree.io](https://formspree.io) avec `redjemitechkraft@gmail.com`.
+2. Créer un nouveau formulaire et récupérer l'endpoint (`https://formspree.io/f/xxxxxxxx`).
+3. Coller l'endpoint dans l'attribut `data-formspree-endpoint` du `<form>` sur :
+   - `fr/contact.html`
+   - `en/contact.html`
+
+---
+
+## 🚢 Déploiement
+
+Connecté à Vercel :
+
+1. Push sur la branche `main` → déploiement automatique.
+2. URLs propres et rewrites configurés dans `vercel.json`.
+3. Domaine personnalisé : à configurer plus tard dans le dashboard Vercel.
+
+---
+
+## ♿ Accessibilité
+
+- Skip link "Aller au contenu" pour la navigation clavier
+- Focus visible sur tous les éléments interactifs
+- `aria-*` pour le burger, le formulaire, le switcher de langue
+- Respect de `prefers-reduced-motion`
+- Contraste WCAG AA (à finaliser avec Gemini sur la palette)
+
+---
+
+## 📜 Licence
+
+© 2026 Adel Redjemi. Code et contenu personnels, tous droits réservés.

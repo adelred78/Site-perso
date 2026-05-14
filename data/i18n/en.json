@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "lang": "en",
+    "dir": "ltr",
+    "siteName": "Adel Redjemi",
+    "siteDescription": "Adel Redjemi — Computer Science Bachelor's student at EPSI Paris. Fullstack, Linux, networking. Currently interning at Glikt."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "cv": "Resume",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "switchLang": "View in French",
+    "switchLangShort": "FR",
+    "skipToContent": "Skip to main content"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Computer Science Student · EPSI Paris",
+      "name": "Adel Redjemi",
+      "tagline": "Aiming for excellence in IT — web, networking, embedded.",
+      "description": "Computer Science Bachelor's student at EPSI Paris, building expertise across three axes: web development, network architecture, embedded systems. Currently interning at Glikt.",
+      "ctaPrimary": "See my work",
+      "ctaSecondary": "Get in touch",
+      "photoAlt": "Portrait of Adel Redjemi"
+    },
+    "status": {
+      "internship": "🟢 Full Stack Intern at Glikt (May – June 2026)",
+      "search": "🔍 Open to apprenticeship from September 2026"
+    },
+    "about": {
+      "heading": "Who I am",
+      "paragraphs": [
+        "First-year Bachelor's student in Computer Science at EPSI Paris. What draws me to computer science is understanding the entire stack — not just plugging into a framework.",
+        "On the code side, I work with PHP, JavaScript and SQL. On the infrastructure side, I build networks on VirtualBox and use Linux daily. On the hands-on side, I built a chain-reaction machine that won a contest, and an IoT platform tracking soil moisture.",
+        "I learn by building. When something breaks, I want to know why."
+      ],
+      "stats": [
+        { "value": "9", "label": "projects shipped" },
+        { "value": "2", "label": "awards won" },
+        { "value": "16.28", "label": "/20 math diploma" }
+      ]
+    },
+    "featured": {
+      "heading": "Featured projects",
+      "subheading": "My 3 most representative builds",
+      "viewAll": "View all projects"
+    },
+    "stack": {
+      "heading": "Tech stack",
+      "subheading": "What I use daily",
+      "categories": [
+        { "icon": "🌐", "title": "Web", "items": ["HTML5", "CSS3", "JavaScript", "PHP 8"] },
+        { "icon": "🗄️", "title": "Data", "items": ["MySQL", "PostgreSQL", "Supabase"] },
+        { "icon": "🐧", "title": "Systems & networking", "items": ["Linux (Ubuntu, Debian)", "Docker", "VirtualBox", "VMware"] },
+        { "icon": "🛠️", "title": "Tools", "items": ["Git", "GitHub", "VS Code", "Figma", "Postman"] },
+        { "icon": "🔌", "title": "Embedded & IoT", "items": ["Arduino", "ESP32", "Node-RED"] }
+      ]
+    },
+    "awards": {
+      "heading": "Awards & recognition",
+      "subheading": "Competitions and distinctions",
+      "viewCertificate": "View certificate",
+      "items": [
+        {
+          "icon": "🏆",
+          "title": "Rube Goldberg Workshop — 1st place",
+          "body": "EPSI Workshop 2025. Chain-reaction machine built with a team of 5. Presented to academic jury.",
+          "certificate": "/assets/certificates/rube-goldberg.pdf"
+        },
+        {
+          "icon": "🥇",
+          "title": "Best Data Cleaner — 1st place",
+          "body": "Data cleaning and performance optimization workshop. Restored workstation responsiveness.",
+          "certificate": null
+        }
+      ]
+    },
+    "contactCta": {
+      "heading": "A project, an apprenticeship, a question?",
+      "subheading": "I reply within 24-48h.",
+      "primary": "Contact me",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "subtitle": "9 builds · academic and personal",
+    "filters": {
+      "typeLabel": "Type",
+      "categoryLabel": "Category",
+      "type": {
+        "all": "All",
+        "academic": "Academic",
+        "personal": "Personal"
+      },
+      "category": {
+        "all": "All",
+        "web": "Web",
+        "iot": "IoT",
+        "network": "Network",
+        "vr": "VR",
+        "embedded": "Embedded",
+        "algorithm": "Algorithms",
+        "tools": "Tools"
+      },
+      "reset": "Reset filters",
+      "noResults": "No project matches. Try another filter.",
+      "showing": "{count} project(s) shown"
+    },
+    "card": {
+      "viewDetail": "View details"
+    }
+  },
+  "projectDetail": {
+    "back": "← Back to projects",
+    "sections": {
+      "context": "Context",
+      "problem": "Problem to solve",
+      "solution": "Solution",
+      "myWork": "What I did",
+      "takeaways": "Takeaways",
+      "gallery": "Gallery"
+    },
+    "meta": {
+      "team": "Team",
+      "duration": "Duration",
+      "role": "Role",
+      "result": "Result",
+      "stack": "Tech stack"
+    },
+    "sidebar": {
+      "linksHeading": "Links",
+      "techHeading": "Technologies",
+      "github": "Source code (GitHub)",
+      "demo": "Live demo",
+      "certificate": "Certificate (PDF)"
+    },
+    "nav": {
+      "previous": "← Previous project",
+      "next": "Next project →"
+    },
+    "notFound": {
+      "title": "Project not found",
+      "body": "This project doesn't exist or has been moved.",
+      "back": "Back to projects list"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About",
+      "bio": "First-year Bachelor's student in Computer Science at EPSI Paris. What I love: understanding systems, breaking things to fix them, and shipping projects that work."
+    },
+    "story": {
+      "heading": "My story",
+      "blocks": [
+        {
+          "title": "My background",
+          "body": "I earned my mathematics baccalauréat with high honors (16.28/20) in July 2025 at Lycée Amara Rachid in Algiers. In parallel, I had already started coding: an intensive web development bootcamp at Code213 (Algiers), 192 hours of HTML, CSS and JavaScript basics. That's when I knew this was what I wanted to do.\n\nI joined EPSI Paris in 2025 for my Bachelor's in Computer Science. Today, I'm doing a Full Stack internship at Glikt in Courbevoie."
+        },
+        {
+          "title": "Why computer science",
+          "body": "What draws me isn't just writing code. It's understanding how everything holds together. From the TCP packet traveling, to the SQL query responding, to the CSS aligning a button — everything is connected. I love that full-stack dimension.\n\nAt EPSI, I didn't want to specialize too early. I'm aiming for excellence across three axes: web, networking, embedded. I'll dive deeper later. For now, I'm building on all three."
+        },
+        {
+          "title": "How I work",
+          "body": "I learn by building. Theory in the morning, code in the afternoon. When something breaks, I don't work around it — I want to know why. That's usually where I learn the most.\n\nIn teams, I like concrete roles. On the Rube Goldberg project, I was in charge of the Tinkercad design. We won the contest."
+        }
+      ]
+    },
+    "timeline": {
+      "heading": "Path",
+      "items": [
+        {
+          "date": "May – June 2026",
+          "title": "Full Stack Internship",
+          "institution": "Glikt — Courbevoie (92), France",
+          "body": "Contributing to the global infrastructure: ideation, technical writing, UI/UX, front-end, back-end, databases."
+        },
+        {
+          "date": "2025 – 2026",
+          "title": "Bachelor's Year 1 in CS",
+          "institution": "EPSI Paris — Courbevoie (92)",
+          "body": "Algorithms, HTML/CSS, PHP/MySQL, Python, SQL, virtualization, IoT, VR, network architecture."
+        },
+        {
+          "date": "2025 – 2026",
+          "title": "Web Development Bootcamp",
+          "institution": "Code213 — El Biar, Algiers",
+          "body": "Intensive 192-hour training: HTML, CSS, intro to JavaScript. Interrupted due to international move."
+        },
+        {
+          "date": "July 2025",
+          "title": "Mathematics Baccalauréat",
+          "institution": "Lycée Amara Rachid — Ben Aknoun, Algiers",
+          "body": "Earned with high honors (16.28/20)."
+        }
+      ]
+    },
+    "softSkills": {
+      "heading": "Soft skills",
+      "subheading": "With real proof",
+      "items": [
+        {
+          "icon": "🤝",
+          "title": "Teamwork",
+          "body": "Coordinated a 5-person team on the Rube Goldberg project. Module breakdown, trigger sync, jury presentation. Result: 1st place locally."
+        },
+        {
+          "icon": "🔧",
+          "title": "Technical rigor",
+          "body": "Designed a secure corporate network infrastructure: HLD/LLD docs, VLAN segmentation, Linux deployment in a virtual environment. The architecture held up under tests."
+        },
+        {
+          "icon": "🎯",
+          "title": "Fast learner",
+          "body": "HydroTrack: I had never touched ESP32 or Node-RED before. Within weeks, working prototype connected to Supabase, cross-referencing weather data."
+        }
+      ]
+    },
+    "languages": {
+      "heading": "Languages",
+      "items": [
+        { "flag": "🇫🇷", "name": "French", "level": "Bilingual" },
+        { "flag": "🇬🇧", "name": "English", "level": "Intermediate (B1, improving)" }
+      ]
+    },
+    "interests": {
+      "heading": "Interests",
+      "items": [
+        { "icon": "🥊", "title": "English boxing", "body": "Former practice." },
+        { "icon": "📚", "title": "Reading", "body": "Novels and computer science books." },
+        { "icon": "🎧", "title": "Tech podcasts", "body": "Underscore_, Hugo Décrypte." },
+        { "icon": "♟️", "title": "Chess", "body": "Strategic mindset training." },
+        { "icon": "🛠️", "title": "Building projects", "body": "Personal projects, app and system management." }
+      ]
+    },
+    "cv": {
+      "heading": "My resume",
+      "subheading": "Available in two languages",
+      "downloadFr": "Download in French ↓",
+      "downloadEn": "Download in English ↓"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let's work together",
+      "intro": "Internship, apprenticeship, freelance project, or just a tech chat: I'm open. Best channel is email — I reply within 24 to 48 hours."
+    },
+    "form": {
+      "heading": "Send me a message",
+      "name": "Name",
+      "namePlaceholder": "What's your name?",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "subject": "Subject",
+      "subjectOptions": {
+        "internship": "Internship",
+        "apprenticeship": "Apprenticeship",
+        "project": "Project",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell me everything",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Thanks! Your message is on its way, I'll reply soon.",
+      "error": "Oops, sending failed. Try emailing me at redjemitechkraft@gmail.com",
+      "consent": "By sending, you agree that your message will be forwarded to me by email."
+    },
+    "sidebar": {
+      "channelsHeading": "Other channels",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "location": "Courbevoie / Paris (92), France",
+      "availabilityHeading": "Current availability",
+      "availabilityItems": [
+        "🟢 Interning at Glikt until end of June 2026",
+        "🔍 Open to apprenticeship starting September 2026"
+      ],
+      "replyTimeHeading": "Reply time",
+      "replyTimeBody": "Within 24-48h on business days"
+    }
+  },
+  "footer": {
+    "tagline": "Hand-built in HTML, CSS and JavaScript",
+    "hostedOn": "Hosted on Vercel",
+    "copyright": "© 2026 Adel Redjemi. All rights reserved.",
+    "version": "v2.0"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "Error 404",
+    "body": "This page doesn't exist (anymore). Back to home.",
+    "cta": "Back to home"
+  }
+}
