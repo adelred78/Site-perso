@@ -36,7 +36,7 @@ export async function loadI18n() {
  * Extrait le slug depuis l'URL de détail.
  */
 export function getSlugFromUrl() {
-  const match = window.location.pathname.match(/\/(?:projets|projects)\/([^/]+)$/);
+  const match = window.location.pathname.match(/\/(?:projets|projects)\/([^/]+?)(?:\.html)?\/?$/);
   return match ? match[1] : null;
 }
 

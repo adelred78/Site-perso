@@ -1,10 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/fr/projets/:slug", "destination": "/fr/projets/_template.html" },
-    { "source": "/en/projects/:slug", "destination": "/en/projects/_template.html" }
-  ],
   "redirects": [
     { "source": "/projects/project-workshop.html", "destination": "/fr/projets/snack-o-matic", "permanent": true },
     { "source": "/projects/project-hydrotrack.html", "destination": "/fr/projets/hydrotrack", "permanent": true },

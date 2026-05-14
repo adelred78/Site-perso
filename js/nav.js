@@ -33,14 +33,13 @@ export function getOtherLangUrl() {
   const lang = getCurrentLang();
 
   if (lang === 'fr') {
-    // Détail projet : /fr/projets/:slug → /en/projects/:slug
-    const projectMatch = path.match(/^\/fr\/projets\/([^/]+)$/);
-    if (projectMatch) return `/en/projects/${projectMatch[1]}`;
+    const projectMatch = path.match(/^\/fr\/projets\/([^/]+?)(?:\.html)?$/);
+    if (projectMatch && projectMatch[1] !== 'projets') return `/en/projects/${projectMatch[1]}`;
 
     return PATH_MAP_FR_EN[path] || PATH_MAP_FR_EN[`${path}/`] || '/en/';
   } else {
-    const projectMatch = path.match(/^\/en\/projects\/([^/]+)$/);
-    if (projectMatch) return `/fr/projets/${projectMatch[1]}`;
+    const projectMatch = path.match(/^\/en\/projects\/([^/]+?)(?:\.html)?$/);
+    if (projectMatch && projectMatch[1] !== 'projects') return `/fr/projets/${projectMatch[1]}`;
 
     return PATH_MAP_EN_FR[path] || PATH_MAP_EN_FR[`${path}/`] || '/fr/';
   }

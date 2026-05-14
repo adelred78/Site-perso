@@ -242,14 +242,30 @@
 }
 
 /* =========================================
-   HERO — single column par défaut, centré
+   HERO — plein écran, contenu centré verticalement
    ========================================= */
 .hero {
-  padding-top: calc(var(--header-height) + var(--space-16));
-  padding-bottom: var(--space-16);
-  min-height: 90vh;
+  padding-top: var(--header-height);
+  padding-bottom: var(--space-12);
+  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Lueur subtile en arrière-plan */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, var(--accent-ghost) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero__inner {
@@ -257,12 +273,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--space-8);
+  gap: var(--space-6);
+  position: relative;
+  z-index: 1;
 }
 
 .hero__content {
   width: 100%;
-  max-width: 720px;
+  max-width: 760px;
 }
 
 .hero__eyebrow {
@@ -274,14 +292,34 @@
   letter-spacing: var(--tracking-wide);
   color: var(--accent-light);
   background-color: var(--accent-ghost);
-  border-radius: var(--radius-sm);
-  margin-bottom: var(--space-5);
+  border: 1px solid color-mix(in srgb, var(--accent-main) 30%, transparent);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-6);
 }
 
 .hero__title {
-  font-size: clamp(var(--text-4xl), 6vw + 1rem, var(--text-6xl));
-  margin-bottom: var(--space-4);
-  background: linear-gradient(180deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: var(--space-5);
+  line-height: 0.95;
+}
+
+.hero__title-first {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-2xl), 4vw + 0.5rem, var(--text-4xl));
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--space-1);
+}
+
+.hero__title-last {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-5xl), 9vw + 1rem, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  background: linear-gradient(180deg, var(--text-primary) 0%, var(--text-secondary) 110%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -290,12 +328,13 @@
 
 .hero__tagline {
   font-family: var(--font-display);
-  font-size: clamp(var(--text-xl), 2.2vw + 0.5rem, var(--text-3xl));
-  font-weight: 600;
-  color: var(--text-primary);
+  font-size: clamp(var(--text-xl), 2vw + 0.5rem, var(--text-2xl));
+  font-weight: 500;
+  color: var(--accent-light);
   margin-bottom: var(--space-5);
   line-height: var(--leading-snug);
   letter-spacing: var(--tracking-tight);
+  max-width: 56ch;
 }
 
 .hero__description {
@@ -303,6 +342,7 @@
   color: var(--text-secondary);
   max-width: 56ch;
   margin-bottom: var(--space-8);
+  line-height: var(--leading-relaxed);
 }
 
 .hero__actions {
@@ -311,17 +351,34 @@
   gap: var(--space-3);
 }
 
-/* Variante avec photo (à activer plus tard) */
-.hero__photo-wrapper {
+/* Indicateur de scroll en bas */
+.hero__scroll {
+  position: absolute;
+  bottom: var(--space-6);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-tertiary);
+  z-index: 1;
+  animation: scrollHint 2.2s ease-in-out infinite;
+  text-transform: uppercase;
   display: none;
 }
 
-@media (min-width: 900px) {
-  .hero__inner:has(.hero__photo-wrapper) {
-    flex-direction: row;
-    align-items: center;
-    gap: var(--space-16);
-  }
+@media (min-width: 768px) {
+  .hero__scroll { display: block; }
+}
+
+@keyframes scrollHint {
+  0%, 100% { transform: translate(-50%, 0); opacity: 0.5; }
+  50% { transform: translate(-50%, 8px); opacity: 1; }
+}
+
+/* Variante avec photo (à activer plus tard) */
+.hero__photo-wrapper {
+  display: none;
 }
 
 /* =========================================
