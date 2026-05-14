@@ -52,37 +52,22 @@
       </div>
     </header>
 
-    <main id="main" style="padding-top: calc(var(--header-height) + var(--space-12));">
+    <main id="main" class="main main--padded">
       <!-- HERO -->
       <section class="container">
-        <div class="grid grid--2" style="align-items: center;">
-          <div>
-            <h1 class="section__title" style="text-align: left;">À propos</h1>
-            <p class="hero__description">
-              Étudiant en première année de Bachelor Informatique à l'EPSI Paris. Ce que j'aime :
+        <header class="page-header">
+          <h1>À propos</h1>
+          <p>Étudiant en première année de Bachelor Informatique à l'EPSI Paris. Ce que j'aime :
               comprendre les systèmes, casser des trucs pour les réparer, et livrer un projet qui
-              marche.
-            </p>
-          </div>
-          <div class="hero__photo-wrapper">
-            <img
-              src="/assets/img/me/me-about.jpg"
-              alt="Portrait d'Adel Redjemi"
-              class="hero__photo"
-              width="600"
-              height="600"
-              loading="eager"
-              onerror="this.style.display='none'"
-            />
-          </div>
-        </div>
+              marche.</p>
+        </header>
       </section>
 
       <!-- STORY -->
       <section class="section">
-        <div class="container" style="max-width: 800px;">
+        <div class="container">
           <article class="story">
-            <h2 class="section__title" style="text-align: left;">Mon parcours</h2>
+            <h2 class="section__title">Mon parcours</h2>
             <p>
               J'ai obtenu mon baccalauréat mathématiques avec mention Très Bien (16,28/20) en
               juillet 2025 au lycée Amara Rachid, à Alger. En parallèle, j'avais déjà commencé à
@@ -95,7 +80,7 @@
               suis en stage Full Stack chez Glikt à Courbevoie.
             </p>
 
-            <h2 class="section__title" style="text-align: left; margin-top: var(--space-12);">
+            <h2 class="section__title">
               Pourquoi l'informatique
             </h2>
             <p>
@@ -109,7 +94,7 @@
               j'approfondirai. Pour l'instant, je construis sur les trois.
             </p>
 
-            <h2 class="section__title" style="text-align: left; margin-top: var(--space-12);">
+            <h2 class="section__title">
               Comment je travaille
             </h2>
             <p>
@@ -219,7 +204,7 @@
         <div class="container">
           <div class="grid grid--2">
             <div>
-              <h2 class="section__title" style="text-align: left;">Langues</h2>
+              <h2 class="section__title">Langues</h2>
               <ul class="languages">
                 <li class="language">
                   <span class="language__flag" aria-hidden="true">🇫🇷</span>
@@ -232,7 +217,7 @@
               </ul>
             </div>
             <div>
-              <h2 class="section__title" style="text-align: left;">Centres d'intérêt</h2>
+              <h2 class="section__title">Centres d'intérêt</h2>
               <ul class="interests">
                 <li><span class="interest__icon" aria-hidden="true">🥊</span> <strong>Boxe anglaise</strong> — ancien pratiquant.</li>
                 <li><span class="interest__icon" aria-hidden="true">📚</span> <strong>Lecture</strong> — romans et ouvrages d'informatique.</li>
@@ -252,10 +237,8 @@
             <h2 class="section__title">Mon CV</h2>
             <p class="section__subtitle">Téléchargeable en deux langues</p>
           </header>
-          <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
-            <a href="/assets/cv/CV_Redjemi_Adel_FR.pdf" target="_blank" rel="noopener" class="button button--primary">Télécharger en français ↓</a>
-            <a href="/assets/cv/CV_Redjemi_Adel_EN.pdf" target="_blank" rel="noopener" class="button button--outline">Download in English ↓</a>
-          </div>
+          <div class="cv-download"><a href="/assets/cv/CV_Redjemi_Adel_FR.pdf" target="_blank" rel="noopener" class="button button--primary">Télécharger en français ↓</a>
+            <a href="/assets/cv/CV_Redjemi_Adel_EN.pdf" target="_blank" rel="noopener" class="button button--outline">Download in English ↓</a></div>
         </div>
       </section>
     </main>

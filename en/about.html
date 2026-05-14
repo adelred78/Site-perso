@@ -52,34 +52,19 @@
       </div>
     </header>
 
-    <main id="main" style="padding-top: calc(var(--header-height) + var(--space-12));">
+    <main id="main" class="main main--padded">
       <section class="container">
-        <div class="grid grid--2" style="align-items: center;">
-          <div>
-            <h1 class="section__title" style="text-align: left;">About</h1>
-            <p class="hero__description">
-              First-year Bachelor's student in Computer Science at EPSI Paris. What I love:
-              understanding systems, breaking things to fix them, and shipping projects that work.
-            </p>
-          </div>
-          <div class="hero__photo-wrapper">
-            <img
-              src="/assets/img/me/me-about.jpg"
-              alt="Portrait of Adel Redjemi"
-              class="hero__photo"
-              width="600"
-              height="600"
-              loading="eager"
-              onerror="this.style.display='none'"
-            />
-          </div>
-        </div>
+        <header class="page-header">
+          <h1>About</h1>
+          <p>First-year Bachelor's student in Computer Science at EPSI Paris. What I love:
+              understanding systems, breaking things to fix them, and shipping projects that work.</p>
+        </header>
       </section>
 
       <section class="section">
-        <div class="container" style="max-width: 800px;">
+        <div class="container">
           <article class="story">
-            <h2 class="section__title" style="text-align: left;">My background</h2>
+            <h2 class="section__title">My background</h2>
             <p>
               I earned my mathematics baccalauréat with high honors (16.28/20) in July 2025 at
               Lycée Amara Rachid in Algiers. In parallel, I had already started coding: an
@@ -91,7 +76,7 @@
               Full Stack internship at Glikt in Courbevoie.
             </p>
 
-            <h2 class="section__title" style="text-align: left; margin-top: var(--space-12);">
+            <h2 class="section__title">
               Why computer science
             </h2>
             <p>
@@ -105,7 +90,7 @@
               now, I'm building on all three.
             </p>
 
-            <h2 class="section__title" style="text-align: left; margin-top: var(--space-12);">
+            <h2 class="section__title">
               How I work
             </h2>
             <p>
@@ -192,7 +177,7 @@
         <div class="container">
           <div class="grid grid--2">
             <div>
-              <h2 class="section__title" style="text-align: left;">Languages</h2>
+              <h2 class="section__title">Languages</h2>
               <ul class="languages">
                 <li class="language">
                   <span class="language__flag" aria-hidden="true">🇫🇷</span>
@@ -205,7 +190,7 @@
               </ul>
             </div>
             <div>
-              <h2 class="section__title" style="text-align: left;">Interests</h2>
+              <h2 class="section__title">Interests</h2>
               <ul class="interests">
                 <li><span class="interest__icon" aria-hidden="true">🥊</span> <strong>English boxing</strong> — former practice.</li>
                 <li><span class="interest__icon" aria-hidden="true">📚</span> <strong>Reading</strong> — novels and computer science books.</li>
@@ -224,10 +209,8 @@
             <h2 class="section__title">My resume</h2>
             <p class="section__subtitle">Available in two languages</p>
           </header>
-          <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
-            <a href="/assets/cv/CV_Redjemi_Adel_EN.pdf" target="_blank" rel="noopener" class="button button--primary">Download in English ↓</a>
-            <a href="/assets/cv/CV_Redjemi_Adel_FR.pdf" target="_blank" rel="noopener" class="button button--outline">Télécharger en français ↓</a>
-          </div>
+          <div class="cv-download"><a href="/assets/cv/CV_Redjemi_Adel_EN.pdf" target="_blank" rel="noopener" class="button button--primary">Download in English ↓</a>
+            <a href="/assets/cv/CV_Redjemi_Adel_FR.pdf" target="_blank" rel="noopener" class="button button--outline">Télécharger en français ↓</a></div>
         </div>
       </section>
     </main>

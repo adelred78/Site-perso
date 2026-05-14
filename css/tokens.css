@@ -79,11 +79,11 @@
   --text-secondary: #94A3B8; /* Slate 400 */
   --text-tertiary: #64748B;  /* Slate 500 */
 
-  /* Accent : Indigo électrique */
-  --accent-main: #6366F1;    /* Indigo 500 */
-  --accent-hover: #4F46E5;   /* Indigo 600 */
-  --accent-light: #818CF8;   /* Indigo 400 */
-  --accent-ghost: rgba(99, 102, 241, 0.1);
+  /* Accent : Sky Blue */
+  --accent-main: #38BDF8;    /* Sky 400 */
+  --accent-hover: #0EA5E9;   /* Sky 500 */
+  --accent-light: #7DD3FC;   /* Sky 300 */
+  --accent-ghost: rgba(56, 189, 248, 0.12);
 
   /* États */
   --status-success: #10B981;
@@ -93,7 +93,7 @@
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 24px rgba(99, 102, 241, 0.18);
+  --shadow-glow: 0 0 24px rgba(56, 189, 248, 0.2);
 
   /* Aliases compatibilité avec mon scaffolding antérieur */
   --color-bg: var(--bg-primary);
@@ -123,15 +123,15 @@
   --text-secondary: #475569;
   --text-tertiary: #94A3B8;
 
-  --accent-main: #4F46E5;
-  --accent-hover: #4338CA;
-  --accent-light: #6366F1;
-  --accent-ghost: rgba(79, 70, 229, 0.1);
+  --accent-main: #0EA5E9;
+  --accent-hover: #0284C7;
+  --accent-light: #38BDF8;
+  --accent-ghost: rgba(14, 165, 233, 0.1);
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.15);
-  --shadow-glow: 0 0 24px rgba(99, 102, 241, 0.25);
+  --shadow-glow: 0 0 24px rgba(14, 165, 233, 0.25);
 
   --color-on-accent: #FFFFFF;
 }
