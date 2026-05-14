@@ -418,44 +418,86 @@
     0 30px 60px -20px rgba(0, 0, 0, 0.55),
     0 0 0 1px rgba(56, 189, 248, 0.06),
     0 0 40px rgba(56, 189, 248, 0.08);
-  transform: rotateY(-8deg) rotateX(4deg) translateZ(0);
+  transform-style: preserve-3d;
+  transform: perspective(1200px) rotateY(-8deg) rotateX(4deg) translateZ(0);
   transform-origin: center center;
   transition:
-    transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
-    box-shadow 0.6s ease,
-    border-color 0.6s ease;
+    transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.5s ease,
+    border-color 0.5s ease;
   animation: codeFloat 6s ease-in-out infinite;
+  --mx: 50%;
+  --my: 50%;
 }
 
+/* Aura externe colorée — visible au hover */
 .code-window::before {
   content: '';
   position: absolute;
-  inset: -1px;
+  inset: -2px;
   border-radius: inherit;
-  background: linear-gradient(135deg, transparent 0%, var(--accent-main) 50%, transparent 100%);
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    var(--accent-main),
+    #a78bfa,
+    var(--accent-main),
+    #5eead4,
+    var(--accent-main)
+  );
   opacity: 0;
   z-index: -1;
-  transition: opacity 0.4s ease;
-  filter: blur(20px);
+  transition: opacity 0.5s ease;
+  filter: blur(24px);
+  animation: auraRotate 8s linear infinite;
 }
 
-.code-window:hover {
-  transform: rotateY(0deg) rotateX(0deg) translateY(-6px) scale(1.02);
-  border-color: color-mix(in srgb, var(--accent-main) 50%, var(--bg-tertiary));
+/* Spot lumineux qui suit la souris */
+.code-window::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    500px circle at var(--mx) var(--my),
+    rgba(56, 189, 248, 0.18),
+    rgba(56, 189, 248, 0.08) 30%,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+.code-window.is-active {
+  animation-play-state: paused;
+  border-color: color-mix(in srgb, var(--accent-main) 60%, var(--bg-tertiary));
   box-shadow:
-    0 40px 80px -20px rgba(0, 0, 0, 0.7),
-    0 0 0 1px rgba(56, 189, 248, 0.15),
-    0 0 60px rgba(56, 189, 248, 0.2);
+    0 50px 100px -20px rgba(0, 0, 0, 0.75),
+    0 0 0 1px rgba(56, 189, 248, 0.2),
+    0 0 80px rgba(56, 189, 248, 0.28);
+}
+
+.code-window.is-active::before {
+  opacity: 0.5;
+}
+
+.code-window.is-active::after {
+  opacity: 1;
+}
+
+/* Fallback hover (sans JS) */
+.code-window:hover {
   animation-play-state: paused;
 }
 
-.code-window:hover::before {
-  opacity: 0.35;
+@keyframes codeFloat {
+  0%, 100% { transform: perspective(1200px) rotateY(-8deg) rotateX(4deg) translateY(0); }
+  50% { transform: perspective(1200px) rotateY(-8deg) rotateX(4deg) translateY(-8px); }
 }
 
-@keyframes codeFloat {
-  0%, 100% { transform: rotateY(-8deg) rotateX(4deg) translateY(0); }
-  50% { transform: rotateY(-8deg) rotateX(4deg) translateY(-8px); }
+@keyframes auraRotate {
+  to { transform: rotate(360deg); }
 }
 
 .code-window__chrome {
