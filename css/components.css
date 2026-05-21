@@ -681,6 +681,78 @@
 }
 
 /* =========================================
+   CARD --GOLD — projet primé (Rube Goldberg)
+   ========================================= */
+.card--gold {
+  position: relative;
+  border-color: rgba(251, 191, 36, 0.25);
+}
+
+.card--gold::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b, #fbbf24, #fde68a);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+  background-size: 200% 200%;
+  animation: goldShimmer 3s ease-in-out infinite;
+}
+
+.card--gold:hover {
+  border-color: transparent;
+  box-shadow:
+    0 0 0 1px rgba(251, 191, 36, 0.4),
+    0 12px 32px -8px rgba(251, 191, 36, 0.35),
+    0 0 48px rgba(251, 191, 36, 0.25);
+}
+
+.card--gold:hover::before {
+  opacity: 1;
+}
+
+.card--gold .card__category {
+  color: #fbbf24;
+}
+
+.card--gold:hover .card__link {
+  color: #fde68a;
+}
+
+.card--gold .badge {
+  background-color: rgba(15, 23, 42, 0.75);
+  color: #fde68a;
+}
+
+.card--gold .tag {
+  background-color: rgba(251, 191, 36, 0.1);
+  color: #fde68a;
+}
+
+@keyframes goldShimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card--gold::before {
+    animation: none;
+  }
+}
+
+/* =========================================
    BADGES
    ========================================= */
 .badge {

@@ -67,16 +67,17 @@ function localized(field) {
 }
 
 function renderProjectCard(project, labels) {
-  const lang = getLang();
   const url = getProjectUrl(project.slug);
   const badge = localized(project.badge);
   const title = localized(project.title);
   const pitch = localized(project.pitch);
   const tech = project.tech.slice(0, 4);
   const viewDetail = labels.projectsPage.card.viewDetail;
+  // Effet doré pour le projet gagnant Rube Goldberg
+  const goldClass = project.slug === 'snack-o-matic' ? ' card--gold' : '';
 
   return `
-    <article class="card card--project" data-type="${project.type}" data-category="${project.category}">
+    <article class="card card--project${goldClass}" data-type="${project.type}" data-category="${project.category}" data-slug="${project.slug}">
       <a href="${url}" class="card__image-link" aria-label="${title}">
         <img src="${project.images.thumb}" alt="${title}" class="card__image" loading="lazy" />
         <span class="badge badge--${project.type}">${badge}</span>

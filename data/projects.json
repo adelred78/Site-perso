@@ -8,29 +8,45 @@
       "type": "academic",
       "category": "embedded",
       "date": "2025",
-      "badge": { "fr": "🏆 Gagnant Local 2025", "en": "🏆 Local Winner 2025" },
+      "badge": {
+        "fr": "🏆 Gagnant Local 2025",
+        "en": "🏆 Local Winner 2025"
+      },
       "title": {
         "fr": "Snack'O'Matic — Machine de Rube Goldberg",
         "en": "Snack'O'Matic — Rube Goldberg Machine"
       },
       "subtitle": {
-        "fr": "Conception et fabrication d'une machine à réaction en chaîne. 1ère place locale, qualification au niveau national.",
-        "en": "Designed and built a chain-reaction machine. 1st place locally, qualified for nationals."
+        "fr": "Conception et fabrication d'une machine à réaction en chaîne en équipe de 5. 1ère place locale après présentation devant un jury académique, puis participation au niveau national.",
+        "en": "Designed and built a chain-reaction machine as a team of 5. 1st place locally after pitching to an academic jury, then participated at the national level."
       },
       "pitch": {
-        "fr": "Machine à réaction en chaîne réalisée en équipe de 5. 1ère place workshop EPSI, qualification nationale.",
-        "en": "Chain-reaction machine built with a team of 5. 1st place at EPSI workshop, qualified for nationals."
+        "fr": "Machine à réaction en chaîne en équipe de 5. 1ère place locale après pitch devant jury, puis participation nationale.",
+        "en": "Chain-reaction machine built as a team of 5. 1st place locally after pitching to the jury, then took part nationally."
       },
       "meta": {
-        "team": { "fr": "5 personnes", "en": "5 people" },
-        "duration": { "fr": "1 semaine intensive", "en": "1 intensive week" },
-        "role": { "fr": "Concepteur & modélisateur 3D", "en": "Designer & 3D modeler" },
+        "team": {
+          "fr": "5 personnes",
+          "en": "5 people"
+        },
+        "duration": {
+          "fr": "1 semaine intensive",
+          "en": "1 intensive week"
+        },
+        "role": {
+          "fr": "Concepteur & modélisateur 3D",
+          "en": "Designer & 3D modeler"
+        },
         "result": {
-          "fr": "🏆 1ère place locale → Qualification nationale",
-          "en": "🏆 1st place locally → Qualified for nationals"
+          "fr": "🏆 1ère place locale (jury académique) → Participation nationale",
+          "en": "🏆 1st place locally (academic jury) → National participation"
         }
       },
-      "tech": ["Tinkercad", "Conception mécanique", "Travail d'équipe"],
+      "tech": [
+        "Tinkercad",
+        "Conception mécanique",
+        "Travail d'équipe"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -41,8 +57,20 @@
         "thumb": "/assets/img/projects/snack-o-matic/cover.jpeg",
         "og": "/assets/img/projects/snack-o-matic/cover.jpeg",
         "gallery": [
-          { "src": "/assets/img/projects/snack-o-matic/3d-design.png", "alt": { "fr": "Modélisation 3D Tinkercad", "en": "Tinkercad 3D model" } },
-          { "src": "/assets/img/projects/snack-o-matic/cover.jpeg", "alt": { "fr": "Machine finale", "en": "Final build" } }
+          {
+            "src": "/assets/img/projects/snack-o-matic/3d-design.png",
+            "alt": {
+              "fr": "Modélisation 3D Tinkercad",
+              "en": "Tinkercad 3D model"
+            }
+          },
+          {
+            "src": "/assets/img/projects/snack-o-matic/cover.jpeg",
+            "alt": {
+              "fr": "Machine finale",
+              "en": "Final build"
+            }
+          }
         ]
       },
       "content": {
@@ -75,18 +103,36 @@
         "takeaways": [
           {
             "icon": "🤝",
-            "title": { "fr": "Coordination d'équipe", "en": "Team coordination" },
-            "body": { "fr": "Un projet à 5 nécessite des points d'avancement fréquents et un découpage clair des responsabilités.", "en": "A 5-person project needs frequent sync points and clear ownership." }
+            "title": {
+              "fr": "Coordination d'équipe",
+              "en": "Team coordination"
+            },
+            "body": {
+              "fr": "Un projet à 5 nécessite des points d'avancement fréquents et un découpage clair des responsabilités.",
+              "en": "A 5-person project needs frequent sync points and clear ownership."
+            }
           },
           {
             "icon": "🔁",
-            "title": { "fr": "Itérer vite", "en": "Fast iteration" },
-            "body": { "fr": "La simulation 3D ne remplace pas le test physique, mais elle évite des heures de retouche.", "en": "3D simulation doesn't replace physical tests, but it saves hours of rework." }
+            "title": {
+              "fr": "Itérer vite",
+              "en": "Fast iteration"
+            },
+            "body": {
+              "fr": "La simulation 3D ne remplace pas le test physique, mais elle évite des heures de retouche.",
+              "en": "3D simulation doesn't replace physical tests, but it saves hours of rework."
+            }
           },
           {
             "icon": "🎤",
-            "title": { "fr": "Présenter à un jury", "en": "Pitching to a jury" },
-            "body": { "fr": "Raconter un projet technique de façon claire et convaincante.", "en": "Explaining a technical build clearly and convincingly." }
+            "title": {
+              "fr": "Présenter à un jury",
+              "en": "Pitching to a jury"
+            },
+            "body": {
+              "fr": "Raconter un projet technique de façon claire et convaincante.",
+              "en": "Explaining a technical build clearly and convincingly."
+            }
           }
         ]
       }
@@ -98,7 +144,10 @@
       "type": "academic",
       "category": "iot",
       "date": "2025",
-      "badge": { "fr": "🌱 IoT", "en": "🌱 IoT" },
+      "badge": {
+        "fr": "🌱 IoT",
+        "en": "🌱 IoT"
+      },
       "title": {
         "fr": "HydroTrack — Plateforme d'arrosage intelligent",
         "en": "HydroTrack — Smart Watering Platform"
@@ -112,12 +161,30 @@
         "en": "Smart IoT watering platform: ESP32, Node-RED and Supabase combined with a weather API."
       },
       "meta": {
-        "team": { "fr": "Projet académique", "en": "Academic project" },
-        "duration": { "fr": "Plusieurs semaines", "en": "Several weeks" },
-        "role": { "fr": "Dev IoT + Web", "en": "IoT + Web Dev" },
-        "result": { "fr": "Prototype fonctionnel", "en": "Working prototype" }
+        "team": {
+          "fr": "Projet académique",
+          "en": "Academic project"
+        },
+        "duration": {
+          "fr": "Plusieurs semaines",
+          "en": "Several weeks"
+        },
+        "role": {
+          "fr": "Dev IoT + Web",
+          "en": "IoT + Web Dev"
+        },
+        "result": {
+          "fr": "Prototype fonctionnel",
+          "en": "Working prototype"
+        }
       },
-      "tech": ["ESP32", "Node-RED", "Supabase", "PostgreSQL", "API météo"],
+      "tech": [
+        "ESP32",
+        "Node-RED",
+        "Supabase",
+        "PostgreSQL",
+        "API météo"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -161,18 +228,36 @@
         "takeaways": [
           {
             "icon": "🧱",
-            "title": { "fr": "Penser système", "en": "Systems thinking" },
-            "body": { "fr": "Un projet IoT, c'est 5 briques qui doivent tenir ensemble : capteur, transport, traitement, stockage, restitution.", "en": "An IoT project is 5 bricks that have to hold together: sensor, transport, processing, storage, display." }
+            "title": {
+              "fr": "Penser système",
+              "en": "Systems thinking"
+            },
+            "body": {
+              "fr": "Un projet IoT, c'est 5 briques qui doivent tenir ensemble : capteur, transport, traitement, stockage, restitution.",
+              "en": "An IoT project is 5 bricks that have to hold together: sensor, transport, processing, storage, display."
+            }
           },
           {
             "icon": "🔧",
-            "title": { "fr": "Découvrir Node-RED", "en": "Discovering Node-RED" },
-            "body": { "fr": "Un outil low-code étonnamment puissant pour prototyper des flux IoT.", "en": "A low-code tool that's surprisingly powerful for prototyping IoT flows." }
+            "title": {
+              "fr": "Découvrir Node-RED",
+              "en": "Discovering Node-RED"
+            },
+            "body": {
+              "fr": "Un outil low-code étonnamment puissant pour prototyper des flux IoT.",
+              "en": "A low-code tool that's surprisingly powerful for prototyping IoT flows."
+            }
           },
           {
             "icon": "🌐",
-            "title": { "fr": "API externes", "en": "External APIs" },
-            "body": { "fr": "Gérer les erreurs et les limites de requêtes d'une API tierce, ce n'est pas trivial.", "en": "Handling errors and rate limits from a third-party API isn't trivial." }
+            "title": {
+              "fr": "API externes",
+              "en": "External APIs"
+            },
+            "body": {
+              "fr": "Gérer les erreurs et les limites de requêtes d'une API tierce, ce n'est pas trivial.",
+              "en": "Handling errors and rate limits from a third-party API isn't trivial."
+            }
           }
         ]
       }
@@ -184,7 +269,10 @@
       "type": "academic",
       "category": "web",
       "date": "2025",
-      "badge": { "fr": "🚲 Web", "en": "🚲 Web" },
+      "badge": {
+        "fr": "🚲 Web",
+        "en": "🚲 Web"
+      },
       "title": {
         "fr": "SmartBike — E-commerce fullstack",
         "en": "SmartBike — Fullstack E-commerce"
@@ -198,12 +286,32 @@
         "en": "Full PHP/MySQL e-commerce: sign-up, login, cart, admin. MVC architecture."
       },
       "meta": {
-        "team": { "fr": "5 personnes", "en": "5 people" },
-        "duration": { "fr": "Projet transversal", "en": "Cross-functional project" },
-        "role": { "fr": "Dev Full Stack", "en": "Full Stack Dev" },
-        "result": { "fr": "Plateforme fonctionnelle", "en": "Working platform" }
+        "team": {
+          "fr": "5 personnes",
+          "en": "5 people"
+        },
+        "duration": {
+          "fr": "Projet transversal",
+          "en": "Cross-functional project"
+        },
+        "role": {
+          "fr": "Dev Full Stack",
+          "en": "Full Stack Dev"
+        },
+        "result": {
+          "fr": "Plateforme fonctionnelle",
+          "en": "Working platform"
+        }
       },
-      "tech": ["HTML", "CSS", "PHP 8", "MySQL", "Apache", "XAMPP", "Looping"],
+      "tech": [
+        "HTML",
+        "CSS",
+        "PHP 8",
+        "MySQL",
+        "Apache",
+        "XAMPP",
+        "Looping"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -247,18 +355,36 @@
         "takeaways": [
           {
             "icon": "🏗️",
-            "title": { "fr": "MVC en pratique", "en": "MVC in practice" },
-            "body": { "fr": "Forcer la séparation au début est pénible, mais c'est ce qui rend le code maintenable.", "en": "Forcing separation upfront is painful, but that's what keeps code maintainable." }
+            "title": {
+              "fr": "MVC en pratique",
+              "en": "MVC in practice"
+            },
+            "body": {
+              "fr": "Forcer la séparation au début est pénible, mais c'est ce qui rend le code maintenable.",
+              "en": "Forcing separation upfront is painful, but that's what keeps code maintainable."
+            }
           },
           {
             "icon": "🔒",
-            "title": { "fr": "Sécurité de base", "en": "Security basics" },
-            "body": { "fr": "Requêtes préparées + bcrypt + sessions, ce sont les fondations à ne jamais sauter.", "en": "Prepared statements + bcrypt + sessions are foundations you never skip." }
+            "title": {
+              "fr": "Sécurité de base",
+              "en": "Security basics"
+            },
+            "body": {
+              "fr": "Requêtes préparées + bcrypt + sessions, ce sont les fondations à ne jamais sauter.",
+              "en": "Prepared statements + bcrypt + sessions are foundations you never skip."
+            }
           },
           {
             "icon": "📊",
-            "title": { "fr": "Concevoir une BDD", "en": "DB design" },
-            "body": { "fr": "Modéliser proprement avant de coder, c'est gagner des heures plus tard.", "en": "Modeling cleanly before coding saves hours later." }
+            "title": {
+              "fr": "Concevoir une BDD",
+              "en": "DB design"
+            },
+            "body": {
+              "fr": "Modéliser proprement avant de coder, c'est gagner des heures plus tard.",
+              "en": "Modeling cleanly before coding saves hours later."
+            }
           }
         ]
       }
@@ -270,7 +396,10 @@
       "type": "academic",
       "category": "network",
       "date": "2025",
-      "badge": { "fr": "🛡️ Réseau", "en": "🛡️ Network" },
+      "badge": {
+        "fr": "🛡️ Réseau",
+        "en": "🛡️ Network"
+      },
       "title": {
         "fr": "Infrastructure réseau sécurisée",
         "en": "Secure Network Infrastructure"
@@ -284,12 +413,30 @@
         "en": "HLD/LLD design, VLAN segmentation, secure Linux VM deployment."
       },
       "meta": {
-        "team": { "fr": "Projet transversal", "en": "Cross-functional project" },
-        "duration": { "fr": "Plusieurs semaines", "en": "Several weeks" },
-        "role": { "fr": "Architecte réseau & sysadmin", "en": "Network architect & sysadmin" },
-        "result": { "fr": "Infrastructure fonctionnelle", "en": "Working infrastructure" }
+        "team": {
+          "fr": "Projet transversal",
+          "en": "Cross-functional project"
+        },
+        "duration": {
+          "fr": "Plusieurs semaines",
+          "en": "Several weeks"
+        },
+        "role": {
+          "fr": "Architecte réseau & sysadmin",
+          "en": "Network architect & sysadmin"
+        },
+        "result": {
+          "fr": "Infrastructure fonctionnelle",
+          "en": "Working infrastructure"
+        }
       },
-      "tech": ["Cisco", "VirtualBox", "Linux", "Visio", "VLAN"],
+      "tech": [
+        "Cisco",
+        "VirtualBox",
+        "Linux",
+        "Visio",
+        "VLAN"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -333,13 +480,25 @@
         "takeaways": [
           {
             "icon": "📐",
-            "title": { "fr": "Documenter avant de configurer", "en": "Document before configuring" },
-            "body": { "fr": "Un schéma clair évite des heures de troubleshooting en production.", "en": "A clear diagram saves hours of production troubleshooting." }
+            "title": {
+              "fr": "Documenter avant de configurer",
+              "en": "Document before configuring"
+            },
+            "body": {
+              "fr": "Un schéma clair évite des heures de troubleshooting en production.",
+              "en": "A clear diagram saves hours of production troubleshooting."
+            }
           },
           {
             "icon": "🐧",
-            "title": { "fr": "Linux en pratique", "en": "Linux in practice" },
-            "body": { "fr": "Manipuler Linux au quotidien sur des VMs, c'est très différent de lire un cours.", "en": "Daily Linux work on VMs is very different from reading a textbook." }
+            "title": {
+              "fr": "Linux en pratique",
+              "en": "Linux in practice"
+            },
+            "body": {
+              "fr": "Manipuler Linux au quotidien sur des VMs, c'est très différent de lire un cours.",
+              "en": "Daily Linux work on VMs is very different from reading a textbook."
+            }
           }
         ]
       }
@@ -351,7 +510,10 @@
       "type": "academic",
       "category": "vr",
       "date": "2025",
-      "badge": { "fr": "🥽 VR", "en": "🥽 VR" },
+      "badge": {
+        "fr": "🥽 VR",
+        "en": "🥽 VR"
+      },
       "title": {
         "fr": "VR Dream Experience",
         "en": "VR Dream Experience"
@@ -365,12 +527,28 @@
         "en": "3 VR environments built on Delightex to explore immersive storytelling."
       },
       "meta": {
-        "team": { "fr": "Projet académique", "en": "Academic project" },
-        "duration": { "fr": "Plusieurs séances", "en": "Several sessions" },
-        "role": { "fr": "Concepteur VR", "en": "VR designer" },
-        "result": { "fr": "3 scènes livrées", "en": "3 scenes shipped" }
+        "team": {
+          "fr": "Projet académique",
+          "en": "Academic project"
+        },
+        "duration": {
+          "fr": "Plusieurs séances",
+          "en": "Several sessions"
+        },
+        "role": {
+          "fr": "Concepteur VR",
+          "en": "VR designer"
+        },
+        "result": {
+          "fr": "3 scènes livrées",
+          "en": "3 scenes shipped"
+        }
       },
-      "tech": ["Delightex", "VR", "Storytelling"],
+      "tech": [
+        "Delightex",
+        "VR",
+        "Storytelling"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -412,8 +590,14 @@
         "takeaways": [
           {
             "icon": "🎨",
-            "title": { "fr": "L'atmosphère prime", "en": "Atmosphere first" },
-            "body": { "fr": "En VR, le détail technique compte moins que l'intention émotionnelle.", "en": "In VR, technical detail matters less than emotional intent." }
+            "title": {
+              "fr": "L'atmosphère prime",
+              "en": "Atmosphere first"
+            },
+            "body": {
+              "fr": "En VR, le détail technique compte moins que l'intention émotionnelle.",
+              "en": "In VR, technical detail matters less than emotional intent."
+            }
           }
         ]
       }
@@ -425,7 +609,10 @@
       "type": "personal",
       "category": "embedded",
       "date": "2024",
-      "badge": { "fr": "💡 Personnel", "en": "💡 Personal" },
+      "badge": {
+        "fr": "💡 Personnel",
+        "en": "💡 Personal"
+      },
       "title": {
         "fr": "Séquenceur de LED Arduino",
         "en": "Arduino LED Sequencer"
@@ -439,12 +626,27 @@
         "en": "Discovering embedded programming through a simple but well-controlled build."
       },
       "meta": {
-        "team": { "fr": "Solo", "en": "Solo" },
-        "duration": { "fr": "Week-end", "en": "Weekend" },
-        "role": { "fr": "Maker", "en": "Maker" },
-        "result": { "fr": "Premier contact réussi avec l'embarqué", "en": "Successful first taste of embedded" }
+        "team": {
+          "fr": "Solo",
+          "en": "Solo"
+        },
+        "duration": {
+          "fr": "Week-end",
+          "en": "Weekend"
+        },
+        "role": {
+          "fr": "Maker",
+          "en": "Maker"
+        },
+        "result": {
+          "fr": "Premier contact réussi avec l'embarqué",
+          "en": "Successful first taste of embedded"
+        }
       },
-      "tech": ["Arduino Uno", "C++"],
+      "tech": [
+        "Arduino Uno",
+        "C++"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -484,8 +686,14 @@
         "takeaways": [
           {
             "icon": "⚡",
-            "title": { "fr": "Le hardware change tout", "en": "Hardware changes everything" },
-            "body": { "fr": "Un bug ici ne vient pas toujours du code — un câble mal mis, et tout casse.", "en": "A bug here isn't always from the code — a loose wire breaks everything." }
+            "title": {
+              "fr": "Le hardware change tout",
+              "en": "Hardware changes everything"
+            },
+            "body": {
+              "fr": "Un bug ici ne vient pas toujours du code — un câble mal mis, et tout casse.",
+              "en": "A bug here isn't always from the code — a loose wire breaks everything."
+            }
           }
         ]
       }
@@ -497,7 +705,10 @@
       "type": "academic",
       "category": "web",
       "date": "2025",
-      "badge": { "fr": "💻 Web", "en": "💻 Web" },
+      "badge": {
+        "fr": "💻 Web",
+        "en": "💻 Web"
+      },
       "title": {
         "fr": "EPSI Tech — E-commerce informatique",
         "en": "EPSI Tech — IT Hardware E-commerce"
@@ -511,12 +722,29 @@
         "en": "IT e-commerce in HTML/CSS/PHP/MySQL."
       },
       "meta": {
-        "team": { "fr": "Projet académique", "en": "Academic project" },
-        "duration": { "fr": "Plusieurs semaines", "en": "Several weeks" },
-        "role": { "fr": "Dev Full Stack", "en": "Full Stack Dev" },
-        "result": { "fr": "Site fonctionnel", "en": "Working site" }
+        "team": {
+          "fr": "Projet académique",
+          "en": "Academic project"
+        },
+        "duration": {
+          "fr": "Plusieurs semaines",
+          "en": "Several weeks"
+        },
+        "role": {
+          "fr": "Dev Full Stack",
+          "en": "Full Stack Dev"
+        },
+        "result": {
+          "fr": "Site fonctionnel",
+          "en": "Working site"
+        }
       },
-      "tech": ["HTML", "CSS", "PHP", "MySQL"],
+      "tech": [
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -558,8 +786,14 @@
         "takeaways": [
           {
             "icon": "🔁",
-            "title": { "fr": "Pratiquer renforce", "en": "Practice reinforces" },
-            "body": { "fr": "Reprendre les mêmes patterns sur un nouveau contexte ancre vraiment les acquis.", "en": "Reusing the same patterns in a new context really cements what you learned." }
+            "title": {
+              "fr": "Pratiquer renforce",
+              "en": "Practice reinforces"
+            },
+            "body": {
+              "fr": "Reprendre les mêmes patterns sur un nouveau contexte ancre vraiment les acquis.",
+              "en": "Reusing the same patterns in a new context really cements what you learned."
+            }
           }
         ]
       }
@@ -571,7 +805,10 @@
       "type": "academic",
       "category": "algorithm",
       "date": "2024",
-      "badge": { "fr": "🐍 Algorithmique", "en": "🐍 Algorithms" },
+      "badge": {
+        "fr": "🐍 Algorithmique",
+        "en": "🐍 Algorithms"
+      },
       "title": {
         "fr": "Optimisation d'algorithmes (Python)",
         "en": "Algorithm Optimization (Python)"
@@ -585,12 +822,28 @@
         "en": "Search algorithm optimization and Big-O analysis."
       },
       "meta": {
-        "team": { "fr": "Solo", "en": "Solo" },
-        "duration": { "fr": "TP académique", "en": "Academic lab" },
-        "role": { "fr": "Algo & analyse", "en": "Algo & analysis" },
-        "result": { "fr": "Gains de performance mesurés", "en": "Measured performance gains" }
+        "team": {
+          "fr": "Solo",
+          "en": "Solo"
+        },
+        "duration": {
+          "fr": "TP académique",
+          "en": "Academic lab"
+        },
+        "role": {
+          "fr": "Algo & analyse",
+          "en": "Algo & analysis"
+        },
+        "result": {
+          "fr": "Gains de performance mesurés",
+          "en": "Measured performance gains"
+        }
       },
-      "tech": ["Python", "Big-O", "Algorithmique"],
+      "tech": [
+        "Python",
+        "Big-O",
+        "Algorithmique"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -632,8 +885,14 @@
         "takeaways": [
           {
             "icon": "📈",
-            "title": { "fr": "Mesurer, pas deviner", "en": "Measure, don't guess" },
-            "body": { "fr": "L'intuition d'un dev sur la perf est souvent fausse. Toujours benchmarker.", "en": "A dev's intuition about perf is often wrong. Always benchmark." }
+            "title": {
+              "fr": "Mesurer, pas deviner",
+              "en": "Measure, don't guess"
+            },
+            "body": {
+              "fr": "L'intuition d'un dev sur la perf est souvent fausse. Toujours benchmarker.",
+              "en": "A dev's intuition about perf is often wrong. Always benchmark."
+            }
           }
         ]
       }
@@ -645,7 +904,10 @@
       "type": "academic",
       "category": "tools",
       "date": "2024",
-      "badge": { "fr": "🛠️ Outils", "en": "🛠️ Tools" },
+      "badge": {
+        "fr": "🛠️ Outils",
+        "en": "🛠️ Tools"
+      },
       "title": {
         "fr": "Setup environnement & Git workflow",
         "en": "Dev Environment & Git Workflow"
@@ -659,12 +921,30 @@
         "en": "Linux + Windows + Git + GitHub: the foundation of a modern dev, mastered early."
       },
       "meta": {
-        "team": { "fr": "Atelier académique", "en": "Academic workshop" },
-        "duration": { "fr": "Plusieurs séances", "en": "Several sessions" },
-        "role": { "fr": "Élève actif", "en": "Hands-on learner" },
-        "result": { "fr": "Environnement multi-OS opérationnel", "en": "Multi-OS environment up & running" }
+        "team": {
+          "fr": "Atelier académique",
+          "en": "Academic workshop"
+        },
+        "duration": {
+          "fr": "Plusieurs séances",
+          "en": "Several sessions"
+        },
+        "role": {
+          "fr": "Élève actif",
+          "en": "Hands-on learner"
+        },
+        "result": {
+          "fr": "Environnement multi-OS opérationnel",
+          "en": "Multi-OS environment up & running"
+        }
       },
-      "tech": ["Git", "GitHub", "Linux", "Windows", "VS Code"],
+      "tech": [
+        "Git",
+        "GitHub",
+        "Linux",
+        "Windows",
+        "VS Code"
+      ],
       "links": {
         "github": "https://github.com/adelred78",
         "demo": null,
@@ -706,8 +986,14 @@
         "takeaways": [
           {
             "icon": "⚙️",
-            "title": { "fr": "Les outils libèrent", "en": "Tools free you" },
-            "body": { "fr": "Bien maîtriser Git et le shell, c'est gagner du temps sur tous les futurs projets.", "en": "Mastering Git and the shell saves time on every future project." }
+            "title": {
+              "fr": "Les outils libèrent",
+              "en": "Tools free you"
+            },
+            "body": {
+              "fr": "Bien maîtriser Git et le shell, c'est gagner du temps sur tous les futurs projets.",
+              "en": "Mastering Git and the shell saves time on every future project."
+            }
           }
         ]
       }
