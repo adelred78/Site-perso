@@ -21,8 +21,8 @@
     "hero": {
       "eyebrow": "Computer Science Student · EPSI Paris",
       "name": "Adel Redjemi",
-      "tagline": "Aiming for excellence in IT — web, networking, embedded.",
-      "description": "Computer Science Bachelor's student at EPSI Paris, building expertise across three axes: web development, network architecture, embedded systems. Currently interning at Glikt.",
+      "tagline": "Aiming for excellence in IT — web, embedded systems and AI.",
+      "description": "Computer Science Bachelor's student at EPSI Paris, building expertise across three axes: web development, embedded systems and artificial intelligence. Currently interning at Glikt.",
       "ctaPrimary": "See my work",
       "ctaSecondary": "Get in touch",
       "photoAlt": "Portrait of Adel Redjemi"
@@ -164,7 +164,7 @@
         },
         {
           "title": "Why computer science",
-          "body": "What draws me isn't just writing code. It's understanding how everything holds together. From the TCP packet traveling, to the SQL query responding, to the CSS aligning a button — everything is connected. I love that full-stack dimension.\n\nAt EPSI, I didn't want to specialize too early. I'm aiming for excellence across three axes: web, networking, embedded. I'll dive deeper later. For now, I'm building on all three."
+          "body": "What draws me isn't just writing code. It's understanding how everything holds together. From the TCP packet traveling, to the SQL query responding, to the CSS aligning a button — everything is connected. I love that full-stack dimension.\n\nAt EPSI, I didn't want to specialize too early. I'm aiming for excellence across three axes: web, embedded systems and AI. I'll dive deeper later. For now, I'm building on all three."
         },
         {
           "title": "How I work",

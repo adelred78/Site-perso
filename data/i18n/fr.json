@@ -21,8 +21,8 @@
     "hero": {
       "eyebrow": "Étudiant Bachelor Informatique · EPSI Paris",
       "name": "Adel Redjemi",
-      "tagline": "Je vise l'excellence en informatique — web, réseaux, embarqué.",
-      "description": "Étudiant en Bachelor Informatique à l'EPSI Paris, je construis ma polyvalence sur trois axes : développement web, architecture réseau, systèmes embarqués. Actuellement en stage chez Glikt.",
+      "tagline": "Je vise l'excellence en informatique — web, systèmes embarqués et IA.",
+      "description": "Étudiant en Bachelor Informatique à l'EPSI Paris, je construis ma polyvalence sur trois axes : développement web, systèmes embarqués et intelligence artificielle. Actuellement en stage chez Glikt.",
       "ctaPrimary": "Voir mes projets",
       "ctaSecondary": "Me contacter",
       "photoAlt": "Portrait d'Adel Redjemi"
@@ -164,7 +164,7 @@
         },
         {
           "title": "Pourquoi l'informatique",
-          "body": "Ce qui m'attire, ce n'est pas juste d'écrire du code. C'est de comprendre comment tout tient debout. Du paquet TCP qui voyage, à la requête SQL qui répond, au CSS qui aligne un bouton — tout est connecté. J'aime cette dimension pile complète.\n\nÀ l'EPSI, je n'ai pas voulu me spécialiser trop vite. Je vise l'excellence sur trois axes : web, réseaux, embarqué. Quand je serai plus avancé, j'approfondirai. Pour l'instant, je construis sur les trois."
+          "body": "Ce qui m'attire, ce n'est pas juste d'écrire du code. C'est de comprendre comment tout tient debout. Du paquet TCP qui voyage, à la requête SQL qui répond, au CSS qui aligne un bouton — tout est connecté. J'aime cette dimension pile complète.\n\nÀ l'EPSI, je n'ai pas voulu me spécialiser trop vite. Je vise l'excellence sur trois axes : web, systèmes embarqués et IA. Quand je serai plus avancé, j'approfondirai. Pour l'instant, je construis sur les trois."
         },
         {
           "title": "Comment je travaille",
