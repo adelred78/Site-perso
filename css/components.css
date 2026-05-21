@@ -1189,6 +1189,75 @@
 }
 
 /* =========================================
+   SECTION STACK — fond technique en blueprint
+   ========================================= */
+.section--stack {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--bg-tertiary);
+  border-bottom: 1px solid var(--bg-tertiary);
+  background:
+    radial-gradient(ellipse 50% 60% at 0% 30%, color-mix(in srgb, var(--accent-main) 7%, transparent), transparent 60%),
+    radial-gradient(ellipse 45% 55% at 100% 70%, color-mix(in srgb, var(--accent-main) 5%, transparent), transparent 60%);
+}
+
+/* Motif blueprint en pointillé, masque radial pour fondre vers les bords */
+.section--stack::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at center, color-mix(in srgb, var(--accent-main) 35%, transparent) 1px, transparent 1.2px);
+  background-size: 32px 32px;
+  background-position: 0 0;
+  opacity: 0.5;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 80% 75% at 50% 50%, black 20%, transparent 75%);
+  mask-image: radial-gradient(ellipse 80% 75% at 50% 50%, black 20%, transparent 75%);
+}
+
+/* Lignes diagonales très subtiles */
+.section--stack::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 60px,
+    color-mix(in srgb, var(--accent-main) 3%, transparent) 60px,
+    color-mix(in srgb, var(--accent-main) 3%, transparent) 61px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section--stack > .container {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme='light'] .section--stack {
+  background:
+    radial-gradient(ellipse 50% 60% at 0% 30%, color-mix(in srgb, var(--accent-main) 10%, transparent), transparent 60%),
+    radial-gradient(ellipse 45% 55% at 100% 70%, color-mix(in srgb, var(--accent-main) 7%, transparent), transparent 60%);
+}
+
+[data-theme='light'] .section--stack::before {
+  background-image: radial-gradient(circle at center, color-mix(in srgb, var(--accent-main) 50%, transparent) 1px, transparent 1.2px);
+  opacity: 0.35;
+}
+
+[data-theme='light'] .section--stack::after {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 60px,
+    color-mix(in srgb, var(--accent-main) 4%, transparent) 60px,
+    color-mix(in srgb, var(--accent-main) 4%, transparent) 61px
+  );
+}
+
+/* =========================================
    STACK — 6 cards compactes, sans glow au hover
    ========================================= */
 .stack-grid {
