@@ -7,6 +7,7 @@ import { initHeader, highlightActiveNavLink } from './nav.js';
 import { initFeaturedProjects, initProjectsPage, initProjectDetailPage } from './projects.js';
 import { initContactForm } from './contact.js';
 import { initTheme } from './theme.js';
+import { initBgParticles } from './bg-particles.js';
 
 function initLightbox() {
   const triggers = document.querySelectorAll('.lightbox-trigger, [data-cert-trigger]');
@@ -87,6 +88,7 @@ function init() {
   initProjectDetailPage();
   initContactForm();
   initLightbox();
+  initBgParticles();
 }
 
 if (document.readyState === 'loading') {
