@@ -9,7 +9,7 @@ import { initContactForm } from './contact.js';
 import { initTheme } from './theme.js';
 
 function initLightbox() {
-  const triggers = document.querySelectorAll('.lightbox-trigger');
+  const triggers = document.querySelectorAll('.lightbox-trigger, [data-cert-trigger]');
   if (!triggers.length) return;
 
   let lightbox = document.querySelector('[data-lightbox]');
@@ -23,16 +23,24 @@ function initLightbox() {
     lightbox.innerHTML = `
       <button class="lightbox__close" aria-label="Fermer">×</button>
       <img class="lightbox__img" alt="" />
+      <div class="lightbox__error is-hidden">Certificat bientôt disponible.</div>
     `;
     document.body.appendChild(lightbox);
   }
 
   const img = lightbox.querySelector('.lightbox__img');
+  const errorEl = lightbox.querySelector('.lightbox__error');
   const closeBtn = lightbox.querySelector('.lightbox__close');
 
   const open = (src, alt = '') => {
-    img.src = src;
+    img.classList.remove('is-hidden');
+    errorEl.classList.add('is-hidden');
     img.alt = alt;
+    img.onerror = () => {
+      img.classList.add('is-hidden');
+      errorEl.classList.remove('is-hidden');
+    };
+    img.src = src;
     lightbox.classList.add('is-open');
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -50,6 +58,12 @@ function initLightbox() {
   triggers.forEach((t) => {
     t.addEventListener('click', (e) => {
       e.preventDefault();
+      const certSrc = t.dataset.certSrc;
+      const certAlt = t.dataset.certAlt;
+      if (certSrc) {
+        open(certSrc, certAlt || '');
+        return;
+      }
       const targetImg = t.tagName === 'IMG' ? t : t.querySelector('img');
       if (targetImg) open(targetImg.src, targetImg.alt);
     });

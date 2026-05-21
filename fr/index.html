@@ -234,8 +234,8 @@
             <h2 class="section__title">Stack technique</h2>
             <p class="section__subtitle">Ce que j'utilise au quotidien</p>
           </header>
-          <div class="grid grid--3 stack-grid">
-            <div class="card">
+          <div class="stack-grid">
+            <article class="card stack-card">
               <div class="card__body">
                 <div class="stack-card__icon">🌐</div>
                 <h3>Web</h3>
@@ -243,17 +243,17 @@
                   <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP 8</li>
                 </ul>
               </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card stack-card">
               <div class="card__body">
                 <div class="stack-card__icon">🗄️</div>
-                <h3>Données</h3>
+                <h3>Données & APIs</h3>
                 <ul class="stack-card__list">
-                  <li>MySQL</li><li>PostgreSQL</li><li>Supabase</li>
+                  <li>MySQL</li><li>PostgreSQL</li><li>Supabase</li><li>API Météo</li><li>API Supabase</li>
                 </ul>
               </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card stack-card">
               <div class="card__body">
                 <div class="stack-card__icon">🐧</div>
                 <h3>Système & réseau</h3>
@@ -261,17 +261,17 @@
                   <li>Linux (Ubuntu, Debian)</li><li>Docker</li><li>VirtualBox</li><li>VMware</li>
                 </ul>
               </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card stack-card">
               <div class="card__body">
                 <div class="stack-card__icon">🛠️</div>
-                <h3>Outils</h3>
+                <h3>Outils & IDE</h3>
                 <ul class="stack-card__list">
-                  <li>Git</li><li>GitHub</li><li>VS Code</li><li>Figma</li><li>Postman</li>
+                  <li>Git</li><li>GitHub</li><li>VS Code</li><li>PyCharm</li><li>Antigravity</li><li>Figma</li><li>Postman</li>
                 </ul>
               </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card stack-card">
               <div class="card__body">
                 <div class="stack-card__icon">🔌</div>
                 <h3>Embarqué & IoT</h3>
@@ -279,7 +279,16 @@
                   <li>Arduino</li><li>ESP32</li><li>Node-RED</li>
                 </ul>
               </div>
-            </div>
+            </article>
+            <article class="card stack-card">
+              <div class="card__body">
+                <div class="stack-card__icon">🤖</div>
+                <h3>IA & Méthodes</h3>
+                <ul class="stack-card__list">
+                  <li>Claude Code</li><li>Gemini</li><li>Manipulation de l'IA</li><li>Méthode BMAD</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -298,15 +307,15 @@
                 <h3>Workshop Rube Goldberg — 1ère place</h3>
                 <p>
                   Workshop EPSI 2025. Machine à réaction en chaîne réalisée en équipe de 5.
-                  Présentation devant jury académique.
+                  1ère place locale après présentation devant jury académique, puis participation au niveau national.
                 </p>
-                <a
-                  href="/assets/certificates/rube-goldberg.pdf"
-                  target="_blank"
-                  rel="noopener"
+                <button
+                  type="button"
                   class="button button--outline button--small"
-                  >Voir le certificat</a
-                >
+                  data-cert-trigger
+                  data-cert-src="/assets/certificates/rube-goldberg.png"
+                  data-cert-alt="Certificat 1ère place — Workshop Rube Goldberg"
+                >Voir le certificat</button>
               </div>
             </article>
             <article class="card award-card">
@@ -317,6 +326,13 @@
                   Atelier nettoyage de données et optimisation des performances. Restauration de
                   la fluidité sur poste de travail.
                 </p>
+                <button
+                  type="button"
+                  class="button button--outline button--small"
+                  data-cert-trigger
+                  data-cert-src="/assets/certificates/data-cleaner.png"
+                  data-cert-alt="Certificat 1ère place — Best Data Cleaner"
+                >Voir le certificat</button>
               </div>
             </article>
           </div>
