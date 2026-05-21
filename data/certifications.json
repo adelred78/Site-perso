@@ -1,0 +1,124 @@
+{
+  "$schema": "Source unique pour les certifications. status: obtained | planned. Featured = visible sur l'accueil.",
+  "certifications": [
+    {
+      "slug": "agile-project-management",
+      "status": "obtained",
+      "featured": true,
+      "order": 1,
+      "category": "management",
+      "title": {
+        "fr": "Gestion de Projets Agile",
+        "en": "Agile Project Management"
+      },
+      "issuer": {
+        "fr": "LinkedIn Learning",
+        "en": "LinkedIn Learning"
+      },
+      "date": "2025",
+      "description": {
+        "fr": "Méthodologies Agile (Scrum, Kanban), gestion d'équipe et conduite de projet.",
+        "en": "Agile methodologies (Scrum, Kanban), team management and project leadership."
+      },
+      "verifyUrl": "https://www.linkedin.com/learning/certificates/90f2cb4c16745b41d55476f54112d8c854a80d4cb1dd6bf47904e8157f0b0b6e?u=43271628",
+      "skills": ["Agile", "Scrum", "Kanban", "Project Management"]
+    },
+    {
+      "slug": "second-obtained",
+      "status": "obtained",
+      "featured": true,
+      "order": 2,
+      "category": "tech",
+      "title": {
+        "fr": "Deuxième certification (à renseigner)",
+        "en": "Second certification (TBD)"
+      },
+      "issuer": {
+        "fr": "Organisme à préciser",
+        "en": "Issuer to fill"
+      },
+      "date": "2025",
+      "description": {
+        "fr": "Description courte de la certification à renseigner.",
+        "en": "Short description to fill."
+      },
+      "verifyUrl": null,
+      "skills": []
+    },
+    {
+      "slug": "cloud-devops",
+      "status": "planned",
+      "featured": true,
+      "order": 3,
+      "category": "cloud",
+      "title": {
+        "fr": "Certification Cloud / DevOps",
+        "en": "Cloud / DevOps Certification"
+      },
+      "issuer": {
+        "fr": "À définir (AWS / Azure / GCP)",
+        "en": "TBD (AWS / Azure / GCP)"
+      },
+      "targetDate": {
+        "fr": "Prévue en 2026",
+        "en": "Planned in 2026"
+      },
+      "description": {
+        "fr": "Préparation à une certification cloud ou DevOps pour valider mes compétences en infrastructure moderne.",
+        "en": "Preparing for a cloud/DevOps certification to validate my modern infrastructure skills."
+      },
+      "progress": 35,
+      "skills": ["Cloud", "Docker", "CI/CD"]
+    },
+    {
+      "slug": "networking-cert",
+      "status": "planned",
+      "featured": false,
+      "order": 4,
+      "category": "network",
+      "title": {
+        "fr": "Certification Réseaux",
+        "en": "Networking Certification"
+      },
+      "issuer": {
+        "fr": "Cisco / CompTIA (à définir)",
+        "en": "Cisco / CompTIA (TBD)"
+      },
+      "targetDate": {
+        "fr": "Prévue en 2026-2027",
+        "en": "Planned 2026-2027"
+      },
+      "description": {
+        "fr": "Approfondir mes acquis EPSI sur l'architecture réseau d'entreprise et la sécurité.",
+        "en": "Going deeper into EPSI fundamentals on enterprise networking and security."
+      },
+      "progress": 15,
+      "skills": ["Cisco", "VLAN", "TCP/IP", "Network security"]
+    },
+    {
+      "slug": "ai-fundamentals",
+      "status": "planned",
+      "featured": false,
+      "order": 5,
+      "category": "ai",
+      "title": {
+        "fr": "Certification IA / Machine Learning",
+        "en": "AI / Machine Learning Certification"
+      },
+      "issuer": {
+        "fr": "À définir",
+        "en": "TBD"
+      },
+      "targetDate": {
+        "fr": "Prévue en 2027",
+        "en": "Planned 2027"
+      },
+      "description": {
+        "fr": "Acquérir les fondamentaux théoriques et pratiques en IA pour compléter mon stack.",
+        "en": "Building theoretical and practical AI foundations to complete my stack."
+      },
+      "progress": 5,
+      "skills": ["Machine Learning", "Python", "Data"]
+    }
+  ]
+}

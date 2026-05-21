@@ -8,6 +8,7 @@ import { initFeaturedProjects, initProjectsPage, initProjectDetailPage } from '.
 import { initContactForm } from './contact.js';
 import { initTheme } from './theme.js';
 import { initBgParticles } from './bg-particles.js';
+import { initFeaturedCertifications, initCertificationsPage } from './certifications.js';
 
 function initLightbox() {
   const triggers = document.querySelectorAll('.lightbox-trigger, [data-cert-trigger]');
@@ -89,6 +90,8 @@ function init() {
   initContactForm();
   initLightbox();
   initBgParticles();
+  initFeaturedCertifications();
+  initCertificationsPage();
 }
 
 if (document.readyState === 'loading') {
