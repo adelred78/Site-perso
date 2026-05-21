@@ -8,9 +8,24 @@ const CONFIG = {
   maxDistance: 140,
   speed: 0.25,
   particleSize: 1.6,
-  particleColor: 'rgba(56, 189, 248, 0.7)',
-  lineColor: 'rgba(56, 189, 248, ',
 };
+
+// Couleurs adaptatives selon le thème actif
+function getColors() {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    return {
+      particle: 'rgba(14, 165, 233, 0.55)',
+      line: 'rgba(14, 165, 233, ',
+      lineAlphaMax: 0.22,
+    };
+  }
+  return {
+    particle: 'rgba(56, 189, 248, 0.7)',
+    line: 'rgba(56, 189, 248, ',
+    lineAlphaMax: 0.35,
+  };
+}
 
 export function initBgParticles() {
   const canvas = document.querySelector('[data-bg-particles]');
@@ -27,8 +42,18 @@ export function initBgParticles() {
   let particles = [];
   let rafId = null;
   let pointer = { x: -9999, y: -9999, active: false };
+  let colors = getColors();
 
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+  // Re-lire les couleurs si le thème change
+  const themeObserver = new MutationObserver(() => {
+    colors = getColors();
+  });
+  themeObserver.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme'],
+  });
 
   function resize() {
     const rect = canvas.getBoundingClientRect();
@@ -75,7 +100,7 @@ export function initBgParticles() {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = CONFIG.particleColor;
+      ctx.fillStyle = colors.particle;
       ctx.fill();
     }
 
@@ -88,8 +113,8 @@ export function initBgParticles() {
         const dy = a.y - b.y;
         const dist = Math.hypot(dx, dy);
         if (dist < CONFIG.maxDistance) {
-          const alpha = (1 - dist / CONFIG.maxDistance) * 0.35;
-          ctx.strokeStyle = CONFIG.lineColor + alpha + ')';
+          const alpha = (1 - dist / CONFIG.maxDistance) * colors.lineAlphaMax;
+          ctx.strokeStyle = colors.line + alpha + ')';
           ctx.lineWidth = 0.7;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);

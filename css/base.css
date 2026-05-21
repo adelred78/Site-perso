@@ -61,10 +61,19 @@ body::before {
   mix-blend-mode: screen;
 }
 
+/* Mode clair : grille plus douce + halo adapté (pas de screen sur fond clair) */
 [data-theme='light'] body {
   background-image:
-    linear-gradient(rgba(14, 165, 233, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(14, 165, 233, 0.07) 1px, transparent 1px);
+    linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+}
+
+[data-theme='light'] body::before {
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 0%, color-mix(in srgb, var(--accent-main) 14%, transparent), transparent 65%),
+    radial-gradient(ellipse 50% 40% at 90% 10%, color-mix(in srgb, var(--accent-main) 10%, transparent), transparent 65%);
+  mix-blend-mode: multiply;
+  opacity: 0.6;
 }
 
 body > * {
