@@ -15,7 +15,7 @@
         "fr": "LinkedIn Learning",
         "en": "LinkedIn Learning"
       },
-      "date": "2025",
+      "date": "2026",
       "description": {
         "fr": "Méthodologies Agile (Scrum, Kanban), gestion d'équipe et conduite de projet.",
         "en": "Agile methodologies (Scrum, Kanban), team management and project leadership."
@@ -37,7 +37,7 @@
         "fr": "LinkedIn Learning",
         "en": "LinkedIn Learning"
       },
-      "date": "2025",
+      "date": "2026",
       "description": {
         "fr": "Culture DevOps, automatisation, intégration et déploiement continus (CI/CD), collaboration dev/ops.",
         "en": "DevOps culture, automation, continuous integration & delivery (CI/CD), dev/ops collaboration."
@@ -67,7 +67,6 @@
         "fr": "Maîtrise approfondie de Git et GitHub : workflows avancés, branches, pull requests, gestion de conflits, collaboration.",
         "en": "Advanced Git & GitHub mastery: advanced workflows, branches, pull requests, conflict resolution, collaboration."
       },
-      "progress": 60,
       "skills": ["Git", "GitHub", "Workflows", "Collaboration"]
     },
     {
@@ -92,7 +91,6 @@
         "fr": "Approfondir React JS : composants, hooks, gestion d'état, écosystème moderne pour développer des interfaces dynamiques.",
         "en": "Going deeper into React JS: components, hooks, state management, modern ecosystem for dynamic interfaces."
       },
-      "progress": 25,
       "skills": ["React", "JavaScript", "Hooks", "Frontend"]
     }
   ]
