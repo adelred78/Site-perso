@@ -46,79 +46,54 @@
       "skills": ["DevOps", "CI/CD", "Automatisation", "Culture DevOps"]
     },
     {
-      "slug": "cloud-devops",
+      "slug": "git-github-bootcamp",
       "status": "planned",
       "featured": true,
       "order": 3,
-      "category": "cloud",
+      "category": "tools",
       "title": {
-        "fr": "Certification Cloud / DevOps",
-        "en": "Cloud / DevOps Certification"
+        "fr": "Git & GitHub Boot Camp",
+        "en": "Git & GitHub Boot Camp"
       },
       "issuer": {
-        "fr": "À définir (AWS / Azure / GCP)",
-        "en": "TBD (AWS / Azure / GCP)"
+        "fr": "Udemy",
+        "en": "Udemy"
       },
       "targetDate": {
         "fr": "Prévue en 2026",
         "en": "Planned in 2026"
       },
       "description": {
-        "fr": "Préparation à une certification cloud ou DevOps pour valider mes compétences en infrastructure moderne.",
-        "en": "Preparing for a cloud/DevOps certification to validate my modern infrastructure skills."
+        "fr": "Maîtrise approfondie de Git et GitHub : workflows avancés, branches, pull requests, gestion de conflits, collaboration.",
+        "en": "Advanced Git & GitHub mastery: advanced workflows, branches, pull requests, conflict resolution, collaboration."
       },
-      "progress": 35,
-      "skills": ["Cloud", "Docker", "CI/CD"]
+      "progress": 60,
+      "skills": ["Git", "GitHub", "Workflows", "Collaboration"]
     },
     {
-      "slug": "networking-cert",
+      "slug": "reactjs-cert",
       "status": "planned",
       "featured": false,
       "order": 4,
-      "category": "network",
+      "category": "web",
       "title": {
-        "fr": "Certification Réseaux",
-        "en": "Networking Certification"
+        "fr": "React JS",
+        "en": "React JS"
       },
       "issuer": {
-        "fr": "Cisco / CompTIA (à définir)",
-        "en": "Cisco / CompTIA (TBD)"
+        "fr": "LinkedIn Learning",
+        "en": "LinkedIn Learning"
       },
       "targetDate": {
-        "fr": "Prévue en 2026-2027",
-        "en": "Planned 2026-2027"
+        "fr": "Prévue en 2026",
+        "en": "Planned in 2026"
       },
       "description": {
-        "fr": "Approfondir mes acquis EPSI sur l'architecture réseau d'entreprise et la sécurité.",
-        "en": "Going deeper into EPSI fundamentals on enterprise networking and security."
+        "fr": "Approfondir React JS : composants, hooks, gestion d'état, écosystème moderne pour développer des interfaces dynamiques.",
+        "en": "Going deeper into React JS: components, hooks, state management, modern ecosystem for dynamic interfaces."
       },
-      "progress": 15,
-      "skills": ["Cisco", "VLAN", "TCP/IP", "Network security"]
-    },
-    {
-      "slug": "ai-fundamentals",
-      "status": "planned",
-      "featured": false,
-      "order": 5,
-      "category": "ai",
-      "title": {
-        "fr": "Certification IA / Machine Learning",
-        "en": "AI / Machine Learning Certification"
-      },
-      "issuer": {
-        "fr": "À définir",
-        "en": "TBD"
-      },
-      "targetDate": {
-        "fr": "Prévue en 2027",
-        "en": "Planned 2027"
-      },
-      "description": {
-        "fr": "Acquérir les fondamentaux théoriques et pratiques en IA pour compléter mon stack.",
-        "en": "Building theoretical and practical AI foundations to complete my stack."
-      },
-      "progress": 5,
-      "skills": ["Machine Learning", "Python", "Data"]
+      "progress": 25,
+      "skills": ["React", "JavaScript", "Hooks", "Frontend"]
     }
   ]
 }
