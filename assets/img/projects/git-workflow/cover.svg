@@ -1,94 +1,133 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Logos Git et GitHub">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0B1220" />
-      <stop offset="1" stop-color="#1E293B" />
+      <stop offset="0" stop-color="#1a1208" />
+      <stop offset="0.5" stop-color="#0F172A" />
+      <stop offset="1" stop-color="#15101F" />
     </linearGradient>
-    <radialGradient id="glow-left" cx="0.25" cy="0.55" r="0.45">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.22" />
-      <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+    <radialGradient id="orange-glow" cx="0.28" cy="0.5" r="0.35">
+      <stop offset="0" stop-color="#F05032" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#F05032" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="glow-right" cx="0.78" cy="0.55" r="0.45">
-      <stop offset="0" stop-color="#A78BFA" stop-opacity="0.2" />
-      <stop offset="1" stop-color="#A78BFA" stop-opacity="0" />
+    <radialGradient id="cream-glow" cx="0.72" cy="0.5" r="0.35">
+      <stop offset="0" stop-color="#F8FAFC" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#F8FAFC" stop-opacity="0" />
     </radialGradient>
-    <pattern id="grid" x="0" y="0" width="56" height="56" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#38BDF8" fill-opacity="0.1" />
-    </pattern>
-    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
+
+    <linearGradient id="git-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F05032" />
+      <stop offset="1" stop-color="#C73B22" />
+    </linearGradient>
+    <linearGradient id="github-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E1E1E" />
+      <stop offset="1" stop-color="#0D1117" />
+    </linearGradient>
+
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12" />
+      <feOffset dx="0" dy="14" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.55" />
+      </feComponentTransfer>
       <feMerge>
-        <feMergeNode in="blur" />
+        <feMergeNode />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-    <linearGradient id="arrow-grad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38BDF8" />
-      <stop offset="1" stop-color="#A78BFA" />
-    </linearGradient>
   </defs>
 
   <!-- Fond -->
   <rect width="1600" height="900" fill="url(#bg)" />
-  <rect width="1600" height="900" fill="url(#grid)" />
-  <rect width="1600" height="900" fill="url(#glow-left)" />
-  <rect width="1600" height="900" fill="url(#glow-right)" />
+  <rect width="1600" height="900" fill="url(#orange-glow)" />
+  <rect width="1600" height="900" fill="url(#cream-glow)" />
+
+  <!-- Lignes de connexion verticales subtiles en arrière-plan -->
+  <g stroke="#F05032" stroke-opacity="0.05" stroke-width="1">
+    <line x1="400" y1="0" x2="400" y2="900" />
+    <line x1="800" y1="0" x2="800" y2="900" />
+    <line x1="1200" y1="0" x2="1200" y2="900" />
+  </g>
 
   <!-- Pill badge -->
   <g transform="translate(80 80)">
-    <rect width="300" height="38" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.45" />
-    <text x="22" y="25" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" letter-spacing="1.5" fill="#7DD3FC">VERSION CONTROL · WORKFLOW</text>
+    <rect width="260" height="40" rx="8" fill="#F05032" fill-opacity="0.15" stroke="#F05032" stroke-opacity="0.5" />
+    <text x="22" y="26" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" letter-spacing="2" fill="#FB923C">GIT · GITHUB</text>
   </g>
 
-  <!-- Titre principal -->
-  <g font-family="Bricolage Grotesque, sans-serif" letter-spacing="-0.02em">
-    <text x="80" y="210" font-size="80" font-weight="800" fill="#F8FAFC">git push</text>
-    <text x="80" y="290" font-size="80" font-weight="800" fill="#38BDF8">origin main</text>
+  <!-- Titre -->
+  <g font-family="Bricolage Grotesque, sans-serif" letter-spacing="-0.03em">
+    <text x="80" y="230" font-size="92" font-weight="800" fill="#F8FAFC">build.</text>
+    <text x="80" y="230" font-size="92" font-weight="800" fill="#FB923C" dx="290">commit.</text>
+    <text x="80" y="230" font-size="92" font-weight="800" fill="#F8FAFC" dx="660">ship.</text>
   </g>
 
-  <!-- LOGO GIT à gauche : diamant rotated avec branches -->
-  <g transform="translate(290 620)" filter="url(#soft-glow)">
-    <!-- Diamant -->
-    <g transform="rotate(45)">
-      <rect x="-130" y="-130" width="260" height="260" rx="24" fill="#0B1220" stroke="#38BDF8" stroke-width="6" />
+  <!-- ============================== -->
+  <!-- CARTE GIT (orange) -->
+  <!-- ============================== -->
+  <g transform="translate(340 600) rotate(-5)" filter="url(#card-shadow)">
+    <!-- Card body -->
+    <rect x="-220" y="-180" width="440" height="360" rx="28" fill="url(#git-card)" />
+
+    <!-- Texture pointillée subtile sur la card -->
+    <g fill="#FFFFFF" fill-opacity="0.06">
+      <circle cx="-180" cy="-140" r="2" />
+      <circle cx="-100" cy="-150" r="1.5" />
+      <circle cx="120" cy="-100" r="2.2" />
+      <circle cx="180" cy="-160" r="1.8" />
+      <circle cx="-140" cy="130" r="2" />
+      <circle cx="150" cy="140" r="1.6" />
+      <circle cx="0" cy="150" r="2.4" />
     </g>
 
-    <!-- Branches Git classiques -->
-    <g stroke="#38BDF8" stroke-width="6" stroke-linecap="round" fill="none">
-      <path d="M -80 0 L 80 0" />
-      <path d="M 10 0 Q 10 -55, 65 -55" />
-    </g>
-
-    <!-- Commits cercles -->
-    <g fill="#7DD3FC" stroke="#0B1220" stroke-width="5">
-      <circle cx="-80" cy="0" r="18" />
-      <circle cx="80" cy="0" r="18" />
-      <circle cx="65" cy="-55" r="16" />
+    <!-- Diamant Git officiel -->
+    <g transform="translate(0 -20)">
+      <g transform="rotate(45)">
+        <rect x="-78" y="-78" width="156" height="156" rx="14" fill="none" stroke="#FFFFFF" stroke-width="8" />
+      </g>
+      <!-- Branches internes -->
+      <g stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none">
+        <path d="M -48 0 L 48 0" />
+        <path d="M 6 0 Q 6 -34, 40 -34" />
+      </g>
+      <g fill="#FFFFFF" stroke="#F05032" stroke-width="3">
+        <circle cx="-48" cy="0" r="11" />
+        <circle cx="48" cy="0" r="11" />
+        <circle cx="40" cy="-34" r="10" />
+      </g>
     </g>
 
     <!-- Label -->
-    <text x="0" y="200" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="38" font-weight="800" fill="#F8FAFC" letter-spacing="-0.02em">Git</text>
-    <text x="0" y="226" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1.5" fill="#64748B">VERSION CONTROL</text>
-  </g>
-
-  <!-- FLÈCHES PUSH / PULL au milieu -->
-  <g transform="translate(800 620)" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="1.5">
-    <g transform="translate(-100 -30)">
-      <line x1="0" y1="0" x2="200" y2="0" stroke="url(#arrow-grad)" stroke-width="2.5" />
-      <polygon points="200,0 186,-7 186,7" fill="#A78BFA" />
-      <text x="100" y="-14" text-anchor="middle" fill="#7DD3FC" font-weight="600">push</text>
+    <g transform="translate(0 130)">
+      <text text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">Git</text>
+      <text y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="2.5" fill="#FED7AA">VERSION  CONTROL</text>
     </g>
-    <g transform="translate(-100 30)">
-      <line x1="200" y1="0" x2="0" y2="0" stroke="url(#arrow-grad)" stroke-width="2.5" />
-      <polygon points="0,0 14,-7 14,7" fill="#38BDF8" />
-      <text x="100" y="24" text-anchor="middle" fill="#C4B5FD" font-weight="600">pull</text>
+
+    <!-- Coin perforation (style stamp) -->
+    <g fill="#0F172A" opacity="0.4">
+      <circle cx="-220" cy="-180" r="14" />
+      <circle cx="220" cy="-180" r="14" />
+      <circle cx="-220" cy="180" r="14" />
+      <circle cx="220" cy="180" r="14" />
     </g>
   </g>
 
-  <!-- LOGO GITHUB à droite : Octocat -->
-  <g transform="translate(1200 620)" filter="url(#soft-glow)">
-    <circle r="135" fill="#0B1220" stroke="#A78BFA" stroke-width="6" />
-    <g transform="scale(1.7)">
+  <!-- ============================== -->
+  <!-- CARTE GITHUB (dark) -->
+  <!-- ============================== -->
+  <g transform="translate(1180 600) rotate(5)" filter="url(#card-shadow)">
+    <!-- Card body -->
+    <rect x="-220" y="-180" width="440" height="360" rx="28" fill="url(#github-card)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5" />
+
+    <!-- Texture pointillée -->
+    <g fill="#FFFFFF" fill-opacity="0.06">
+      <circle cx="-180" cy="-140" r="2" />
+      <circle cx="160" cy="-150" r="1.5" />
+      <circle cx="-100" cy="140" r="2.2" />
+      <circle cx="170" cy="140" r="1.8" />
+    </g>
+
+    <!-- Octocat -->
+    <g transform="translate(0 -20) scale(1.85)">
       <path d="M 0,-58
                C -32,-58 -58,-32 -58,0
                C -58,25 -42,46 -19,53
@@ -115,23 +154,36 @@
                C 2,52 3,54 6,53
                C 29,46 45,25 45,0
                C 45,-32 19,-58 0,-58 Z"
-            fill="#C4B5FD" />
+            fill="#FFFFFF" />
     </g>
-    <text x="0" y="200" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="38" font-weight="800" fill="#F8FAFC" letter-spacing="-0.02em">GitHub</text>
-    <text x="0" y="226" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1.5" fill="#64748B">REMOTE · HOSTING</text>
+
+    <!-- Label -->
+    <g transform="translate(0 130)">
+      <text text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">GitHub</text>
+      <text y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="2.5" fill="#94A3B8">REMOTE  HOSTING</text>
+    </g>
+
+    <!-- Perforation coins -->
+    <g fill="#0F172A" opacity="0.4">
+      <circle cx="-220" cy="-180" r="14" />
+      <circle cx="220" cy="-180" r="14" />
+      <circle cx="-220" cy="180" r="14" />
+      <circle cx="220" cy="180" r="14" />
+    </g>
   </g>
 
-  <!-- Snippet bas -->
-  <g transform="translate(80 810)" font-family="JetBrains Mono, monospace" font-size="16">
-    <text fill="#94A3B8">$ <tspan fill="#38BDF8">git</tspan> <tspan fill="#E2E8F0">commit</tspan> <tspan fill="#94A3B8">&amp;&amp;</tspan> <tspan fill="#38BDF8">git</tspan> <tspan fill="#E2E8F0">push</tspan> <tspan fill="#A3E635">origin main</tspan></text>
+  <!-- "&" entre les deux cartes -->
+  <g transform="translate(760 600)">
+    <circle r="44" fill="#0F172A" stroke="#FB923C" stroke-width="2.5" />
+    <text text-anchor="middle" y="22" font-family="Bricolage Grotesque, sans-serif" font-size="56" font-weight="800" fill="#FB923C" letter-spacing="-0.04em">&amp;</text>
   </g>
 
   <!-- Étoiles décoratives -->
-  <g fill="#7DD3FC" opacity="0.5">
-    <circle cx="1430" cy="180" r="2" />
-    <circle cx="1500" cy="300" r="1.5" />
-    <circle cx="180" cy="440" r="2.4" />
-    <circle cx="120" cy="780" r="1.8" />
-    <circle cx="800" cy="400" r="1.6" />
+  <g fill="#FB923C" opacity="0.5">
+    <circle cx="80" cy="500" r="2" />
+    <circle cx="1480" cy="380" r="2.4" />
+    <circle cx="120" cy="820" r="1.6" />
+    <circle cx="1540" cy="780" r="1.8" />
+    <circle cx="760" cy="180" r="2" />
   </g>
 </svg>
