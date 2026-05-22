@@ -1,207 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Setup environnement & Git — heatmap d'activité commits">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Setup environnement et Git workflow">
   <defs>
     <linearGradient id="bg-dev" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0B1220" />
       <stop offset="1" stop-color="#1E293B" />
     </linearGradient>
-    <radialGradient id="glow-dev" cx="0.85" cy="0.2" r="0.65">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.2" />
+    <radialGradient id="glow-dev" cx="0.85" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.22" />
       <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
     </radialGradient>
     <pattern id="grid-dev" x="0" y="0" width="56" height="56" patternUnits="userSpaceOnUse">
       <circle cx="1" cy="1" r="1" fill="#38BDF8" fill-opacity="0.1" />
     </pattern>
+    <linearGradient id="curve-commits" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8" />
+      <stop offset="1" stop-color="#7DD3FC" />
+    </linearGradient>
+    <linearGradient id="curve-area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+    </linearGradient>
   </defs>
 
-  <!-- Fond -->
   <rect width="1600" height="900" fill="url(#bg-dev)" />
   <rect width="1600" height="900" fill="url(#grid-dev)" />
   <rect width="1600" height="900" fill="url(#glow-dev)" />
 
-  <!-- Pill badge haut gauche -->
+  <!-- Pill badge -->
   <g transform="translate(80 80)">
-    <rect width="260" height="36" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.4" />
-    <text x="20" y="23" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" letter-spacing="1" fill="#7DD3FC">GIT · COMMITS · ENV</text>
+    <rect width="240" height="38" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.45" />
+    <text x="22" y="25" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" letter-spacing="1.5" fill="#7DD3FC">GIT · WORKFLOW</text>
   </g>
 
   <!-- Labels axes -->
   <g font-family="JetBrains Mono, monospace" font-size="14" fill="#64748B" letter-spacing="1">
-    <text x="220" y="780">semaines (52) →</text>
-    <text x="190" y="190" text-anchor="end">jour</text>
+    <text x="220" y="780">temps (mois) →</text>
+    <text x="190" y="200" text-anchor="end">commits</text>
   </g>
 
   <!-- Axes -->
-  <g transform="translate(220 200)" stroke="#334155" stroke-width="2">
+  <g transform="translate(220 210)" stroke="#334155" stroke-width="2">
     <line x1="0" y1="0" x2="0" y2="540" />
     <line x1="0" y1="540" x2="1160" y2="540" />
-  </g>
-
-  <!-- Y-axis day labels (Mon, Wed, Fri) -->
-  <g font-family="JetBrains Mono, monospace" font-size="11" fill="#64748B">
-    <text x="195" y="252" text-anchor="end">Mon</text>
-    <text x="195" y="362" text-anchor="end">Wed</text>
-    <text x="195" y="472" text-anchor="end">Fri</text>
-  </g>
-
-  <!-- HEATMAP : 52 semaines × 7 jours -->
-  <!-- Cellule = 20×20 + 2px gap. Origine (240, 215). -->
-  <g transform="translate(240 215)">
-    <!-- Génération de la heatmap avec valeurs aléatoires mais réalistes -->
-    <!-- Niveaux : 0 (bg-tertiary), 1, 2, 3, 4 (accent intense) -->
-
-    <!-- Pour rester maintainable, on note les patterns par colonne (jour 0=Sun...6=Sat) -->
-    <!-- Couleurs : 0=#1E293B (vide), 1=rgba(56,189,248,0.18), 2=0.35, 3=0.6, 4=#38BDF8 plein -->
-    <g>
-      <!-- Ligne par jour (7 lignes). Chaque <use> représente une cellule. -->
-      <!-- On va générer manuellement quelques semaines colorées. -->
-    </g>
-
-    <!-- HEATMAP CELLS — généré manuellement avec un pattern réaliste -->
-    <!-- Chaque cellule : x = col*22, y = row*22, taille 18×18, rx 3 -->
-
-    <!-- Background grid : toutes les cells niveau 0 d'abord -->
-    <g fill="#1E293B" stroke="#334155" stroke-width="0.5">
-      <!-- 52 colonnes × 7 lignes -->
-      <!-- ON va écrire les cellules ligne par ligne en JS-friendly mais en pur SVG hardcoded -->
-    </g>
-
-    <!-- Cellules colorées : pattern d'activité progressif -->
-    <!-- semaine 0-10 (début) : sparse -->
-    <!-- semaine 11-30 (montée) : dense -->
-    <!-- semaine 31-52 (peak) : très dense -->
-
-    <!-- Pour ne pas écrire 364 lignes, utilisons un script dans le SVG... non, hardcoded -->
-
-    <!-- === Heatmap : on génère 52 colonnes de 7 cellules === -->
-    <!-- Niveau 0 (fond) : toutes les cellules baseline -->
-    <g fill="#1E293B" stroke="#334155" stroke-width="0.5">
-      <!-- Row 0 (Sun) - 52 cells -->
-      <g><rect x="0" y="0" width="18" height="18" rx="3"/><rect x="22" y="0" width="18" height="18" rx="3"/><rect x="44" y="0" width="18" height="18" rx="3"/><rect x="66" y="0" width="18" height="18" rx="3"/><rect x="88" y="0" width="18" height="18" rx="3"/><rect x="110" y="0" width="18" height="18" rx="3"/><rect x="132" y="0" width="18" height="18" rx="3"/><rect x="154" y="0" width="18" height="18" rx="3"/><rect x="176" y="0" width="18" height="18" rx="3"/><rect x="198" y="0" width="18" height="18" rx="3"/><rect x="220" y="0" width="18" height="18" rx="3"/><rect x="242" y="0" width="18" height="18" rx="3"/><rect x="264" y="0" width="18" height="18" rx="3"/><rect x="286" y="0" width="18" height="18" rx="3"/><rect x="308" y="0" width="18" height="18" rx="3"/><rect x="330" y="0" width="18" height="18" rx="3"/><rect x="352" y="0" width="18" height="18" rx="3"/><rect x="374" y="0" width="18" height="18" rx="3"/><rect x="396" y="0" width="18" height="18" rx="3"/><rect x="418" y="0" width="18" height="18" rx="3"/><rect x="440" y="0" width="18" height="18" rx="3"/><rect x="462" y="0" width="18" height="18" rx="3"/><rect x="484" y="0" width="18" height="18" rx="3"/><rect x="506" y="0" width="18" height="18" rx="3"/><rect x="528" y="0" width="18" height="18" rx="3"/><rect x="550" y="0" width="18" height="18" rx="3"/><rect x="572" y="0" width="18" height="18" rx="3"/><rect x="594" y="0" width="18" height="18" rx="3"/><rect x="616" y="0" width="18" height="18" rx="3"/><rect x="638" y="0" width="18" height="18" rx="3"/><rect x="660" y="0" width="18" height="18" rx="3"/><rect x="682" y="0" width="18" height="18" rx="3"/><rect x="704" y="0" width="18" height="18" rx="3"/><rect x="726" y="0" width="18" height="18" rx="3"/><rect x="748" y="0" width="18" height="18" rx="3"/><rect x="770" y="0" width="18" height="18" rx="3"/><rect x="792" y="0" width="18" height="18" rx="3"/><rect x="814" y="0" width="18" height="18" rx="3"/><rect x="836" y="0" width="18" height="18" rx="3"/><rect x="858" y="0" width="18" height="18" rx="3"/><rect x="880" y="0" width="18" height="18" rx="3"/><rect x="902" y="0" width="18" height="18" rx="3"/><rect x="924" y="0" width="18" height="18" rx="3"/><rect x="946" y="0" width="18" height="18" rx="3"/><rect x="968" y="0" width="18" height="18" rx="3"/><rect x="990" y="0" width="18" height="18" rx="3"/><rect x="1012" y="0" width="18" height="18" rx="3"/><rect x="1034" y="0" width="18" height="18" rx="3"/><rect x="1056" y="0" width="18" height="18" rx="3"/><rect x="1078" y="0" width="18" height="18" rx="3"/><rect x="1100" y="0" width="18" height="18" rx="3"/><rect x="1122" y="0" width="18" height="18" rx="3"/></g>
-      <!-- Lignes 1-6 : juste un fond uniforme via translate du même groupe -->
-      <use href="#" />
-    </g>
-
-    <!-- Row 1-6 : duplicated background -->
-    <g fill="#1E293B" stroke="#334155" stroke-width="0.5">
-      <g transform="translate(0 22)"><rect x="0" y="0" width="18" height="18" rx="3"/><rect x="22" y="0" width="18" height="18" rx="3"/><rect x="44" y="0" width="18" height="18" rx="3"/><rect x="66" y="0" width="18" height="18" rx="3"/><rect x="88" y="0" width="18" height="18" rx="3"/><rect x="110" y="0" width="18" height="18" rx="3"/><rect x="132" y="0" width="18" height="18" rx="3"/><rect x="154" y="0" width="18" height="18" rx="3"/><rect x="176" y="0" width="18" height="18" rx="3"/><rect x="198" y="0" width="18" height="18" rx="3"/><rect x="220" y="0" width="18" height="18" rx="3"/><rect x="242" y="0" width="18" height="18" rx="3"/><rect x="264" y="0" width="18" height="18" rx="3"/><rect x="286" y="0" width="18" height="18" rx="3"/><rect x="308" y="0" width="18" height="18" rx="3"/><rect x="330" y="0" width="18" height="18" rx="3"/><rect x="352" y="0" width="18" height="18" rx="3"/><rect x="374" y="0" width="18" height="18" rx="3"/><rect x="396" y="0" width="18" height="18" rx="3"/><rect x="418" y="0" width="18" height="18" rx="3"/><rect x="440" y="0" width="18" height="18" rx="3"/><rect x="462" y="0" width="18" height="18" rx="3"/><rect x="484" y="0" width="18" height="18" rx="3"/><rect x="506" y="0" width="18" height="18" rx="3"/><rect x="528" y="0" width="18" height="18" rx="3"/><rect x="550" y="0" width="18" height="18" rx="3"/><rect x="572" y="0" width="18" height="18" rx="3"/><rect x="594" y="0" width="18" height="18" rx="3"/><rect x="616" y="0" width="18" height="18" rx="3"/><rect x="638" y="0" width="18" height="18" rx="3"/><rect x="660" y="0" width="18" height="18" rx="3"/><rect x="682" y="0" width="18" height="18" rx="3"/><rect x="704" y="0" width="18" height="18" rx="3"/><rect x="726" y="0" width="18" height="18" rx="3"/><rect x="748" y="0" width="18" height="18" rx="3"/><rect x="770" y="0" width="18" height="18" rx="3"/><rect x="792" y="0" width="18" height="18" rx="3"/><rect x="814" y="0" width="18" height="18" rx="3"/><rect x="836" y="0" width="18" height="18" rx="3"/><rect x="858" y="0" width="18" height="18" rx="3"/><rect x="880" y="0" width="18" height="18" rx="3"/><rect x="902" y="0" width="18" height="18" rx="3"/><rect x="924" y="0" width="18" height="18" rx="3"/><rect x="946" y="0" width="18" height="18" rx="3"/><rect x="968" y="0" width="18" height="18" rx="3"/><rect x="990" y="0" width="18" height="18" rx="3"/><rect x="1012" y="0" width="18" height="18" rx="3"/><rect x="1034" y="0" width="18" height="18" rx="3"/><rect x="1056" y="0" width="18" height="18" rx="3"/><rect x="1078" y="0" width="18" height="18" rx="3"/><rect x="1100" y="0" width="18" height="18" rx="3"/><rect x="1122" y="0" width="18" height="18" rx="3"/></g>
-      <g transform="translate(0 44)"><rect x="0" y="0" width="18" height="18" rx="3"/><rect x="22" y="0" width="18" height="18" rx="3"/><rect x="44" y="0" width="18" height="18" rx="3"/><rect x="66" y="0" width="18" height="18" rx="3"/><rect x="88" y="0" width="18" height="18" rx="3"/><rect x="110" y="0" width="18" height="18" rx="3"/><rect x="132" y="0" width="18" height="18" rx="3"/><rect x="154" y="0" width="18" height="18" rx="3"/><rect x="176" y="0" width="18" height="18" rx="3"/><rect x="198" y="0" width="18" height="18" rx="3"/><rect x="220" y="0" width="18" height="18" rx="3"/><rect x="242" y="0" width="18" height="18" rx="3"/><rect x="264" y="0" width="18" height="18" rx="3"/><rect x="286" y="0" width="18" height="18" rx="3"/><rect x="308" y="0" width="18" height="18" rx="3"/><rect x="330" y="0" width="18" height="18" rx="3"/><rect x="352" y="0" width="18" height="18" rx="3"/><rect x="374" y="0" width="18" height="18" rx="3"/><rect x="396" y="0" width="18" height="18" rx="3"/><rect x="418" y="0" width="18" height="18" rx="3"/><rect x="440" y="0" width="18" height="18" rx="3"/><rect x="462" y="0" width="18" height="18" rx="3"/><rect x="484" y="0" width="18" height="18" rx="3"/><rect x="506" y="0" width="18" height="18" rx="3"/><rect x="528" y="0" width="18" height="18" rx="3"/><rect x="550" y="0" width="18" height="18" rx="3"/><rect x="572" y="0" width="18" height="18" rx="3"/><rect x="594" y="0" width="18" height="18" rx="3"/><rect x="616" y="0" width="18" height="18" rx="3"/><rect x="638" y="0" width="18" height="18" rx="3"/><rect x="660" y="0" width="18" height="18" rx="3"/><rect x="682" y="0" width="18" height="18" rx="3"/><rect x="704" y="0" width="18" height="18" rx="3"/><rect x="726" y="0" width="18" height="18" rx="3"/><rect x="748" y="0" width="18" height="18" rx="3"/><rect x="770" y="0" width="18" height="18" rx="3"/><rect x="792" y="0" width="18" height="18" rx="3"/><rect x="814" y="0" width="18" height="18" rx="3"/><rect x="836" y="0" width="18" height="18" rx="3"/><rect x="858" y="0" width="18" height="18" rx="3"/><rect x="880" y="0" width="18" height="18" rx="3"/><rect x="902" y="0" width="18" height="18" rx="3"/><rect x="924" y="0" width="18" height="18" rx="3"/><rect x="946" y="0" width="18" height="18" rx="3"/><rect x="968" y="0" width="18" height="18" rx="3"/><rect x="990" y="0" width="18" height="18" rx="3"/><rect x="1012" y="0" width="18" height="18" rx="3"/><rect x="1034" y="0" width="18" height="18" rx="3"/><rect x="1056" y="0" width="18" height="18" rx="3"/><rect x="1078" y="0" width="18" height="18" rx="3"/><rect x="1100" y="0" width="18" height="18" rx="3"/><rect x="1122" y="0" width="18" height="18" rx="3"/></g>
-      <g transform="translate(0 66)"><rect x="0" y="0" width="18" height="18" rx="3"/><rect x="22" y="0" width="18" height="18" rx="3"/><rect x="44" y="0" width="18" height="18" rx="3"/><rect x="66" y="0" width="18" height="18" rx="3"/><rect x="88" y="0" width="18" height="18" rx="3"/><rect x="110" y="0" width="18" height="18" rx="3"/><rect x="132" y="0" width="18" height="18" rx="3"/><rect x="154" y="0" width="18" height="18" rx="3"/><rect x="176" y="0" width="18" height="18" rx="3"/><rect x="198" y="0" width="18" height="18" rx="3"/><rect x="220" y="0" width="18" height="18" rx="3"/><rect x="242" y="0" width="18" height="18" rx="3"/><rect x="264" y="0" width="18" height="18" rx="3"/><rect x="286" y="0" width="18" height="18" rx="3"/><rect x="308" y="0" width="18" height="18" rx="3"/><rect x="330" y="0" width="18" height="18" rx="3"/><rect x="352" y="0" width="18" height="18" rx="3"/><rect x="374" y="0" width="18" height="18" rx="3"/><rect x="396" y="0" width="18" height="18" rx="3"/><rect x="418" y="0" width="18" height="18" rx="3"/><rect x="440" y="0" width="18" height="18" rx="3"/><rect x="462" y="0" width="18" height="18" rx="3"/><rect x="484" y="0" width="18" height="18" rx="3"/><rect x="506" y="0" width="18" height="18" rx="3"/><rect x="528" y="0" width="18" height="18" rx="3"/><rect x="550" y="0" width="18" height="18" rx="3"/><rect x="572" y="0" width="18" height="18" rx="3"/><rect x="594" y="0" width="18" height="18" rx="3"/><rect x="616" y="0" width="18" height="18" rx="3"/><rect x="638" y="0" width="18" height="18" rx="3"/><rect x="660" y="0" width="18" height="18" rx="3"/><rect x="682" y="0" width="18" height="18" rx="3"/><rect x="704" y="0" width="18" height="18" rx="3"/><rect x="726" y="0" width="18" height="18" rx="3"/><rect x="748" y="0" width="18" height="18" rx="3"/><rect x="770" y="0" width="18" height="18" rx="3"/><rect x="792" y="0" width="18" height="18" rx="3"/><rect x="814" y="0" width="18" height="18" rx="3"/><rect x="836" y="0" width="18" height="18" rx="3"/><rect x="858" y="0" width="18" height="18" rx="3"/><rect x="880" y="0" width="18" height="18" rx="3"/><rect x="902" y="0" width="18" height="18" rx="3"/><rect x="924" y="0" width="18" height="18" rx="3"/><rect x="946" y="0" width="18" height="18" rx="3"/><rect x="968" y="0" width="18" height="18" rx="3"/><rect x="990" y="0" width="18" height="18" rx="3"/><rect x="1012" y="0" width="18" height="18" rx="3"/><rect x="1034" y="0" width="18" height="18" rx="3"/><rect x="1056" y="0" width="18" height="18" rx="3"/><rect x="1078" y="0" width="18" height="18" rx="3"/><rect x="1100" y="0" width="18" height="18" rx="3"/><rect x="1122" y="0" width="18" height="18" rx="3"/></g>
-      <g transform="translate(0 88)"><rect x="0" y="0" width="18" height="18" rx="3"/><rect x="22" y="0" width="18" height="18" rx="3"/><rect x="44" y="0" width="18" height="18" rx="3"/><rect x="66" y="0" width="18" height="18" rx="3"/><rect x="88" y="0" width="18" height="18" rx="3"/><rect x="110" y="0" width="18" height="18" rx="3"/><rect x="132" y="0" width="18" height="18" rx="3"/><rect x="154" y="0" width="18" height="18" rx="3"/><rect x="176" y="0" width="18" height="18" rx="3"/><rect x="198" y="0" width="18" height="18" rx="3"/><rect x="220" y="0" width="18" height="18" rx="3"/><rect x="242" y="0" width="18" height="18" rx="3"/><rect x="264" y="0" width="18" height="18" rx="3"/><rect x="286" y="0" width="18" height="18" rx="3"/><rect x="308" y="0" width="18" height="18" rx="3"/><rect x="330" y="0" width="18" height="18" rx="3"/><rect x="352" y="0" width="18" height="18" rx="3"/><rect x="374" y="0" width="18" height="18" rx="3"/><rect x="396" y="0" width="18" height="18" rx="3"/><rect x="418" y="0" width="18" height="18" rx="3"/><rect x="440" y="0" width="18" height="18" rx="3"/><rect x="462" y="0" width="18" height="18" rx="3"/><rect x="484" y="0" width="18" height="18" rx="3"/><rect x="506" y="0" width="18" height="18" rx="3"/><rect x="528" y="0" width="18" height="18" rx="3"/><rect x="550" y="0" width="18" height="18" rx="3"/><rect x="572" y="0" width="18" height="18" rx="3"/><rect x="594" y="0" width="18" height="18" rx="3"/><rect x="616" y="0" width="18" height="18" rx="3"/><rect x="638" y="0" width="18" height="18" rx="3"/><rect x="660" y="0" width="18" height="18" rx="3"/><rect x="682" y="0" width="18" height="18" rx="3"/><rect x="704" y="0" width="18" height="18" rx="3"/><rect x="726" y="0" width="18" height="18" rx="3"/><rect x="748" y="0" width="18" height="18" rx="3"/><rect x="770" y="0" width="18" height="18" rx="3"/><rect x="792" y="0" width="18" height="18" rx="3"/><rect x="814" y="0" width="18" height="18" rx="3"/><rect x="836" y="0" width="18" height="18" rx="3"/><rect x="858" y="0" width="18" height="18" rx="3"/><rect x="880" y="0" width="18" height="18" rx="3"/><rect x="902" y="0" width="18" height="18" rx="3"/><rect x="924" y="0" width="18" height="18" rx="3"/><rect x="946" y="0" width="18" height="18" rx="3"/><rect x="968" y="0" width="18" height="18" rx="3"/><rect x="990" y="0" width="18" height="18" rx="3"/><rect x="1012" y="0" width="18" height="18" rx="3"/><rect x="1034" y="0" width="18" height="18" rx="3"/><rect x="1056" y="0" width="18" height="18" rx="3"/><rect x="1078" y="0" width="18" height="18" rx="3"/><rect x="1100" y="0" width="18" height="18" rx="3"/><rect x="1122" y="0" width="18" height="18" rx="3"/></g>
-      <g transform="translate(0 110)"><rect x="0" y="0" width="18" height="18" rx="3"/><rect x="22" y="0" width="18" height="18" rx="3"/><rect x="44" y="0" width="18" height="18" rx="3"/><rect x="66" y="0" width="18" height="18" rx="3"/><rect x="88" y="0" width="18" height="18" rx="3"/><rect x="110" y="0" width="18" height="18" rx="3"/><rect x="132" y="0" width="18" height="18" rx="3"/><rect x="154" y="0" width="18" height="18" rx="3"/><rect x="176" y="0" width="18" height="18" rx="3"/><rect x="198" y="0" width="18" height="18" rx="3"/><rect x="220" y="0" width="18" height="18" rx="3"/><rect x="242" y="0" width="18" height="18" rx="3"/><rect x="264" y="0" width="18" height="18" rx="3"/><rect x="286" y="0" width="18" height="18" rx="3"/><rect x="308" y="0" width="18" height="18" rx="3"/><rect x="330" y="0" width="18" height="18" rx="3"/><rect x="352" y="0" width="18" height="18" rx="3"/><rect x="374" y="0" width="18" height="18" rx="3"/><rect x="396" y="0" width="18" height="18" rx="3"/><rect x="418" y="0" width="18" height="18" rx="3"/><rect x="440" y="0" width="18" height="18" rx="3"/><rect x="462" y="0" width="18" height="18" rx="3"/><rect x="484" y="0" width="18" height="18" rx="3"/><rect x="506" y="0" width="18" height="18" rx="3"/><rect x="528" y="0" width="18" height="18" rx="3"/><rect x="550" y="0" width="18" height="18" rx="3"/><rect x="572" y="0" width="18" height="18" rx="3"/><rect x="594" y="0" width="18" height="18" rx="3"/><rect x="616" y="0" width="18" height="18" rx="3"/><rect x="638" y="0" width="18" height="18" rx="3"/><rect x="660" y="0" width="18" height="18" rx="3"/><rect x="682" y="0" width="18" height="18" rx="3"/><rect x="704" y="0" width="18" height="18" rx="3"/><rect x="726" y="0" width="18" height="18" rx="3"/><rect x="748" y="0" width="18" height="18" rx="3"/><rect x="770" y="0" width="18" height="18" rx="3"/><rect x="792" y="0" width="18" height="18" rx="3"/><rect x="814" y="0" width="18" height="18" rx="3"/><rect x="836" y="0" width="18" height="18" rx="3"/><rect x="858" y="0" width="18" height="18" rx="3"/><rect x="880" y="0" width="18" height="18" rx="3"/><rect x="902" y="0" width="18" height="18" rx="3"/><rect x="924" y="0" width="18" height="18" rx="3"/><rect x="946" y="0" width="18" height="18" rx="3"/><rect x="968" y="0" width="18" height="18" rx="3"/><rect x="990" y="0" width="18" height="18" rx="3"/><rect x="1012" y="0" width="18" height="18" rx="3"/><rect x="1034" y="0" width="18" height="18" rx="3"/><rect x="1056" y="0" width="18" height="18" rx="3"/><rect x="1078" y="0" width="18" height="18" rx="3"/><rect x="1100" y="0" width="18" height="18" rx="3"/><rect x="1122" y="0" width="18" height="18" rx="3"/></g>
-      <g transform="translate(0 132)"><rect x="0" y="0" width="18" height="18" rx="3"/><rect x="22" y="0" width="18" height="18" rx="3"/><rect x="44" y="0" width="18" height="18" rx="3"/><rect x="66" y="0" width="18" height="18" rx="3"/><rect x="88" y="0" width="18" height="18" rx="3"/><rect x="110" y="0" width="18" height="18" rx="3"/><rect x="132" y="0" width="18" height="18" rx="3"/><rect x="154" y="0" width="18" height="18" rx="3"/><rect x="176" y="0" width="18" height="18" rx="3"/><rect x="198" y="0" width="18" height="18" rx="3"/><rect x="220" y="0" width="18" height="18" rx="3"/><rect x="242" y="0" width="18" height="18" rx="3"/><rect x="264" y="0" width="18" height="18" rx="3"/><rect x="286" y="0" width="18" height="18" rx="3"/><rect x="308" y="0" width="18" height="18" rx="3"/><rect x="330" y="0" width="18" height="18" rx="3"/><rect x="352" y="0" width="18" height="18" rx="3"/><rect x="374" y="0" width="18" height="18" rx="3"/><rect x="396" y="0" width="18" height="18" rx="3"/><rect x="418" y="0" width="18" height="18" rx="3"/><rect x="440" y="0" width="18" height="18" rx="3"/><rect x="462" y="0" width="18" height="18" rx="3"/><rect x="484" y="0" width="18" height="18" rx="3"/><rect x="506" y="0" width="18" height="18" rx="3"/><rect x="528" y="0" width="18" height="18" rx="3"/><rect x="550" y="0" width="18" height="18" rx="3"/><rect x="572" y="0" width="18" height="18" rx="3"/><rect x="594" y="0" width="18" height="18" rx="3"/><rect x="616" y="0" width="18" height="18" rx="3"/><rect x="638" y="0" width="18" height="18" rx="3"/><rect x="660" y="0" width="18" height="18" rx="3"/><rect x="682" y="0" width="18" height="18" rx="3"/><rect x="704" y="0" width="18" height="18" rx="3"/><rect x="726" y="0" width="18" height="18" rx="3"/><rect x="748" y="0" width="18" height="18" rx="3"/><rect x="770" y="0" width="18" height="18" rx="3"/><rect x="792" y="0" width="18" height="18" rx="3"/><rect x="814" y="0" width="18" height="18" rx="3"/><rect x="836" y="0" width="18" height="18" rx="3"/><rect x="858" y="0" width="18" height="18" rx="3"/><rect x="880" y="0" width="18" height="18" rx="3"/><rect x="902" y="0" width="18" height="18" rx="3"/><rect x="924" y="0" width="18" height="18" rx="3"/><rect x="946" y="0" width="18" height="18" rx="3"/><rect x="968" y="0" width="18" height="18" rx="3"/><rect x="990" y="0" width="18" height="18" rx="3"/><rect x="1012" y="0" width="18" height="18" rx="3"/><rect x="1034" y="0" width="18" height="18" rx="3"/><rect x="1056" y="0" width="18" height="18" rx="3"/><rect x="1078" y="0" width="18" height="18" rx="3"/><rect x="1100" y="0" width="18" height="18" rx="3"/><rect x="1122" y="0" width="18" height="18" rx="3"/></g>
-    </g>
-
-    <!-- === CELLULES COLORÉES par niveau (sélection réaliste) === -->
-    <!-- Niveau 1 (faible) -->
-    <g fill="#38BDF8" fill-opacity="0.18" rx="3">
-      <rect x="44" y="22" width="18" height="18" rx="3" />
-      <rect x="88" y="66" width="18" height="18" rx="3" />
-      <rect x="110" y="44" width="18" height="18" rx="3" />
-      <rect x="154" y="22" width="18" height="18" rx="3" />
-      <rect x="198" y="88" width="18" height="18" rx="3" />
-      <rect x="264" y="22" width="18" height="18" rx="3" />
-      <rect x="330" y="44" width="18" height="18" rx="3" />
-      <rect x="396" y="0" width="18" height="18" rx="3" />
-      <rect x="462" y="110" width="18" height="18" rx="3" />
-      <rect x="528" y="22" width="18" height="18" rx="3" />
-      <rect x="594" y="132" width="18" height="18" rx="3" />
-      <rect x="660" y="66" width="18" height="18" rx="3" />
-      <rect x="726" y="44" width="18" height="18" rx="3" />
-      <rect x="792" y="22" width="18" height="18" rx="3" />
-      <rect x="858" y="110" width="18" height="18" rx="3" />
-      <rect x="924" y="0" width="18" height="18" rx="3" />
-      <rect x="990" y="132" width="18" height="18" rx="3" />
-      <rect x="1056" y="22" width="18" height="18" rx="3" />
-    </g>
-
-    <!-- Niveau 2 (moyen) -->
-    <g fill="#38BDF8" fill-opacity="0.4">
-      <rect x="88" y="44" width="18" height="18" rx="3" />
-      <rect x="132" y="66" width="18" height="18" rx="3" />
-      <rect x="176" y="44" width="18" height="18" rx="3" />
-      <rect x="220" y="66" width="18" height="18" rx="3" />
-      <rect x="286" y="44" width="18" height="18" rx="3" />
-      <rect x="352" y="22" width="18" height="18" rx="3" />
-      <rect x="418" y="66" width="18" height="18" rx="3" />
-      <rect x="484" y="44" width="18" height="18" rx="3" />
-      <rect x="550" y="88" width="18" height="18" rx="3" />
-      <rect x="616" y="44" width="18" height="18" rx="3" />
-      <rect x="682" y="66" width="18" height="18" rx="3" />
-      <rect x="748" y="22" width="18" height="18" rx="3" />
-      <rect x="814" y="88" width="18" height="18" rx="3" />
-      <rect x="880" y="44" width="18" height="18" rx="3" />
-      <rect x="946" y="66" width="18" height="18" rx="3" />
-      <rect x="1012" y="22" width="18" height="18" rx="3" />
-      <rect x="1078" y="44" width="18" height="18" rx="3" />
-      <rect x="1122" y="66" width="18" height="18" rx="3" />
-    </g>
-
-    <!-- Niveau 3 (élevé) — pattern qui monte vers la fin -->
-    <g fill="#38BDF8" fill-opacity="0.7">
-      <rect x="440" y="44" width="18" height="18" rx="3" />
-      <rect x="506" y="22" width="18" height="18" rx="3" />
-      <rect x="572" y="44" width="18" height="18" rx="3" />
-      <rect x="638" y="22" width="18" height="18" rx="3" />
-      <rect x="704" y="44" width="18" height="18" rx="3" />
-      <rect x="770" y="22" width="18" height="18" rx="3" />
-      <rect x="836" y="44" width="18" height="18" rx="3" />
-      <rect x="902" y="22" width="18" height="18" rx="3" />
-      <rect x="968" y="44" width="18" height="18" rx="3" />
-      <rect x="1034" y="22" width="18" height="18" rx="3" />
-      <rect x="1100" y="44" width="18" height="18" rx="3" />
-
-      <rect x="836" y="66" width="18" height="18" rx="3" />
-      <rect x="902" y="88" width="18" height="18" rx="3" />
-      <rect x="968" y="66" width="18" height="18" rx="3" />
-      <rect x="1034" y="88" width="18" height="18" rx="3" />
-      <rect x="1100" y="66" width="18" height="18" rx="3" />
-    </g>
-
-    <!-- Niveau 4 (pic — fin d'année avec gros boost) -->
-    <g fill="#38BDF8">
-      <rect x="924" y="44" width="18" height="18" rx="3" />
-      <rect x="946" y="22" width="18" height="18" rx="3" />
-      <rect x="990" y="66" width="18" height="18" rx="3" />
-      <rect x="1012" y="44" width="18" height="18" rx="3" />
-      <rect x="1056" y="44" width="18" height="18" rx="3" />
-      <rect x="1078" y="22" width="18" height="18" rx="3" />
-      <rect x="1100" y="22" width="18" height="18" rx="3" />
-      <rect x="1122" y="44" width="18" height="18" rx="3" />
-
-      <rect x="1078" y="66" width="18" height="18" rx="3" />
-      <rect x="1100" y="88" width="18" height="18" rx="3" />
-      <rect x="1122" y="22" width="18" height="18" rx="3" />
+    <g stroke-width="1" opacity="0.5">
+      <line x1="232" y1="540" x2="232" y2="548" />
+      <line x1="464" y1="540" x2="464" y2="548" />
+      <line x1="696" y1="540" x2="696" y2="548" />
+      <line x1="928" y1="540" x2="928" y2="548" />
+      <line x1="1160" y1="540" x2="1160" y2="548" />
+      <line x1="-8" y1="135" x2="0" y2="135" />
+      <line x1="-8" y1="270" x2="0" y2="270" />
+      <line x1="-8" y1="405" x2="0" y2="405" />
     </g>
   </g>
 
-  <!-- Légende niveaux à droite -->
-  <g transform="translate(1230 250)" font-family="JetBrains Mono, monospace" font-size="13" fill="#94A3B8" letter-spacing="0.5">
-    <text x="0" y="-12">Activité</text>
-    <g>
-      <rect x="0" y="0" width="18" height="18" rx="3" fill="#1E293B" stroke="#334155" stroke-width="0.5" />
-      <text x="32" y="14" fill="#64748B">aucune</text>
+  <!-- Tick labels -->
+  <g font-family="JetBrains Mono, monospace" font-size="12" fill="#64748B" letter-spacing="0.5">
+    <text x="220" y="775" text-anchor="middle">sept</text>
+    <text x="452" y="775" text-anchor="middle">nov</text>
+    <text x="684" y="775" text-anchor="middle">jan</text>
+    <text x="916" y="775" text-anchor="middle">mars</text>
+    <text x="1148" y="775" text-anchor="middle">mai</text>
+    <text x="1380" y="775" text-anchor="middle">juin</text>
+  </g>
+
+  <!-- Aire sous la courbe -->
+  <path d="M 220 740 Q 380 720, 500 660 T 800 480 T 1100 280 T 1380 220 L 1380 750 L 220 750 Z"
+        fill="url(#curve-area)" />
+
+  <!-- Courbe principale (commits cumulés) -->
+  <path d="M 220 740 Q 380 720, 500 660 T 800 480 T 1100 280 T 1380 220"
+        fill="none"
+        stroke="url(#curve-commits)"
+        stroke-width="4"
+        stroke-linecap="round" />
+
+  <!-- Points data sur la courbe -->
+  <g>
+    <circle cx="220" cy="740" r="6" fill="#38BDF8" />
+    <circle cx="380" cy="720" r="6" fill="#38BDF8" />
+    <circle cx="560" cy="640" r="6" fill="#38BDF8" />
+    <circle cx="720" cy="540" r="6" fill="#38BDF8" />
+    <circle cx="900" cy="420" r="6" fill="#38BDF8" />
+    <circle cx="1080" cy="310" r="6" fill="#38BDF8" />
+    <circle cx="1280" cy="240" r="8" fill="#7DD3FC" stroke="#0B1220" stroke-width="2" />
+  </g>
+
+  <!-- Label sur le dernier point -->
+  <g transform="translate(1280 200)">
+    <rect x="-50" y="-22" width="100" height="22" rx="4" fill="#38BDF8" />
+    <text x="0" y="-7" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#0B1220">+1248 commits</text>
+  </g>
+
+  <!-- Petits commits dots éparpillés (style git log) -->
+  <g fill="#38BDF8" opacity="0.45">
+    <circle cx="320" cy="690" r="3" />
+    <circle cx="440" cy="700" r="3" />
+    <circle cx="600" cy="600" r="3" />
+    <circle cx="780" cy="500" r="3" />
+    <circle cx="980" cy="370" r="3" />
+    <circle cx="1180" cy="270" r="3" />
+  </g>
+
+  <!-- Branches visualisation simplifiée à droite -->
+  <g transform="translate(1230 320)" font-family="JetBrains Mono, monospace" font-size="13">
+    <text fill="#94A3B8" letter-spacing="0.5">Branches actives</text>
+
+    <g transform="translate(0 22)">
+      <circle cx="8" cy="8" r="6" fill="#38BDF8" />
+      <text x="24" y="12" fill="#7DD3FC">main</text>
     </g>
-    <g transform="translate(0 30)">
-      <rect x="0" y="0" width="18" height="18" rx="3" fill="#38BDF8" fill-opacity="0.18" />
-      <text x="32" y="14" fill="#64748B">faible</text>
+    <g transform="translate(0 48)">
+      <circle cx="8" cy="8" r="6" fill="#A78BFA" />
+      <text x="24" y="12" fill="#C4B5FD">feature/*</text>
     </g>
-    <g transform="translate(0 60)">
-      <rect x="0" y="0" width="18" height="18" rx="3" fill="#38BDF8" fill-opacity="0.4" />
-      <text x="32" y="14" fill="#64748B">moyenne</text>
-    </g>
-    <g transform="translate(0 90)">
-      <rect x="0" y="0" width="18" height="18" rx="3" fill="#38BDF8" fill-opacity="0.7" />
-      <text x="32" y="14" fill="#64748B">élevée</text>
-    </g>
-    <g transform="translate(0 120)">
-      <rect x="0" y="0" width="18" height="18" rx="3" fill="#38BDF8" />
-      <text x="32" y="14" fill="#7DD3FC">pic</text>
+    <g transform="translate(0 74)">
+      <circle cx="8" cy="8" r="6" fill="#5EEAD4" />
+      <text x="24" y="12" fill="#6EE7B7">fix/*</text>
     </g>
   </g>
 
   <!-- Snippet code en bas -->
   <g transform="translate(80 700)" font-family="JetBrains Mono, monospace" font-size="16">
-    <text fill="#94A3B8">$ <tspan fill="#38BDF8">git</tspan> <tspan fill="#E2E8F0">log --oneline --graph --all</tspan></text>
-    <text y="28" fill="#64748B">1248 commits · 47 branches · workflow propre</text>
+    <text fill="#94A3B8">$ <tspan fill="#38BDF8">git</tspan> <tspan fill="#E2E8F0">commit -m</tspan> <tspan fill="#A3E635">"feat: ship excellence"</tspan></text>
+    <text y="28" fill="#64748B">linux · ubuntu · debian · vscode · pycharm · git · github</text>
+  </g>
+
+  <!-- Étoiles décoratives -->
+  <g fill="#7DD3FC" opacity="0.5">
+    <circle cx="1430" cy="180" r="2" />
+    <circle cx="1490" cy="280" r="1.5" />
+    <circle cx="1380" cy="350" r="2.4" />
+    <circle cx="1530" cy="220" r="1.8" />
+    <circle cx="120" cy="820" r="1.8" />
   </g>
 </svg>
