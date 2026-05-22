@@ -24,26 +24,26 @@
       "skills": ["Agile", "Scrum", "Kanban", "Project Management"]
     },
     {
-      "slug": "second-obtained",
+      "slug": "devops-fundamentals",
       "status": "obtained",
       "featured": true,
       "order": 2,
-      "category": "tech",
+      "category": "devops",
       "title": {
-        "fr": "Deuxième certification (à renseigner)",
-        "en": "Second certification (TBD)"
+        "fr": "Les fondements du DevOps",
+        "en": "DevOps Fundamentals"
       },
       "issuer": {
-        "fr": "Organisme à préciser",
-        "en": "Issuer to fill"
+        "fr": "LinkedIn Learning",
+        "en": "LinkedIn Learning"
       },
       "date": "2025",
       "description": {
-        "fr": "Description courte de la certification à renseigner.",
-        "en": "Short description to fill."
+        "fr": "Culture DevOps, automatisation, intégration et déploiement continus (CI/CD), collaboration dev/ops.",
+        "en": "DevOps culture, automation, continuous integration & delivery (CI/CD), dev/ops collaboration."
       },
       "verifyUrl": null,
-      "skills": []
+      "skills": ["DevOps", "CI/CD", "Automatisation", "Culture DevOps"]
     },
     {
       "slug": "cloud-devops",
