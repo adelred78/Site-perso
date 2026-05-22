@@ -45,7 +45,7 @@
   <url><loc>https://adelredjemi.vercel.app/fr/projets/arduino-led</loc><priority>0.6</priority></url>
   <url><loc>https://adelredjemi.vercel.app/fr/projets/epsi-tech</loc><priority>0.6</priority></url>
   <url><loc>https://adelredjemi.vercel.app/fr/projets/python-algo</loc><priority>0.6</priority></url>
-  <url><loc>https://adelredjemi.vercel.app/fr/projets/dev-environment</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/git-workflow</loc><priority>0.6</priority></url>
 
   <!-- EN -->
   <url>
@@ -87,5 +87,5 @@
   <url><loc>https://adelredjemi.vercel.app/en/projects/arduino-led</loc><priority>0.6</priority></url>
   <url><loc>https://adelredjemi.vercel.app/en/projects/epsi-tech</loc><priority>0.6</priority></url>
   <url><loc>https://adelredjemi.vercel.app/en/projects/python-algo</loc><priority>0.6</priority></url>
-  <url><loc>https://adelredjemi.vercel.app/en/projects/dev-environment</loc><priority>0.6</priority></url>
+  <url><loc>https://adelredjemi.vercel.app/en/projects/git-workflow</loc><priority>0.6</priority></url>
 </urlset>

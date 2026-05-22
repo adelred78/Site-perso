@@ -898,7 +898,7 @@
       }
     },
     {
-      "slug": "dev-environment",
+      "slug": "git-workflow",
       "featured": false,
       "order": 9,
       "type": "academic",
@@ -951,9 +951,9 @@
         "certificate": null
       },
       "images": {
-        "cover": "/assets/img/projects/dev-environment/cover.svg",
-        "thumb": "/assets/img/projects/dev-environment/cover.svg",
-        "og": "/assets/img/projects/dev-environment/cover.svg",
+        "cover": "/assets/img/projects/git-workflow/cover.svg",
+        "thumb": "/assets/img/projects/git-workflow/cover.svg",
+        "og": "/assets/img/projects/git-workflow/cover.svg",
         "gallery": []
       },
       "content": {

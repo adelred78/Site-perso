@@ -2,35 +2,95 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/projects/project-workshop.html", "destination": "/fr/projets/snack-o-matic", "permanent": true },
-    { "source": "/projects/project-hydrotrack.html", "destination": "/fr/projets/hydrotrack", "permanent": true },
-    { "source": "/projects/project-web.html", "destination": "/fr/projets/smartbike", "permanent": true },
-    { "source": "/projects/project-network.html", "destination": "/fr/projets/network-infra", "permanent": true },
-    { "source": "/projects/project-vr.html", "destination": "/fr/projets/vr-dream", "permanent": true },
-    { "source": "/projects/project-arduino.html", "destination": "/fr/projets/arduino-led", "permanent": true },
-    { "source": "/projects/project-epsi-tech.html", "destination": "/fr/projets/epsi-tech", "permanent": true },
-    { "source": "/projects/project-system.html", "destination": "/fr/projets/python-algo", "permanent": true }
+    {
+      "source": "/projects/project-workshop.html",
+      "destination": "/fr/projets/snack-o-matic",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-hydrotrack.html",
+      "destination": "/fr/projets/hydrotrack",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-web.html",
+      "destination": "/fr/projets/smartbike",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-network.html",
+      "destination": "/fr/projets/network-infra",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-vr.html",
+      "destination": "/fr/projets/vr-dream",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-arduino.html",
+      "destination": "/fr/projets/arduino-led",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-epsi-tech.html",
+      "destination": "/fr/projets/epsi-tech",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-system.html",
+      "destination": "/fr/projets/python-algo",
+      "permanent": true
+    },
+    {
+      "source": "/fr/projets/dev-environment",
+      "destination": "/fr/projets/git-workflow",
+      "permanent": true
+    },
+    {
+      "source": "/en/projects/dev-environment",
+      "destination": "/en/projects/git-workflow",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/data/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     }
   ]
