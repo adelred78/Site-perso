@@ -850,9 +850,9 @@
         "certificate": null
       },
       "images": {
-        "cover": "/assets/img/projects/python-algo/cover.png",
-        "thumb": "/assets/img/projects/python-algo/cover.png",
-        "og": "/assets/img/projects/python-algo/cover.png",
+        "cover": "/assets/img/projects/python-algo/cover.svg",
+        "thumb": "/assets/img/projects/python-algo/cover.svg",
+        "og": "/assets/img/projects/python-algo/cover.svg",
         "gallery": []
       },
       "content": {
@@ -951,9 +951,9 @@
         "certificate": null
       },
       "images": {
-        "cover": "/assets/img/projects/dev-environment/cover.png",
-        "thumb": "/assets/img/projects/dev-environment/cover.png",
-        "og": "/assets/img/projects/dev-environment/cover.png",
+        "cover": "/assets/img/projects/dev-environment/cover.svg",
+        "thumb": "/assets/img/projects/dev-environment/cover.svg",
+        "og": "/assets/img/projects/dev-environment/cover.svg",
         "gallery": []
       },
       "content": {

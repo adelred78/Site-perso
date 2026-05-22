@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Optimisation d'algorithmes Python — analyse de complexité Big-O">
+  <defs>
+    <linearGradient id="bg-py" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220" />
+      <stop offset="1" stop-color="#1E293B" />
+    </linearGradient>
+    <radialGradient id="glow-py" cx="0.2" cy="0.85" r="0.7">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid-py" x="0" y="0" width="56" height="56" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#38BDF8" fill-opacity="0.1" />
+    </pattern>
+    <linearGradient id="curve-fast" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8" />
+      <stop offset="1" stop-color="#7DD3FC" />
+    </linearGradient>
+    <linearGradient id="curve-slow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F59E0B" />
+      <stop offset="1" stop-color="#EF4444" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fond -->
+  <rect width="1600" height="900" fill="url(#bg-py)" />
+  <rect width="1600" height="900" fill="url(#grid-py)" />
+  <rect width="1600" height="900" fill="url(#glow-py)" />
+
+  <!-- Axes -->
+  <g transform="translate(220 200)" stroke="#334155" stroke-width="2">
+    <!-- Y axis -->
+    <line x1="0" y1="0" x2="0" y2="540" />
+    <!-- X axis -->
+    <line x1="0" y1="540" x2="1160" y2="540" />
+    <!-- Tick marks -->
+    <g stroke="#334155" stroke-width="1" opacity="0.5">
+      <line x1="290" y1="540" x2="290" y2="548" />
+      <line x1="580" y1="540" x2="580" y2="548" />
+      <line x1="870" y1="540" x2="870" y2="548" />
+      <line x1="1160" y1="540" x2="1160" y2="548" />
+      <line x1="-8" y1="135" x2="0" y2="135" />
+      <line x1="-8" y1="270" x2="0" y2="270" />
+      <line x1="-8" y1="405" x2="0" y2="405" />
+    </g>
+  </g>
+
+  <!-- Labels axes -->
+  <g font-family="JetBrains Mono, monospace" font-size="14" fill="#64748B">
+    <text x="220" y="780" letter-spacing="1">n  (taille de l'entrée) →</text>
+    <text x="190" y="190" text-anchor="end" letter-spacing="1">time</text>
+  </g>
+
+  <!-- Courbe O(n²) — lente -->
+  <path d="M 220 740 Q 540 720, 800 600 T 1380 220"
+        fill="none"
+        stroke="url(#curve-slow)"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-dasharray="0"
+        opacity="0.85" />
+
+  <!-- Courbe O(log n) — rapide -->
+  <path d="M 220 740 Q 480 660, 700 640 T 1380 600"
+        fill="none"
+        stroke="url(#curve-fast)"
+        stroke-width="4"
+        stroke-linecap="round" />
+
+  <!-- Points data sur la courbe rapide -->
+  <g fill="#38BDF8">
+    <circle cx="380" cy="700" r="5" />
+    <circle cx="600" cy="660" r="5" />
+    <circle cx="900" cy="630" r="5" />
+    <circle cx="1180" cy="615" r="5" />
+  </g>
+
+  <!-- Légende complexités -->
+  <g transform="translate(960 220)" font-family="JetBrains Mono, monospace" font-size="18">
+    <g>
+      <line x1="0" y1="0" x2="32" y2="0" stroke="url(#curve-slow)" stroke-width="4" stroke-linecap="round" />
+      <text x="50" y="6" fill="#FCA5A5">O(n²)  — naïf</text>
+    </g>
+    <g transform="translate(0 36)">
+      <line x1="0" y1="0" x2="32" y2="0" stroke="url(#curve-fast)" stroke-width="4" stroke-linecap="round" />
+      <text x="50" y="6" fill="#7DD3FC">O(log n) — optimisé</text>
+    </g>
+  </g>
+
+  <!-- Label en haut à gauche -->
+  <g transform="translate(80 80)">
+    <rect width="280" height="36" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.4" />
+    <text x="20" y="23" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" letter-spacing="1" fill="#7DD3FC">PYTHON · ALGORITHMIQUE</text>
+  </g>
+
+  <!-- Snippet code Python -->
+  <g transform="translate(80 680)" font-family="JetBrains Mono, monospace" font-size="16">
+    <text fill="#C084FC">def <tspan fill="#FBBF24">search</tspan><tspan fill="#E2E8F0">(items, key):</tspan></text>
+    <text y="26" fill="#E2E8F0">    <tspan fill="#C084FC">return</tspan> index[key]</text>
+  </g>
+</svg>
