@@ -82,8 +82,10 @@ function renderCertCard(cert, lang) {
     <article class="cert-card cert-card--${cert.status}" data-status="${cert.status}" data-category="${cert.category}">
       <div class="cert-card__head">
         <div class="cert-card__icon" aria-hidden="true">${statusIcon}</div>
-        <span class="cert-card__status">${statusLabel}</span>
-        ${dateHtml}
+        <div class="cert-card__head-meta">
+          ${dateHtml}
+          <span class="cert-card__status">${statusLabel}</span>
+        </div>
       </div>
       <h3 class="cert-card__title">${title}</h3>
       <p class="cert-card__issuer">${issuer}</p>

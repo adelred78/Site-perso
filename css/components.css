@@ -1051,7 +1051,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-5);
-  max-width: 1000px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -1061,9 +1061,10 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .cert-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-6);
   }
 }
 
@@ -1097,12 +1098,18 @@
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  flex-wrap: wrap;
+}
+
+.cert-card__head-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
 }
 
 .cert-card__icon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1137,10 +1144,10 @@
 .cert-card--planned .cert-card__status { color: var(--status-warning); }
 
 .cert-card__date {
-  margin-left: auto;
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   color: var(--text-tertiary);
+  letter-spacing: var(--tracking-wide);
 }
 
 .cert-card__title {
