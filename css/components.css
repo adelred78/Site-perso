@@ -318,7 +318,7 @@
 }
 
 .hero__title {
-  font-family: var(--font-display);
+  font-family: var(--font-hero);
   font-size: clamp(var(--text-4xl), 6vw + 1rem, var(--text-6xl));
   font-weight: 800;
   letter-spacing: var(--tracking-tight);
@@ -349,7 +349,7 @@
 }
 
 .hero__tagline {
-  font-family: var(--font-display);
+  font-family: var(--font-hero);
   font-size: clamp(var(--text-xl), 2vw + 0.5rem, var(--text-2xl));
   font-weight: 500;
   color: var(--accent-light);

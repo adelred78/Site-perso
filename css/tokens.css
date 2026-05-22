@@ -5,8 +5,9 @@
 
 :root {
   /* === Typographie === */
-  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-hero: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Onest', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
 
   /* Échelle typographique */
