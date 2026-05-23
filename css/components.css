@@ -3181,17 +3181,16 @@
   text-transform: uppercase;
 }
 
-/* === Figures (images uniformes 16:9) === */
+/* === Body magazine === */
 .about-body {
-  max-width: 760px;
+  max-width: 800px;
   margin-inline: auto;
   padding: 0 var(--container-padding);
 }
 
+/* === Figures de base === */
 .about-figure {
-  margin: var(--space-10) auto;
-  max-width: 760px;
-  padding-inline: var(--container-padding);
+  margin: var(--space-8) auto;
 }
 
 .about-figure img {
@@ -3206,19 +3205,67 @@
 .about-figure figcaption {
   margin-top: var(--space-3);
   font-family: var(--font-body);
+  font-style: italic;
   font-size: var(--text-sm);
   color: var(--text-tertiary);
   line-height: var(--leading-snug);
-  text-align: center;
 }
 
-/* Première figure après le hero — pas de double margin */
-.about-hero + .about-figure {
+/* Cover (1ère image après le hero) — pleine largeur */
+.about-figure--cover {
+  max-width: 1100px;
+  padding-inline: var(--container-padding);
   margin-top: var(--space-10);
+  margin-bottom: var(--space-12);
+}
+
+.about-figure--cover img {
+  aspect-ratio: 21 / 9;
+}
+
+.about-figure--cover figcaption {
+  text-align: center;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* Inline floated — style journal (text wraps around) */
+.about-figure--inline {
+  margin: var(--space-2) 0 var(--space-5);
+  max-width: 320px;
+}
+
+.about-figure--inline img {
+  aspect-ratio: 4 / 3;
+}
+
+.about-figure--inline figcaption {
+  text-align: left;
+  font-size: var(--text-xs);
+}
+
+@media (min-width: 720px) {
+  .about-figure--inline.about-figure--right {
+    float: right;
+    margin: var(--space-1) 0 var(--space-4) var(--space-8);
+    clear: right;
+  }
+  .about-figure--inline.about-figure--left {
+    float: left;
+    margin: var(--space-1) var(--space-8) var(--space-4) 0;
+    clear: left;
+  }
 }
 
 .about-section {
   margin-bottom: var(--space-12);
+}
+
+/* Important pour clear les floats */
+.about-section::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .about-h2 {
