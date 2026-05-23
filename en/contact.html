@@ -67,34 +67,74 @@
           <article class="contact-form-card">
             <h2>Send me a message</h2>
             <form data-contact-form data-formspree-endpoint="https://formspree.io/f/xnjwkngv" novalidate>
+              <div class="form__honeypot" aria-hidden="true">
+                <label>Don't fill this
+                  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                </label>
+              </div>
+
               <div class="form__group">
                 <label for="name" class="form__label">Name</label>
-                <input type="text" id="name" name="name" required class="form__input" placeholder="What's your name?" />
+                <input type="text" id="name" name="name" required minlength="2" autocomplete="name" class="form__input" placeholder="Your name" />
+                <p class="form__error" data-error-for="name" aria-live="polite"></p>
               </div>
               <div class="form__group">
                 <label for="email" class="form__label">Email</label>
-                <input type="email" id="email" name="email" required class="form__input" placeholder="your.email@example.com" />
+                <input type="email" id="email" name="email" required autocomplete="email" class="form__input" placeholder="your.email@example.com" />
+                <p class="form__error" data-error-for="email" aria-live="polite"></p>
               </div>
               <div class="form__group">
                 <label for="subject" class="form__label">Subject</label>
                 <select id="subject" name="subject" required class="form__select">
-                  <option value="">Choose a subject</option>
+                  <option value="">— Choose a subject —</option>
                   <option value="internship">Internship</option>
                   <option value="apprenticeship">Apprenticeship</option>
-                  <option value="project">Project</option>
+                  <option value="project">Freelance project</option>
+                  <option value="call">Book a call</option>
                   <option value="other">Other</option>
                 </select>
+                <p class="form__error" data-error-for="subject" aria-live="polite"></p>
               </div>
               <div class="form__group">
-                <label for="message" class="form__label">Message</label>
-                <textarea id="message" name="message" required class="form__textarea" placeholder="Tell me everything"></textarea>
+                <label for="message" class="form__label">Message <span class="form__counter" data-char-counter>0 / 1000</span></label>
+                <textarea id="message" name="message" required minlength="20" maxlength="1000" class="form__textarea" placeholder="Describe your request in a few sentences (20 characters minimum)"></textarea>
+                <p class="form__error" data-error-for="message" aria-live="polite"></p>
               </div>
-              <button type="submit" class="button button--primary">Send message</button>
+              <button type="submit" class="button button--primary form__submit">
+                <span class="form__submit-label">Send message</span>
+                <svg class="form__spinner" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="50 50" />
+                </svg>
+              </button>
+              <p class="form__privacy">
+                🔒 Your data is only used to reply to you.
+                No tracking, no newsletter, no sharing.
+              </p>
               <div data-form-feedback class="form__feedback is-hidden" role="status" aria-live="polite"></div>
             </form>
           </article>
 
           <aside class="contact-sidebar">
+            <div class="sidebar-box">
+              <h3>Quick contact</h3>
+              <div class="quick-contact">
+                <a href="https://cal.com/adelredjemi" target="_blank" rel="noopener" class="quick-contact__btn quick-contact__btn--cal">
+                  <span class="quick-contact__icon" aria-hidden="true">📅</span>
+                  <span class="quick-contact__body">
+                    <span class="quick-contact__title">Book a call</span>
+                    <span class="quick-contact__sub">15 min · Cal.com</span>
+                  </span>
+                </a>
+                <a href="https://wa.me/33619346481" target="_blank" rel="noopener" class="quick-contact__btn quick-contact__btn--whatsapp">
+                  <span class="quick-contact__icon" aria-hidden="true">💬</span>
+                  <span class="quick-contact__body">
+                    <span class="quick-contact__title">WhatsApp</span>
+                    <span class="quick-contact__sub">Quick reply</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+
             <div class="sidebar-box">
               <h3>Other channels</h3>
               <ul class="contact-list">
@@ -104,6 +144,7 @@
                 <li>📍 Paris &amp; Île-de-France</li>
               </ul>
             </div>
+
             <div class="sidebar-box">
               <h3>Current availability</h3>
               <ul>
@@ -111,9 +152,21 @@
                 <li>🔍 Open to apprenticeship starting September 2026</li>
               </ul>
             </div>
+
             <div class="sidebar-box">
-              <h3>Reply time</h3>
-              <p>Within 24-48h on business days</p>
+              <h3>FAQ</h3>
+              <details class="faq-item">
+                <summary>How fast do you reply?</summary>
+                <p>Within 24-48h on business days. WhatsApp is often faster.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Do you take freelance work?</summary>
+                <p>Yes, on scoped missions compatible with my internship. Let's talk.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Where do you work from?</summary>
+                <p>Paris &amp; Île-de-France in person. Remote anywhere.</p>
+              </details>
             </div>
           </aside>
         </div>

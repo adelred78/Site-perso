@@ -72,35 +72,77 @@
               data-formspree-endpoint="https://formspree.io/f/xnjwkngv"
               novalidate
             >
+              <!-- Honeypot anti-bot (caché aux humains, rempli par les bots) -->
+              <div class="form__honeypot" aria-hidden="true">
+                <label>Ne remplis pas ce champ
+                  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                </label>
+              </div>
+
               <div class="form__group">
                 <label for="name" class="form__label">Nom</label>
-                <input type="text" id="name" name="name" required class="form__input" placeholder="Comment tu t'appelles ?" />
+                <input type="text" id="name" name="name" required minlength="2" autocomplete="name" class="form__input" placeholder="Votre nom" />
+                <p class="form__error" data-error-for="name" aria-live="polite"></p>
               </div>
               <div class="form__group">
                 <label for="email" class="form__label">Email</label>
-                <input type="email" id="email" name="email" required class="form__input" placeholder="ton.email@exemple.com" />
+                <input type="email" id="email" name="email" required autocomplete="email" class="form__input" placeholder="votre.email@exemple.com" />
+                <p class="form__error" data-error-for="email" aria-live="polite"></p>
               </div>
               <div class="form__group">
                 <label for="subject" class="form__label">Sujet</label>
                 <select id="subject" name="subject" required class="form__select">
-                  <option value="">Choisis un sujet</option>
+                  <option value="">— Choisissez un sujet —</option>
                   <option value="internship">Stage</option>
                   <option value="apprenticeship">Alternance</option>
-                  <option value="project">Projet</option>
+                  <option value="project">Projet freelance</option>
+                  <option value="call">Demande de call</option>
                   <option value="other">Autre</option>
                 </select>
+                <p class="form__error" data-error-for="subject" aria-live="polite"></p>
               </div>
               <div class="form__group">
-                <label for="message" class="form__label">Message</label>
-                <textarea id="message" name="message" required class="form__textarea" placeholder="Dis-moi tout"></textarea>
+                <label for="message" class="form__label">Message <span class="form__counter" data-char-counter>0 / 1000</span></label>
+                <textarea id="message" name="message" required minlength="20" maxlength="1000" class="form__textarea" placeholder="Décrivez votre demande en quelques phrases (20 caractères minimum)"></textarea>
+                <p class="form__error" data-error-for="message" aria-live="polite"></p>
               </div>
-              <button type="submit" class="button button--primary">Envoyer le message</button>
+              <button type="submit" class="button button--primary form__submit">
+                <span class="form__submit-label">Envoyer le message</span>
+                <svg class="form__spinner" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="50 50" />
+                </svg>
+              </button>
+              <p class="form__privacy">
+                🔒 Vos données sont utilisées uniquement pour vous répondre.
+                Pas de tracking, pas de newsletter, pas de partage.
+              </p>
               <div data-form-feedback class="form__feedback is-hidden" role="status" aria-live="polite"></div>
             </form>
           </article>
 
           <!-- SIDEBAR -->
           <aside class="contact-sidebar">
+            <!-- Quick contact options -->
+            <div class="sidebar-box">
+              <h3>Contact rapide</h3>
+              <div class="quick-contact">
+                <a href="https://cal.com/adelredjemi" target="_blank" rel="noopener" class="quick-contact__btn quick-contact__btn--cal">
+                  <span class="quick-contact__icon" aria-hidden="true">📅</span>
+                  <span class="quick-contact__body">
+                    <span class="quick-contact__title">Réserver un call</span>
+                    <span class="quick-contact__sub">15 min · Cal.com</span>
+                  </span>
+                </a>
+                <a href="https://wa.me/33619346481" target="_blank" rel="noopener" class="quick-contact__btn quick-contact__btn--whatsapp">
+                  <span class="quick-contact__icon" aria-hidden="true">💬</span>
+                  <span class="quick-contact__body">
+                    <span class="quick-contact__title">WhatsApp</span>
+                    <span class="quick-contact__sub">Réponse rapide</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+
             <div class="sidebar-box">
               <h3>Autres canaux</h3>
               <ul class="contact-list">
@@ -110,6 +152,7 @@
                 <li>📍 Paris &amp; Île-de-France</li>
               </ul>
             </div>
+
             <div class="sidebar-box">
               <h3>Disponibilité actuelle</h3>
               <ul>
@@ -117,9 +160,21 @@
                 <li>🔍 Cherche alternance dès septembre 2026</li>
               </ul>
             </div>
+
             <div class="sidebar-box">
-              <h3>Délai de réponse</h3>
-              <p>24-48h en jours ouvrés</p>
+              <h3>Questions fréquentes</h3>
+              <details class="faq-item">
+                <summary>Quel est ton délai de réponse ?</summary>
+                <p>24 à 48h en jours ouvrés. Par WhatsApp c'est souvent plus rapide.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Tu acceptes les projets freelance ?</summary>
+                <p>Oui, sur des missions cadrées et compatibles avec mon stage. Parlons-en.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Tu te déplaces où ?</summary>
+                <p>Paris &amp; Île-de-France en présentiel. Remote partout.</p>
+              </details>
             </div>
           </aside>
         </div>

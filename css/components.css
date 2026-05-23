@@ -1519,6 +1519,210 @@
   border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
+/* === Honeypot anti-bot (caché) === */
+.form__honeypot {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* === Validation inline === */
+.form__input--error,
+.form__textarea--error,
+.form__select--error,
+[aria-invalid='true'] {
+  border-bottom-color: var(--status-error) !important;
+}
+
+.form__error {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--status-error);
+  margin-top: var(--space-2);
+  min-height: 1em;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.form__error--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Compteur de caractères === */
+.form__counter {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-left: var(--space-2);
+  letter-spacing: 0.05em;
+  text-transform: none;
+}
+
+.form__counter--warning {
+  color: var(--status-warning);
+}
+
+/* === Bouton submit avec spinner === */
+.form__submit {
+  position: relative;
+  margin-top: var(--space-2);
+}
+
+.form__spinner {
+  width: 18px;
+  height: 18px;
+  margin-left: var(--space-2);
+  display: none;
+  animation: spin 0.8s linear infinite;
+}
+
+.form__submit--loading .form__spinner {
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form__spinner { animation: none; }
+}
+
+/* === Mention RGPD === */
+.form__privacy {
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  line-height: var(--leading-snug);
+}
+
+/* =========================================
+   QUICK CONTACT (Cal.com / WhatsApp)
+   ========================================= */
+.quick-contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.quick-contact__btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.quick-contact__btn:hover {
+  border-color: var(--accent-main);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.quick-contact__btn--cal:hover {
+  border-color: var(--accent-main);
+  background-color: var(--accent-ghost);
+}
+
+.quick-contact__btn--whatsapp:hover {
+  border-color: #25D366;
+  background-color: rgba(37, 211, 102, 0.08);
+}
+
+.quick-contact__icon {
+  font-size: var(--text-2xl);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.quick-contact__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.quick-contact__title {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+}
+
+.quick-contact__sub {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+/* =========================================
+   FAQ items
+   ========================================= */
+.faq-item {
+  border-top: 1px solid var(--bg-tertiary);
+  padding: var(--space-3) 0;
+}
+
+.faq-item:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.faq-item summary {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  transition: color var(--transition-fast);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-family: var(--font-mono);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  color: var(--accent-light);
+  transition: transform var(--transition-fast);
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item summary:hover {
+  color: var(--accent-light);
+}
+
+.faq-item p {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-normal);
+}
+
 /* =========================================
    PAGE HEADERS (À propos, Projets, Contact)
    ========================================= */
