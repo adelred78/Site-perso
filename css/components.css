@@ -1606,7 +1606,528 @@
 }
 
 /* =========================================
-   QUICK CONTACT (Cal.com / WhatsApp)
+   CONTACT PAGE — Design éditorial pro
+   ========================================= */
+.contact-page {
+  --serif: 'Instrument Serif', Georgia, serif;
+  --warm-body: 'Manrope', system-ui, sans-serif;
+  padding-bottom: var(--space-20);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  align-items: start;
+  padding-top: var(--space-12);
+}
+
+@media (min-width: 1000px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: var(--space-16);
+  }
+}
+
+/* === Colonne gauche : Lead === */
+.contact-lead {
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  .contact-lead {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-8));
+  }
+}
+
+.contact-lead__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--accent-light);
+  margin-bottom: var(--space-6);
+}
+
+.contact-lead__eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background-color: var(--accent-main);
+}
+
+.contact-lead__title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw + 1rem, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.contact-lead__title em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent-light);
+  letter-spacing: -0.02em;
+}
+
+.contact-lead__intro {
+  font-family: var(--warm-body);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+  max-width: 44ch;
+  margin-bottom: var(--space-8);
+}
+
+.contact-lead__status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  background-color: color-mix(in srgb, var(--status-success) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--status-success) 30%, transparent);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-10);
+}
+
+.contact-lead__dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--status-success);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 var(--status-success);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--status-success) 60%, transparent); }
+  70% { box-shadow: 0 0 0 8px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-lead__dot { animation: none; }
+}
+
+/* === Channel buttons (Cal.com / WhatsApp) === */
+.contact-lead__channels {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-10);
+}
+
+.channel-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-6);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.channel-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent-main) 8%, transparent), transparent);
+  transition: left 0.6s ease;
+}
+
+.channel-btn:hover::before {
+  left: 100%;
+}
+
+.channel-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-main);
+  box-shadow: 0 12px 32px -12px color-mix(in srgb, var(--accent-main) 30%, transparent);
+}
+
+.channel-btn--whatsapp:hover {
+  border-color: #25D366;
+  box-shadow: 0 12px 32px -12px rgba(37, 211, 102, 0.35);
+}
+
+.channel-btn__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: color-mix(in srgb, var(--accent-main) 12%, transparent);
+  color: var(--accent-light);
+  flex-shrink: 0;
+}
+
+.channel-btn--whatsapp .channel-btn__icon {
+  background-color: rgba(37, 211, 102, 0.12);
+  color: #25D366;
+}
+
+.channel-btn__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.channel-btn__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.channel-btn__title {
+  font-family: var(--warm-body);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.channel-btn__sub {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.channel-btn__arrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xl);
+  color: var(--text-tertiary);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.channel-btn:hover .channel-btn__arrow {
+  transform: translate(2px, -2px);
+  color: var(--accent-light);
+}
+
+/* === Direct links (email, linkedin, github, location) === */
+.contact-lead__direct {
+  display: flex;
+  flex-direction: column;
+}
+
+.direct-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--bg-tertiary);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: padding-left var(--transition-fast), color var(--transition-fast);
+}
+
+.direct-link:last-child {
+  border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.direct-link:not(.direct-link--static):hover {
+  padding-left: var(--space-2);
+  color: var(--accent-light);
+}
+
+.direct-link__label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--text-tertiary);
+  flex-shrink: 0;
+  min-width: 80px;
+}
+
+.direct-link__value {
+  font-family: var(--warm-body);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.direct-link:hover .direct-link__value {
+  color: var(--accent-light);
+}
+
+/* === Colonne droite : Form card pro === */
+.contact-form-wrap {
+  position: relative;
+}
+
+.contact-form-pro {
+  position: relative;
+  background-color: color-mix(in srgb, var(--bg-secondary) 80%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 700px) {
+  .contact-form-pro {
+    padding: var(--space-10);
+  }
+}
+
+/* Glow accent autour de la card */
+.contact-form-pro::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-main) 35%, transparent), transparent 50%);
+  z-index: -1;
+  opacity: 0.6;
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.contact-form-pro__head {
+  margin-bottom: var(--space-8);
+}
+
+.contact-form-pro__title {
+  font-family: var(--serif);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: var(--space-2);
+}
+
+.contact-form-pro__sub {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+}
+
+/* === Form pro avec floating labels === */
+.form-pro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-field__input {
+  width: 100%;
+  padding: var(--space-6) var(--space-4) var(--space-3);
+  font-family: var(--warm-body);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base), background-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.form-field__input::placeholder {
+  color: transparent;
+}
+
+.form-field__input:focus {
+  outline: none;
+  border-color: var(--accent-main);
+  background-color: color-mix(in srgb, var(--bg-primary) 50%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-main) 12%, transparent);
+}
+
+.form-field__label {
+  position: absolute;
+  top: 50%;
+  left: var(--space-4);
+  transform: translateY(-50%);
+  font-family: var(--warm-body);
+  font-size: var(--text-base);
+  color: var(--text-tertiary);
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background-color: transparent;
+}
+
+/* Floating : remonte quand focus ou rempli */
+.form-field__input:focus + .form-field__label,
+.form-field__input:not(:placeholder-shown) + .form-field__label,
+.form-field--select .form-field__input:valid + .form-field__label {
+  top: var(--space-3);
+  transform: translateY(0);
+  font-size: var(--text-xs);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--accent-light);
+}
+
+/* Textarea spécifique */
+.form-field__input--textarea {
+  min-height: 140px;
+  resize: vertical;
+  padding-top: var(--space-8);
+}
+
+.form-field__input--textarea + .form-field__label {
+  top: var(--space-5);
+  transform: translateY(0);
+}
+
+.form-field__input--textarea:focus + .form-field__label,
+.form-field__input--textarea:not(:placeholder-shown) + .form-field__label {
+  top: var(--space-3);
+}
+
+/* Select spécifique */
+.form-field--select {
+  position: relative;
+}
+
+.form-field--select .form-field__input {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: var(--space-10);
+  cursor: pointer;
+}
+
+.form-field--select::after {
+  content: '';
+  position: absolute;
+  right: var(--space-5);
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--text-secondary);
+  border-bottom: 2px solid var(--text-secondary);
+  transform: translateY(-75%) rotate(45deg);
+  pointer-events: none;
+  transition: border-color var(--transition-fast);
+}
+
+.form-field--select:hover::after {
+  border-color: var(--accent-light);
+}
+
+/* État erreur sur form-field */
+.form-field__input--error,
+.form-field__input[aria-invalid='true'] {
+  border-color: var(--status-error) !important;
+}
+
+.form-field__input--error:focus,
+.form-field__input[aria-invalid='true']:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+}
+
+/* Counter en bas à droite */
+.form-pro .form__counter {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+/* === Bouton submit pro === */
+.button-pro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-8);
+  font-family: var(--warm-body);
+  font-size: var(--text-base);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--bg-primary);
+  background: linear-gradient(135deg, var(--accent-light), var(--accent-main));
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  align-self: flex-start;
+  margin-top: var(--space-2);
+  position: relative;
+  overflow: hidden;
+}
+
+.button-pro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--accent-main), var(--accent-hover));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button-pro:hover::before {
+  opacity: 1;
+}
+
+.button-pro > * {
+  position: relative;
+}
+
+.button-pro:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -8px color-mix(in srgb, var(--accent-main) 50%, transparent);
+}
+
+.button-pro:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button-pro__arrow {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-base);
+}
+
+.button-pro:hover .button-pro__arrow {
+  transform: translateX(4px);
+}
+
+.form__submit--loading .button-pro__arrow {
+  display: none;
+}
+
+/* =========================================
+   QUICK CONTACT (Cal.com / WhatsApp) — legacy
    ========================================= */
 .quick-contact {
   display: flex;

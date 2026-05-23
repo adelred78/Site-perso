@@ -23,7 +23,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;600&family=Onest:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&family=Onest:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="/css/tokens.css" />
     <link rel="stylesheet" href="/css/base.css" />
@@ -53,122 +53,138 @@
       </div>
     </header>
 
-    <main id="main" class="main main--padded">
-      <section class="container">
-        <header class="page-header">
-          <h1>Let's work together</h1>
-          <p>Internship, apprenticeship, freelance project, or just a tech chat: I'm open. Best
-            channel is email — I reply within 24 to 48 hours.</p>
-        </header>
-      </section>
+    <main id="main" class="main main--padded contact-page">
+      <section class="container contact-layout">
 
-      <section class="container section">
-        <div class="grid grid--2 contact-grid">
-          <article class="contact-form-card">
-            <h2>Send me a message</h2>
-            <form data-contact-form data-formspree-endpoint="https://formspree.io/f/xnjwkngv" novalidate>
+        <div class="contact-lead">
+          <span class="contact-lead__eyebrow">REACH OUT · 2026</span>
+          <h1 class="contact-lead__title">
+            Let's<br />
+            <em>work together.</em>
+          </h1>
+          <p class="contact-lead__intro">
+            Internship, apprenticeship, freelance project, or just a tech chat.
+            I reply within 24-48 hours.
+          </p>
+
+          <div class="contact-lead__status">
+            <span class="contact-lead__dot" aria-hidden="true"></span>
+            <span>Available · Apprenticeship from September 2026</span>
+          </div>
+
+          <div class="contact-lead__channels">
+            <a href="https://cal.com/adelredjemi" target="_blank" rel="noopener" class="channel-btn channel-btn--cal">
+              <span class="channel-btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </span>
+              <span class="channel-btn__body">
+                <span class="channel-btn__title">Book a call</span>
+                <span class="channel-btn__sub">15 min on Cal.com</span>
+              </span>
+              <span class="channel-btn__arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a href="https://wa.me/33619346481" target="_blank" rel="noopener" class="channel-btn channel-btn--whatsapp">
+              <span class="channel-btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+              </span>
+              <span class="channel-btn__body">
+                <span class="channel-btn__title">WhatsApp</span>
+                <span class="channel-btn__sub">Quick reply</span>
+              </span>
+              <span class="channel-btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="contact-lead__direct">
+            <a href="mailto:redjemitechkraft@gmail.com" class="direct-link">
+              <span class="direct-link__label">EMAIL</span>
+              <span class="direct-link__value">redjemitechkraft@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener" class="direct-link">
+              <span class="direct-link__label">LINKEDIN</span>
+              <span class="direct-link__value">m-redjemi <span aria-hidden="true">↗</span></span>
+            </a>
+            <a href="https://github.com/adelred78" target="_blank" rel="noopener" class="direct-link">
+              <span class="direct-link__label">GITHUB</span>
+              <span class="direct-link__value">adelred78 <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="direct-link direct-link--static">
+              <span class="direct-link__label">LOCATION</span>
+              <span class="direct-link__value">Paris &amp; Île-de-France</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <article class="contact-form-pro">
+            <header class="contact-form-pro__head">
+              <h2 class="contact-form-pro__title">Send a message</h2>
+              <p class="contact-form-pro__sub">Reply within 24-48h on business days</p>
+            </header>
+
+            <form
+              data-contact-form
+              data-formspree-endpoint="https://formspree.io/f/xnjwkngv"
+              novalidate
+              class="form-pro"
+            >
               <div class="form__honeypot" aria-hidden="true">
                 <label>Don't fill this
                   <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
                 </label>
               </div>
 
-              <div class="form__group">
-                <label for="name" class="form__label">Name</label>
-                <input type="text" id="name" name="name" required minlength="2" autocomplete="name" class="form__input" placeholder="Your name" />
+              <div class="form-field">
+                <input type="text" id="name" name="name" required minlength="2" autocomplete="name" class="form-field__input" placeholder=" " />
+                <label for="name" class="form-field__label">Your name</label>
                 <p class="form__error" data-error-for="name" aria-live="polite"></p>
               </div>
-              <div class="form__group">
-                <label for="email" class="form__label">Email</label>
-                <input type="email" id="email" name="email" required autocomplete="email" class="form__input" placeholder="your.email@example.com" />
+
+              <div class="form-field">
+                <input type="email" id="email" name="email" required autocomplete="email" class="form-field__input" placeholder=" " />
+                <label for="email" class="form-field__label">Email</label>
                 <p class="form__error" data-error-for="email" aria-live="polite"></p>
               </div>
-              <div class="form__group">
-                <label for="subject" class="form__label">Subject</label>
-                <select id="subject" name="subject" required class="form__select">
-                  <option value="">— Choose a subject —</option>
+
+              <div class="form-field form-field--select">
+                <select id="subject" name="subject" required class="form-field__input">
+                  <option value=""></option>
                   <option value="internship">Internship</option>
                   <option value="apprenticeship">Apprenticeship</option>
                   <option value="project">Freelance project</option>
                   <option value="call">Book a call</option>
                   <option value="other">Other</option>
                 </select>
+                <label for="subject" class="form-field__label">Subject</label>
                 <p class="form__error" data-error-for="subject" aria-live="polite"></p>
               </div>
-              <div class="form__group">
-                <label for="message" class="form__label">Message <span class="form__counter" data-char-counter>0 / 1000</span></label>
-                <textarea id="message" name="message" required minlength="20" maxlength="1000" class="form__textarea" placeholder="Describe your request in a few sentences (20 characters minimum)"></textarea>
+
+              <div class="form-field">
+                <textarea id="message" name="message" required minlength="20" maxlength="1000" class="form-field__input form-field__input--textarea" placeholder=" "></textarea>
+                <label for="message" class="form-field__label">Your message</label>
+                <span class="form__counter" data-char-counter aria-live="polite">0 / 1000</span>
                 <p class="form__error" data-error-for="message" aria-live="polite"></p>
               </div>
-              <button type="submit" class="button button--primary form__submit">
-                <span class="form__submit-label">Send message</span>
+
+              <button type="submit" class="button-pro form__submit">
+                <span class="form__submit-label">Send</span>
+                <svg class="button-pro__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
                 <svg class="form__spinner" viewBox="0 0 24 24" aria-hidden="true">
                   <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="50 50" />
                 </svg>
               </button>
+
               <p class="form__privacy">
-                🔒 Your data is only used to reply to you.
-                No tracking, no newsletter, no sharing.
+                🔒 Your data is only used to reply to you. No tracking, no newsletter.
               </p>
+
               <div data-form-feedback class="form__feedback is-hidden" role="status" aria-live="polite"></div>
             </form>
           </article>
-
-          <aside class="contact-sidebar">
-            <div class="sidebar-box">
-              <h3>Quick contact</h3>
-              <div class="quick-contact">
-                <a href="https://cal.com/adelredjemi" target="_blank" rel="noopener" class="quick-contact__btn quick-contact__btn--cal">
-                  <span class="quick-contact__icon" aria-hidden="true">📅</span>
-                  <span class="quick-contact__body">
-                    <span class="quick-contact__title">Book a call</span>
-                    <span class="quick-contact__sub">15 min · Cal.com</span>
-                  </span>
-                </a>
-                <a href="https://wa.me/33619346481" target="_blank" rel="noopener" class="quick-contact__btn quick-contact__btn--whatsapp">
-                  <span class="quick-contact__icon" aria-hidden="true">💬</span>
-                  <span class="quick-contact__body">
-                    <span class="quick-contact__title">WhatsApp</span>
-                    <span class="quick-contact__sub">Quick reply</span>
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div class="sidebar-box">
-              <h3>Other channels</h3>
-              <ul class="contact-list">
-                <li>📧 <a href="mailto:redjemitechkraft@gmail.com">redjemitechkraft@gmail.com</a></li>
-                <li>💼 <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener">LinkedIn — m-redjemi</a></li>
-                <li>💻 <a href="https://github.com/adelred78" target="_blank" rel="noopener">GitHub — adelred78</a></li>
-                <li>📍 Paris &amp; Île-de-France</li>
-              </ul>
-            </div>
-
-            <div class="sidebar-box">
-              <h3>Current availability</h3>
-              <ul>
-                <li>🟢 Interning at Glikt until mid-June 2026</li>
-                <li>🔍 Open to apprenticeship starting September 2026</li>
-              </ul>
-            </div>
-
-            <div class="sidebar-box">
-              <h3>FAQ</h3>
-              <details class="faq-item">
-                <summary>How fast do you reply?</summary>
-                <p>Within 24-48h on business days. WhatsApp is often faster.</p>
-              </details>
-              <details class="faq-item">
-                <summary>Do you take freelance work?</summary>
-                <p>Yes, on scoped missions compatible with my internship. Let's talk.</p>
-              </details>
-              <details class="faq-item">
-                <summary>Where do you work from?</summary>
-                <p>Paris &amp; Île-de-France in person. Remote anywhere.</p>
-              </details>
-            </div>
-          </aside>
         </div>
       </section>
     </main>
