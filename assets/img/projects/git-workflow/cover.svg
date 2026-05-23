@@ -1,28 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Git et GitHub">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Logos Git et GitHub">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0A0F1C" />
-      <stop offset="1" stop-color="#0F172A" />
+      <stop offset="0" stop-color="#1a1208" />
+      <stop offset="0.5" stop-color="#0F172A" />
+      <stop offset="1" stop-color="#15101F" />
     </linearGradient>
-    <radialGradient id="aurora-1" cx="0.2" cy="0.2" r="0.7">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.18" />
-      <stop offset="0.5" stop-color="#38BDF8" stop-opacity="0.04" />
-      <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+    <radialGradient id="orange-glow" cx="0.28" cy="0.5" r="0.35">
+      <stop offset="0" stop-color="#F05032" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#F05032" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="aurora-2" cx="0.85" cy="0.9" r="0.65">
-      <stop offset="0" stop-color="#F8FAFC" stop-opacity="0.06" />
+    <radialGradient id="cream-glow" cx="0.72" cy="0.5" r="0.35">
+      <stop offset="0" stop-color="#F8FAFC" stop-opacity="0.12" />
       <stop offset="1" stop-color="#F8FAFC" stop-opacity="0" />
     </radialGradient>
 
-    <linearGradient id="git-gradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7DD3FC" />
-      <stop offset="1" stop-color="#0EA5E9" />
+    <linearGradient id="git-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F05032" />
+      <stop offset="1" stop-color="#C73B22" />
+    </linearGradient>
+    <linearGradient id="github-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E1E1E" />
+      <stop offset="1" stop-color="#0D1117" />
     </linearGradient>
 
-    <filter id="logo-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12" />
+      <feOffset dx="0" dy="14" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.55" />
+      </feComponentTransfer>
       <feMerge>
-        <feMergeNode in="blur" />
+        <feMergeNode />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
@@ -30,60 +38,96 @@
 
   <!-- Fond -->
   <rect width="1600" height="900" fill="url(#bg)" />
-  <rect width="1600" height="900" fill="url(#aurora-1)" />
-  <rect width="1600" height="900" fill="url(#aurora-2)" />
+  <rect width="1600" height="900" fill="url(#orange-glow)" />
+  <rect width="1600" height="900" fill="url(#cream-glow)" />
 
-  <!-- Lignes horizontales très subtiles (effet ligne éditoriale) -->
-  <g stroke="#FFFFFF" stroke-opacity="0.04">
-    <line x1="80" y1="150" x2="1520" y2="150" />
-    <line x1="80" y1="750" x2="1520" y2="750" />
+  <!-- Lignes de connexion verticales subtiles en arrière-plan -->
+  <g stroke="#F05032" stroke-opacity="0.05" stroke-width="1">
+    <line x1="400" y1="0" x2="400" y2="900" />
+    <line x1="800" y1="0" x2="800" y2="900" />
+    <line x1="1200" y1="0" x2="1200" y2="900" />
   </g>
 
-  <!-- HEADER éditorial très propre -->
-  <g transform="translate(80 110)" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="3" fill="#64748B">
-    <text>VERSION CONTROL · WORKFLOW</text>
-    <text x="1440" text-anchor="end" fill="#475569">001 / GIT — GITHUB</text>
+  <!-- Pill badge -->
+  <g transform="translate(80 80)">
+    <rect width="260" height="40" rx="8" fill="#F05032" fill-opacity="0.15" stroke="#F05032" stroke-opacity="0.5" />
+    <text x="22" y="26" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" letter-spacing="2" fill="#FB923C">GIT · GITHUB</text>
   </g>
 
-  <!-- ============================== -->
-  <!-- LOGO GIT (gauche) -->
-  <!-- ============================== -->
-  <g transform="translate(440 480)" filter="url(#logo-glow)">
-    <!-- Diamant -->
-    <g transform="rotate(45)">
-      <rect x="-150" y="-150" width="300" height="300" rx="20" fill="none" stroke="url(#git-gradient)" stroke-width="9" />
-    </g>
-
-    <!-- Branches -->
-    <g stroke="url(#git-gradient)" stroke-width="9" stroke-linecap="round" fill="none">
-      <path d="M -95 0 L 95 0" />
-      <path d="M 12 0 Q 12 -68, 80 -68" />
-    </g>
-
-    <!-- Commits -->
-    <g fill="#7DD3FC">
-      <circle cx="-95" cy="0" r="20" />
-      <circle cx="95" cy="0" r="20" />
-      <circle cx="80" cy="-68" r="18" />
-    </g>
-    <g fill="#0A0F1C">
-      <circle cx="-95" cy="0" r="8" />
-      <circle cx="95" cy="0" r="8" />
-      <circle cx="80" cy="-68" r="7" />
-    </g>
-  </g>
-
-  <!-- Séparateur central très fin -->
-  <g transform="translate(800 480)">
-    <line x1="0" y1="-90" x2="0" y2="90" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
-    <text y="6" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2" fill="#64748B">×</text>
+  <!-- Titre -->
+  <g font-family="Bricolage Grotesque, sans-serif" letter-spacing="-0.03em">
+    <text x="80" y="230" font-size="92" font-weight="800" fill="#F8FAFC">build.</text>
+    <text x="80" y="230" font-size="92" font-weight="800" fill="#FB923C" dx="290">commit.</text>
+    <text x="80" y="230" font-size="92" font-weight="800" fill="#F8FAFC" dx="660">ship.</text>
   </g>
 
   <!-- ============================== -->
-  <!-- LOGO GITHUB (droite) -->
+  <!-- CARTE GIT (orange) -->
   <!-- ============================== -->
-  <g transform="translate(1160 480)" filter="url(#logo-glow)">
-    <g transform="scale(2.4)">
+  <g transform="translate(340 600) rotate(-5)" filter="url(#card-shadow)">
+    <!-- Card body -->
+    <rect x="-220" y="-180" width="440" height="360" rx="28" fill="url(#git-card)" />
+
+    <!-- Texture pointillée subtile sur la card -->
+    <g fill="#FFFFFF" fill-opacity="0.06">
+      <circle cx="-180" cy="-140" r="2" />
+      <circle cx="-100" cy="-150" r="1.5" />
+      <circle cx="120" cy="-100" r="2.2" />
+      <circle cx="180" cy="-160" r="1.8" />
+      <circle cx="-140" cy="130" r="2" />
+      <circle cx="150" cy="140" r="1.6" />
+      <circle cx="0" cy="150" r="2.4" />
+    </g>
+
+    <!-- Diamant Git officiel -->
+    <g transform="translate(0 -20)">
+      <g transform="rotate(45)">
+        <rect x="-78" y="-78" width="156" height="156" rx="14" fill="none" stroke="#FFFFFF" stroke-width="8" />
+      </g>
+      <!-- Branches internes -->
+      <g stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none">
+        <path d="M -48 0 L 48 0" />
+        <path d="M 6 0 Q 6 -34, 40 -34" />
+      </g>
+      <g fill="#FFFFFF" stroke="#F05032" stroke-width="3">
+        <circle cx="-48" cy="0" r="11" />
+        <circle cx="48" cy="0" r="11" />
+        <circle cx="40" cy="-34" r="10" />
+      </g>
+    </g>
+
+    <!-- Label -->
+    <g transform="translate(0 130)">
+      <text text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">Git</text>
+      <text y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="2.5" fill="#FED7AA">VERSION  CONTROL</text>
+    </g>
+
+    <!-- Coin perforation (style stamp) -->
+    <g fill="#0F172A" opacity="0.4">
+      <circle cx="-220" cy="-180" r="14" />
+      <circle cx="220" cy="-180" r="14" />
+      <circle cx="-220" cy="180" r="14" />
+      <circle cx="220" cy="180" r="14" />
+    </g>
+  </g>
+
+  <!-- ============================== -->
+  <!-- CARTE GITHUB (dark) -->
+  <!-- ============================== -->
+  <g transform="translate(1180 600) rotate(5)" filter="url(#card-shadow)">
+    <!-- Card body -->
+    <rect x="-220" y="-180" width="440" height="360" rx="28" fill="url(#github-card)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5" />
+
+    <!-- Texture pointillée -->
+    <g fill="#FFFFFF" fill-opacity="0.06">
+      <circle cx="-180" cy="-140" r="2" />
+      <circle cx="160" cy="-150" r="1.5" />
+      <circle cx="-100" cy="140" r="2.2" />
+      <circle cx="170" cy="140" r="1.8" />
+    </g>
+
+    <!-- Octocat -->
+    <g transform="translate(0 -20) scale(1.85)">
       <path d="M 0,-58
                C -32,-58 -58,-32 -58,0
                C -58,25 -42,46 -19,53
@@ -110,23 +154,36 @@
                C 2,52 3,54 6,53
                C 29,46 45,25 45,0
                C 45,-32 19,-58 0,-58 Z"
-            fill="#F8FAFC" />
+            fill="#FFFFFF" />
+    </g>
+
+    <!-- Label -->
+    <g transform="translate(0 130)">
+      <text text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">GitHub</text>
+      <text y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="2.5" fill="#94A3B8">REMOTE  HOSTING</text>
+    </g>
+
+    <!-- Perforation coins -->
+    <g fill="#0F172A" opacity="0.4">
+      <circle cx="-220" cy="-180" r="14" />
+      <circle cx="220" cy="-180" r="14" />
+      <circle cx="-220" cy="180" r="14" />
+      <circle cx="220" cy="180" r="14" />
     </g>
   </g>
 
-  <!-- Labels sous les logos -->
-  <g transform="translate(0 720)" font-family="Bricolage Grotesque, sans-serif" letter-spacing="-0.03em">
-    <text x="440" y="0" text-anchor="middle" font-size="42" font-weight="700" fill="#F8FAFC">Git</text>
-    <text x="1160" y="0" text-anchor="middle" font-size="42" font-weight="700" fill="#F8FAFC">GitHub</text>
+  <!-- "&" entre les deux cartes -->
+  <g transform="translate(760 600)">
+    <circle r="44" fill="#0F172A" stroke="#FB923C" stroke-width="2.5" />
+    <text text-anchor="middle" y="22" font-family="Bricolage Grotesque, sans-serif" font-size="56" font-weight="800" fill="#FB923C" letter-spacing="-0.04em">&amp;</text>
   </g>
 
-  <g transform="translate(0 770)" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="3" fill="#475569">
-    <text x="440" text-anchor="middle">DISTRIBUTED  SCM</text>
-    <text x="1160" text-anchor="middle">CLOUD  PLATFORM</text>
-  </g>
-
-  <!-- Tagline bottom -->
-  <g transform="translate(80 830)" font-family="JetBrains Mono, monospace" font-size="12" fill="#475569" letter-spacing="2.5">
-    <text>$ track · branch · merge · ship</text>
+  <!-- Étoiles décoratives -->
+  <g fill="#FB923C" opacity="0.5">
+    <circle cx="80" cy="500" r="2" />
+    <circle cx="1480" cy="380" r="2.4" />
+    <circle cx="120" cy="820" r="1.6" />
+    <circle cx="1540" cy="780" r="1.8" />
+    <circle cx="760" cy="180" r="2" />
   </g>
 </svg>
