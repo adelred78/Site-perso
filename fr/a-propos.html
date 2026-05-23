@@ -23,7 +23,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;600&family=Onest:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&family=Onest:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="/css/tokens.css" />
     <link rel="stylesheet" href="/css/base.css" />
@@ -53,105 +53,213 @@
       </div>
     </header>
 
-    <main id="main" class="main main--padded">
-      <!-- HERO -->
-      <section class="container">
-        <header class="page-header">
-          <h1>À propos</h1>
-          <p>Étudiant en première année de Bachelor Informatique à l'EPSI Paris. Ce que j'aime :
-              comprendre les systèmes, casser des trucs pour les réparer, et livrer un projet qui
-              marche.</p>
+    <main id="main" class="main main--padded about-page">
+
+      <!-- HERO MAGAZINE -->
+      <article class="about-article">
+        <header class="about-hero">
+          <div class="container">
+            <span class="about-hero__eyebrow">PORTRAIT · 2026 · 5 MIN DE LECTURE</span>
+            <h1 class="about-hero__title">
+              Étudiant en informatique,<br />
+              <em>en construction.</em>
+            </h1>
+            <p class="about-hero__lede">
+              Bachelor 1 EPSI Paris, stage Full Stack chez Glikt, je construis ma polyvalence sur
+              trois axes : web, systèmes embarqués et IA. Voici l'histoire derrière le portfolio.
+            </p>
+            <div class="about-hero__meta">
+              <span>Par Adel Redjemi</span>
+              <span aria-hidden="true">·</span>
+              <span>Mai 2026</span>
+              <span aria-hidden="true">·</span>
+              <span>5 min</span>
+            </div>
+          </div>
         </header>
-      </section>
 
-      <!-- STORY -->
-      <section class="section">
-        <div class="container">
-          <article class="story">
-            <h2 class="section__title">Mon parcours</h2>
-            <p>
-              J'ai obtenu mon baccalauréat mathématiques avec mention Très Bien (16,28/20) en
-              juillet 2025 au lycée Amara Rachid, à Alger. En parallèle, j'avais déjà commencé à
-              coder : une formation intensive en développement web chez Code213 (Alger), 192
-              heures de HTML, CSS et introduction au JavaScript. C'est là que j'ai compris que
-              c'était ça que je voulais faire.
-            </p>
-            <p>
-              J'ai rejoint l'EPSI Paris en 2025 pour mon Bachelor Informatique. Aujourd'hui, je
-              suis en stage Full Stack chez Glikt à Courbevoie.
-            </p>
+        <!-- IMAGE COVER -->
+        <figure class="about-figure about-figure--cover">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&q=80&auto=format&fit=crop" alt="Code sur écran d'ordinateur" loading="lazy" />
+          <figcaption>L'écran de mon laptop pendant un sprint nocturne — projet HydroTrack, hiver 2025.</figcaption>
+        </figure>
 
-            <h2 class="section__title">
-              Pourquoi l'informatique
-            </h2>
-            <p>
-              Ce qui m'attire, ce n'est pas juste d'écrire du code. C'est de comprendre comment
-              tout tient debout. Du paquet TCP qui voyage, à la requête SQL qui répond, au CSS
-              qui aligne un bouton — tout est connecté. J'aime cette dimension pile complète.
-            </p>
-            <p>
-              À l'EPSI, je n'ai pas voulu me spécialiser trop vite. Je vise l'excellence sur
-              trois axes : <strong>web, systèmes embarqués et IA</strong>. Quand je serai plus avancé,
-              j'approfondirai. Pour l'instant, je construis sur les trois.
+        <!-- BODY MAGAZINE -->
+        <div class="about-body">
+
+          <!-- I. PARCOURS -->
+          <section class="about-section">
+            <h2 class="about-h2"><span class="about-h2__num">I.</span> Du lycée Amara Rachid à l'EPSI Paris</h2>
+
+            <p class="about-p about-p--lead">
+              <span class="dropcap">J</span>'ai grandi avec les maths. Au lycée Amara Rachid, à
+              Ben Aknoun (Alger), j'ai choisi la filière mathématiques par envie, pas par calcul.
+              En juillet 2025, j'ai obtenu mon bac avec <strong>mention Très Bien — 16,28/20</strong>.
+              Le diplôme n'était pas une fin, c'était une porte.
             </p>
 
-            <h2 class="section__title">
-              Comment je travaille
-            </h2>
-            <p>
-              J'apprends en construisant. Théorie le matin, code l'après-midi. Quand un truc
-              casse, je ne le contourne pas — je veux savoir pourquoi. C'est souvent là que
+            <p class="about-p">
+              En parallèle, je m'étais déjà mis au code. Une formation intensive en développement
+              web chez Code213 — 192 heures de HTML, CSS et introduction au JavaScript. C'est là
+              que j'ai compris que ce n'était pas juste un hobby, mais ce que je voulais faire
+              vraiment.
+            </p>
+
+            <figure class="about-figure about-figure--inset about-figure--right">
+              <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=900&q=80&auto=format&fit=crop" alt="Tableau couvert d'équations mathématiques" loading="lazy" />
+              <figcaption>Le bac maths, terrain d'entraînement à la rigueur algorithmique.</figcaption>
+            </figure>
+
+            <p class="about-p">
+              En septembre 2025, j'ai rejoint l'<strong>EPSI Paris</strong> pour mon Bachelor
+              Informatique. École d'ingénieur informatique implantée à Courbevoie (La Défense),
+              avec un programme volontairement large : algorithmique, dev web, virtualisation,
+              IoT, VR, architecture réseau. De quoi explorer sans se fermer de portes.
+            </p>
+
+            <p class="about-p">
+              Aujourd'hui, je suis en <strong>stage Full Stack chez Glikt</strong> à Courbevoie
+              jusqu'à mi-juin 2026. Ma première vraie immersion en entreprise.
+            </p>
+          </section>
+
+          <!-- PULL QUOTE -->
+          <blockquote class="about-pullquote">
+            « Ce qui m'attire, ce n'est pas juste d'écrire du code.
+            C'est de comprendre comment tout tient debout. »
+          </blockquote>
+
+          <!-- II. POURQUOI L'INFORMATIQUE -->
+          <section class="about-section">
+            <h2 class="about-h2"><span class="about-h2__num">II.</span> Pourquoi l'informatique</h2>
+
+            <p class="about-p">
+              Du paquet TCP qui voyage, à la requête SQL qui répond, au CSS qui aligne un bouton —
+              tout est connecté. C'est cette dimension <strong>pile complète</strong> qui me
+              fascine. Je veux comprendre comment le clic d'un utilisateur déclenche une cascade
+              jusqu'au serveur, à la base, et revient à l'écran.
+            </p>
+
+            <figure class="about-figure about-figure--full">
+              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80&auto=format&fit=crop" alt="Bâtiment moderne en verre, type campus" loading="lazy" />
+              <figcaption>Le campus EPSI à Courbevoie — entre la Défense et le périphérique.</figcaption>
+            </figure>
+
+            <p class="about-p">
+              À l'EPSI, je n'ai pas voulu me spécialiser trop vite. Je vise l'excellence sur trois
+              axes : <strong>web</strong>, <strong>systèmes embarqués</strong> et
+              <strong>intelligence artificielle</strong>. Quand je serai plus avancé,
+              j'approfondirai. Pour l'instant, je construis sur les trois en parallèle —
+              SmartBike pour le web, HydroTrack pour l'IoT, et je commence à manipuler l'IA via
+              Claude Code et Gemini au quotidien.
+            </p>
+          </section>
+
+          <!-- III. COMMENT JE TRAVAILLE -->
+          <section class="about-section">
+            <h2 class="about-h2"><span class="about-h2__num">III.</span> Comment je travaille</h2>
+
+            <p class="about-p">
+              J'apprends en construisant. Théorie le matin, code l'après-midi. Quand un truc casse,
+              je ne le contourne pas — je veux savoir <em>pourquoi</em>. C'est souvent là que
               j'apprends le plus.
             </p>
-            <p>
-              En équipe, j'aime les rôles concrets. Sur le Rube Goldberg, j'étais responsable de
-              la conception Tinkercad. On a gagné le concours.
-            </p>
-          </article>
-        </div>
-      </section>
 
-      <!-- TIMELINE -->
+            <p class="about-p">
+              En équipe, je préfère les rôles concrets. Sur le projet Rube Goldberg, j'étais
+              responsable de la conception 3D sur Tinkercad. Un module précis, un délai serré, une
+              démo devant jury. Résultat : <strong>1ère place locale</strong> avec qualification
+              au niveau national.
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <!-- TIMELINE PRO -->
       <section class="section">
         <div class="container">
           <header class="section__heading">
-            <h2 class="section__title">Parcours</h2>
+            <span class="section__eyebrow">CHRONOLOGIE</span>
+            <h2 class="section__title">Mon parcours</h2>
           </header>
-          <div class="timeline">
-            <article class="timeline__item">
-              <p class="timeline__date">Mi-avril → mi-juin 2026</p>
-              <h3 class="timeline__title">Stage Full Stack</h3>
-              <p class="timeline__institution">Glikt — Courbevoie (92)</p>
-              <p>
-                Participation au développement de l'infrastructure globale : idéation, rédaction
-                technique, UI/UX, front-end, back-end, bases de données.
-              </p>
-            </article>
-            <article class="timeline__item">
-              <p class="timeline__date">2025 – 2026</p>
-              <h3 class="timeline__title">Bachelor 1 Informatique</h3>
-              <p class="timeline__institution">EPSI Paris — Courbevoie (92)</p>
-              <p>
-                Algorithmique, HTML/CSS, PHP/MySQL, Python, SQL, virtualisation, IoT, VR,
-                architecture réseau.
-              </p>
-            </article>
-            <article class="timeline__item">
-              <p class="timeline__date">2025 – 2026</p>
-              <h3 class="timeline__title">Formation Développement Web</h3>
-              <p class="timeline__institution">Code213 — El Biar, Alger</p>
-              <p>
-                Formation intensive 192h : HTML, CSS, introduction JavaScript. Interrompue pour
-                mobilité internationale.
-              </p>
-            </article>
-            <article class="timeline__item">
-              <p class="timeline__date">Juillet 2025</p>
-              <h3 class="timeline__title">Baccalauréat Mathématiques</h3>
-              <p class="timeline__institution">Lycée Amara Rachid — Ben Aknoun, Alger</p>
-              <p>Diplôme obtenu avec <strong>mention Très Bien</strong> — <strong>16,28/20</strong>.</p>
-            </article>
-          </div>
+
+          <ol class="timeline-pro" aria-label="Parcours chronologique">
+            <li class="timeline-pro__item" data-phase="now">
+              <div class="timeline-pro__rail" aria-hidden="true">
+                <span class="timeline-pro__dot"></span>
+              </div>
+              <div class="timeline-pro__date">
+                <span class="timeline-pro__date-main">Mi-avril → mi-juin 2026</span>
+                <span class="timeline-pro__date-sub">2 mois · Temps plein</span>
+              </div>
+              <article class="timeline-pro__card">
+                <span class="timeline-pro__tag timeline-pro__tag--now">En cours</span>
+                <h3 class="timeline-pro__title">Stage Full Stack</h3>
+                <p class="timeline-pro__institution">Glikt · Courbevoie (92)</p>
+                <p class="timeline-pro__body">
+                  Participation au développement de l'infrastructure globale : idéation,
+                  rédaction technique, UI/UX, front-end, back-end et bases de données.
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline-pro__item" data-phase="school">
+              <div class="timeline-pro__rail" aria-hidden="true">
+                <span class="timeline-pro__dot"></span>
+              </div>
+              <div class="timeline-pro__date">
+                <span class="timeline-pro__date-main">2025 — 2026</span>
+                <span class="timeline-pro__date-sub">Bachelor 1</span>
+              </div>
+              <article class="timeline-pro__card">
+                <span class="timeline-pro__tag">Formation</span>
+                <h3 class="timeline-pro__title">Bachelor Informatique</h3>
+                <p class="timeline-pro__institution">EPSI Paris · Courbevoie (92)</p>
+                <p class="timeline-pro__body">
+                  Algorithmique · HTML/CSS · PHP/MySQL · Python · SQL · Virtualisation · IoT · VR ·
+                  Architecture réseau.
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline-pro__item" data-phase="bootcamp">
+              <div class="timeline-pro__rail" aria-hidden="true">
+                <span class="timeline-pro__dot"></span>
+              </div>
+              <div class="timeline-pro__date">
+                <span class="timeline-pro__date-main">2025</span>
+                <span class="timeline-pro__date-sub">Bootcamp 192h</span>
+              </div>
+              <article class="timeline-pro__card">
+                <span class="timeline-pro__tag">Bootcamp</span>
+                <h3 class="timeline-pro__title">Formation Développement Web</h3>
+                <p class="timeline-pro__institution">Code213 · El Biar, Alger</p>
+                <p class="timeline-pro__body">
+                  Formation intensive : HTML, CSS, introduction JavaScript. Interrompue
+                  volontairement pour la mobilité vers la France.
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline-pro__item" data-phase="bac">
+              <div class="timeline-pro__rail" aria-hidden="true">
+                <span class="timeline-pro__dot"></span>
+              </div>
+              <div class="timeline-pro__date">
+                <span class="timeline-pro__date-main">Juillet 2025</span>
+                <span class="timeline-pro__date-sub">Baccalauréat</span>
+              </div>
+              <article class="timeline-pro__card">
+                <span class="timeline-pro__tag timeline-pro__tag--gold">🏆 Mention TB</span>
+                <h3 class="timeline-pro__title">Bac Mathématiques</h3>
+                <p class="timeline-pro__institution">Lycée Amara Rachid · Ben Aknoun, Alger</p>
+                <p class="timeline-pro__body">
+                  Diplôme obtenu avec <strong>mention Très Bien</strong> —
+                  <strong>16,28/20</strong>.
+                </p>
+              </article>
+            </li>
+          </ol>
         </div>
       </section>
 

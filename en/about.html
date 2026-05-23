@@ -23,7 +23,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;600&family=Onest:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&family=Onest:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="/css/tokens.css" />
     <link rel="stylesheet" href="/css/base.css" />
@@ -53,92 +53,203 @@
       </div>
     </header>
 
-    <main id="main" class="main main--padded">
-      <section class="container">
-        <header class="page-header">
-          <h1>About</h1>
-          <p>First-year Bachelor's student in Computer Science at EPSI Paris. What I love:
-              understanding systems, breaking things to fix them, and shipping projects that work.</p>
-        </header>
-      </section>
+    <main id="main" class="main main--padded about-page">
 
-      <section class="section">
-        <div class="container">
-          <article class="story">
-            <h2 class="section__title">My background</h2>
-            <p>
-              I earned my mathematics baccalauréat with high honors (16.28/20) in July 2025 at
-              Lycée Amara Rachid in Algiers. In parallel, I had already started coding: an
-              intensive web development bootcamp at Code213 (Algiers), 192 hours of HTML, CSS and
-              JavaScript basics. That's when I knew this was what I wanted to do.
+      <article class="about-article">
+        <header class="about-hero">
+          <div class="container">
+            <span class="about-hero__eyebrow">PORTRAIT · 2026 · 5 MIN READ</span>
+            <h1 class="about-hero__title">
+              A computer science student,<br />
+              <em>under construction.</em>
+            </h1>
+            <p class="about-hero__lede">
+              Bachelor's Year 1 at EPSI Paris, currently doing a Full Stack internship at Glikt.
+              Building expertise across three axes: web, embedded systems and AI. Here's the
+              story behind the portfolio.
             </p>
-            <p>
-              I joined EPSI Paris in 2025 for my Bachelor's in Computer Science. Today, I'm doing a
-              Full Stack internship at Glikt in Courbevoie.
-            </p>
-
-            <h2 class="section__title">
-              Why computer science
-            </h2>
-            <p>
-              What draws me isn't just writing code. It's understanding how everything holds
-              together. From the TCP packet traveling, to the SQL query responding, to the CSS
-              aligning a button — everything is connected. I love that full-stack dimension.
-            </p>
-            <p>
-              At EPSI, I didn't want to specialize too early. I'm aiming for excellence across
-              three axes: <strong>web, embedded systems and AI</strong>. I'll dive deeper later. For
-              now, I'm building on all three.
-            </p>
-
-            <h2 class="section__title">
-              How I work
-            </h2>
-            <p>
-              I learn by building. Theory in the morning, code in the afternoon. When something
-              breaks, I don't work around it — I want to know why. That's usually where I learn
-              the most.
-            </p>
-            <p>
-              In teams, I like concrete roles. On the Rube Goldberg project, I was in charge of
-              the Tinkercad design. We won the contest.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <header class="section__heading"><h2 class="section__title">Path</h2></header>
-          <div class="timeline">
-            <article class="timeline__item">
-              <p class="timeline__date">Mid-April → Mid-June 2026</p>
-              <h3 class="timeline__title">Full Stack Internship</h3>
-              <p class="timeline__institution">Glikt — Courbevoie (92), France</p>
-              <p>
-                Contributing to the global infrastructure: ideation, technical writing, UI/UX,
-                front-end, back-end, databases.
-              </p>
-            </article>
-            <article class="timeline__item">
-              <p class="timeline__date">2025 – 2026</p>
-              <h3 class="timeline__title">Bachelor's Year 1 in CS</h3>
-              <p class="timeline__institution">EPSI Paris — Courbevoie (92)</p>
-              <p>Algorithms, HTML/CSS, PHP/MySQL, Python, SQL, virtualization, IoT, VR, network architecture.</p>
-            </article>
-            <article class="timeline__item">
-              <p class="timeline__date">2025 – 2026</p>
-              <h3 class="timeline__title">Web Development Bootcamp</h3>
-              <p class="timeline__institution">Code213 — El Biar, Algiers</p>
-              <p>Intensive 192-hour training: HTML, CSS, intro to JavaScript. Interrupted due to international move.</p>
-            </article>
-            <article class="timeline__item">
-              <p class="timeline__date">July 2025</p>
-              <h3 class="timeline__title">Mathematics Baccalauréat</h3>
-              <p class="timeline__institution">Lycée Amara Rachid — Ben Aknoun, Algiers</p>
-              <p>Earned with <strong>Mention Très Bien</strong> (highest French honors) — <strong>16.28/20</strong>.</p>
-            </article>
+            <div class="about-hero__meta">
+              <span>By Adel Redjemi</span>
+              <span aria-hidden="true">·</span>
+              <span>May 2026</span>
+              <span aria-hidden="true">·</span>
+              <span>5 min</span>
+            </div>
           </div>
+        </header>
+
+        <figure class="about-figure about-figure--cover">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&q=80&auto=format&fit=crop" alt="Code on a laptop screen" loading="lazy" />
+          <figcaption>My laptop screen during a late-night sprint — HydroTrack project, winter 2025.</figcaption>
+        </figure>
+
+        <div class="about-body">
+
+          <section class="about-section">
+            <h2 class="about-h2"><span class="about-h2__num">I.</span> From Lycée Amara Rachid to EPSI Paris</h2>
+
+            <p class="about-p about-p--lead">
+              <span class="dropcap">I</span> grew up with math. At Lycée Amara Rachid in Ben Aknoun
+              (Algiers), I chose the mathematics track out of genuine interest, not strategy. In
+              July 2025, I earned my baccalauréat with <strong>Mention Très Bien — 16.28/20</strong>
+              (highest French honors). The diploma wasn't an end, it was a door.
+            </p>
+
+            <p class="about-p">
+              In parallel, I had already started coding. An intensive web development bootcamp at
+              Code213 — 192 hours of HTML, CSS and JavaScript basics. That's where I knew this
+              wasn't just a hobby, but what I really wanted to do.
+            </p>
+
+            <figure class="about-figure about-figure--inset about-figure--right">
+              <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=900&q=80&auto=format&fit=crop" alt="Whiteboard covered with mathematical equations" loading="lazy" />
+              <figcaption>The math baccalauréat — training ground for algorithmic rigor.</figcaption>
+            </figure>
+
+            <p class="about-p">
+              In September 2025, I joined <strong>EPSI Paris</strong> for my Bachelor's in Computer
+              Science. CS engineering school based in Courbevoie (La Défense), with a deliberately
+              broad curriculum: algorithms, web dev, virtualization, IoT, VR, network architecture.
+              Enough to explore without closing any doors.
+            </p>
+
+            <p class="about-p">
+              Today, I'm doing a <strong>Full Stack internship at Glikt</strong> in Courbevoie
+              until mid-June 2026. My first real immersion in a company.
+            </p>
+          </section>
+
+          <blockquote class="about-pullquote">
+            "What draws me isn't just writing code.
+            It's understanding how everything holds together."
+          </blockquote>
+
+          <section class="about-section">
+            <h2 class="about-h2"><span class="about-h2__num">II.</span> Why computer science</h2>
+
+            <p class="about-p">
+              From the TCP packet traveling, to the SQL query responding, to the CSS aligning a
+              button — everything is connected. It's this <strong>full-stack dimension</strong>
+              that fascinates me. I want to understand how a user's click triggers a cascade down
+              to the server, to the database, and back to the screen.
+            </p>
+
+            <figure class="about-figure about-figure--full">
+              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80&auto=format&fit=crop" alt="Modern glass campus building" loading="lazy" />
+              <figcaption>The EPSI campus in Courbevoie — between La Défense and the périphérique.</figcaption>
+            </figure>
+
+            <p class="about-p">
+              At EPSI, I didn't want to specialize too early. I'm aiming for excellence across
+              three axes: <strong>web</strong>, <strong>embedded systems</strong> and
+              <strong>artificial intelligence</strong>. I'll dive deeper later. For now, I'm
+              building on all three in parallel — SmartBike for web, HydroTrack for IoT, and I'm
+              starting to leverage AI through Claude Code and Gemini daily.
+            </p>
+          </section>
+
+          <section class="about-section">
+            <h2 class="about-h2"><span class="about-h2__num">III.</span> How I work</h2>
+
+            <p class="about-p">
+              I learn by building. Theory in the morning, code in the afternoon. When something
+              breaks, I don't work around it — I want to know <em>why</em>. That's usually where
+              I learn the most.
+            </p>
+
+            <p class="about-p">
+              In teams, I prefer concrete roles. On the Rube Goldberg project, I was in charge of
+              the 3D design on Tinkercad. A precise module, a tight deadline, a jury demo. Result:
+              <strong>1st place locally</strong> with national-level qualification.
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <section class="section">
+        <div class="container">
+          <header class="section__heading">
+            <span class="section__eyebrow">TIMELINE</span>
+            <h2 class="section__title">My path</h2>
+          </header>
+
+          <ol class="timeline-pro" aria-label="Chronological path">
+            <li class="timeline-pro__item" data-phase="now">
+              <div class="timeline-pro__rail" aria-hidden="true">
+                <span class="timeline-pro__dot"></span>
+              </div>
+              <div class="timeline-pro__date">
+                <span class="timeline-pro__date-main">Mid-April → Mid-June 2026</span>
+                <span class="timeline-pro__date-sub">2 months · Full-time</span>
+              </div>
+              <article class="timeline-pro__card">
+                <span class="timeline-pro__tag timeline-pro__tag--now">In progress</span>
+                <h3 class="timeline-pro__title">Full Stack Internship</h3>
+                <p class="timeline-pro__institution">Glikt · Courbevoie (92), France</p>
+                <p class="timeline-pro__body">
+                  Contributing to the global infrastructure: ideation, technical writing, UI/UX,
+                  front-end, back-end and databases.
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline-pro__item" data-phase="school">
+              <div class="timeline-pro__rail" aria-hidden="true">
+                <span class="timeline-pro__dot"></span>
+              </div>
+              <div class="timeline-pro__date">
+                <span class="timeline-pro__date-main">2025 — 2026</span>
+                <span class="timeline-pro__date-sub">Year 1</span>
+              </div>
+              <article class="timeline-pro__card">
+                <span class="timeline-pro__tag">Studies</span>
+                <h3 class="timeline-pro__title">Bachelor's in Computer Science</h3>
+                <p class="timeline-pro__institution">EPSI Paris · Courbevoie (92)</p>
+                <p class="timeline-pro__body">
+                  Algorithms · HTML/CSS · PHP/MySQL · Python · SQL · Virtualization · IoT · VR ·
+                  Network architecture.
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline-pro__item" data-phase="bootcamp">
+              <div class="timeline-pro__rail" aria-hidden="true">
+                <span class="timeline-pro__dot"></span>
+              </div>
+              <div class="timeline-pro__date">
+                <span class="timeline-pro__date-main">2025</span>
+                <span class="timeline-pro__date-sub">192h bootcamp</span>
+              </div>
+              <article class="timeline-pro__card">
+                <span class="timeline-pro__tag">Bootcamp</span>
+                <h3 class="timeline-pro__title">Web Development Bootcamp</h3>
+                <p class="timeline-pro__institution">Code213 · El Biar, Algiers</p>
+                <p class="timeline-pro__body">
+                  Intensive training: HTML, CSS, JavaScript basics. Interrupted intentionally for
+                  the move to France.
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline-pro__item" data-phase="bac">
+              <div class="timeline-pro__rail" aria-hidden="true">
+                <span class="timeline-pro__dot"></span>
+              </div>
+              <div class="timeline-pro__date">
+                <span class="timeline-pro__date-main">July 2025</span>
+                <span class="timeline-pro__date-sub">Baccalauréat</span>
+              </div>
+              <article class="timeline-pro__card">
+                <span class="timeline-pro__tag timeline-pro__tag--gold">🏆 Highest Honors</span>
+                <h3 class="timeline-pro__title">Math Baccalauréat</h3>
+                <p class="timeline-pro__institution">Lycée Amara Rachid · Ben Aknoun, Algiers</p>
+                <p class="timeline-pro__body">
+                  Earned with <strong>Mention Très Bien</strong> —
+                  <strong>16.28/20</strong>.
+                </p>
+              </article>
+            </li>
+          </ol>
         </div>
       </section>
 
