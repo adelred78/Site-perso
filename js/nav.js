@@ -66,18 +66,37 @@ export function initHeader() {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // Burger
+  // Burger menu mobile : full-screen overlay + body lock + ESC
   if (burger && nav) {
-    burger.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('header__nav--open');
-      burger.setAttribute('aria-expanded', String(isOpen));
-    });
+    const openMenu = () => {
+      nav.classList.add('header__nav--open');
+      burger.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('menu-open');
+    };
+    const closeMenu = () => {
+      nav.classList.remove('header__nav--open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    };
+    const toggleMenu = () => {
+      if (nav.classList.contains('header__nav--open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    };
+
+    burger.addEventListener('click', toggleMenu);
 
     nav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('header__nav--open');
-        burger.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('header__nav--open')) {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
