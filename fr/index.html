@@ -26,7 +26,7 @@
       content="Étudiant en Bachelor Informatique à l'EPSI Paris. Web, systèmes embarqués et IA."
     />
     <meta property="og:url" content="https://adelredjemi.vercel.app/fr/" />
-    <meta property="og:image" content="https://adelredjemi.vercel.app/assets/img/og/og-home.png" />
+    <meta property="og:image" content="https://adelredjemi.vercel.app/assets/img/og/og-home.jpg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -35,7 +35,7 @@
       name="twitter:description"
       content="Étudiant en Bachelor Informatique à l'EPSI Paris. Web, systèmes embarqués et IA."
     />
-    <meta name="twitter:image" content="https://adelredjemi.vercel.app/assets/img/og/og-home.png" />
+    <meta name="twitter:image" content="https://adelredjemi.vercel.app/assets/img/og/og-home.jpg" />
 
     <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
@@ -45,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600;700&family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;600&family=Onest:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -67,7 +67,6 @@
           "https://www.linkedin.com/in/m-redjemi/",
           "https://github.com/adelred78"
         ],
-        "email": "redjemitechkraft@gmail.com",
         "knowsLanguage": ["fr", "en"]
       }
     </script>
@@ -79,7 +78,7 @@
     <header class="header" data-header>
       <div class="container header__inner">
         <a href="/fr/" class="header__logo">Adel <span class="text-accent">REDJEMI</span></a>
-        <nav class="header__nav" data-nav aria-label="Navigation principale">
+        <nav class="header__nav" id="main-nav" data-nav aria-label="Navigation principale">
           <ul class="header__nav-list">
             <li><a href="/fr/" class="header__nav-link">Accueil</a></li>
             <li><a href="/fr/projets" class="header__nav-link">Projets</a></li>
@@ -115,16 +114,15 @@
     <main id="main">
       <!-- HERO -->
       <section class="hero" id="accueil">
-        <canvas class="hero__bg" data-bg-particles aria-hidden="true"></canvas>
+        <canvas class="hero__bg" data-bg-particles aria-hidden="true" width="1600" height="900"></canvas>
         <div class="container hero__inner">
           <div class="hero__content">
             <h1 class="hero__title">Adel Redjemi</h1>
             <span class="hero__eyebrow">Étudiant Bachelor Informatique · EPSI Paris</span>
             <p class="hero__tagline">Je vise l'excellence en informatique — web, systèmes embarqués et IA.</p>
             <p class="hero__description">
-              Étudiant en Bachelor Informatique à l'EPSI Paris, je construis ma polyvalence sur
-              trois axes : développement web, systèmes embarqués et intelligence artificielle. Actuellement
-              en stage chez Glikt.
+              En première année de Bachelor Informatique à l'EPSI Paris, je suis actuellement en
+              stage Full Stack chez Glikt. À la recherche d'une alternance dès septembre 2026.
             </p>
             <div class="hero__actions">
               <a href="/fr/projets" class="button button--primary">Voir mes projets</a>
@@ -145,7 +143,7 @@
                 <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {</div>
                 <div class="code-line code-line--indent"><span class="code-property">name</span>: <span class="code-string">'Adel Redjemi'</span>,</div>
                 <div class="code-line code-line--indent"><span class="code-property">role</span>: <span class="code-string">'CS Student'</span>,</div>
-                <div class="code-line code-line--indent"><span class="code-property">stack</span>: [<span class="code-string">'Web'</span>, <span class="code-string">'Network'</span>, <span class="code-string">'IoT'</span>],</div>
+                <div class="code-line code-line--indent"><span class="code-property">stack</span>: [<span class="code-string">'Web'</span>, <span class="code-string">'Embedded'</span>, <span class="code-string">'AI'</span>],</div>
                 <div class="code-line code-line--indent"><span class="code-property">curious</span>: <span class="code-boolean">true</span></div>
                 <div class="code-line">};</div>
                 <div class="code-line">&nbsp;</div>
@@ -158,7 +156,7 @@
       </section>
 
       <!-- STATUS BANNER -->
-      <section class="status-banner">
+      <section class="status-banner" role="status" aria-label="Statut actuel">
         <div class="container">
           <div class="status-banner__items">
             <span>🟢 Stagiaire Full Stack chez Glikt (mi-avril → mi-juin 2026 · 2 mois)</span>
@@ -168,11 +166,11 @@
       </section>
 
       <!-- ABOUT (home) -->
-      <section class="section section--about" id="qui-je-suis">
+      <section class="section section--about" id="qui-je-suis" aria-labelledby="qui-je-suis-title">
         <div class="container">
           <header class="intro-header">
             <span class="intro-header__eyebrow">À propos</span>
-            <h2 class="intro-header__title">Qui je suis</h2>
+            <h2 class="intro-header__title" id="qui-je-suis-title">Qui je suis</h2>
           </header>
 
           <div class="intro-grid">
@@ -318,7 +316,7 @@
       <section class="section" id="awards">
         <div class="container">
           <header class="section__heading">
-            <h2 class="section__title">Awards & reconnaissances</h2>
+            <h2 class="section__title">Distinctions</h2>
             <p class="section__subtitle">Compétitions et distinctions</p>
           </header>
           <div class="grid grid--2">
@@ -368,8 +366,8 @@
             <p class="section__subtitle">Je réponds en 24-48h.</p>
             <div class="hero__actions">
               <a href="/fr/contact" class="button button--primary">Me contacter</a>
-              <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener" class="button button--outline">LinkedIn</a>
-              <a href="https://github.com/adelred78" target="_blank" rel="noopener" class="button button--outline">GitHub</a>
+              <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener" class="button button--outline">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/adelred78" target="_blank" rel="noopener" class="button button--outline">GitHub <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>

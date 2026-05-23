@@ -21,19 +21,19 @@
     <meta property="og:title" content="Adel Redjemi — Portfolio" />
     <meta property="og:description" content="CS Bachelor's student at EPSI Paris. Web, embedded systems and AI." />
     <meta property="og:url" content="https://adelredjemi.vercel.app/en/" />
-    <meta property="og:image" content="https://adelredjemi.vercel.app/assets/img/og/og-home.png" />
+    <meta property="og:image" content="https://adelredjemi.vercel.app/assets/img/og/og-home.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Adel Redjemi — Portfolio" />
     <meta name="twitter:description" content="CS Bachelor's student at EPSI Paris. Web, embedded systems and AI." />
-    <meta name="twitter:image" content="https://adelredjemi.vercel.app/assets/img/og/og-home.png" />
+    <meta name="twitter:image" content="https://adelredjemi.vercel.app/assets/img/og/og-home.jpg" />
 
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600;700&family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;600&family=Onest:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="/css/tokens.css" />
     <link rel="stylesheet" href="/css/base.css" />
@@ -51,7 +51,6 @@
           "https://www.linkedin.com/in/m-redjemi/",
           "https://github.com/adelred78"
         ],
-        "email": "redjemitechkraft@gmail.com",
         "knowsLanguage": ["fr", "en"]
       }
     </script>
@@ -62,7 +61,7 @@
     <header class="header" data-header>
       <div class="container header__inner">
         <a href="/en/" class="header__logo">Adel <span class="text-accent">REDJEMI</span></a>
-        <nav class="header__nav" data-nav aria-label="Main navigation">
+        <nav class="header__nav" id="main-nav" data-nav aria-label="Main navigation">
           <ul class="header__nav-list">
             <li><a href="/en/" class="header__nav-link">Home</a></li>
             <li><a href="/en/projects" class="header__nav-link">Projects</a></li>
@@ -82,15 +81,15 @@
 
     <main id="main">
       <section class="hero" id="home">
-        <canvas class="hero__bg" data-bg-particles aria-hidden="true"></canvas>
+        <canvas class="hero__bg" data-bg-particles aria-hidden="true" width="1600" height="900"></canvas>
         <div class="container hero__inner">
           <div class="hero__content">
             <h1 class="hero__title">Adel Redjemi</h1>
             <span class="hero__eyebrow">Computer Science Student · EPSI Paris</span>
             <p class="hero__tagline">Aiming for excellence in IT — web, embedded systems and AI.</p>
             <p class="hero__description">
-              CS Bachelor's student at EPSI Paris, building expertise across three axes: web
-              development, network architecture, embedded systems. Currently interning at Glikt.
+              First-year CS student at EPSI Paris, currently doing a Full Stack internship at
+              Glikt. Looking for an apprenticeship from September 2026.
             </p>
             <div class="hero__actions">
               <a href="/en/projects" class="button button--primary">See my work</a>
@@ -111,7 +110,7 @@
                 <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {</div>
                 <div class="code-line code-line--indent"><span class="code-property">name</span>: <span class="code-string">'Adel Redjemi'</span>,</div>
                 <div class="code-line code-line--indent"><span class="code-property">role</span>: <span class="code-string">'CS Student'</span>,</div>
-                <div class="code-line code-line--indent"><span class="code-property">stack</span>: [<span class="code-string">'Web'</span>, <span class="code-string">'Network'</span>, <span class="code-string">'IoT'</span>],</div>
+                <div class="code-line code-line--indent"><span class="code-property">stack</span>: [<span class="code-string">'Web'</span>, <span class="code-string">'Embedded'</span>, <span class="code-string">'AI'</span>],</div>
                 <div class="code-line code-line--indent"><span class="code-property">curious</span>: <span class="code-boolean">true</span></div>
                 <div class="code-line">};</div>
                 <div class="code-line">&nbsp;</div>
@@ -123,7 +122,7 @@
         <a href="#about" class="hero__scroll" aria-label="Scroll down">↓ Scroll</a>
       </section>
 
-      <section class="status-banner">
+      <section class="status-banner" role="status" aria-label="Statut actuel">
         <div class="container">
           <div class="status-banner__items">
             <span>🟢 Full Stack Intern at Glikt (mid-April → mid-June 2026 · 2 months)</span>
@@ -132,11 +131,11 @@
         </div>
       </section>
 
-      <section class="section section--about" id="about">
+      <section class="section section--about" id="about" aria-labelledby="about-title">
         <div class="container">
           <header class="intro-header">
             <span class="intro-header__eyebrow">About</span>
-            <h2 class="intro-header__title">Who I am</h2>
+            <h2 class="intro-header__title" id="about-title">Who I am</h2>
           </header>
 
           <div class="intro-grid">
@@ -274,7 +273,7 @@
       <section class="section" id="awards">
         <div class="container">
           <header class="section__heading">
-            <h2 class="section__title">Awards & recognition</h2>
+            <h2 class="section__title">Distinctions</h2>
             <p class="section__subtitle">Competitions and distinctions</p>
           </header>
           <div class="grid grid--2">
@@ -305,8 +304,8 @@
             <p class="section__subtitle">I reply within 24-48h.</p>
             <div class="hero__actions">
               <a href="/en/contact" class="button button--primary">Contact me</a>
-              <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener" class="button button--outline">LinkedIn</a>
-              <a href="https://github.com/adelred78" target="_blank" rel="noopener" class="button button--outline">GitHub</a>
+              <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener" class="button button--outline">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/adelred78" target="_blank" rel="noopener" class="button button--outline">GitHub <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>

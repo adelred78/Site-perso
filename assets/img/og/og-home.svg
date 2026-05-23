@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Adel Redjemi - Portfolio">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1C" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.25" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.85" cy="0.85" r="0.5">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.15" />
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#38BDF8" fill-opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <rect width="1200" height="630" fill="url(#glow1)" />
+  <rect width="1200" height="630" fill="url(#glow2)" />
+
+  <!-- Eyebrow -->
+  <g transform="translate(80 110)">
+    <rect width="320" height="34" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.45" />
+    <text x="20" y="22" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" letter-spacing="2" fill="#7DD3FC">ÉTUDIANT INFORMATIQUE · EPSI</text>
+  </g>
+
+  <!-- Nom géant -->
+  <g transform="translate(80 250)" font-family="Bricolage Grotesque, Plus Jakarta Sans, sans-serif" letter-spacing="-0.03em">
+    <text font-size="124" font-weight="800" fill="#F8FAFC">Adel</text>
+    <text y="120" font-size="124" font-weight="800" fill="#38BDF8">Redjemi</text>
+  </g>
+
+  <!-- Tagline -->
+  <g transform="translate(80 510)" font-family="Onest, sans-serif">
+    <text font-size="26" font-weight="500" fill="#94A3B8">Je vise l'excellence en informatique —</text>
+    <text y="34" font-size="26" font-weight="600" fill="#F8FAFC">web, systèmes embarqués et IA.</text>
+  </g>
+
+  <!-- Numéro version / badge en bas droite -->
+  <g transform="translate(1120 580)" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2" text-anchor="end">
+    <text fill="#475569">PORTFOLIO · 2026</text>
+  </g>
+
+  <!-- Coin décoratif sky-blue en haut à droite -->
+  <g transform="translate(990 100)" opacity="0.8">
+    <g stroke="#38BDF8" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M 0 60 L 80 60" />
+      <path d="M 30 60 Q 30 30, 60 30" />
+    </g>
+    <g fill="#7DD3FC" stroke="#0F172A" stroke-width="2">
+      <circle cx="0" cy="60" r="10" />
+      <circle cx="80" cy="60" r="10" />
+      <circle cx="60" cy="30" r="9" />
+    </g>
+  </g>
+
+  <!-- Étoiles décoratives -->
+  <g fill="#7DD3FC" opacity="0.5">
+    <circle cx="1100" cy="220" r="2" />
+    <circle cx="1150" cy="300" r="1.4" />
+    <circle cx="1080" cy="370" r="2.2" />
+    <circle cx="50" cy="80" r="1.8" />
+  </g>
+</svg>
