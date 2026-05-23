@@ -93,6 +93,31 @@ function hideFeedback(el) {
   el.textContent = '';
 }
 
+export function initEmailCopy() {
+  const buttons = document.querySelectorAll('[data-copy-email]');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const email = btn.dataset.copyEmail;
+      if (!email) return;
+      const lang = getCurrentLang();
+      const hint = btn.querySelector('.direct-link__copy-hint');
+      const original = hint?.textContent || '';
+      try {
+        await navigator.clipboard.writeText(email);
+        if (hint) hint.textContent = lang === 'en' ? 'copied!' : 'copié !';
+        btn.classList.add('is-copied');
+        setTimeout(() => {
+          btn.classList.remove('is-copied');
+          if (hint) hint.textContent = original;
+        }, 1800);
+      } catch {
+        // Fallback : ouvre mailto si clipboard refuse
+        window.location.href = `mailto:${email}`;
+      }
+    });
+  });
+}
+
 export function initContactForm() {
   const form = document.querySelector('[data-contact-form]');
   if (!form) return;

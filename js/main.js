@@ -5,7 +5,7 @@
 
 import { initHeader, highlightActiveNavLink } from './nav.js';
 import { initFeaturedProjects, initProjectsPage, initProjectDetailPage } from './projects.js';
-import { initContactForm } from './contact.js';
+import { initContactForm, initEmailCopy } from './contact.js';
 import { initTheme } from './theme.js';
 import { initBgParticles } from './bg-particles.js';
 import { initFeaturedCertifications, initCertificationsPage } from './certifications.js';
@@ -88,6 +88,7 @@ function init() {
   initProjectsPage();
   initProjectDetailPage();
   initContactForm();
+  initEmailCopy();
   initLightbox();
   initBgParticles();
   initFeaturedCertifications();

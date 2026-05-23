@@ -98,10 +98,13 @@
           </div>
 
           <div class="contact-lead__direct">
-            <a href="mailto:redjemitechkraft@gmail.com" class="direct-link">
+            <button type="button" class="direct-link" data-copy-email="redjemitechkraft@gmail.com">
               <span class="direct-link__label">EMAIL</span>
-              <span class="direct-link__value">redjemitechkraft@gmail.com</span>
-            </a>
+              <span class="direct-link__value">
+                <span data-copy-text>redjemitechkraft@gmail.com</span>
+                <span class="direct-link__copy-hint" aria-hidden="true">copier</span>
+              </span>
+            </button>
             <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener" class="direct-link">
               <span class="direct-link__label">LINKEDIN</span>
               <span class="direct-link__value">m-redjemi <span aria-hidden="true">↗</span></span>
@@ -181,7 +184,7 @@
               </button>
 
               <p class="form__privacy">
-                🔒 Vos données servent uniquement à vous répondre. Pas de tracking, pas de newsletter.
+                Vos données servent uniquement à vous répondre. Pas de tracking, pas de newsletter.
               </p>
 
               <div data-form-feedback class="form__feedback is-hidden" role="status" aria-live="polite"></div>
