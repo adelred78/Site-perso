@@ -1321,26 +1321,25 @@
 
 .stack-card__list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-2) 0;
-  line-height: var(--leading-snug);
+  flex-direction: column;
+  gap: var(--space-3);
 }
 
 .stack-card__list li {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   color: var(--text-secondary);
-  white-space: nowrap;
+  line-height: var(--leading-snug);
 }
 
-.stack-card__list li:not(:last-child)::after {
+.stack-card__list li span:not(:last-child)::after {
   content: '/';
   margin-inline: var(--space-2);
   color: var(--accent-light);
-  opacity: 0.6;
+  opacity: 0.55;
   font-weight: 500;
 }
 
