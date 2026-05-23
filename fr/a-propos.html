@@ -218,90 +218,192 @@
         </div>
       </article>
 
-      <!-- TIMELINE PRO -->
-      <section class="section">
+      <!-- PARCOURS — Editorial Journey -->
+      <section class="section section--journey">
         <div class="container">
-          <header class="section__heading">
-            <span class="section__eyebrow">CHRONOLOGIE</span>
+          <header class="section__heading section__heading--center">
+            <span class="section__eyebrow">CHRONOLOGIE · 2025 → 2026</span>
             <h2 class="section__title">Mon parcours</h2>
+            <p class="section__subtitle">
+              Quatre étapes, une trajectoire claire — du lycée à l'entreprise.
+            </p>
           </header>
 
-          <ol class="timeline-pro" aria-label="Parcours chronologique">
-            <li class="timeline-pro__item" data-phase="now">
-              <div class="timeline-pro__rail" aria-hidden="true">
-                <span class="timeline-pro__dot"></span>
+          <ol class="journey" aria-label="Parcours chronologique">
+
+            <li class="journey__item" data-phase="now" data-reveal>
+              <div class="journey__aside">
+                <span class="journey__step" aria-hidden="true">01</span>
+                <span class="journey__step-year" aria-hidden="true">2026</span>
+                <span class="journey__step-label" aria-hidden="true">Entreprise</span>
               </div>
-              <div class="timeline-pro__date">
-                <span class="timeline-pro__date-main">Mi-avril → mi-juin 2026</span>
-                <span class="timeline-pro__date-sub">2 mois · Temps plein</span>
+              <div class="journey__marker" aria-hidden="true">
+                <span class="journey__marker-ring"></span>
+                <span class="journey__marker-dot"></span>
               </div>
-              <article class="timeline-pro__card">
-                <span class="timeline-pro__tag timeline-pro__tag--now">En cours</span>
-                <h3 class="timeline-pro__title">Stage Full Stack</h3>
-                <p class="timeline-pro__institution">Glikt · Courbevoie (92)</p>
-                <p class="timeline-pro__body">
+              <article class="journey__card">
+                <div class="journey__card-glow" aria-hidden="true"></div>
+                <header class="journey__head">
+                  <span class="journey__status">
+                    <span class="journey__pulse" aria-hidden="true"></span>
+                    En cours
+                  </span>
+                  <span class="journey__period">Mi-avril → mi-juin 2026</span>
+                </header>
+                <h3 class="journey__role">Stage Full Stack</h3>
+                <p class="journey__place">Glikt — Courbevoie (92), France</p>
+                <p class="journey__desc">
                   Participation au développement de l'infrastructure globale : idéation,
                   rédaction technique, UI/UX, front-end, back-end et bases de données.
                 </p>
+                <div class="journey__metrics">
+                  <div class="journey__metric">
+                    <span class="journey__metric-num">2</span>
+                    <span class="journey__metric-lbl">mois</span>
+                  </div>
+                  <div class="journey__metric">
+                    <span class="journey__metric-num">100<span class="journey__metric-unit">%</span></span>
+                    <span class="journey__metric-lbl">temps plein</span>
+                  </div>
+                </div>
+                <ul class="journey__chips" aria-label="Domaines">
+                  <li>Full Stack</li>
+                  <li>UI/UX</li>
+                  <li>Back-end</li>
+                  <li>BDD</li>
+                </ul>
               </article>
             </li>
 
-            <li class="timeline-pro__item" data-phase="school">
-              <div class="timeline-pro__rail" aria-hidden="true">
-                <span class="timeline-pro__dot"></span>
+            <li class="journey__item" data-phase="school" data-reveal>
+              <div class="journey__aside">
+                <span class="journey__step" aria-hidden="true">02</span>
+                <span class="journey__step-year" aria-hidden="true">2025 — 2026</span>
+                <span class="journey__step-label" aria-hidden="true">Bachelor 1</span>
               </div>
-              <div class="timeline-pro__date">
-                <span class="timeline-pro__date-main">2025 — 2026</span>
-                <span class="timeline-pro__date-sub">Bachelor 1</span>
+              <div class="journey__marker" aria-hidden="true">
+                <span class="journey__marker-ring"></span>
+                <span class="journey__marker-dot"></span>
               </div>
-              <article class="timeline-pro__card">
-                <span class="timeline-pro__tag">Formation</span>
-                <h3 class="timeline-pro__title">Bachelor Informatique</h3>
-                <p class="timeline-pro__institution">EPSI Paris · Courbevoie (92)</p>
-                <p class="timeline-pro__body">
-                  Algorithmique · HTML/CSS · PHP/MySQL · Python · SQL · Virtualisation · IoT · VR ·
-                  Architecture réseau.
+              <article class="journey__card">
+                <div class="journey__card-glow" aria-hidden="true"></div>
+                <header class="journey__head">
+                  <span class="journey__status">Formation</span>
+                  <span class="journey__period">Septembre 2025 → Juin 2026</span>
+                </header>
+                <h3 class="journey__role">Bachelor Informatique</h3>
+                <p class="journey__place">EPSI Paris — Courbevoie (92)</p>
+                <p class="journey__desc">
+                  Année de fondations sur les trois axes : algorithmique et POO en Python,
+                  développement web full-stack, virtualisation et IoT, architecture réseau et VR.
                 </p>
+                <div class="journey__metrics">
+                  <div class="journey__metric">
+                    <span class="journey__metric-num">3</span>
+                    <span class="journey__metric-lbl">années</span>
+                  </div>
+                  <div class="journey__metric">
+                    <span class="journey__metric-num">9</span>
+                    <span class="journey__metric-lbl">disciplines</span>
+                  </div>
+                </div>
+                <ul class="journey__chips" aria-label="Disciplines">
+                  <li>Python</li>
+                  <li>POO</li>
+                  <li>HTML/CSS</li>
+                  <li>PHP/MySQL</li>
+                  <li>SQL</li>
+                  <li>Virtualisation</li>
+                  <li>IoT</li>
+                  <li>VR</li>
+                  <li>Réseau</li>
+                </ul>
               </article>
             </li>
 
-            <li class="timeline-pro__item" data-phase="bootcamp">
-              <div class="timeline-pro__rail" aria-hidden="true">
-                <span class="timeline-pro__dot"></span>
+            <li class="journey__item" data-phase="bootcamp" data-reveal>
+              <div class="journey__aside">
+                <span class="journey__step" aria-hidden="true">03</span>
+                <span class="journey__step-year" aria-hidden="true">2025</span>
+                <span class="journey__step-label" aria-hidden="true">Bootcamp</span>
               </div>
-              <div class="timeline-pro__date">
-                <span class="timeline-pro__date-main">2025</span>
-                <span class="timeline-pro__date-sub">Bootcamp 192h</span>
+              <div class="journey__marker" aria-hidden="true">
+                <span class="journey__marker-ring"></span>
+                <span class="journey__marker-dot"></span>
               </div>
-              <article class="timeline-pro__card">
-                <span class="timeline-pro__tag">Bootcamp</span>
-                <h3 class="timeline-pro__title">Formation Développement Web</h3>
-                <p class="timeline-pro__institution">Code213 · El Biar, Alger</p>
-                <p class="timeline-pro__body">
-                  Formation intensive : HTML, CSS, introduction JavaScript. Interrompue
-                  volontairement pour la mobilité vers la France.
+              <article class="journey__card">
+                <div class="journey__card-glow" aria-hidden="true"></div>
+                <header class="journey__head">
+                  <span class="journey__status">Bootcamp</span>
+                  <span class="journey__period">Hiver 2025</span>
+                </header>
+                <h3 class="journey__role">Formation Développement Web</h3>
+                <p class="journey__place">Code213 — El Biar, Alger</p>
+                <p class="journey__desc">
+                  Formation intensive : HTML, CSS, introduction à JavaScript. Premier vrai contact
+                  avec le code en autonomie. Interrompue volontairement pour la mobilité vers la France.
                 </p>
+                <div class="journey__metrics">
+                  <div class="journey__metric">
+                    <span class="journey__metric-num">192<span class="journey__metric-unit">h</span></span>
+                    <span class="journey__metric-lbl">de formation</span>
+                  </div>
+                  <div class="journey__metric">
+                    <span class="journey__metric-num">3</span>
+                    <span class="journey__metric-lbl">langages</span>
+                  </div>
+                </div>
+                <ul class="journey__chips" aria-label="Stack">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                </ul>
               </article>
             </li>
 
-            <li class="timeline-pro__item" data-phase="bac">
-              <div class="timeline-pro__rail" aria-hidden="true">
-                <span class="timeline-pro__dot"></span>
+            <li class="journey__item" data-phase="bac" data-reveal>
+              <div class="journey__aside">
+                <span class="journey__step" aria-hidden="true">04</span>
+                <span class="journey__step-year" aria-hidden="true">Juillet 2025</span>
+                <span class="journey__step-label" aria-hidden="true">Baccalauréat</span>
               </div>
-              <div class="timeline-pro__date">
-                <span class="timeline-pro__date-main">Juillet 2025</span>
-                <span class="timeline-pro__date-sub">Baccalauréat</span>
+              <div class="journey__marker" aria-hidden="true">
+                <span class="journey__marker-ring"></span>
+                <span class="journey__marker-dot"></span>
               </div>
-              <article class="timeline-pro__card">
-                <span class="timeline-pro__tag timeline-pro__tag--gold">🏆 Mention TB</span>
-                <h3 class="timeline-pro__title">Bac Mathématiques</h3>
-                <p class="timeline-pro__institution">Lycée Amara Rachid · Ben Aknoun, Alger</p>
-                <p class="timeline-pro__body">
-                  Diplôme obtenu avec <strong>mention Très Bien</strong> —
-                  <strong>16,28/20</strong>.
+              <article class="journey__card">
+                <div class="journey__card-glow" aria-hidden="true"></div>
+                <header class="journey__head">
+                  <span class="journey__status journey__status--gold">
+                    <span class="journey__status-icon" aria-hidden="true">★</span>
+                    Mention Très Bien
+                  </span>
+                  <span class="journey__period">Juillet 2025</span>
+                </header>
+                <h3 class="journey__role">Bac Mathématiques</h3>
+                <p class="journey__place">Lycée Amara Rachid — Ben Aknoun, Alger</p>
+                <p class="journey__desc">
+                  Filière scientifique, spécialité mathématiques. Diplôme obtenu avec
+                  <strong>mention Très Bien</strong>, la plus haute distinction du système algérien.
                 </p>
+                <div class="journey__metrics">
+                  <div class="journey__metric journey__metric--gold">
+                    <span class="journey__metric-num">16,28<span class="journey__metric-unit">/20</span></span>
+                    <span class="journey__metric-lbl">moyenne finale</span>
+                  </div>
+                  <div class="journey__metric">
+                    <span class="journey__metric-num">TB</span>
+                    <span class="journey__metric-lbl">mention</span>
+                  </div>
+                </div>
+                <ul class="journey__chips" aria-label="Spécialités">
+                  <li>Mathématiques</li>
+                  <li>Physique</li>
+                  <li>Sciences</li>
+                </ul>
               </article>
             </li>
+
           </ol>
         </div>
       </section>

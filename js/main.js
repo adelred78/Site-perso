@@ -80,6 +80,52 @@ function initLightbox() {
   });
 }
 
+function initJourney() {
+  const items = document.querySelectorAll('.journey__item[data-reveal]');
+  if (items.length) {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach((item) => item.classList.add('is-revealed'));
+    } else {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const item = entry.target;
+            const delay = parseInt(item.dataset.revealDelay || '0', 10);
+            item.style.transitionDelay = `${delay}ms`;
+            item.classList.add('is-revealed');
+            observer.unobserve(item);
+          });
+        },
+        { threshold: 0.18, rootMargin: '0px 0px -8% 0px' }
+      );
+
+      items.forEach((item, idx) => {
+        item.dataset.revealDelay = String(idx * 110);
+        observer.observe(item);
+      });
+    }
+  }
+
+  // Mouse-follow glow on cards
+  const cards = document.querySelectorAll('.journey__card');
+  cards.forEach((card) => {
+    card.addEventListener('pointermove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const mx = ((e.clientX - rect.left) / rect.width) * 100;
+      const my = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--mx', `${mx}%`);
+      card.style.setProperty('--my', `${my}%`);
+    });
+    card.addEventListener('pointerleave', () => {
+      card.style.removeProperty('--mx');
+      card.style.removeProperty('--my');
+    });
+  });
+}
+
 function init() {
   initTheme();
   initHeader();
@@ -93,6 +139,7 @@ function init() {
   initBgParticles();
   initFeaturedCertifications();
   initCertificationsPage();
+  initJourney();
 }
 
 if (document.readyState === 'loading') {
