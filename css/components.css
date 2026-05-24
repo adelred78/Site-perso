@@ -3987,6 +3987,53 @@
 }
 
 /* =========================================
+   EXTERNAL LINK — Lien externe stylé (Code213, etc.)
+   ========================================= */
+.external-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  color: var(--accent-light);
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent-main), var(--accent-main));
+  background-position: 0 100%;
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.3s ease;
+  border-radius: 2px;
+}
+
+.external-link:hover,
+.external-link:focus-visible {
+  background-size: 100% 1px;
+  color: var(--accent-main);
+}
+
+.external-link:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent-main) 40%, transparent);
+  outline-offset: 3px;
+}
+
+.external-link strong {
+  color: inherit;
+  font-weight: 700;
+}
+
+.external-link__arrow {
+  display: inline-block;
+  font-size: 0.78em;
+  line-height: 1;
+  transform: translate(1px, -1px);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.external-link:hover .external-link__arrow,
+.external-link:focus-visible .external-link__arrow {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================
    LESSONS — Carnet éditorial pour soft skills
    ========================================= */
 .section--lessons {
