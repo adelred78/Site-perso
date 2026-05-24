@@ -80,36 +80,44 @@ function initLightbox() {
   });
 }
 
-function initJourney() {
-  const items = document.querySelectorAll('.journey__item[data-reveal]');
-  if (items.length) {
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function initReveal() {
+  const targets = document.querySelectorAll('[data-reveal]');
+  if (!targets.length) return;
 
-    if (reduce || !('IntersectionObserver' in window)) {
-      items.forEach((item) => item.classList.add('is-revealed'));
-    } else {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            const item = entry.target;
-            const delay = parseInt(item.dataset.revealDelay || '0', 10);
-            item.style.transitionDelay = `${delay}ms`;
-            item.classList.add('is-revealed');
-            observer.unobserve(item);
-          });
-        },
-        { threshold: 0.18, rootMargin: '0px 0px -8% 0px' }
-      );
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      items.forEach((item, idx) => {
-        item.dataset.revealDelay = String(idx * 110);
-        observer.observe(item);
-      });
-    }
+  if (reduce || !('IntersectionObserver' in window)) {
+    targets.forEach((el) => el.classList.add('is-revealed'));
+    return;
   }
 
-  // Mouse-follow glow on cards
+  // Stagger delay per sibling group so each section animates as a cascade
+  const groupCounters = new Map();
+  targets.forEach((el) => {
+    const parent = el.parentElement;
+    const count = groupCounters.get(parent) || 0;
+    el.dataset.revealDelay = String(count * 90);
+    groupCounters.set(parent, count + 1);
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const delay = parseInt(el.dataset.revealDelay || '0', 10);
+        el.style.transitionDelay = `${delay}ms`;
+        el.classList.add('is-revealed');
+        observer.unobserve(el);
+      });
+    },
+    { threshold: 0.18, rootMargin: '0px 0px -8% 0px' }
+  );
+
+  targets.forEach((el) => observer.observe(el));
+}
+
+function initJourneyGlow() {
   const cards = document.querySelectorAll('.journey__card');
   cards.forEach((card) => {
     card.addEventListener('pointermove', (e) => {
@@ -139,7 +147,8 @@ function init() {
   initBgParticles();
   initFeaturedCertifications();
   initCertificationsPage();
-  initJourney();
+  initReveal();
+  initJourneyGlow();
 }
 
 if (document.readyState === 'loading') {
