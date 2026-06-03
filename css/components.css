@@ -1371,6 +1371,12 @@
   align-self: flex-start;
 }
 
+.cert-card__verify[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* =========================================
    SECTION STACK — fond technique en blueprint
    ========================================= */

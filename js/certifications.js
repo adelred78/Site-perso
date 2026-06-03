@@ -74,8 +74,10 @@ function renderCertCard(cert, lang) {
       ? `<span class="cert-card__date">${targetDate}</span>`
       : '';
 
-  const verifyHtml = isObtained && cert.verifyUrl
-    ? `<a href="${cert.verifyUrl}" target="_blank" rel="noopener" class="button button--outline button--small cert-card__verify">${t.verify} ↗</a>`
+  const verifyHtml = isObtained
+    ? cert.verifyUrl
+      ? `<a href="${cert.verifyUrl}" target="_blank" rel="noopener" class="button button--outline button--small cert-card__verify">${t.verify} ↗</a>`
+      : `<button type="button" class="button button--outline button--small cert-card__verify" disabled aria-disabled="true">${t.verify}</button>`
     : '';
 
   return `
