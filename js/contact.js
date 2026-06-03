@@ -22,7 +22,6 @@ const LABELS = {
       emailInvalid: "Format d'email invalide.",
       subjectRequired: 'Sélectionnez un sujet.',
       messageRequired: 'Le message est requis.',
-      messageMin: 'Au moins 20 caractères.',
     },
   },
   en: {
@@ -37,7 +36,6 @@ const LABELS = {
       emailInvalid: 'Invalid email format.',
       subjectRequired: 'Choose a subject.',
       messageRequired: 'Message is required.',
-      messageMin: 'At least 20 characters.',
     },
   },
 };
@@ -59,7 +57,6 @@ function validateField(field, labels) {
   }
   if (name === 'message') {
     if (!value) return labels.errors.messageRequired;
-    if (value.length < 20) return labels.errors.messageMin;
   }
   return null;
 }
@@ -134,7 +131,7 @@ export function initContactForm() {
 
   // Compteur de caractères
   if (messageField && charCounter) {
-    const max = messageField.getAttribute('maxlength') || 1000;
+    const max = messageField.getAttribute('maxlength') || 2500;
     const update = () => {
       const len = messageField.value.length;
       charCounter.textContent = `${len} / ${max}`;
@@ -201,7 +198,10 @@ export function initContactForm() {
 
       if (res.ok) {
         form.reset();
-        if (charCounter) charCounter.textContent = `0 / 1000`;
+        if (charCounter && messageField) {
+          const max = messageField.getAttribute('maxlength') || 2500;
+          charCounter.textContent = `0 / ${max}`;
+        }
         showFeedback(feedback, 'success', labels.success);
         feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
