@@ -110,10 +110,19 @@ export function initHeader() {
  * Marque le lien de navigation actif (aria-current).
  */
 export function highlightActiveNavLink() {
-  const path = window.location.pathname.replace(/\.html$/, '').replace(/\/$/, '');
+  const normalize = (p) => p.replace(/\.html$/, '').replace(/\/$/, '');
+  const path = normalize(window.location.pathname);
   document.querySelectorAll('[data-nav] a').forEach((link) => {
-    const href = link.getAttribute('href')?.replace(/\.html$/, '').replace(/\/$/, '') ?? '';
-    if (href && (path === href || path.startsWith(`${href}/`))) {
+    const href = normalize(link.getAttribute('href') ?? '');
+    if (!href) return;
+
+    // La home ('/fr' ou '/en' après normalisation) ne doit matcher qu'à
+    // l'identique : sinon son préfixe '/fr/' la rend active sur TOUTES les
+    // sous-pages, qui commencent toutes par '/fr/'.
+    const isHome = /^\/(fr|en)$/.test(href);
+    const isActive = isHome ? path === href : path === href || path.startsWith(`${href}/`);
+
+    if (isActive) {
       link.setAttribute('aria-current', 'page');
     } else {
       link.removeAttribute('aria-current');
