@@ -155,11 +155,15 @@ export function initBgParticles() {
   canvas.parentElement.addEventListener('mousemove', onPointerMove);
   canvas.parentElement.addEventListener('mouseleave', onPointerLeave);
 
-  // Pause when tab hidden
+  // Pause when tab hidden — `rafId = null` + garde évitent de lancer
+  // une 2ᵉ boucle requestAnimationFrame si l'événement se redéclenche.
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-      if (rafId) cancelAnimationFrame(rafId);
-    } else {
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+    } else if (!rafId) {
       step();
     }
   });
