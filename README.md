@@ -2,7 +2,7 @@
 
 Portfolio personnel bilingue (FR / EN) d'Adel Redjemi, étudiant en Bachelor Informatique à l'EPSI Paris.
 
-🌐 **Live** : [adel-redjemi.vercel.app](https://adel-redjemi.vercel.app)
+🌐 **Live** : [adelredjemi.vercel.app](https://adelredjemi.vercel.app)
 
 ---
 
@@ -110,8 +110,10 @@ Géré par `js/nav.js`. Le lien dans le header pointe automatiquement vers l'URL
 1. Ouvre `data/projects.json`.
 2. Ajoute une entrée dans le tableau `projects` en suivant le schéma des projets existants.
 3. Pose les images du projet dans `assets/img/projects/[slug]/`.
-4. Ajoute les URLs FR + EN dans `sitemap.xml`.
-5. Commit + push → Vercel redéploie tout seul.
+4. Crée les pages détail `fr/projets/[slug].html` et `en/projects/[slug].html` (copie d'un fichier existant).
+5. Ajoute les URLs FR + EN dans `sitemap.xml`.
+6. Lance `node scripts/gen-project-meta.mjs` pour renseigner les métadonnées SEO (`<title>`, description, Open Graph, canonical, hreflang) des pages détail à partir du JSON. Sans ça, les aperçus de partage (LinkedIn, WhatsApp…) sont vides car le contenu est rendu en JS.
+7. Commit + push → Vercel redéploie tout seul.
 
 ---
 
