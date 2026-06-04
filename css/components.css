@@ -281,15 +281,22 @@
     -webkit-backdrop-filter: blur(20px);
     transform: translateX(100%);
     opacity: 0;
+    /* visibility:hidden retire les liens du focus clavier + de l'arbre d'accessibilité
+       quand le menu est fermé ; le délai préserve l'animation de fermeture. */
+    visibility: hidden;
     pointer-events: none;
-    transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease;
+    transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease,
+      visibility 0s linear 0.45s;
     z-index: calc(var(--z-header) - 1);
   }
 
   .header__nav--open {
     transform: translateX(0);
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
+    transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease,
+      visibility 0s;
   }
 
   /* Label "MENU" en haut de l'overlay */
