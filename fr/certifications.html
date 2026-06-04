@@ -7,6 +7,18 @@
     <meta name="description" content="Certifications obtenues et en préparation par Adel Redjemi : management, cloud/DevOps, réseaux, IA." />
     <meta name="theme-color" content="#0f172a" />
 
+    <!-- Thème appliqué avant le 1er paint pour éviter le flash (FOUC). Logique alignée sur theme.js -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light' && t !== 'dark')
+            t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+
     <link rel="canonical" href="https://adelredjemi.vercel.app/fr/certifications" />
     <link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/certifications" />
     <link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/certifications" />
