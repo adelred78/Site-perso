@@ -1793,7 +1793,9 @@
 
 .contact-layout {
   display: grid;
-  grid-template-columns: 1fr;
+  /* minmax(0, …) permet à la colonne de rétrécir sous la largeur intrinsèque
+     de son contenu (email long) au lieu de déborder sur mobile. */
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-12);
   align-items: start;
   padding-top: var(--space-12);
@@ -2031,12 +2033,19 @@
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
+  min-width: 0;
 }
 
 .direct-link__value {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: var(--space-2);
+  /* autorise la valeur à rétrécir et la pastille "copier" à passer sous l'email
+     plutôt que de forcer la largeur de la colonne (débordement mobile). */
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .direct-link__copy-hint {
@@ -2811,12 +2820,37 @@
   padding-top: var(--space-8);
 }
 
+/* Les boutons préc./suivant contiennent le titre du projet : il doit pouvoir
+   passer à la ligne (sinon white-space:nowrap des .button fait déborder la page). */
+.project-detail__nav .button {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-1);
+  min-height: 0;
+  white-space: normal;
+  text-align: left;
+}
+
 .project-detail__nav small {
   display: block;
   font-size: var(--text-xs);
   color: var(--text-tertiary);
   font-weight: 400;
   margin-top: var(--space-1);
+  overflow-wrap: anywhere;
+}
+
+/* Sur mobile : empiler verticalement, chaque bouton pleine largeur. */
+@media (max-width: 559px) {
+  .project-detail__nav {
+    flex-direction: column;
+  }
+  .project-detail__nav .button {
+    width: 100%;
+  }
 }
 
 .project-detail__sidebar .sidebar-box + .sidebar-box {
