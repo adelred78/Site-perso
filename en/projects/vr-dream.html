@@ -3,18 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project — Adel Redjemi</title>
-    <meta name="description" content="Project detail by Adel Redjemi." />
+    <title>VR Dream Experience — Adel Redjemi</title>
+    <meta name="description" content="3 VR environments built on Delightex to explore immersive storytelling." />
     <meta name="theme-color" content="#0f172a" />
 
-    <link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/projets/" />
-    <link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/projects/" />
+    <!-- Thème appliqué avant le 1er paint pour éviter le flash (FOUC). Logique alignée sur theme.js -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light' && t !== 'dark')
+            t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/projets/vr-dream" />
+    <link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/projects/vr-dream" />
+    <link rel="alternate" hreflang="x-default" href="https://adelredjemi.vercel.app/fr/projets/vr-dream" />
+    <link rel="canonical" href="https://adelredjemi.vercel.app/en/projects/vr-dream" />
 
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Project — Adel Redjemi" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="VR Dream Experience — Adel Redjemi" />
+    <meta property="og:description" content="3 VR environments built on Delightex to explore immersive storytelling." />
+    <meta property="og:image" content="https://adelredjemi.vercel.app/assets/img/projects/vr-dream/cover.png" />
+    <meta property="og:url" content="https://adelredjemi.vercel.app/en/projects/vr-dream" />
 
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
@@ -43,7 +58,7 @@
           </ul>
         </nav>
         <div class="header__actions">
-          <a href="#" class="header__lang" data-lang-switch aria-label="Voir en français">FR</a>
+          <a href="/fr/projets/vr-dream" class="header__lang" data-lang-switch aria-label="Voir en français">FR</a>
           <button class="header__theme" data-theme-toggle aria-pressed="false"></button>
           <a href="/assets/cv/CV_Redjemi_Adel_EN.pdf" class="button button--outline button--small" target="_blank" rel="noopener">Resume</a>
           <button class="header__burger" data-burger aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
