@@ -67,12 +67,12 @@ function showFieldError(form, fieldName, errorMessage) {
   if (!field || !errorEl) return;
   if (errorMessage) {
     field.setAttribute('aria-invalid', 'true');
-    field.classList.add('form__input--error', 'form__textarea--error', 'form__select--error');
+    field.classList.add('form-field__input--error');
     errorEl.textContent = errorMessage;
     errorEl.classList.add('form__error--visible');
   } else {
     field.removeAttribute('aria-invalid');
-    field.classList.remove('form__input--error', 'form__textarea--error', 'form__select--error');
+    field.classList.remove('form-field__input--error');
     errorEl.textContent = '';
     errorEl.classList.remove('form__error--visible');
   }
