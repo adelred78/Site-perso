@@ -52,7 +52,7 @@ Portfolio personnel bilingue (FR / EN) d'Adel Redjemi, étudiant en Bachelor Inf
 │   ├── projects.js         → Chargement & rendu des projets
 │   └── contact.js          → Soumission du formulaire
 ├── data/
-│   ├── projects.json       → Source unique des 9 projets (bilingue)
+│   ├── projects.json       → Source unique des 10 projets (bilingue)
 │   └── i18n/
 │       ├── fr.json         → Strings d'interface FR
 │       └── en.json         → Strings d'interface EN

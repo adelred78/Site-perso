@@ -937,6 +937,86 @@
 }
 
 /* =========================================
+   CARD --SPOTLIGHT — projet à la une (accueil)
+   ========================================= */
+.featured-spotlight {
+  margin-bottom: var(--space-6);
+}
+
+.card--spotlight {
+  box-shadow: var(--shadow-md);
+}
+
+.card--spotlight__media {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-tertiary);
+}
+
+.card--spotlight__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background-color: var(--bg-tertiary);
+  transition: transform var(--transition-slow);
+}
+
+.card--spotlight:hover .card--spotlight__image {
+  transform: scale(1.03);
+}
+
+.card--spotlight__body {
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+}
+
+.card--spotlight__title {
+  font-size: clamp(var(--text-2xl), 1.5vw + 1rem, var(--text-4xl));
+  margin-bottom: var(--space-3);
+}
+
+.card--spotlight__desc {
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-5);
+  max-width: 62ch;
+}
+
+.card--spotlight__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: auto;
+}
+
+@media (min-width: 900px) {
+  .card--spotlight {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .card--spotlight__media {
+    flex: 1 1 56%;
+    min-height: 340px;
+  }
+
+  .card--spotlight__image {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .card--spotlight__body {
+    flex: 1 1 44%;
+    justify-content: center;
+    padding: var(--space-10);
+  }
+}
+
+/* =========================================
    BADGES
    ========================================= */
 .badge {

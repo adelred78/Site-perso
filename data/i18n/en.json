@@ -39,14 +39,14 @@
         "I learn by building. When something breaks, I want to know why."
       ],
       "stats": [
-        { "value": "9", "label": "projects shipped" },
+        { "value": "10", "label": "projects shipped" },
         { "value": "2", "label": "awards won" },
         { "value": "16.28", "label": "/20 math diploma" }
       ]
     },
     "featured": {
       "heading": "Featured projects",
-      "subheading": "My 3 most representative builds",
+      "subheading": "My most representative builds",
       "viewAll": "View all projects"
     },
     "stack": {
@@ -89,7 +89,7 @@
   },
   "projectsPage": {
     "title": "Projects",
-    "subtitle": "9 builds · academic and personal",
+    "subtitle": "10 builds · academic and personal",
     "filters": {
       "typeLabel": "Type",
       "categoryLabel": "Category",

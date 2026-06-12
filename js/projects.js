@@ -148,20 +148,58 @@ export async function initProjectsPage() {
 }
 
 /* ===========================
- * PAGE FEATURED (accueil) — 3 projets phares
+ * PAGE FEATURED (accueil) — projet à la une + grille
  * =========================== */
+
+/**
+ * Carte « spotlight » pleine largeur pour le projet à la une (1er featured).
+ * Format horizontal (image + contenu) sur desktop, empilé sur mobile.
+ */
+function renderSpotlightCard(project, labels) {
+  const url = getProjectUrl(project.slug);
+  const badge = localized(project.badge);
+  const title = localized(project.title);
+  const desc = localized(project.subtitle) || localized(project.pitch);
+  const category = labels.projectsPage.filters.category[project.category] ?? project.category;
+  const viewDetail = labels.projectsPage.card.viewDetail;
+  const demoLabel = labels.projectDetail.sidebar.demo;
+  const tech = project.tech.slice(0, 6);
+
+  return `
+    <article class="card card--spotlight" data-type="${project.type}" data-category="${project.category}" data-slug="${project.slug}">
+      <a href="${url}" class="card--spotlight__media" aria-label="${title}">
+        <img src="${project.images.cover}" alt="${title}" class="card--spotlight__image" loading="lazy" />
+        <span class="badge badge--${project.type}">${badge}</span>
+      </a>
+      <div class="card--spotlight__body">
+        <span class="card__category">${category}</span>
+        <h3 class="card--spotlight__title">${title}</h3>
+        <p class="card--spotlight__desc">${desc}</p>
+        <div class="tags">${tech.map((t) => `<span class="tag">${t}</span>`).join('')}</div>
+        <div class="card--spotlight__actions">
+          <a href="${url}" class="button button--primary button--small">${viewDetail} <span aria-hidden="true">→</span></a>
+          ${project.links?.demo ? `<a href="${project.links.demo}" target="_blank" rel="noopener" class="button button--outline button--small">${demoLabel} <span aria-hidden="true">↗</span></a>` : ''}
+        </div>
+      </div>
+    </article>
+  `;
+}
 
 export async function initFeaturedProjects() {
   const container = document.querySelector('[data-featured-grid]');
   if (!container) return;
 
   const [projects, labels] = await Promise.all([loadProjects(), loadI18n()]);
-  const featured = projects
-    .filter((p) => p.featured)
-    .sort((a, b) => a.order - b.order)
-    .slice(0, 3);
+  const featured = projects.filter((p) => p.featured).sort((a, b) => a.order - b.order);
 
-  container.innerHTML = featured.map((p) => renderProjectCard(p, labels)).join('');
+  const spotlightContainer = document.querySelector('[data-featured-spotlight]');
+  if (spotlightContainer && featured.length) {
+    // 1er projet featured → carte à la une ; les 3 suivants → grille classique.
+    spotlightContainer.innerHTML = renderSpotlightCard(featured[0], labels);
+    container.innerHTML = featured.slice(1, 4).map((p) => renderProjectCard(p, labels)).join('');
+  } else {
+    container.innerHTML = featured.slice(0, 3).map((p) => renderProjectCard(p, labels)).join('');
+  }
 }
 
 /* ===========================

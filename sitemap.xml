@@ -37,6 +37,7 @@
   </url>
 
   <!-- FR — Projets détail -->
+  <url><loc>https://adelredjemi.vercel.app/fr/projets/jobtracker</loc><priority>0.8</priority></url>
   <url><loc>https://adelredjemi.vercel.app/fr/projets/snack-o-matic</loc><priority>0.7</priority></url>
   <url><loc>https://adelredjemi.vercel.app/fr/projets/hydrotrack</loc><priority>0.7</priority></url>
   <url><loc>https://adelredjemi.vercel.app/fr/projets/smartbike</loc><priority>0.7</priority></url>
@@ -79,6 +80,7 @@
     <priority>0.8</priority>
   </url>
 
+  <url><loc>https://adelredjemi.vercel.app/en/projects/jobtracker</loc><priority>0.8</priority></url>
   <url><loc>https://adelredjemi.vercel.app/en/projects/snack-o-matic</loc><priority>0.7</priority></url>
   <url><loc>https://adelredjemi.vercel.app/en/projects/hydrotrack</loc><priority>0.7</priority></url>
   <url><loc>https://adelredjemi.vercel.app/en/projects/smartbike</loc><priority>0.7</priority></url>

@@ -39,14 +39,14 @@
         "J'apprends en construisant. Quand un truc casse, je veux savoir pourquoi."
       ],
       "stats": [
-        { "value": "9", "label": "projets livrés" },
+        { "value": "10", "label": "projets livrés" },
         { "value": "2", "label": "awards remportés" },
         { "value": "16,28", "label": "/20 au bac maths" }
       ]
     },
     "featured": {
       "heading": "Projets phares",
-      "subheading": "Mes 3 réalisations les plus représentatives",
+      "subheading": "Mes réalisations les plus représentatives",
       "viewAll": "Voir tous les projets"
     },
     "stack": {
@@ -89,7 +89,7 @@
   },
   "projectsPage": {
     "title": "Projets",
-    "subtitle": "9 réalisations · académiques et personnelles",
+    "subtitle": "10 réalisations · académiques et personnelles",
     "filters": {
       "typeLabel": "Type",
       "categoryLabel": "Catégorie",

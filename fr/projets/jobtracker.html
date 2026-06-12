@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projets — Adel Redjemi</title>
-    <meta name="description" content="10 projets réalisés par Adel Redjemi : SaaS, web, IoT, embarqué, IA, VR, algorithmique." />
+    <title>JobTracker — Suivi de candidatures — Adel Redjemi</title>
+    <meta name="description" content="Application web de suivi de candidatures pour étudiants : centralise stages, alternances et emplois dans un tableau Kanban, gère les CV/lettres, relances et exports — pour ne plus rien perdre dans Excel." />
     <meta name="theme-color" content="#0f172a" />
 
     <!-- Thème appliqué avant le 1er paint pour éviter le flash (FOUC). Logique alignée sur theme.js -->
@@ -19,16 +19,17 @@
       })();
     </script>
 
-    <link rel="canonical" href="https://adelredjemi.vercel.app/fr/projets" />
-    <link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/projets" />
-    <link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/projects" />
+    <link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/projets/jobtracker" />
+    <link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/projects/jobtracker" />
+    <link rel="alternate" hreflang="x-default" href="https://adelredjemi.vercel.app/fr/projets/jobtracker" />
+    <link rel="canonical" href="https://adelredjemi.vercel.app/fr/projets/jobtracker" />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:title" content="Projets — Adel Redjemi" />
-    <meta property="og:description" content="10 projets : SaaS, web, IoT, embarqué, IA, VR, algorithmique." />
-    <meta property="og:url" content="https://adelredjemi.vercel.app/fr/projets" />
-    <meta property="og:image" content="https://adelredjemi.vercel.app/assets/img/og/og-projects.png" />
+    <meta property="og:title" content="JobTracker — Suivi de candidatures — Adel Redjemi" />
+    <meta property="og:description" content="Application web de suivi de candidatures pour étudiants : centralise stages, alternances et emplois dans un tableau Kanban, gère les CV/lettres, relances et exports — pour ne plus rien perdre dans Excel." />
+    <meta property="og:image" content="https://adelredjemi.vercel.app/assets/img/projects/jobtracker/jobtracker-dashboard.png" />
+    <meta property="og:url" content="https://adelredjemi.vercel.app/fr/projets/jobtracker" />
 
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
@@ -57,7 +58,7 @@
           </ul>
         </nav>
         <div class="header__actions">
-          <a href="/en/projects" class="header__lang" data-lang-switch aria-label="View in English">EN</a>
+          <a href="/en/projects/jobtracker" class="header__lang" data-lang-switch aria-label="View in English">EN</a>
           <button class="header__theme" data-theme-toggle aria-pressed="false"></button>
           <a href="/assets/cv/CV_Redjemi_Adel_FR.pdf" class="button button--outline button--small" target="_blank" rel="noopener">CV</a>
           <button class="header__burger" data-burger aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -65,44 +66,10 @@
       </div>
     </header>
 
-    <main id="main" class="main main--padded">
-      <header class="container page-header">
-        <h1>Projets</h1>
-        <p>10 réalisations · académiques et personnelles</p>
-      </header>
-
-      <section class="container">
-        <div class="filters">
-          <div class="filters__group">
-            <span class="filters__label">Type</span>
-            <div class="filters__buttons">
-              <button class="button button--ghost button--small" data-filter="type" data-value="all" aria-pressed="true">Tous</button>
-              <button class="button button--ghost button--small" data-filter="type" data-value="academic" aria-pressed="false">Académique</button>
-              <button class="button button--ghost button--small" data-filter="type" data-value="personal" aria-pressed="false">Personnel</button>
-            </div>
-          </div>
-          <div class="filters__group">
-            <span class="filters__label">Catégorie</span>
-            <div class="filters__buttons">
-              <button class="button button--ghost button--small" data-filter="category" data-value="all" aria-pressed="true">Toutes</button>
-              <button class="button button--ghost button--small" data-filter="category" data-value="web" aria-pressed="false">Web</button>
-              <button class="button button--ghost button--small" data-filter="category" data-value="iot" aria-pressed="false">IoT</button>
-              <button class="button button--ghost button--small" data-filter="category" data-value="network" aria-pressed="false">Réseau</button>
-              <button class="button button--ghost button--small" data-filter="category" data-value="vr" aria-pressed="false">VR</button>
-              <button class="button button--ghost button--small" data-filter="category" data-value="embedded" aria-pressed="false">Embarqué</button>
-              <button class="button button--ghost button--small" data-filter="category" data-value="algorithm" aria-pressed="false">Algorithmique</button>
-              <button class="button button--ghost button--small" data-filter="category" data-value="tools" aria-pressed="false">Outils</button>
-            </div>
-          </div>
-          <button class="button button--outline button--small" data-filter-reset>Réinitialiser</button>
-        </div>
-      </section>
-
+    <main id="main" class="main main--detail" data-project-detail>
+      <!-- Contenu généré dynamiquement par /js/projects.js depuis /data/projects.json -->
       <section class="container section">
-        <div class="grid grid--3" data-projects-grid></div>
-        <p class="is-hidden" data-no-results>
-          Aucun projet ne correspond. Essaie un autre filtre.
-        </p>
+        <p>Chargement du projet…</p>
       </section>
     </main>
     <footer class="footer">

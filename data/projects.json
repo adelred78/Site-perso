@@ -2,6 +2,181 @@
   "$schema": "Source de vérité pour tous les projets. Lu par /fr/projets, /en/projects et les templates de détail.",
   "projects": [
     {
+      "slug": "jobtracker",
+      "featured": true,
+      "order": 0,
+      "type": "personal",
+      "category": "web",
+      "date": "2026",
+      "badge": {
+        "fr": "🚀 SaaS",
+        "en": "🚀 SaaS"
+      },
+      "title": {
+        "fr": "JobTracker — Suivi de candidatures",
+        "en": "JobTracker — Job Application Tracker"
+      },
+      "subtitle": {
+        "fr": "Le suivi de candidatures, enfin sous contrôle. Un SaaS full-stack que j'ai conçu et développé seul pour les étudiants en recherche de stage, alternance ou premier emploi.",
+        "en": "Job hunting, finally under control. A full-stack SaaS I designed and built solo for students looking for an internship, apprenticeship or first job."
+      },
+      "pitch": {
+        "fr": "Application web de suivi de candidatures pour étudiants : centralise stages, alternances et emplois dans un tableau Kanban, gère les CV/lettres, relances et exports — pour ne plus rien perdre dans Excel.",
+        "en": "A job-application tracker for students: internships, apprenticeships and jobs centralized in a Kanban board, with CV/cover-letter management, follow-ups and exports — so nothing gets lost in a spreadsheet again."
+      },
+      "meta": {
+        "team": {
+          "fr": "Solo (projet perso)",
+          "en": "Solo (personal project)"
+        },
+        "duration": {
+          "fr": "2026 · en continu",
+          "en": "2026 · ongoing"
+        },
+        "role": {
+          "fr": "Conception produit + dev full-stack",
+          "en": "Product design + full-stack dev"
+        },
+        "result": {
+          "fr": "🚀 En ligne en bêta",
+          "en": "🚀 Live in beta"
+        }
+      },
+      "tech": [
+        "SaaS",
+        "Full-stack",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "Tailwind CSS"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78/job-application-tracker",
+        "demo": "https://monjobtracker.vercel.app",
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
+        "thumb": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
+        "og": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
+        "gallery": [
+          {
+            "src": "/assets/img/projects/jobtracker/jobtracker-kanban.png",
+            "alt": {
+              "fr": "Vue Kanban en glisser-déposer des candidatures",
+              "en": "Drag-and-drop Kanban view of applications"
+            }
+          },
+          {
+            "src": "/assets/img/projects/jobtracker/jobtracker-list.png",
+            "alt": {
+              "fr": "Vue liste des candidatures",
+              "en": "List view of applications"
+            }
+          },
+          {
+            "src": "/assets/img/projects/jobtracker/jobtracker-documents.png",
+            "alt": {
+              "fr": "Bibliothèque de documents (CV et lettres de motivation)",
+              "en": "Document library (CVs and cover letters)"
+            }
+          }
+        ]
+      },
+      "content": {
+        "context": {
+          "fr": "JobTracker est né d'un constat personnel : quand on est étudiant, suivre ses candidatures de stage et d'alternance dans un fichier Excel devient vite ingérable — colonnes qui débordent, relances oubliées, bonne version du CV introuvable. J'ai voulu un outil unique, pensé pour les étudiants français, qui remplace ce chaos par un espace clair où chaque candidature se suit de bout en bout : statut, entretiens, relances, documents associés.",
+          "en": "JobTracker started from a personal observation: as a student, tracking internship and apprenticeship applications in a spreadsheet quickly becomes unmanageable — overflowing columns, forgotten follow-ups, the right CV version nowhere to be found. I wanted a single tool, built for students, that replaces this chaos with a clear space where every application is tracked end to end: status, interviews, follow-ups, attached documents."
+        },
+        "problem": {
+          "fr": "Les étudiants jonglent avec des dizaines de candidatures éparpillées entre Excel, mails et dossiers. Résultat : on perd le fil, on oublie de relancer, on ne retrouve plus la bonne version de son CV. Comment centraliser tout ça dans un espace unique et sécurisé, où les données d'un utilisateur restent strictement les siennes ?",
+          "en": "Students juggle dozens of applications scattered across spreadsheets, emails and folders. The result: you lose track, forget to follow up, can't find the right version of your CV. How do you centralize all of it in a single, secure space where each user's data stays strictly their own?"
+        },
+        "solution": {
+          "fr": "Un SaaS full-stack bâti sur Next.js 16 (App Router, Server Components & Server Actions) et Supabase (PostgreSQL, Auth, Storage). Chaque candidature vit dans un tableau Kanban en glisser-déposer, avec 5 statuts, historique, documents associés, relances et un tableau de bord statistique. L'isolation des données entre utilisateurs est garantie au niveau de la base via Row Level Security PostgreSQL, et l'ensemble respecte le RGPD (hébergement en Europe, export complet, suppression définitive).",
+          "en": "A full-stack SaaS built on Next.js 16 (App Router, Server Components & Server Actions) and Supabase (PostgreSQL, Auth, Storage). Each application lives in a drag-and-drop Kanban board, with 5 statuses, history, attached documents, follow-ups and a stats dashboard. Data isolation between users is enforced at the database level with PostgreSQL Row Level Security, and the whole thing is GDPR-compliant (EU hosting, full export, permanent deletion)."
+        },
+        "myWork": {
+          "fr": [
+            "Authentification email + Google OAuth via Supabase Auth",
+            "Vue Kanban en glisser-déposer (dnd-kit) et vue liste, 5 statuts et historique des candidatures",
+            "Gestion des documents CV / lettres : upload PDF ou lien externe, miniatures générées côté client (pdf.js)",
+            "Filtres, recherche, favoris, archivage, import/export CSV et export PDF",
+            "Tableau de bord avec KPIs et répartition par statut",
+            "Conformité RGPD : hébergement en Europe, export complet des données (JSON), suppression de compte définitive",
+            "Onboarding guidé, design responsive et SEO (sitemap, données structurées JSON-LD)"
+          ],
+          "en": [
+            "Email + Google OAuth authentication via Supabase Auth",
+            "Drag-and-drop Kanban view (dnd-kit) and list view, 5 statuses and application history",
+            "CV / cover-letter document management: PDF upload or external link, thumbnails generated client-side (pdf.js)",
+            "Filters, search, favorites, archiving, CSV import/export and PDF export",
+            "Dashboard with KPIs and status breakdown",
+            "GDPR compliance: EU hosting, full data export (JSON), permanent account deletion",
+            "Guided onboarding, responsive design and SEO (sitemap, JSON-LD structured data)"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🔒",
+            "title": {
+              "fr": "Isolation des données",
+              "en": "Data isolation"
+            },
+            "body": {
+              "fr": "Garantir qu'un utilisateur ne voie jamais les données d'un autre, directement au niveau de PostgreSQL via Row Level Security.",
+              "en": "Guaranteeing a user never sees another's data, right at the PostgreSQL level with Row Level Security."
+            }
+          },
+          {
+            "icon": "🗂️",
+            "title": {
+              "fr": "Kanban persistant",
+              "en": "Persistent Kanban"
+            },
+            "body": {
+              "fr": "Le glisser-déposer (dnd-kit) impose de persister l'ordre des cartes via une RPC de réordonnancement côté serveur.",
+              "en": "Drag-and-drop (dnd-kit) means persisting card order through a server-side reordering RPC."
+            }
+          },
+          {
+            "icon": "✅",
+            "title": {
+              "fr": "Validation bidirectionnelle",
+              "en": "Two-way validation"
+            },
+            "body": {
+              "fr": "Des Server Actions validées avec Zod côté client ET serveur : une seule source de vérité pour les règles métier.",
+              "en": "Server Actions validated with Zod on both client AND server: a single source of truth for the business rules."
+            }
+          },
+          {
+            "icon": "📄",
+            "title": {
+              "fr": "PDF dans le navigateur",
+              "en": "PDF in the browser"
+            },
+            "body": {
+              "fr": "Générer les miniatures de PDF directement côté client avec pdf.js, sans aucun traitement serveur.",
+              "en": "Generating PDF thumbnails directly client-side with pdf.js, with no server processing."
+            }
+          },
+          {
+            "icon": "🛡️",
+            "title": {
+              "fr": "RGPD de bout en bout",
+              "en": "End-to-end GDPR"
+            },
+            "body": {
+              "fr": "Une suppression de compte vraiment définitive, qui purge aussi les fichiers stockés dans le storage.",
+              "en": "Account deletion that's truly permanent, also purging the files held in storage."
+            }
+          }
+        ]
+      }
+    },
+    {
       "slug": "snack-o-matic",
       "featured": true,
       "order": 1,
