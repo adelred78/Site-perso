@@ -1,4 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="100" fill="#1e293b"/>
-  <text x="50%" y="50%" dy=".35em" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="bold" font-size="280" fill="#2dd4bf">RA</text>
+  <!-- Favicon v2 — monogramme « A_ » (A + curseur terminal), palette du design system :
+       slate 800/900 en fond, accent Sky 300→500. Lettre en tracés (aucune police requise). -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0D1526"/>
+    </linearGradient>
+    <linearGradient id="letter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="115" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="115" fill="url(#glow)"/>
+  <rect x="11" y="11" width="490" height="490" rx="104" fill="none" stroke="#7DD3FC" stroke-opacity="0.18" stroke-width="10"/>
+
+  <!-- A -->
+  <path d="M84 402 L210 110 L336 402 M146 308 L274 308"
+        fill="none" stroke="url(#letter)" stroke-width="64"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Curseur terminal -->
+  <rect x="378" y="398" width="80" height="36" rx="11" fill="#7DD3FC"/>
 </svg>
