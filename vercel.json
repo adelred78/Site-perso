@@ -3,42 +3,42 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/projects/project-workshop.html",
+      "source": "/projects/project-workshop",
       "destination": "/fr/projets/snack-o-matic",
       "permanent": true
     },
     {
-      "source": "/projects/project-hydrotrack.html",
+      "source": "/projects/project-hydrotrack",
       "destination": "/fr/projets/hydrotrack",
       "permanent": true
     },
     {
-      "source": "/projects/project-web.html",
+      "source": "/projects/project-web",
       "destination": "/fr/projets/smartbike",
       "permanent": true
     },
     {
-      "source": "/projects/project-network.html",
+      "source": "/projects/project-network",
       "destination": "/fr/projets/network-infra",
       "permanent": true
     },
     {
-      "source": "/projects/project-vr.html",
+      "source": "/projects/project-vr",
       "destination": "/fr/projets/vr-dream",
       "permanent": true
     },
     {
-      "source": "/projects/project-arduino.html",
+      "source": "/projects/project-arduino",
       "destination": "/fr/projets/arduino-led",
       "permanent": true
     },
     {
-      "source": "/projects/project-epsi-tech.html",
+      "source": "/projects/project-epsi-tech",
       "destination": "/fr/projets/epsi-tech",
       "permanent": true
     },
     {
-      "source": "/projects/project-system.html",
+      "source": "/projects/project-system",
       "destination": "/fr/projets/python-algo",
       "permanent": true
     },
