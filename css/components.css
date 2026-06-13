@@ -1048,6 +1048,56 @@
 }
 
 /* =========================================
+   CARD TYPE — pastille Académique / Personnel (bas-droite de la cover)
+   ========================================= */
+.card__type {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: var(--shadow-sm);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+/* point coloré en tête de pastille */
+.card__type::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-full);
+  background-color: currentColor;
+  box-shadow: 0 0 6px currentColor;
+}
+
+/* Académique → bleu (Sky) */
+.card__type--academic {
+  background-color: rgba(2, 132, 199, 0.82);
+}
+.card__type--academic::before {
+  color: #bae6fd;
+}
+
+/* Personnel → violet (Fuchsia) */
+.card__type--personal {
+  background-color: rgba(162, 28, 175, 0.82);
+}
+.card__type--personal::before {
+  color: #f5d0fe;
+}
+
+/* =========================================
    TAGS TECH
    ========================================= */
 .tags {

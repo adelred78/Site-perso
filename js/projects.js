@@ -73,6 +73,7 @@ function renderProjectCard(project, labels) {
   const pitch = localized(project.pitch);
   const tech = project.tech.slice(0, 4);
   const viewDetail = labels.projectsPage.card.viewDetail;
+  const typeLabel = labels.projectsPage.filters.type[project.type] ?? project.type;
   // Effet doré pour le projet gagnant Rube Goldberg
   const goldClass = project.slug === 'snack-o-matic' ? ' card--gold' : '';
 
@@ -81,6 +82,7 @@ function renderProjectCard(project, labels) {
       <a href="${url}" class="card__image-link" aria-label="${title}">
         <img src="${project.images.thumb}" alt="${title}" class="card__image" loading="lazy" />
         <span class="badge badge--${project.type}">${badge}</span>
+        <span class="card__type card__type--${project.type}">${typeLabel}</span>
       </a>
       <div class="card__body">
         <span class="card__category">${labels.projectsPage.filters.category[project.category] ?? project.category}</span>
@@ -164,12 +166,14 @@ function renderSpotlightCard(project, labels) {
   const viewDetail = labels.projectsPage.card.viewDetail;
   const demoLabel = labels.projectDetail.sidebar.demo;
   const tech = project.tech.slice(0, 6);
+  const typeLabel = labels.projectsPage.filters.type[project.type] ?? project.type;
 
   return `
     <article class="card card--spotlight" data-type="${project.type}" data-category="${project.category}" data-slug="${project.slug}">
       <a href="${url}" class="card--spotlight__media" aria-label="${title}">
         <img src="${project.images.cover}" alt="${title}" class="card--spotlight__image" loading="lazy" />
         <span class="badge badge--${project.type}">${badge}</span>
+        <span class="card__type card__type--${project.type}">${typeLabel}</span>
       </a>
       <div class="card--spotlight__body">
         <span class="card__category">${category}</span>
