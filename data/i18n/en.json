@@ -226,7 +226,7 @@
       "heading": "Languages",
       "items": [
         { "flag": "🇫🇷", "name": "French", "level": "Bilingual" },
-        { "flag": "🇬🇧", "name": "English", "level": "Intermediate (B1, improving)" }
+        { "flag": "🇬🇧", "name": "English", "level": "Intermediate" }
       ]
     },
     "interests": {
