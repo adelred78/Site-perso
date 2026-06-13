@@ -1081,12 +1081,12 @@
   box-shadow: 0 0 6px currentColor;
 }
 
-/* Académique → bleu (Sky) */
+/* Académique → vert (Emerald) */
 .card__type--academic {
-  background-color: rgba(2, 132, 199, 0.82);
+  background-color: rgba(5, 150, 105, 0.85);
 }
 .card__type--academic::before {
-  color: #bae6fd;
+  color: #6ee7b7;
 }
 
 /* Personnel → violet (Fuchsia) */
