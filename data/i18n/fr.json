@@ -34,7 +34,7 @@
     "about": {
       "heading": "Qui je suis",
       "paragraphs": [
-        "Étudiant en première année de Bachelor Informatique à l'EPSI Paris. Ce qui m'attire en informatique, c'est de comprendre toute la pile — pas juste de bidouiller un framework.",
+        "Étudiant en Bachelor Informatique à l'EPSI Paris. Ce qui m'attire en informatique, c'est de comprendre toute la pile — pas juste de bidouiller un framework.",
         "Côté code, je touche au PHP, au JavaScript, au SQL. Côté infra, je monte des réseaux sur VirtualBox et je manipule Linux au quotidien. Côté concret, j'ai construit une machine à réaction en chaîne qui a gagné un concours, et une plateforme IoT pour suivre l'humidité du sol.",
         "J'apprends en construisant. Quand un truc casse, je veux savoir pourquoi."
       ],
@@ -153,7 +153,7 @@
   "about": {
     "hero": {
       "title": "À propos",
-      "bio": "Étudiant en première année de Bachelor Informatique à l'EPSI Paris. Ce que j'aime : comprendre les systèmes, casser des trucs pour les réparer, et livrer un projet qui marche."
+      "bio": "Étudiant en Bachelor Informatique à l'EPSI Paris. Ce que j'aime : comprendre les systèmes, casser des trucs pour les réparer, et livrer un projet qui marche."
     },
     "story": {
       "heading": "Mon parcours",

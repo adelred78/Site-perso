@@ -34,7 +34,7 @@
     "about": {
       "heading": "Who I am",
       "paragraphs": [
-        "First-year Bachelor's student in Computer Science at EPSI Paris. What draws me to computer science is understanding the entire stack — not just plugging into a framework.",
+        "Bachelor's student in Computer Science at EPSI Paris. What draws me to computer science is understanding the entire stack — not just plugging into a framework.",
         "On the code side, I work with PHP, JavaScript and SQL. On the infrastructure side, I build networks on VirtualBox and use Linux daily. On the hands-on side, I built a chain-reaction machine that won a contest, and an IoT platform tracking soil moisture.",
         "I learn by building. When something breaks, I want to know why."
       ],
@@ -153,7 +153,7 @@
   "about": {
     "hero": {
       "title": "About",
-      "bio": "First-year Bachelor's student in Computer Science at EPSI Paris. What I love: understanding systems, breaking things to fix them, and shipping projects that work."
+      "bio": "Bachelor's student in Computer Science at EPSI Paris. What I love: understanding systems, breaking things to fix them, and shipping projects that work."
     },
     "story": {
       "heading": "My story",
