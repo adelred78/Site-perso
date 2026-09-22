@@ -3,7 +3,7 @@
     "lang": "fr",
     "dir": "ltr",
     "siteName": "Adel Redjemi",
-    "siteDescription": "Adel Redjemi — Étudiant en Bachelor Informatique à l'EPSI Paris. Fullstack, Linux, réseaux. Stage chez Glikt en cours."
+    "siteDescription": "Adel Redjemi — Étudiant en informatique à l'EPITECH Paris (B02). Projets pratiques en cybersécurité, Java, Linux et réseaux."
   },
   "nav": {
     "home": "Accueil",
@@ -19,29 +19,38 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Étudiant Bachelor Informatique · EPSI Paris",
+      "eyebrow": "Étudiant Bachelor 02 · EPITECH Paris",
       "name": "Adel Redjemi",
-      "tagline": "Je vise l'excellence en informatique — web, systèmes embarqués et IA.",
-      "description": "Étudiant en Bachelor Informatique à l'EPSI Paris, je construis ma polyvalence sur trois axes : développement web, systèmes embarqués et intelligence artificielle. Actuellement en stage chez Glikt.",
+      "tagline": "Projets pratiques en cybersécurité, Java, Linux, réseaux et labs de sécurité.",
+      "description": "Étudiant en Bachelor Informatique à l'EPITECH Paris, je construis une base pratique solide en cybersécurité à travers des projets personnels Java, des labs de sécurité sous Linux, l'analyse réseau et la pratique de CTFs.",
       "ctaPrimary": "Voir mes projets",
       "ctaSecondary": "Me contacter",
       "photoAlt": "Portrait d'Adel Redjemi"
     },
     "status": {
-      "internship": "🟢 Stagiaire Full Stack chez Glikt (mi-avril → mi-juin 2026 · 2 mois)",
-      "search": "🔍 Recherche alternance B2 dès septembre 2026"
+      "internship": "🔒 Recherche un stage de 6 mois en cybersécurité",
+      "search": "🎯 Poursuite en alternance orientée cybersécurité"
     },
     "about": {
       "heading": "Qui je suis",
       "paragraphs": [
-        "Étudiant en Bachelor Informatique à l'EPSI Paris. Ce qui m'attire en informatique, c'est de comprendre toute la pile — pas juste de bidouiller un framework.",
-        "Côté code, je touche au PHP, au JavaScript, au SQL. Côté infra, je monte des réseaux sur VirtualBox et je manipule Linux au quotidien. Côté concret, j'ai construit une machine à réaction en chaîne qui a gagné un concours, et une plateforme IoT pour suivre l'humidité du sol.",
-        "J'apprends en construisant. Quand un truc casse, je veux savoir pourquoi."
+        "Étudiant en Bachelor Informatique à l'EPITECH Paris (Bachelor 02 / B02). Après avoir réussi la Piscine Java EPITECH en septembre 2026, j'ai orienté ma progression vers la cybersécurité.",
+        "Je développe des projets concrets comme Secure Vault (coffre-fort de fichiers Java sécurisé), un Home SOC Lab (analyse de trafic, logs SSH et détection) et des challenges CTF sous Exegol. En parallèle, je consolide mes bases en réseaux et infrastructure.",
+        "J'apprends en construisant, en testant et en analysant le comportement réel des systèmes et des protocoles."
       ],
       "stats": [
-        { "value": "10", "label": "projets livrés" },
-        { "value": "2", "label": "awards remportés" },
-        { "value": "16,28", "label": "/20 au bac maths" }
+        {
+          "value": "13",
+          "label": "projets & labs"
+        },
+        {
+          "value": "2",
+          "label": "awards remportés"
+        },
+        {
+          "value": "16,28",
+          "label": "/20 au bac maths"
+        }
       ]
     },
     "featured": {
@@ -53,11 +62,62 @@
       "heading": "Stack technique",
       "subheading": "Ce que j'utilise au quotidien",
       "categories": [
-        { "icon": "🌐", "title": "Web", "items": ["HTML5", "CSS3", "JavaScript", "PHP 8"] },
-        { "icon": "🗄️", "title": "Données", "items": ["MySQL", "PostgreSQL", "Supabase"] },
-        { "icon": "🐧", "title": "Système & réseau", "items": ["Linux (Ubuntu, Debian)", "Docker", "VirtualBox", "VMware"] },
-        { "icon": "🛠️", "title": "Outils", "items": ["Git", "GitHub", "VS Code", "Figma", "Postman"] },
-        { "icon": "🔌", "title": "Embarqué & IoT", "items": ["Arduino", "ESP32", "Node-RED"] }
+        {
+          "icon": "🔒",
+          "title": "Cybersécurité",
+          "items": [
+            "Exegol",
+            "Nmap",
+            "Wireshark",
+            "tcpdump",
+            "Analyse de logs",
+            "Secured Java",
+            "Hardening"
+          ]
+        },
+        {
+          "icon": "☕",
+          "title": "Programmation",
+          "items": [
+            "Java (Priorité)",
+            "Python",
+            "JavaScript",
+            "HTML5/CSS3"
+          ]
+        },
+        {
+          "icon": "🐧",
+          "title": "Systèmes & Réseaux",
+          "items": [
+            "Linux",
+            "TCP/IP",
+            "GNS3",
+            "ESXi",
+            "pfSense/OPNsense",
+            "Active Directory",
+            "DHCP",
+            "SSH"
+          ]
+        },
+        {
+          "icon": "🛠️",
+          "title": "Outils & Services",
+          "items": [
+            "Git",
+            "GitHub",
+            "VS Code",
+            "Vercel",
+            "Supabase"
+          ]
+        },
+        {
+          "icon": "🔌",
+          "title": "Embarqué & IoT",
+          "items": [
+            "ESP32",
+            "Node-RED"
+          ]
+        }
       ]
     },
     "awards": {
@@ -68,7 +128,7 @@
         {
           "icon": "🏆",
           "title": "Workshop Rube Goldberg — 1ère place",
-          "body": "Workshop EPSI 2025. Machine à réaction en chaîne réalisée en équipe de 5. Présentation devant jury académique.",
+          "body": "Workshop Rube Goldberg 2025. Machine à réaction en chaîne réalisée en équipe de 5. Présentation devant jury académique (1ère place locale et qualification nationale).",
           "certificate": "/assets/certificates/rube-goldberg.pdf"
         },
         {
@@ -89,7 +149,7 @@
   },
   "projectsPage": {
     "title": "Projets",
-    "subtitle": "10 réalisations · académiques et personnelles",
+    "subtitle": "Réalisations et labs en cybersécurité, réseaux et développement",
     "filters": {
       "typeLabel": "Type",
       "categoryLabel": "Catégorie",
@@ -106,7 +166,8 @@
         "vr": "VR",
         "embedded": "Embarqué",
         "algorithm": "Algorithmique",
-        "tools": "Outils"
+        "tools": "Outils",
+        "cyber": "Cybersécurité"
       },
       "reset": "Réinitialiser les filtres",
       "noResults": "Aucun projet ne correspond. Essaie un autre filtre.",
@@ -153,22 +214,22 @@
   "about": {
     "hero": {
       "title": "À propos",
-      "bio": "Étudiant en Bachelor Informatique à l'EPSI Paris. Ce que j'aime : comprendre les systèmes, casser des trucs pour les réparer, et livrer un projet qui marche."
+      "bio": "Étudiant en Bachelor Informatique (B02) à l'EPITECH Paris. Focus sur la cybersécurité, Java, Linux, le réseau et les labs de sécurité."
     },
     "story": {
       "heading": "Mon parcours",
       "blocks": [
         {
-          "title": "Mon parcours",
-          "body": "J'ai obtenu mon baccalauréat mathématiques avec mention Très Bien (16,28/20) en juillet 2025 au lycée Amara Rachid, à Alger. En parallèle, j'avais déjà commencé à coder : une formation intensive en développement web chez Code213 (Alger), 192 heures de HTML, CSS et introduction au JavaScript. C'est là que j'ai compris que c'était ça que je voulais faire.\n\nJ'ai rejoint l'EPSI Paris en 2025 pour mon Bachelor Informatique. Aujourd'hui, je suis en stage Full Stack chez Glikt à Courbevoie."
+          "title": "Du lycée Amara Rachid à l'EPITECH Paris",
+          "body": "J'ai obtenu mon baccalauréat mathématiques avec mention Très Bien (16,28/20) au lycée Amara Rachid à Ben Aknoun (Alger). En parallèle, j'ai suivi une formation initiale en développement web chez Code213 (192 heures de HTML, CSS et JavaScript).\n\nEn 2025, j'ai rejoint le cursus Bachelor en informatique avant d'intégrer l'EPITECH Paris (Bachelor 02 / B02). La réussite de la Piscine Java EPITECH en septembre 2026 a été un point de bascule majeur pour appliquer les concepts de code à des projets de sécurité indépendants."
         },
         {
-          "title": "Pourquoi l'informatique",
-          "body": "Ce qui m'attire, ce n'est pas juste d'écrire du code. C'est de comprendre comment tout tient debout. Du paquet TCP qui voyage, à la requête SQL qui répond, au CSS qui aligne un bouton — tout est connecté. J'aime cette dimension pile complète.\n\nÀ l'EPSI, je n'ai pas voulu me spécialiser trop vite. Je vise l'excellence sur trois axes : web, systèmes embarqués et IA. Quand je serai plus avancé, j'approfondirai. Pour l'instant, je construis sur les trois."
+          "title": "Pourquoi la cybersécurité",
+          "body": "Ce qui me passionne, c'est de comprendre le fonctionnement réel des systèmes et des réseaux au-delà des abstractions. Analyser la façon dont les données transitent, comment les authentifications et les chiffrements protègent les fichiers, et comment détecter des anomalies sur un serveur Linux.\n\nJe concentre mes travaux sur la sécurité offensive (énumération Nmap, CTFs Exegol, analyse de vulnérabilités), la sécurité défensive (analyse de paquets Wireshark/tcpdump, monitoring de logs SSH, détection), l'infrastructure réseau (GNS3, ESXi, pfSense) et le développement sécurisé en Java."
         },
         {
-          "title": "Comment je travaille",
-          "body": "J'apprends en construisant, pas en accumulant des cours. Je teste, je casse, je répare — et quand quelque chose lâche, je veux comprendre pourquoi plutôt que de le contourner. C'est souvent là que je progresse le plus.\n\nEn équipe, j'aime les rôles concrets. Sur le Rube Goldberg, j'étais responsable de la conception Tinkercad. On a gagné le concours."
+          "title": "Méthodologie & Travail d'équipe",
+          "body": "J'apprends en construisant, en testant et en documentant. Quand un composant échoue, j'analyse la cause profonde plutôt que de contourner le problème.\n\nEn équipe, j'apporte de la rigueur et de la clarté. Lors du concours Rube Goldberg Machine, j'ai assuré la conception 3D sous Tinkercad, permettant d'obtenir la 1ère place et une présentation au niveau national."
         }
       ]
     },
@@ -176,28 +237,28 @@
       "heading": "Parcours",
       "items": [
         {
-          "date": "Mi-avril → mi-juin 2026",
-          "title": "Stage Full Stack",
-          "institution": "Glikt — Courbevoie (92)",
-          "body": "Participation au développement de l'infrastructure globale : idéation, rédaction technique, UI/UX, front-end, back-end, bases de données."
+          "date": "2026 – Présent",
+          "title": "EPITECH Paris — Bachelor 02 & Cybersécurité",
+          "institution": "EPITECH Paris",
+          "body": "Études d'informatique avec un axe prioritaire en cybersécurité : Java sécurisé, Linux, réseaux, labs SOC et CTFs."
         },
         {
-          "date": "2025 – 2026",
-          "title": "Bachelor 1 Informatique",
-          "institution": "EPSI Paris — Courbevoie (92)",
-          "body": "Algorithmique, HTML/CSS, PHP/MySQL, Python, SQL, Virtualisation, IoT, VR, Architecture réseau."
+          "date": "Septembre 2026",
+          "title": "Piscine Java EPITECH",
+          "institution": "EPITECH Paris",
+          "body": "Immersion intensive en Java POO et algorithmique. Déclic pour la création du projet Secure Vault."
         },
         {
-          "date": "2025 – 2026",
+          "date": "2025",
           "title": "Formation Développement Web",
           "institution": "Code213 — El Biar, Alger",
-          "body": "Formation intensive 192h : HTML, CSS, introduction JavaScript. Interrompue pour mobilité internationale."
+          "body": "Formation de 192 heures : fondations HTML, CSS, JavaScript."
         },
         {
           "date": "Juillet 2025",
-          "title": "Baccalauréat Mathématiques",
+          "title": "Baccalauréat Mathématiques — Mention Très Bien",
           "institution": "Lycée Amara Rachid — Ben Aknoun, Alger",
-          "body": "Diplôme obtenu avec mention Très Bien (16,28/20)."
+          "body": "Diplôme obtenu avec la moyenne de 16,28/20."
         }
       ]
     },
@@ -225,18 +286,51 @@
     "languages": {
       "heading": "Langues",
       "items": [
-        { "flag": "🇫🇷", "name": "Français", "level": "Bilingue" },
-        { "flag": "🇬🇧", "name": "Anglais", "level": "Intermédiaire" }
+        {
+          "flag": "🇫🇷",
+          "name": "Français",
+          "level": "Bilingue"
+        },
+        {
+          "flag": "🇩🇿",
+          "name": "Arabe & Kabyle",
+          "level": "Langues maternelles / Bilingue"
+        },
+        {
+          "flag": "🇬🇧",
+          "name": "Anglais",
+          "level": "Intermédiaire (progression active)"
+        },
+        {
+          "flag": "🇪🇸",
+          "name": "Espagnol",
+          "level": "Objectif futur"
+        }
       ]
     },
     "interests": {
       "heading": "Centres d'intérêt",
       "items": [
-        { "icon": "🥊", "title": "Boxe anglaise", "body": "Ancien pratiquant." },
-        { "icon": "📚", "title": "Lecture", "body": "Romans et ouvrages d'informatique." },
-        { "icon": "🎧", "title": "Podcasts tech", "body": "Underscore_, Hugo Décrypte." },
-        { "icon": "♟️", "title": "Échecs", "body": "Jeu de réflexion stratégique." },
-        { "icon": "🛠️", "title": "Création de projets", "body": "Projets perso, gestion d'applications et de systèmes." }
+        {
+          "icon": "🔒",
+          "title": "Cybersécurité & Labs",
+          "body": "CTFs Exegol, TryHackMe, investigation de logs et réseaux."
+        },
+        {
+          "icon": "🤖",
+          "title": "Robotique & Systèmes Embarqués",
+          "body": "Intérêt secondaire long terme : drones, automatisation d'infrastructures et systèmes autonomes."
+        },
+        {
+          "icon": "☕",
+          "title": "Projets Java",
+          "body": "Conception d'outils CLI et applications sécurisées."
+        },
+        {
+          "icon": "📚",
+          "title": "Lecture & Veille",
+          "body": "Documentation technique, réseaux et cybersécurité."
+        }
       ]
     },
     "cv": {
@@ -249,7 +343,7 @@
   "contact": {
     "hero": {
       "title": "Travaillons ensemble",
-      "intro": "Stage, alternance, ou juste un échange tech : je suis ouvert. Le canal qui marche le mieux, c'est l'email — je réponds en 24 à 48 heures."
+      "intro": "Recherche d'un stage de 6 mois en cybersécurité, puis d'une alternance. Disponible pour toute opportunité technique ou échange professionnel."
     },
     "form": {
       "heading": "Envoie-moi un message",
@@ -277,11 +371,11 @@
       "email": "Email",
       "linkedin": "LinkedIn",
       "github": "GitHub",
-      "location": "Courbevoie / Paris (92)",
+      "location": "Paris & Île-de-France",
       "availabilityHeading": "Disponibilité actuelle",
       "availabilityItems": [
-        "🟢 En stage chez Glikt jusqu'à mi-juin 2026",
-        "🔍 Cherche alternance dès septembre 2026"
+        "🔒 Recherche stage de 6 mois en cybersécurité",
+        "🎯 Poursuite en alternance orientée cybersécurité"
       ],
       "replyTimeHeading": "Délai de réponse",
       "replyTimeBody": "24-48h en jours ouvrés"

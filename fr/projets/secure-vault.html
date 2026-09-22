@@ -1,13 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EPSI Tech — IT Hardware E-commerce — Adel Redjemi</title>
-    <meta name="description" content="IT e-commerce in HTML/CSS/PHP/MySQL." />
+    <title>Secure Vault — Coffre-fort CLI Java — Adel Redjemi</title>
+    <meta name="description" content="Application Java CLI de coffre-fort de fichiers sécurisé : PBKDF2-HMAC-SHA-256, AES-256-GCM, contrôle d'accès, protection path traversal et journalisation d'audit." />
     <meta name="theme-color" content="#0f172a" />
 
-    <!-- Thème appliqué avant le 1er paint pour éviter le flash (FOUC). Logique alignée sur theme.js -->
     <script>
       (function () {
         try {
@@ -19,17 +18,16 @@
       })();
     </script>
 
-    <link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/projets/epsi-tech" />
-    <link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/projects/epsi-tech" />
-    <link rel="alternate" hreflang="x-default" href="https://adelredjemi.vercel.app/fr/projets/epsi-tech" />
-    <link rel="canonical" href="https://adelredjemi.vercel.app/en/projects/epsi-tech" />
+    <link rel="alternate" hreflang="fr" href="https://adelredjemi.vercel.app/fr/projets/secure-vault" />
+    <link rel="alternate" hreflang="en" href="https://adelredjemi.vercel.app/en/projects/secure-vault" />
+    <link rel="alternate" hreflang="x-default" href="https://adelredjemi.vercel.app/fr/projets/secure-vault" />
+    <link rel="canonical" href="https://adelredjemi.vercel.app/fr/projets/secure-vault" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="EPSI Tech — IT Hardware E-commerce — Adel Redjemi" />
-    <meta property="og:description" content="IT e-commerce in HTML/CSS/PHP/MySQL." />
-    <meta property="og:image" content="https://adelredjemi.vercel.app/assets/img/projects/epsi-tech/cover.png" />
-    <meta property="og:url" content="https://adelredjemi.vercel.app/en/projects/epsi-tech" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Secure Vault — Coffre-fort CLI Java — Adel Redjemi" />
+    <meta property="og:description" content="Application Java CLI de coffre-fort de fichiers sécurisé : PBKDF2-HMAC-SHA-256, AES-256-GCM, contrôle d'accès, protection path traversal et journalisation d'audit." />
+    <meta property="og:url" content="https://adelredjemi.vercel.app/fr/projets/secure-vault" />
 
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2" />
     <link rel="icon" href="/favicon.ico?v=2" />
@@ -44,43 +42,44 @@
     <link rel="stylesheet" href="/css/components.css" />
   </head>
   <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
 
     <header class="header" data-header>
       <div class="container header__inner">
-        <a href="/en/" class="header__logo">Adel <span class="text-accent">REDJEMI</span></a>
-        <nav class="header__nav" id="main-nav" data-nav aria-label="Main navigation">
+        <a href="/fr/" class="header__logo">Adel <span class="text-accent">REDJEMI</span></a>
+        <nav class="header__nav" id="main-nav" data-nav aria-label="Navigation principale">
           <ul class="header__nav-list">
-            <li><a href="/en/" class="header__nav-link">Home</a></li>
-            <li><a href="/en/projects" class="header__nav-link">Projects</a></li>
-            <li><a href="/en/certifications" class="header__nav-link">Certifications</a></li>
-            <li><a href="/en/about" class="header__nav-link">About</a></li>
-            <li><a href="/en/contact" class="header__nav-link">Contact</a></li>
+            <li><a href="/fr/" class="header__nav-link">Accueil</a></li>
+            <li><a href="/fr/projets" class="header__nav-link">Projets</a></li>
+            <li><a href="/fr/certifications" class="header__nav-link">Certifications</a></li>
+            <li><a href="/fr/a-propos" class="header__nav-link">À propos</a></li>
+            <li><a href="/fr/contact" class="header__nav-link">Contact</a></li>
           </ul>
         </nav>
         <div class="header__actions">
-          <a href="/fr/projets/epsi-tech" class="header__lang" data-lang-switch aria-label="Voir en français">FR</a>
+          <a href="/en/projects/secure-vault" class="header__lang" data-lang-switch aria-label="View in English">EN</a>
           <button class="header__theme" data-theme-toggle aria-pressed="false"></button>
-          <a href="/assets/cv/Redjemi_Adel_Curriculum_officiel.pdf" class="button button--outline button--small" target="_blank" rel="noopener">Resume</a>
-          <button class="header__burger" data-burger aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+          <a href="/assets/cv/Redjemi_Adel_Curriculum_officiel.pdf" class="button button--outline button--small" target="_blank" rel="noopener">CV</a>
+          <button class="header__burger" data-burger aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
       </div>
     </header>
 
     <main id="main" class="main main--detail" data-project-detail>
       <section class="container section">
-        <p>Loading project…</p>
+        <p>Chargement du projet…</p>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__main">
           <div class="footer__brand">
-            <a href="/en/" class="footer__logo">Adel <span class="text-accent">REDJEMI</span></a>
-            <p class="footer__tagline">CS Student (B02) · EPITECH Paris (Cybersecurity)</p>
+            <a href="/fr/" class="footer__logo">Adel <span class="text-accent">REDJEMI</span></a>
+            <p class="footer__tagline">Étudiant Bachelor 02 · EPITECH Paris (Cybersécurité)</p>
             <p class="footer__status">
               <span class="footer__status-dot" aria-hidden="true"></span>
-              <span>Seeking 6-month cybersecurity internship</span>
+              <span>Recherche stage 6 mois en cybersécurité</span>
             </p>
             <div class="footer__socials">
               <a href="https://www.linkedin.com/in/m-redjemi/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer__social"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
@@ -92,11 +91,11 @@
           <div class="footer__col">
             <h4 class="footer__heading">Navigation</h4>
             <ul class="footer__links">
-              <li><a href="/en/">Home</a></li>
-              <li><a href="/en/projets">Projects</a></li>
-              <li><a href="/en/certifications">Certifications</a></li>
-              <li><a href="/en/a-propos">About</a></li>
-              <li><a href="/en/contact">Contact</a></li>
+              <li><a href="/fr/">Accueil</a></li>
+              <li><a href="/fr/projets">Projets</a></li>
+              <li><a href="/fr/certifications">Certifications</a></li>
+              <li><a href="/fr/a-propos">À propos</a></li>
+              <li><a href="/fr/contact">Contact</a></li>
             </ul>
           </div>
 
@@ -112,7 +111,7 @@
         </div>
 
         <div class="footer__bottom">
-          <p class="footer__copyright">© 2026 Adel Redjemi. All rights reserved.</p>
+          <p class="footer__copyright">© 2026 Adel Redjemi. Tous droits réservés.</p>
           <p class="footer__version">v2.0</p>
         </div>
       </div>
