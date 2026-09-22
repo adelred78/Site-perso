@@ -3,7 +3,7 @@
     "lang": "en",
     "dir": "ltr",
     "siteName": "Adel Redjemi",
-    "siteDescription": "Adel Redjemi — Computer Science Bachelor's student at EPSI Paris. Fullstack, Linux, networking. Currently interning at Glikt."
+    "siteDescription": "Adel Redjemi — Computer Science Student at EPITECH Paris (B02). Hands-on projects in cybersecurity, Java, Linux, and networking."
   },
   "nav": {
     "home": "Home",
@@ -19,29 +19,38 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Computer Science Student · EPSI Paris",
+      "eyebrow": "Computer Science Student (B02) · EPITECH Paris",
       "name": "Adel Redjemi",
-      "tagline": "Aiming for excellence in IT — web, embedded systems and AI.",
-      "description": "Computer Science Bachelor's student at EPSI Paris, building expertise across three axes: web development, embedded systems and artificial intelligence. Currently interning at Glikt.",
+      "tagline": "Hands-on projects in cybersecurity, Java, Linux, networking, and security labs.",
+      "description": "Computer Science student at EPITECH Paris building a strong practical foundation in cybersecurity through personal Java projects, Linux security labs, network analysis, and CTFs.",
       "ctaPrimary": "See my work",
       "ctaSecondary": "Get in touch",
       "photoAlt": "Portrait of Adel Redjemi"
     },
     "status": {
-      "internship": "🟢 Full Stack Intern at Glikt (mid-April → mid-June 2026 · 2 months)",
-      "search": "🔍 Open to apprenticeship from September 2026"
+      "internship": "🔒 Seeking a 6-month cybersecurity internship",
+      "search": "🎯 Followed by a cybersecurity-oriented apprenticeship"
     },
     "about": {
       "heading": "Who I am",
       "paragraphs": [
-        "Bachelor's student in Computer Science at EPSI Paris. What draws me to computer science is understanding the entire stack — not just plugging into a framework.",
-        "On the code side, I work with PHP, JavaScript and SQL. On the infrastructure side, I build networks on VirtualBox and use Linux daily. On the hands-on side, I built a chain-reaction machine that won a contest, and an IoT platform tracking soil moisture.",
-        "I learn by building. When something breaks, I want to know why."
+        "Computer Science student at EPITECH Paris (Bachelor 02 / B02). After completing the EPITECH Java Piscine in September 2026, I focused my learning path on cybersecurity.",
+        "I build concrete projects such as Secure Vault (a secure Java CLI file vault), a Home SOC Lab (traffic analysis, SSH log monitoring, and detection), and CTF challenges in Exegol, alongside core networking foundations.",
+        "I learn by building, testing, and analyzing real system behavior and protocol mechanics."
       ],
       "stats": [
-        { "value": "10", "label": "projects shipped" },
-        { "value": "2", "label": "awards won" },
-        { "value": "16.28", "label": "/20 math diploma" }
+        {
+          "value": "13",
+          "label": "projects & labs"
+        },
+        {
+          "value": "2",
+          "label": "awards won"
+        },
+        {
+          "value": "16.28",
+          "label": "/20 in math baccalaureate"
+        }
       ]
     },
     "featured": {
@@ -53,11 +62,62 @@
       "heading": "Tech stack",
       "subheading": "What I use daily",
       "categories": [
-        { "icon": "🌐", "title": "Web", "items": ["HTML5", "CSS3", "JavaScript", "PHP 8"] },
-        { "icon": "🗄️", "title": "Data", "items": ["MySQL", "PostgreSQL", "Supabase"] },
-        { "icon": "🐧", "title": "Systems & networking", "items": ["Linux (Ubuntu, Debian)", "Docker", "VirtualBox", "VMware"] },
-        { "icon": "🛠️", "title": "Tools", "items": ["Git", "GitHub", "VS Code", "Figma", "Postman"] },
-        { "icon": "🔌", "title": "Embedded & IoT", "items": ["Arduino", "ESP32", "Node-RED"] }
+        {
+          "icon": "🔒",
+          "title": "Cybersecurity",
+          "items": [
+            "Exegol",
+            "Nmap",
+            "Wireshark",
+            "tcpdump",
+            "Log Analysis",
+            "Secured Java",
+            "Hardening"
+          ]
+        },
+        {
+          "icon": "☕",
+          "title": "Programming",
+          "items": [
+            "Java (Priority)",
+            "Python",
+            "JavaScript",
+            "HTML5/CSS3"
+          ]
+        },
+        {
+          "icon": "🐧",
+          "title": "Systems & Networking",
+          "items": [
+            "Linux",
+            "TCP/IP",
+            "GNS3",
+            "ESXi",
+            "pfSense/OPNsense",
+            "Active Directory",
+            "DHCP",
+            "SSH"
+          ]
+        },
+        {
+          "icon": "🛠️",
+          "title": "Tools & Services",
+          "items": [
+            "Git",
+            "GitHub",
+            "VS Code",
+            "Vercel",
+            "Supabase"
+          ]
+        },
+        {
+          "icon": "🔌",
+          "title": "Embedded & IoT",
+          "items": [
+            "ESP32",
+            "Node-RED"
+          ]
+        }
       ]
     },
     "awards": {
@@ -68,7 +128,7 @@
         {
           "icon": "🏆",
           "title": "Rube Goldberg Workshop — 1st place",
-          "body": "EPSI Workshop 2025. Chain-reaction machine built with a team of 5. Presented to academic jury.",
+          "body": "Rube Goldberg Workshop 2025. Chain-reaction machine built with a team of 5. Presented to academic jury.",
           "certificate": "/assets/certificates/rube-goldberg.pdf"
         },
         {
@@ -89,7 +149,7 @@
   },
   "projectsPage": {
     "title": "Projects",
-    "subtitle": "10 builds · academic and personal",
+    "subtitle": "Projects and labs in cybersecurity, networking, and software development",
     "filters": {
       "typeLabel": "Type",
       "categoryLabel": "Category",
@@ -106,7 +166,8 @@
         "vr": "VR",
         "embedded": "Embedded",
         "algorithm": "Algorithms",
-        "tools": "Tools"
+        "tools": "Tools",
+        "cyber": "Cybersecurity"
       },
       "reset": "Reset filters",
       "noResults": "No project matches. Try another filter.",
@@ -153,22 +214,22 @@
   "about": {
     "hero": {
       "title": "About",
-      "bio": "Bachelor's student in Computer Science at EPSI Paris. What I love: understanding systems, breaking things to fix them, and shipping projects that work."
+      "bio": "Computer Science Student (B02) at EPITECH Paris. Focus on cybersecurity, Java, Linux, networking, and security labs."
     },
     "story": {
       "heading": "My story",
       "blocks": [
         {
-          "title": "My background",
-          "body": "I earned my mathematics baccalauréat with high honors (16.28/20) in July 2025 at Lycée Amara Rachid in Algiers. In parallel, I had already started coding: an intensive web development bootcamp at Code213 (Algiers), 192 hours of HTML, CSS and JavaScript basics. That's when I knew this was what I wanted to do.\n\nI joined EPSI Paris in 2025 for my Bachelor's in Computer Science. Today, I'm doing a Full Stack internship at Glikt in Courbevoie."
+          "title": "From Lycée Amara Rachid to EPITECH Paris",
+          "body": "I graduated with a Mathematics Baccalaureate (High Honors, 16.28/20) at Lycée Amara Rachid in Algiers. Alongside high school, I completed a 192-hour web development training program at Code213.\n\nIn 2025, I joined computer science studies before continuing at EPITECH Paris (Bachelor 02 / B02). Completing the EPITECH Java Piscine in September 2026 was a major milestone toward building independent cybersecurity projects."
         },
         {
-          "title": "Why computer science",
-          "body": "What draws me isn't just writing code. It's understanding how everything holds together. From the TCP packet traveling, to the SQL query responding, to the CSS aligning a button — everything is connected. I love that full-stack dimension.\n\nAt EPSI, I didn't want to specialize too early. I'm aiming for excellence across three axes: web, embedded systems and AI. I'll dive deeper later. For now, I'm building on all three."
+          "title": "Why Cybersecurity",
+          "body": "What drives me is understanding how systems and networks work beneath the surface. Analyzing how data packets travel, how authentication and encryption protect files, and how to detect anomalies on a Linux server.\n\nMy focus areas include offensive security foundations (Nmap enumeration, Exegol CTFs, vulnerability analysis), defensive security (Wireshark/tcpdump packet analysis, SSH log monitoring, detection), network infrastructure (GNS3, ESXi, pfSense), and secure Java development."
         },
         {
-          "title": "How I work",
-          "body": "I learn by building, not by piling up courses. I test, I break things, I fix them — and when something gives out, I want to understand why rather than work around it. That's usually where I make the most progress.\n\nIn teams, I like concrete roles. On the Rube Goldberg project, I was in charge of the Tinkercad design. We won the contest."
+          "title": "Methodology & Teamwork",
+          "body": "I learn by building, testing, and documenting. When something breaks, I investigate the root cause rather than applying quick workarounds.\n\nIn team settings, I bring technical rigor and clarity. During the Rube Goldberg Machine competition, I managed the 3D design on Tinkercad, winning 1st place locally and advancing to the national presentation."
         }
       ]
     },
@@ -176,28 +237,28 @@
       "heading": "Path",
       "items": [
         {
-          "date": "Mid-April → Mid-June 2026",
-          "title": "Full Stack Internship",
-          "institution": "Glikt — Courbevoie (92), France",
-          "body": "Contributing to the global infrastructure: ideation, technical writing, UI/UX, front-end, back-end, databases."
+          "date": "2026 – Present",
+          "title": "EPITECH Paris — Bachelor 02 & Cybersecurity",
+          "institution": "EPITECH Paris",
+          "body": "Computer science studies with a primary focus on cybersecurity: secure Java, Linux, networking, SOC labs, and CTFs."
         },
         {
-          "date": "2025 – 2026",
-          "title": "Bachelor's Year 1 in CS",
-          "institution": "EPSI Paris — Courbevoie (92)",
-          "body": "Algorithms, HTML/CSS, PHP/MySQL, Python, SQL, virtualization, IoT, VR, network architecture."
+          "date": "September 2026",
+          "title": "EPITECH Java Piscine",
+          "institution": "EPITECH Paris",
+          "body": "Intensive immersion in Java OOP and algorithms. Catalyst for building the Secure Vault project."
         },
         {
-          "date": "2025 – 2026",
-          "title": "Web Development Bootcamp",
+          "date": "2025",
+          "title": "Web Development Training",
           "institution": "Code213 — El Biar, Algiers",
-          "body": "Intensive 192-hour training: HTML, CSS, intro to JavaScript. Interrupted due to international move."
+          "body": "192-hour training program: HTML, CSS, JavaScript fundamentals."
         },
         {
           "date": "July 2025",
-          "title": "Mathematics Baccalauréat",
-          "institution": "Lycée Amara Rachid — Ben Aknoun, Algiers",
-          "body": "Earned with high honors (16.28/20)."
+          "title": "Mathematics Baccalaureate — High Honors",
+          "institution": "Lycée Amara Rachid — Algiers",
+          "body": "Graduated with High Honors (16.28/20)."
         }
       ]
     },
@@ -225,18 +286,51 @@
     "languages": {
       "heading": "Languages",
       "items": [
-        { "flag": "🇫🇷", "name": "French", "level": "Bilingual" },
-        { "flag": "🇬🇧", "name": "English", "level": "Intermediate" }
+        {
+          "flag": "🇫🇷",
+          "name": "French",
+          "level": "Bilingual"
+        },
+        {
+          "flag": "🇩🇿",
+          "name": "Arabic & Kabyle",
+          "level": "Native / Bilingual"
+        },
+        {
+          "flag": "🇬🇧",
+          "name": "English",
+          "level": "Intermediate (actively improving)"
+        },
+        {
+          "flag": "🇪🇸",
+          "name": "Spanish",
+          "level": "Future goal"
+        }
       ]
     },
     "interests": {
       "heading": "Interests",
       "items": [
-        { "icon": "🥊", "title": "English boxing", "body": "Former practice." },
-        { "icon": "📚", "title": "Reading", "body": "Novels and computer science books." },
-        { "icon": "🎧", "title": "Tech podcasts", "body": "Underscore_, Hugo Décrypte." },
-        { "icon": "♟️", "title": "Chess", "body": "Strategic mindset training." },
-        { "icon": "🛠️", "title": "Building projects", "body": "Personal projects, app and system management." }
+        {
+          "icon": "🔒",
+          "title": "Cybersecurity & Labs",
+          "body": "Exegol CTFs, TryHackMe, log investigation, and networking."
+        },
+        {
+          "icon": "🤖",
+          "title": "Robotics & Embedded Systems",
+          "body": "Secondary long-term interest: drones, infrastructure automation, and autonomous systems."
+        },
+        {
+          "icon": "☕",
+          "title": "Java Projects",
+          "body": "Building CLI tools and security-oriented applications."
+        },
+        {
+          "icon": "📚",
+          "title": "Reading & Tech Watch",
+          "body": "Technical documentation, networking, and cybersecurity."
+        }
       ]
     },
     "cv": {
@@ -249,7 +343,7 @@
   "contact": {
     "hero": {
       "title": "Let's work together",
-      "intro": "Internship, apprenticeship, or just a tech chat: I'm open. Best channel is email — I reply within 24 to 48 hours."
+      "intro": "Actively looking for a 6-month cybersecurity internship, followed by an apprenticeship. Open to technical opportunities and professional networking."
     },
     "form": {
       "heading": "Send me a message",
@@ -277,11 +371,11 @@
       "email": "Email",
       "linkedin": "LinkedIn",
       "github": "GitHub",
-      "location": "Courbevoie / Paris (92), France",
+      "location": "Paris & Île-de-France",
       "availabilityHeading": "Current availability",
       "availabilityItems": [
-        "🟢 Interning at Glikt until mid-June 2026",
-        "🔍 Open to apprenticeship starting September 2026"
+        "🔒 Seeking 6-month cybersecurity internship",
+        "🎯 Followed by cybersecurity apprenticeship"
       ],
       "replyTimeHeading": "Reply time",
       "replyTimeBody": "Within 24-48h on business days"

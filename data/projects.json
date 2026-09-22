@@ -2,9 +2,510 @@
   "$schema": "Source de vérité pour tous les projets. Lu par /fr/projets, /en/projects et les templates de détail.",
   "projects": [
     {
-      "slug": "jobtracker",
+      "slug": "secure-vault",
       "featured": true,
       "order": 0,
+      "type": "personal",
+      "category": "cyber",
+      "date": "2026",
+      "badge": {
+        "fr": "🔒 Cybersécurité",
+        "en": "🔒 Cybersecurity"
+      },
+      "title": {
+        "fr": "Secure Vault — Coffre-fort CLI Java",
+        "en": "Secure Vault — Java CLI Vault"
+      },
+      "subtitle": {
+        "fr": "Application Java CLI de coffre-fort de fichiers sécurisé développée à la suite de la Piscine Java EPITECH pour appliquer les concepts de cybersécurité.",
+        "en": "Java CLI secure file vault developed after the EPITECH Java Piscine to apply cybersecurity concepts."
+      },
+      "pitch": {
+        "fr": "Coffre-fort de fichiers en ligne de commande : authentification, dérivation PBKDF2-HMAC-SHA-256, chiffrement AES-256-GCM, protection path traversal et journalisation d'audit.",
+        "en": "Command-line file vault: authentication, PBKDF2-HMAC-SHA-256 derivation, AES-256-GCM encryption, path traversal prevention, and audit logging."
+      },
+      "meta": {
+        "team": {
+          "fr": "Solo (projet perso)",
+          "en": "Solo (personal project)"
+        },
+        "duration": {
+          "fr": "2026",
+          "en": "2026"
+        },
+        "role": {
+          "fr": "Développement Java & Sécurité",
+          "en": "Java & Security Development"
+        },
+        "result": {
+          "fr": "🛡️ Projet fonctionnel sur GitHub",
+          "en": "🛡️ Working project on GitHub"
+        }
+      },
+      "tech": [
+        "Java",
+        "PBKDF2",
+        "AES-256-GCM",
+        "Java NIO",
+        "Cybersecurity",
+        "Git"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78/securevault-java",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&q=80&auto=format&fit=crop",
+        "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80&auto=format&fit=crop",
+        "og": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&q=80&auto=format&fit=crop",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Projet personnel développé après la Piscine Java EPITECH pour appliquer les concepts de programmation Java à des enjeux concrets de cybersécurité.",
+          "en": "Personal project built after the EPITECH Java Piscine to apply Java development concepts to concrete cybersecurity challenges."
+        },
+        "problem": {
+          "fr": "Comment stocker et manipuler des fichiers sensibles en local en garantissant l'authentification, le chiffrement fort, la résistance aux attaques par force brute et la traçabilité ?",
+          "en": "How to locally store and handle sensitive files while guaranteeing authentication, strong encryption, brute-force resistance, and auditability?"
+        },
+        "solution": {
+          "fr": "Un coffre-fort CLI modulaire en Java intégrant PBKDF2-HMAC-SHA-256 avec sels aléatoires pour l'authentification, le chiffrement authentifié AES-256-GCM pour les fichiers, la prévention du path traversal, le verrouillage temporaire en cas d'échec et une journalisation d'audit des actions.",
+          "en": "A modular Java CLI vault featuring PBKDF2-HMAC-SHA-256 with random salts for authentication, AES-256-GCM authenticated encryption for files, path traversal prevention, temporary lockout on failure, and audit logging."
+        },
+        "myWork": {
+          "fr": [
+            "Implémentation de l'authentification et dérivation de clés via PBKDF2-HMAC-SHA-256 avec sels uniques",
+            "Chiffrement et déchiffrement authentifié des fichiers personnels via AES-256-GCM",
+            "Isolation des coffres-forts par utilisateur et contrôle d'accès strict",
+            "Sécurisation des chemins de fichiers pour empêcher les attaques par Path Traversal",
+            "Mécanisme de verrouillage temporaire du compte contre les tentatives de force brute",
+            "Système de journalisation d'audit (AuditLogger) pour suivre les événements de sécurité"
+          ],
+          "en": [
+            "Implemented authentication and key derivation via PBKDF2-HMAC-SHA-256 with unique salts",
+            "Authenticated file encryption and decryption using AES-256-GCM",
+            "User-level vault isolation and strict access control",
+            "Path sanitization to prevent Path Traversal attacks",
+            "Temporary login lockout mechanism against brute-force attempts",
+            "Audit logging system (AuditLogger) for tracking security events"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🔑",
+            "title": {
+              "fr": "Cryptographie appliquée",
+              "en": "Applied Cryptography"
+            },
+            "body": {
+              "fr": "Pratique concrète du chiffrement authentifié (AES-GCM) et de la dérivation de mot de passe sécurisée (PBKDF2).",
+              "en": "Hands-on experience with authenticated encryption (AES-GCM) and secure password derivation (PBKDF2)."
+            }
+          },
+          {
+            "icon": "🛡️",
+            "title": {
+              "fr": "Programmation défensive",
+              "en": "Defensive Programming"
+            },
+            "body": {
+              "fr": "Gestion rigoureuse des entrées utilisateurs pour neutraliser le path traversal et les injections de chemins.",
+              "en": "Rigorous user input validation to neutralize path traversal and path injection attacks."
+            }
+          },
+          {
+            "icon": "📝",
+            "title": {
+              "fr": "Traçabilité & Audit",
+              "en": "Traceability & Audit"
+            },
+            "body": {
+              "fr": "Mise en place d'un journal d'audit non répudiable pour tracer les accès et échecs de connexion.",
+              "en": "Implementation of an audit logger to track accesses and connection failures."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "home-soc-lab",
+      "featured": true,
+      "order": 1,
+      "type": "personal",
+      "category": "cyber",
+      "date": "2026",
+      "badge": {
+        "fr": "🛡️ Blue Team / SOC",
+        "en": "🛡️ Blue Team / SOC"
+      },
+      "title": {
+        "fr": "Home SOC Lab — Analyse & Détection",
+        "en": "Home SOC Lab — Analysis & Detection"
+      },
+      "subtitle": {
+        "fr": "Lab de sécurité domestique sur 7 jours axé sur la visibilité réseau, le monitoring SSH, l'analyse de logs et la détection d'attaques.",
+        "en": "7-day home security lab focused on network visibility, SSH monitoring, log analysis, and attack detection."
+      },
+      "pitch": {
+        "fr": "Environnement virtuel d'expérimentation SOC : capture de trafic Wireshark/tcpdump, énumération Nmap, analyse des journaux SSH et écriture de scripts Bash de détection d'intrusion.",
+        "en": "Virtual SOC experiment environment: Wireshark/tcpdump traffic capture, Nmap enumeration, SSH log investigation, and Bash intrusion detection scripting."
+      },
+      "meta": {
+        "team": {
+          "fr": "Solo (projet perso)",
+          "en": "Solo (personal project)"
+        },
+        "duration": {
+          "fr": "7 jours (projet structuré)",
+          "en": "7 days (structured project)"
+        },
+        "role": {
+          "fr": "Analyse réseau & Détection",
+          "en": "Network Analysis & Detection"
+        },
+        "result": {
+          "fr": "📊 Lab & Scripts validés",
+          "en": "📊 Lab & Scripts validated"
+        }
+      },
+      "tech": [
+        "Linux",
+        "Wireshark",
+        "tcpdump",
+        "Nmap",
+        "SSH",
+        "Bash",
+        "SOC",
+        "Blue Team"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80&auto=format&fit=crop",
+        "thumb": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&auto=format&fit=crop",
+        "og": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80&auto=format&fit=crop",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Projet pratique de lab de sécurité Blue Team structuré sur une semaine pour développer une expérience directe des outils de réseau et de journalisation sous Linux.",
+          "en": "Hands-on Blue Team security lab structured over one week to gain direct experience with Linux networking and logging tools."
+        },
+        "problem": {
+          "fr": "Comment observer le comportement d'un attaquant sur le réseau et détecter des tentatives d'intrusion SSH ou de scan de ports en utilisant des outils d'analyse open-source ?",
+          "en": "How to observe attacker behavior on the network and detect SSH intrusion attempts or port scans using open-source analysis tools?"
+        },
+        "solution": {
+          "fr": "Déploiement d'un lab virtuel (Kali & Ubuntu Server), capture de paquets pcap, analyse d'empreintes Nmap, chronologie des événements dans auth.log et écriture d'alertes automatisées en Bash.",
+          "en": "Deployment of a virtual lab (Kali & Ubuntu Server), pcap packet capture, Nmap fingerprint analysis, timeline reconstruction in auth.log, and Bash automated alerting scripts."
+        },
+        "myWork": {
+          "fr": [
+            "Configuration de l'infrastructure du lab (Kali Linux, Ubuntu Target, routage local)",
+            "Capture et inspection de trafic réseau en ligne de commande (tcpdump) et avec Wireshark",
+            "Analyse de scans Nmap et cartographie de la surface d'attaque du serveur cible",
+            "Monitoring et reconstitution d'attaques par force brute SSH à partir des logs (/var/log/auth.log)",
+            "Développement d'un script Bash de détection et d'alerte sur les échecs de connexion répétés",
+            "Documentation de la chronologie d'attaque et recommandations de hardening SSH"
+          ],
+          "en": [
+            "Lab infrastructure setup (Kali Linux, Ubuntu Target, local routing)",
+            "Network traffic capture and inspection via command-line (tcpdump) and Wireshark",
+            "Nmap scan analysis and mapping of the target server's attack surface",
+            "Monitoring and timeline reconstruction of SSH brute-force attacks from log files (/var/log/auth.log)",
+            "Development of a Bash detection and alerting script for repeated connection failures",
+            "Attack timeline documentation and SSH hardening recommendations"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🌐",
+            "title": {
+              "fr": "Visibilité réseau",
+              "en": "Network Visibility"
+            },
+            "body": {
+              "fr": "Maîtrise de tcpdump et Wireshark pour analyser les paquets TCP/IP et détecter les anomalies.",
+              "en": "Mastery of tcpdump and Wireshark for TCP/IP packet analysis and anomaly detection."
+            }
+          },
+          {
+            "icon": "📊",
+            "title": {
+              "fr": "Analyse de logs",
+              "en": "Log Analysis"
+            },
+            "body": {
+              "fr": "Capacité à reconstruire une chronologie d'incident à partir des journaux système Linux.",
+              "en": "Ability to reconstruct incident timelines from Linux system logs."
+            }
+          },
+          {
+            "icon": "🛡️",
+            "title": {
+              "fr": "Hardening",
+              "en": "Hardening"
+            },
+            "body": {
+              "fr": "Application de mesures concrètes d'endurcissement système et de filtrage d'accès.",
+              "en": "Implementation of concrete system hardening and access filtering measures."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "exegol-ctf-labs",
+      "featured": true,
+      "order": 2,
+      "type": "personal",
+      "category": "cyber",
+      "date": "2026",
+      "badge": {
+        "fr": "🎯 CTF & Security Labs",
+        "en": "🎯 CTF & Security Labs"
+      },
+      "title": {
+        "fr": "Exegol / CTF Security Labs",
+        "en": "Exegol / CTF Security Labs"
+      },
+      "subtitle": {
+        "fr": "Résolution de challenges de sécurité et laboratoires pratiques dans l'environnement containerisé Exegol d'EPITECH.",
+        "en": "Security challenge resolution and practical labs in EPITECH's containerized Exegol environment."
+      },
+      "pitch": {
+        "fr": "Pratique offensive et défensive : énumération Nmap/curl, analyse d'applications web, exploitation de mauvais paramétrages FTP/SSH, et élévation de privilèges Linux.",
+        "en": "Offensive and defensive practice: Nmap/curl enumeration, web app analysis, FTP/SSH misconfiguration exploitation, and Linux privilege escalation."
+      },
+      "meta": {
+        "team": {
+          "fr": "Solo (pratique lab)",
+          "en": "Solo (lab practice)"
+        },
+        "duration": {
+          "fr": "2026 · pratique continue",
+          "en": "2026 · ongoing practice"
+        },
+        "role": {
+          "fr": "Recherche de vulnérabilités & CTF",
+          "en": "Vulnerability Research & CTF"
+        },
+        "result": {
+          "fr": "🏁 Challenges validés",
+          "en": "🏁 Solved challenges"
+        }
+      },
+      "tech": [
+        "Exegol",
+        "Linux",
+        "Nmap",
+        "Web Security",
+        "SSH",
+        "FTP",
+        "Privilege Escalation",
+        "CTF"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=1200&q=80&auto=format&fit=crop",
+        "thumb": "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=800&q=80&auto=format&fit=crop",
+        "og": "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=1200&q=80&auto=format&fit=crop",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Série d'entraînements pratiques sur la plateforme Exegol d'EPITECH pour comprendre le fonctionnement interne des services et des vulnérabilités courantes.",
+          "en": "Series of hands-on practice sessions on EPITECH's Exegol platform to understand the inner workings of services and common vulnerabilities."
+        },
+        "problem": {
+          "fr": "Comment identifier méthodiquement les points d'entrée d'un système distant et comprendre les faiblesses d'application ou de configuration d'un serveur ?",
+          "en": "How to methodically identify remote system entry points and understand server configuration or application weaknesses?"
+        },
+        "solution": {
+          "fr": "Application d'une démarche d'investigation rigoureuse : reconnaissance, énumération de services, analyse du comportement des applications et élévation de privilèges sur Linux.",
+          "en": "Application of a rigorous investigation process: reconnaissance, service enumeration, application behavior analysis, and Linux privilege escalation."
+        },
+        "myWork": {
+          "fr": [
+            "Challenge 'Fun With Functional' : énumération réseau Nmap, requêtes HTTP/curl, analyse d'upload de fichiers Haskell et comportement serveur",
+            "Challenge 'Batman's Secret' : investigation de services FTP anonymes, accès SSH, analyse de journaux et comportement d'application web",
+            "Challenge 'Toss a Coin #2' : énumération Apache/SSH, privilèges sudo (sudo -l), exécution Python contrôlée et limites de privilèges utilisateur",
+            "Pratique régulière des commandes de reconnaissance et d'inspection sur conteneurs Exegol"
+          ],
+          "en": [
+            "'Fun With Functional' Challenge: Nmap network enumeration, HTTP/curl requests, Haskell file upload analysis, and server behavior assessment",
+            "'Batman's Secret' Challenge: Anonymous FTP service investigation, SSH access, log analysis, and web application behavior",
+            "'Toss a Coin #2' Challenge: Apache/SSH enumeration, sudo privilege inspection (sudo -l), controlled Python execution, and user privilege boundaries",
+            "Regular practice of reconnaissance and inspection commands using Exegol containers"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🔎",
+            "title": {
+              "fr": "Énumération rigoureuse",
+              "en": "Rigorous Enumeration"
+            },
+            "body": {
+              "fr": "Apprentissage de la méthodologie de découverte sans précipiter l'exploitation.",
+              "en": "Learning discovery methodology without rushing into exploitation."
+            }
+          },
+          {
+            "icon": "⚙️",
+            "title": {
+              "fr": "Compréhension des services",
+              "en": "Service Understanding"
+            },
+            "body": {
+              "fr": "Analyse approfondie du fonctionnement de HTTP, SSH, FTP et des limites de privilèges Linux.",
+              "en": "In-depth analysis of HTTP, SSH, FTP mechanisms and Linux privilege boundaries."
+            }
+          },
+          {
+            "icon": "🧪",
+            "title": {
+              "fr": "Expérimentation contrôlée",
+              "en": "Controlled Experimentation"
+            },
+            "body": {
+              "fr": "Utilisation d'Exegol pour tester et documenter la logique de chaque vulnérabilité.",
+              "en": "Using Exegol to test and document the logic of each vulnerability."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "network-infra",
+      "featured": true,
+      "order": 3,
+      "type": "academic",
+      "category": "network",
+      "date": "2025",
+      "badge": {
+        "fr": "🌐 Infra & Réseau",
+        "en": "🌐 Infra & Network"
+      },
+      "title": {
+        "fr": "STOCKME — Infrastructure Réseau & Sécurité",
+        "en": "STOCKME — Network & Security Infrastructure"
+      },
+      "subtitle": {
+        "fr": "Architecture réseau et sécurité sous GNS3 et ESXi : pare-feu pfSense/OPNsense, Active Directory, DHCP, routage et services réseau.",
+        "en": "Network and security architecture in GNS3 and ESXi: pfSense/OPNsense firewalls, Active Directory, DHCP, routing, and network services."
+      },
+      "pitch": {
+        "fr": "Conception et déploiement d'une infrastructure d'entreprise virtualisée sous GNS3 et ESXi avec segmentation réseau, pare-feu, services Active Directory et DHCP.",
+        "en": "Design and deployment of a virtualized enterprise infrastructure in GNS3 and ESXi featuring network segmentation, firewalls, Active Directory, and DHCP services."
+      },
+      "meta": {
+        "team": {
+          "fr": "Projet transversal",
+          "en": "Cross-functional project"
+        },
+        "duration": {
+          "fr": "Plusieurs semaines",
+          "en": "Several weeks"
+        },
+        "role": {
+          "fr": "Architecte réseau & sysadmin",
+          "en": "Network architect & sysadmin"
+        },
+        "result": {
+          "fr": "Infrastructure fonctionnelle",
+          "en": "Working infrastructure"
+        }
+      },
+      "tech": [
+        "GNS3",
+        "ESXi",
+        "pfSense",
+        "OPNsense",
+        "Active Directory",
+        "DHCP",
+        "Réseau",
+        "Cybersecurity"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/network-infra/cover.png",
+        "thumb": "/assets/img/projects/network-infra/cover.png",
+        "og": "/assets/img/projects/network-infra/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Projet transversal EPSI 2025 — concevoir et déployer une infrastructure réseau d'entreprise sécurisée, depuis les schémas de haut niveau jusqu'à la configuration des machines virtuelles.",
+          "en": "EPSI 2025 cross-functional project — design and deploy a secure corporate network infrastructure, from high-level diagrams to VM configuration."
+        },
+        "problem": {
+          "fr": "Construire un réseau d'entreprise réaliste : segmenter les services, isoler les zones sensibles, documenter l'architecture pour qu'un autre admin puisse la reprendre.",
+          "en": "Build a realistic corporate network: segment services, isolate sensitive zones, document the architecture so another admin can take it over."
+        },
+        "solution": {
+          "fr": "Documents HLD (High Level Design) et LLD (Low Level Design) avant tout déploiement. Segmentation par VLAN, machines virtuelles Linux déployées sous VirtualBox, configuration testée puis validée.",
+          "en": "HLD (High Level Design) and LLD (Low Level Design) docs before any deployment. VLAN segmentation, Linux VMs deployed on VirtualBox, configuration tested and validated."
+        },
+        "myWork": {
+          "fr": [
+            "Rédaction des documents HLD et LLD",
+            "Schémas réseau sur Microsoft Visio",
+            "Déploiement et configuration de VMs Linux",
+            "Mise en place de la segmentation VLAN",
+            "Tests de connectivité et validation"
+          ],
+          "en": [
+            "Wrote HLD and LLD documents",
+            "Network diagrams in Microsoft Visio",
+            "Deployed and configured Linux VMs",
+            "Set up VLAN segmentation",
+            "Connectivity tests and validation"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "📐",
+            "title": {
+              "fr": "Documenter avant de configurer",
+              "en": "Document before configuring"
+            },
+            "body": {
+              "fr": "Un schéma clair évite des heures de troubleshooting en production.",
+              "en": "A clear diagram saves hours of production troubleshooting."
+            }
+          },
+          {
+            "icon": "🐧",
+            "title": {
+              "fr": "Linux en pratique",
+              "en": "Linux in practice"
+            },
+            "body": {
+              "fr": "Manipuler Linux au quotidien sur des VMs, c'est très différent de lire un cours.",
+              "en": "Daily Linux work on VMs is very different from reading a textbook."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "jobtracker",
+      "featured": false,
+      "order": 4,
       "type": "personal",
       "category": "web",
       "date": "2026",
@@ -177,9 +678,361 @@
       }
     },
     {
+      "slug": "hydrotrack",
+      "featured": false,
+      "order": 5,
+      "type": "academic",
+      "category": "iot",
+      "date": "2025",
+      "badge": {
+        "fr": "🌱 IoT",
+        "en": "🌱 IoT"
+      },
+      "title": {
+        "fr": "HydroTrack — Plateforme d'arrosage intelligent",
+        "en": "HydroTrack — Smart Watering Platform"
+      },
+      "subtitle": {
+        "fr": "Capteurs ESP32, flux Node-RED, base Supabase. Croisement des données météo et de l'humidité du sol pour optimiser l'arrosage.",
+        "en": "ESP32 sensors, Node-RED flows, Supabase backend. Cross-references weather data and soil humidity to optimize watering."
+      },
+      "pitch": {
+        "fr": "Plateforme IoT d'arrosage intelligent : ESP32, Node-RED et Supabase combinés à une API météo.",
+        "en": "Smart IoT watering platform: ESP32, Node-RED and Supabase combined with a weather API."
+      },
+      "meta": {
+        "team": {
+          "fr": "Projet académique",
+          "en": "Academic project"
+        },
+        "duration": {
+          "fr": "Plusieurs semaines",
+          "en": "Several weeks"
+        },
+        "role": {
+          "fr": "Dev IoT + Web",
+          "en": "IoT + Web Dev"
+        },
+        "result": {
+          "fr": "Prototype fonctionnel",
+          "en": "Working prototype"
+        }
+      },
+      "tech": [
+        "ESP32",
+        "Node-RED",
+        "Supabase",
+        "PostgreSQL",
+        "API météo"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/hydrotrack/cover.png",
+        "thumb": "/assets/img/projects/hydrotrack/cover.png",
+        "og": "/assets/img/projects/hydrotrack/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Projet académique EPSI orienté agriculture intelligente. L'enjeu : aider les agriculteurs à arroser au bon moment, ni trop, ni trop peu. Un capteur seul ne suffit pas — il faut croiser ce qu'il mesure avec la météo à venir.",
+          "en": "EPSI academic project focused on smart agriculture. The challenge: help farmers water at the right time — neither too much, nor too little. A sensor alone isn't enough — you need to cross what it measures with upcoming weather."
+        },
+        "problem": {
+          "fr": "Comment combiner des données capteurs en temps réel (humidité du sol) avec des prévisions externes (API météo), les stocker proprement, et restituer une décision claire à l'utilisateur ? Le tout sur du matériel embarqué peu coûteux.",
+          "en": "How do you combine real-time sensor data (soil humidity) with external forecasts (weather API), store it cleanly, and surface a clear decision to the user? All on cheap embedded hardware."
+        },
+        "solution": {
+          "fr": "Architecture en 3 couches : (1) ESP32 lit l'humidité et envoie les mesures, (2) Node-RED orchestre, interroge l'API météo, croise avec la mesure et écrit dans Supabase, (3) une interface web lit Supabase et affiche un état + une recommandation d'arrosage.",
+          "en": "Three-layer architecture: (1) ESP32 reads humidity and ships measurements, (2) Node-RED orchestrates, queries the weather API, cross-references with the measurement and writes to Supabase, (3) a web interface reads Supabase and shows status + watering recommendation."
+        },
+        "myWork": {
+          "fr": [
+            "Programmation de l'ESP32 (capteur d'humidité + envoi des données)",
+            "Conception des flux Node-RED (logique métier)",
+            "Intégration de l'API météo (récupération des prévisions)",
+            "Modélisation et alimentation de la base Supabase",
+            "Développement de l'interface web (consultation des mesures + notifications automatiques)"
+          ],
+          "en": [
+            "Programmed the ESP32 (humidity sensor + data shipping)",
+            "Designed Node-RED flows (business logic)",
+            "Integrated the weather API (forecast retrieval)",
+            "Modeled and populated the Supabase database",
+            "Built the web interface (data viewing + automatic notifications)"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🧱",
+            "title": {
+              "fr": "Penser système",
+              "en": "Systems thinking"
+            },
+            "body": {
+              "fr": "Un projet IoT, c'est 5 briques qui doivent tenir ensemble : capteur, transport, traitement, stockage, restitution.",
+              "en": "An IoT project is 5 bricks that have to hold together: sensor, transport, processing, storage, display."
+            }
+          },
+          {
+            "icon": "🔧",
+            "title": {
+              "fr": "Découvrir Node-RED",
+              "en": "Discovering Node-RED"
+            },
+            "body": {
+              "fr": "Un outil low-code étonnamment puissant pour prototyper des flux IoT.",
+              "en": "A low-code tool that's surprisingly powerful for prototyping IoT flows."
+            }
+          },
+          {
+            "icon": "🌐",
+            "title": {
+              "fr": "API externes",
+              "en": "External APIs"
+            },
+            "body": {
+              "fr": "Gérer les erreurs et les limites de requêtes d'une API tierce, ce n'est pas trivial.",
+              "en": "Handling errors and rate limits from a third-party API isn't trivial."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "epsi-tech",
+      "featured": false,
+      "order": 6,
+      "type": "academic",
+      "category": "web",
+      "date": "2025",
+      "badge": {
+        "fr": "💻 Web",
+        "en": "💻 Web"
+      },
+      "title": {
+        "fr": "EPSI Tech — E-commerce informatique",
+        "en": "EPSI Tech — IT Hardware E-commerce"
+      },
+      "subtitle": {
+        "fr": "Site e-commerce de matériel informatique avec catalogue, authentification utilisateur et gestion de commandes en MySQL.",
+        "en": "IT hardware e-commerce site with catalog, user auth and MySQL-backed order management."
+      },
+      "pitch": {
+        "fr": "E-commerce informatique en HTML/CSS/PHP/MySQL.",
+        "en": "IT e-commerce in HTML/CSS/PHP/MySQL."
+      },
+      "meta": {
+        "team": {
+          "fr": "Projet académique",
+          "en": "Academic project"
+        },
+        "duration": {
+          "fr": "Plusieurs semaines",
+          "en": "Several weeks"
+        },
+        "role": {
+          "fr": "Dev Full Stack",
+          "en": "Full Stack Dev"
+        },
+        "result": {
+          "fr": "Site fonctionnel",
+          "en": "Working site"
+        }
+      },
+      "tech": [
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/epsi-tech/cover.png",
+        "thumb": "/assets/img/projects/epsi-tech/cover.png",
+        "og": "/assets/img/projects/epsi-tech/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Itération sur les compétences e-commerce avec une autre marque fictive : EPSI Tech, spécialiste du matériel informatique.",
+          "en": "Iteration on e-commerce skills with another fictional brand: EPSI Tech, an IT hardware shop."
+        },
+        "problem": {
+          "fr": "Reproduire un parcours d'achat complet sur un catalogue tech, avec gestion des stocks et statuts de commandes.",
+          "en": "Reproduce a full purchase flow on a tech catalog, with stock and order-status handling."
+        },
+        "solution": {
+          "fr": "Architecture PHP classique, base MySQL relationnelle, interface user + interface admin séparées.",
+          "en": "Classic PHP architecture, relational MySQL database, separate user and admin interfaces."
+        },
+        "myWork": {
+          "fr": [
+            "Conception de la base MySQL (produits, catégories, stocks, commandes)",
+            "Implémentation des pages catalogue et fiches produits",
+            "Authentification utilisateur",
+            "Gestion administrateur du catalogue"
+          ],
+          "en": [
+            "Designed MySQL database (products, categories, stock, orders)",
+            "Implemented catalog and product detail pages",
+            "User authentication",
+            "Admin catalog management"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🔁",
+            "title": {
+              "fr": "Pratiquer renforce",
+              "en": "Practice reinforces"
+            },
+            "body": {
+              "fr": "Reprendre les mêmes patterns sur un nouveau contexte ancre vraiment les acquis.",
+              "en": "Reusing the same patterns in a new context really cements what you learned."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "smartbike",
+      "featured": false,
+      "order": 7,
+      "type": "academic",
+      "category": "web",
+      "date": "2025",
+      "badge": {
+        "fr": "🚲 Web",
+        "en": "🚲 Web"
+      },
+      "title": {
+        "fr": "SmartBike — E-commerce fullstack",
+        "en": "SmartBike — Fullstack E-commerce"
+      },
+      "subtitle": {
+        "fr": "Boutique en ligne complète pour une marque de vélos connectés : catalogue, authentification, panier, espace admin. Architecture MVC en PHP.",
+        "en": "Complete online store for a smart-bike brand: catalog, auth, cart, admin panel. MVC architecture in PHP."
+      },
+      "pitch": {
+        "fr": "E-commerce complet en PHP/MySQL : inscription, connexion, panier, admin. Architecture MVC.",
+        "en": "Full PHP/MySQL e-commerce: sign-up, login, cart, admin. MVC architecture."
+      },
+      "meta": {
+        "team": {
+          "fr": "5 personnes",
+          "en": "5 people"
+        },
+        "duration": {
+          "fr": "Projet transversal",
+          "en": "Cross-functional project"
+        },
+        "role": {
+          "fr": "Dev Full Stack",
+          "en": "Full Stack Dev"
+        },
+        "result": {
+          "fr": "Plateforme fonctionnelle",
+          "en": "Working platform"
+        }
+      },
+      "tech": [
+        "HTML",
+        "CSS",
+        "PHP 8",
+        "MySQL",
+        "Apache",
+        "XAMPP",
+        "Looping"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/smartbike/cover.png",
+        "thumb": "/assets/img/projects/smartbike/cover.png",
+        "og": "/assets/img/projects/smartbike/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Projet transversal EPSI 2025. La consigne : construire un site e-commerce complet pour une marque fictive de vélos intelligents. On part de zéro — base de données, backend, frontend, espace admin. Tout doit fonctionner de bout en bout.",
+          "en": "EPSI 2025 cross-functional project. The brief: build a complete e-commerce site for a fictional smart-bike brand. From scratch — database, backend, frontend, admin panel. Everything had to work end to end."
+        },
+        "problem": {
+          "fr": "Construire un parcours d'achat complet : un visiteur découvre des vélos, s'inscrit, se connecte, ajoute au panier, commande. Tout en s'assurant que les comptes sont sécurisés, que les commandes sont traçables, et qu'un admin peut gérer le catalogue.",
+          "en": "Build a full purchase journey: a visitor browses bikes, signs up, logs in, adds to cart, places an order. While making sure accounts are secured, orders are traceable, and an admin can manage the catalog."
+        },
+        "solution": {
+          "fr": "Architecture MVC stricte pour séparer modèle (accès BDD), vue (templates) et contrôleur (logique). Base MySQL conçue via Looping (MCD → MLD → schéma SQL). Sessions PHP pour l'auth, hash bcrypt pour les mots de passe, requêtes préparées contre l'injection SQL.",
+          "en": "Strict MVC to split model (DB access), view (templates) and controller (logic). MySQL database modeled with Looping (CDM → LDM → SQL schema). PHP sessions for auth, bcrypt for password hashing, prepared statements against SQL injection."
+        },
+        "myWork": {
+          "fr": [
+            "Modélisation de la base : MCD/MLD sur Looping, puis schéma SQL",
+            "Système d'inscription / connexion (sessions PHP, hash sécurisé)",
+            "Catalogue produits dynamique avec fiches détaillées",
+            "Panier et processus de commande complet",
+            "Espace administrateur pour gérer vélos et commandes"
+          ],
+          "en": [
+            "Database modeling: CDM/LDM in Looping, then SQL schema",
+            "Sign-up / login system (PHP sessions, secure hashing)",
+            "Dynamic product catalog with detail pages",
+            "Cart and full checkout flow",
+            "Admin panel to manage bikes and orders"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🏗️",
+            "title": {
+              "fr": "MVC en pratique",
+              "en": "MVC in practice"
+            },
+            "body": {
+              "fr": "Forcer la séparation au début est pénible, mais c'est ce qui rend le code maintenable.",
+              "en": "Forcing separation upfront is painful, but that's what keeps code maintainable."
+            }
+          },
+          {
+            "icon": "🔒",
+            "title": {
+              "fr": "Sécurité de base",
+              "en": "Security basics"
+            },
+            "body": {
+              "fr": "Requêtes préparées + bcrypt + sessions, ce sont les fondations à ne jamais sauter.",
+              "en": "Prepared statements + bcrypt + sessions are foundations you never skip."
+            }
+          },
+          {
+            "icon": "📊",
+            "title": {
+              "fr": "Concevoir une BDD",
+              "en": "DB design"
+            },
+            "body": {
+              "fr": "Modéliser proprement avant de coder, c'est gagner des heures plus tard.",
+              "en": "Modeling cleanly before coding saves hours later."
+            }
+          }
+        ]
+      }
+    },
+    {
       "slug": "snack-o-matic",
-      "featured": true,
-      "order": 1,
+      "featured": false,
+      "order": 8,
       "type": "academic",
       "category": "embedded",
       "date": "2025",
@@ -313,474 +1166,9 @@
       }
     },
     {
-      "slug": "hydrotrack",
-      "featured": true,
-      "order": 2,
-      "type": "academic",
-      "category": "iot",
-      "date": "2025",
-      "badge": {
-        "fr": "🌱 IoT",
-        "en": "🌱 IoT"
-      },
-      "title": {
-        "fr": "HydroTrack — Plateforme d'arrosage intelligent",
-        "en": "HydroTrack — Smart Watering Platform"
-      },
-      "subtitle": {
-        "fr": "Capteurs ESP32, flux Node-RED, base Supabase. Croisement des données météo et de l'humidité du sol pour optimiser l'arrosage.",
-        "en": "ESP32 sensors, Node-RED flows, Supabase backend. Cross-references weather data and soil humidity to optimize watering."
-      },
-      "pitch": {
-        "fr": "Plateforme IoT d'arrosage intelligent : ESP32, Node-RED et Supabase combinés à une API météo.",
-        "en": "Smart IoT watering platform: ESP32, Node-RED and Supabase combined with a weather API."
-      },
-      "meta": {
-        "team": {
-          "fr": "Projet académique",
-          "en": "Academic project"
-        },
-        "duration": {
-          "fr": "Plusieurs semaines",
-          "en": "Several weeks"
-        },
-        "role": {
-          "fr": "Dev IoT + Web",
-          "en": "IoT + Web Dev"
-        },
-        "result": {
-          "fr": "Prototype fonctionnel",
-          "en": "Working prototype"
-        }
-      },
-      "tech": [
-        "ESP32",
-        "Node-RED",
-        "Supabase",
-        "PostgreSQL",
-        "API météo"
-      ],
-      "links": {
-        "github": "https://github.com/adelred78",
-        "demo": null,
-        "certificate": null
-      },
-      "images": {
-        "cover": "/assets/img/projects/hydrotrack/cover.png",
-        "thumb": "/assets/img/projects/hydrotrack/cover.png",
-        "og": "/assets/img/projects/hydrotrack/cover.png",
-        "gallery": []
-      },
-      "content": {
-        "context": {
-          "fr": "Projet académique EPSI orienté agriculture intelligente. L'enjeu : aider les agriculteurs à arroser au bon moment, ni trop, ni trop peu. Un capteur seul ne suffit pas — il faut croiser ce qu'il mesure avec la météo à venir.",
-          "en": "EPSI academic project focused on smart agriculture. The challenge: help farmers water at the right time — neither too much, nor too little. A sensor alone isn't enough — you need to cross what it measures with upcoming weather."
-        },
-        "problem": {
-          "fr": "Comment combiner des données capteurs en temps réel (humidité du sol) avec des prévisions externes (API météo), les stocker proprement, et restituer une décision claire à l'utilisateur ? Le tout sur du matériel embarqué peu coûteux.",
-          "en": "How do you combine real-time sensor data (soil humidity) with external forecasts (weather API), store it cleanly, and surface a clear decision to the user? All on cheap embedded hardware."
-        },
-        "solution": {
-          "fr": "Architecture en 3 couches : (1) ESP32 lit l'humidité et envoie les mesures, (2) Node-RED orchestre, interroge l'API météo, croise avec la mesure et écrit dans Supabase, (3) une interface web lit Supabase et affiche un état + une recommandation d'arrosage.",
-          "en": "Three-layer architecture: (1) ESP32 reads humidity and ships measurements, (2) Node-RED orchestrates, queries the weather API, cross-references with the measurement and writes to Supabase, (3) a web interface reads Supabase and shows status + watering recommendation."
-        },
-        "myWork": {
-          "fr": [
-            "Programmation de l'ESP32 (capteur d'humidité + envoi des données)",
-            "Conception des flux Node-RED (logique métier)",
-            "Intégration de l'API météo (récupération des prévisions)",
-            "Modélisation et alimentation de la base Supabase",
-            "Développement de l'interface web (consultation des mesures + notifications automatiques)"
-          ],
-          "en": [
-            "Programmed the ESP32 (humidity sensor + data shipping)",
-            "Designed Node-RED flows (business logic)",
-            "Integrated the weather API (forecast retrieval)",
-            "Modeled and populated the Supabase database",
-            "Built the web interface (data viewing + automatic notifications)"
-          ]
-        },
-        "takeaways": [
-          {
-            "icon": "🧱",
-            "title": {
-              "fr": "Penser système",
-              "en": "Systems thinking"
-            },
-            "body": {
-              "fr": "Un projet IoT, c'est 5 briques qui doivent tenir ensemble : capteur, transport, traitement, stockage, restitution.",
-              "en": "An IoT project is 5 bricks that have to hold together: sensor, transport, processing, storage, display."
-            }
-          },
-          {
-            "icon": "🔧",
-            "title": {
-              "fr": "Découvrir Node-RED",
-              "en": "Discovering Node-RED"
-            },
-            "body": {
-              "fr": "Un outil low-code étonnamment puissant pour prototyper des flux IoT.",
-              "en": "A low-code tool that's surprisingly powerful for prototyping IoT flows."
-            }
-          },
-          {
-            "icon": "🌐",
-            "title": {
-              "fr": "API externes",
-              "en": "External APIs"
-            },
-            "body": {
-              "fr": "Gérer les erreurs et les limites de requêtes d'une API tierce, ce n'est pas trivial.",
-              "en": "Handling errors and rate limits from a third-party API isn't trivial."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "slug": "smartbike",
-      "featured": true,
-      "order": 3,
-      "type": "academic",
-      "category": "web",
-      "date": "2025",
-      "badge": {
-        "fr": "🚲 Web",
-        "en": "🚲 Web"
-      },
-      "title": {
-        "fr": "SmartBike — E-commerce fullstack",
-        "en": "SmartBike — Fullstack E-commerce"
-      },
-      "subtitle": {
-        "fr": "Boutique en ligne complète pour une marque de vélos connectés : catalogue, authentification, panier, espace admin. Architecture MVC en PHP.",
-        "en": "Complete online store for a smart-bike brand: catalog, auth, cart, admin panel. MVC architecture in PHP."
-      },
-      "pitch": {
-        "fr": "E-commerce complet en PHP/MySQL : inscription, connexion, panier, admin. Architecture MVC.",
-        "en": "Full PHP/MySQL e-commerce: sign-up, login, cart, admin. MVC architecture."
-      },
-      "meta": {
-        "team": {
-          "fr": "5 personnes",
-          "en": "5 people"
-        },
-        "duration": {
-          "fr": "Projet transversal",
-          "en": "Cross-functional project"
-        },
-        "role": {
-          "fr": "Dev Full Stack",
-          "en": "Full Stack Dev"
-        },
-        "result": {
-          "fr": "Plateforme fonctionnelle",
-          "en": "Working platform"
-        }
-      },
-      "tech": [
-        "HTML",
-        "CSS",
-        "PHP 8",
-        "MySQL",
-        "Apache",
-        "XAMPP",
-        "Looping"
-      ],
-      "links": {
-        "github": "https://github.com/adelred78",
-        "demo": null,
-        "certificate": null
-      },
-      "images": {
-        "cover": "/assets/img/projects/smartbike/cover.png",
-        "thumb": "/assets/img/projects/smartbike/cover.png",
-        "og": "/assets/img/projects/smartbike/cover.png",
-        "gallery": []
-      },
-      "content": {
-        "context": {
-          "fr": "Projet transversal EPSI 2025. La consigne : construire un site e-commerce complet pour une marque fictive de vélos intelligents. On part de zéro — base de données, backend, frontend, espace admin. Tout doit fonctionner de bout en bout.",
-          "en": "EPSI 2025 cross-functional project. The brief: build a complete e-commerce site for a fictional smart-bike brand. From scratch — database, backend, frontend, admin panel. Everything had to work end to end."
-        },
-        "problem": {
-          "fr": "Construire un parcours d'achat complet : un visiteur découvre des vélos, s'inscrit, se connecte, ajoute au panier, commande. Tout en s'assurant que les comptes sont sécurisés, que les commandes sont traçables, et qu'un admin peut gérer le catalogue.",
-          "en": "Build a full purchase journey: a visitor browses bikes, signs up, logs in, adds to cart, places an order. While making sure accounts are secured, orders are traceable, and an admin can manage the catalog."
-        },
-        "solution": {
-          "fr": "Architecture MVC stricte pour séparer modèle (accès BDD), vue (templates) et contrôleur (logique). Base MySQL conçue via Looping (MCD → MLD → schéma SQL). Sessions PHP pour l'auth, hash bcrypt pour les mots de passe, requêtes préparées contre l'injection SQL.",
-          "en": "Strict MVC to split model (DB access), view (templates) and controller (logic). MySQL database modeled with Looping (CDM → LDM → SQL schema). PHP sessions for auth, bcrypt for password hashing, prepared statements against SQL injection."
-        },
-        "myWork": {
-          "fr": [
-            "Modélisation de la base : MCD/MLD sur Looping, puis schéma SQL",
-            "Système d'inscription / connexion (sessions PHP, hash sécurisé)",
-            "Catalogue produits dynamique avec fiches détaillées",
-            "Panier et processus de commande complet",
-            "Espace administrateur pour gérer vélos et commandes"
-          ],
-          "en": [
-            "Database modeling: CDM/LDM in Looping, then SQL schema",
-            "Sign-up / login system (PHP sessions, secure hashing)",
-            "Dynamic product catalog with detail pages",
-            "Cart and full checkout flow",
-            "Admin panel to manage bikes and orders"
-          ]
-        },
-        "takeaways": [
-          {
-            "icon": "🏗️",
-            "title": {
-              "fr": "MVC en pratique",
-              "en": "MVC in practice"
-            },
-            "body": {
-              "fr": "Forcer la séparation au début est pénible, mais c'est ce qui rend le code maintenable.",
-              "en": "Forcing separation upfront is painful, but that's what keeps code maintainable."
-            }
-          },
-          {
-            "icon": "🔒",
-            "title": {
-              "fr": "Sécurité de base",
-              "en": "Security basics"
-            },
-            "body": {
-              "fr": "Requêtes préparées + bcrypt + sessions, ce sont les fondations à ne jamais sauter.",
-              "en": "Prepared statements + bcrypt + sessions are foundations you never skip."
-            }
-          },
-          {
-            "icon": "📊",
-            "title": {
-              "fr": "Concevoir une BDD",
-              "en": "DB design"
-            },
-            "body": {
-              "fr": "Modéliser proprement avant de coder, c'est gagner des heures plus tard.",
-              "en": "Modeling cleanly before coding saves hours later."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "slug": "network-infra",
-      "featured": false,
-      "order": 4,
-      "type": "academic",
-      "category": "network",
-      "date": "2025",
-      "badge": {
-        "fr": "🛡️ Réseau",
-        "en": "🛡️ Network"
-      },
-      "title": {
-        "fr": "Infrastructure réseau sécurisée",
-        "en": "Secure Network Infrastructure"
-      },
-      "subtitle": {
-        "fr": "Conception (HLD/LLD) et déploiement d'un réseau d'entreprise segmenté en environnement virtuel.",
-        "en": "HLD/LLD design and deployment of a segmented corporate network in a virtual environment."
-      },
-      "pitch": {
-        "fr": "Conception HLD/LLD, segmentation VLAN, déploiement de VMs Linux sécurisées.",
-        "en": "HLD/LLD design, VLAN segmentation, secure Linux VM deployment."
-      },
-      "meta": {
-        "team": {
-          "fr": "Projet transversal",
-          "en": "Cross-functional project"
-        },
-        "duration": {
-          "fr": "Plusieurs semaines",
-          "en": "Several weeks"
-        },
-        "role": {
-          "fr": "Architecte réseau & sysadmin",
-          "en": "Network architect & sysadmin"
-        },
-        "result": {
-          "fr": "Infrastructure fonctionnelle",
-          "en": "Working infrastructure"
-        }
-      },
-      "tech": [
-        "Cisco",
-        "VirtualBox",
-        "Linux",
-        "Visio",
-        "VLAN"
-      ],
-      "links": {
-        "github": "https://github.com/adelred78",
-        "demo": null,
-        "certificate": null
-      },
-      "images": {
-        "cover": "/assets/img/projects/network-infra/cover.png",
-        "thumb": "/assets/img/projects/network-infra/cover.png",
-        "og": "/assets/img/projects/network-infra/cover.png",
-        "gallery": []
-      },
-      "content": {
-        "context": {
-          "fr": "Projet transversal EPSI 2025 — concevoir et déployer une infrastructure réseau d'entreprise sécurisée, depuis les schémas de haut niveau jusqu'à la configuration des machines virtuelles.",
-          "en": "EPSI 2025 cross-functional project — design and deploy a secure corporate network infrastructure, from high-level diagrams to VM configuration."
-        },
-        "problem": {
-          "fr": "Construire un réseau d'entreprise réaliste : segmenter les services, isoler les zones sensibles, documenter l'architecture pour qu'un autre admin puisse la reprendre.",
-          "en": "Build a realistic corporate network: segment services, isolate sensitive zones, document the architecture so another admin can take it over."
-        },
-        "solution": {
-          "fr": "Documents HLD (High Level Design) et LLD (Low Level Design) avant tout déploiement. Segmentation par VLAN, machines virtuelles Linux déployées sous VirtualBox, configuration testée puis validée.",
-          "en": "HLD (High Level Design) and LLD (Low Level Design) docs before any deployment. VLAN segmentation, Linux VMs deployed on VirtualBox, configuration tested and validated."
-        },
-        "myWork": {
-          "fr": [
-            "Rédaction des documents HLD et LLD",
-            "Schémas réseau sur Microsoft Visio",
-            "Déploiement et configuration de VMs Linux",
-            "Mise en place de la segmentation VLAN",
-            "Tests de connectivité et validation"
-          ],
-          "en": [
-            "Wrote HLD and LLD documents",
-            "Network diagrams in Microsoft Visio",
-            "Deployed and configured Linux VMs",
-            "Set up VLAN segmentation",
-            "Connectivity tests and validation"
-          ]
-        },
-        "takeaways": [
-          {
-            "icon": "📐",
-            "title": {
-              "fr": "Documenter avant de configurer",
-              "en": "Document before configuring"
-            },
-            "body": {
-              "fr": "Un schéma clair évite des heures de troubleshooting en production.",
-              "en": "A clear diagram saves hours of production troubleshooting."
-            }
-          },
-          {
-            "icon": "🐧",
-            "title": {
-              "fr": "Linux en pratique",
-              "en": "Linux in practice"
-            },
-            "body": {
-              "fr": "Manipuler Linux au quotidien sur des VMs, c'est très différent de lire un cours.",
-              "en": "Daily Linux work on VMs is very different from reading a textbook."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "slug": "vr-dream",
-      "featured": false,
-      "order": 5,
-      "type": "academic",
-      "category": "vr",
-      "date": "2025",
-      "badge": {
-        "fr": "🥽 VR",
-        "en": "🥽 VR"
-      },
-      "title": {
-        "fr": "VR Dream Experience",
-        "en": "VR Dream Experience"
-      },
-      "subtitle": {
-        "fr": "3 scènes immersives fantastiques conçues pour faire ressentir évasion et émerveillement.",
-        "en": "3 fantasy immersive scenes designed to evoke wonder and escape."
-      },
-      "pitch": {
-        "fr": "3 environnements VR construits sur Delightex pour explorer le storytelling immersif.",
-        "en": "3 VR environments built on Delightex to explore immersive storytelling."
-      },
-      "meta": {
-        "team": {
-          "fr": "Projet académique",
-          "en": "Academic project"
-        },
-        "duration": {
-          "fr": "Plusieurs séances",
-          "en": "Several sessions"
-        },
-        "role": {
-          "fr": "Concepteur VR",
-          "en": "VR designer"
-        },
-        "result": {
-          "fr": "3 scènes livrées",
-          "en": "3 scenes shipped"
-        }
-      },
-      "tech": [
-        "Delightex",
-        "VR",
-        "Storytelling"
-      ],
-      "links": {
-        "github": "https://github.com/adelred78",
-        "demo": null,
-        "certificate": null
-      },
-      "images": {
-        "cover": "/assets/img/projects/vr-dream/cover.png",
-        "thumb": "/assets/img/projects/vr-dream/cover.png",
-        "og": "/assets/img/projects/vr-dream/cover.png",
-        "gallery": []
-      },
-      "content": {
-        "context": {
-          "fr": "Atelier réalité virtuelle EPSI : explorer comment un environnement immersif peut susciter une émotion forte chez l'utilisateur.",
-          "en": "EPSI VR workshop: explore how an immersive environment can spark a strong emotional response in the user."
-        },
-        "problem": {
-          "fr": "Au-delà de la technique, comment construire une atmosphère qui transporte vraiment l'utilisateur ?",
-          "en": "Beyond the technical side, how do you build an atmosphere that truly transports the user?"
-        },
-        "solution": {
-          "fr": "Trois scènes complémentaires sur Delightex, chacune travaillant une émotion : émerveillement, évasion, contemplation. Choix d'éclairages, de palettes et de sons en fonction de l'intention.",
-          "en": "Three complementary scenes on Delightex, each working a different emotion: wonder, escape, contemplation. Lighting, palette and sound chosen to match the intent."
-        },
-        "myWork": {
-          "fr": [
-            "Conception narrative des 3 scènes",
-            "Construction des environnements sur Delightex",
-            "Travail des éclairages et des palettes",
-            "Tests utilisateurs informels"
-          ],
-          "en": [
-            "Narrative design for the 3 scenes",
-            "Built environments in Delightex",
-            "Lighting and palette work",
-            "Informal user testing"
-          ]
-        },
-        "takeaways": [
-          {
-            "icon": "🎨",
-            "title": {
-              "fr": "L'atmosphère prime",
-              "en": "Atmosphere first"
-            },
-            "body": {
-              "fr": "En VR, le détail technique compte moins que l'intention émotionnelle.",
-              "en": "In VR, technical detail matters less than emotional intent."
-            }
-          }
-        ]
-      }
-    },
-    {
       "slug": "arduino-led",
       "featured": false,
-      "order": 6,
+      "order": 9,
       "type": "personal",
       "category": "embedded",
       "date": "2024",
@@ -874,109 +1262,9 @@
       }
     },
     {
-      "slug": "epsi-tech",
-      "featured": false,
-      "order": 7,
-      "type": "academic",
-      "category": "web",
-      "date": "2025",
-      "badge": {
-        "fr": "💻 Web",
-        "en": "💻 Web"
-      },
-      "title": {
-        "fr": "EPSI Tech — E-commerce informatique",
-        "en": "EPSI Tech — IT Hardware E-commerce"
-      },
-      "subtitle": {
-        "fr": "Site e-commerce de matériel informatique avec catalogue, authentification utilisateur et gestion de commandes en MySQL.",
-        "en": "IT hardware e-commerce site with catalog, user auth and MySQL-backed order management."
-      },
-      "pitch": {
-        "fr": "E-commerce informatique en HTML/CSS/PHP/MySQL.",
-        "en": "IT e-commerce in HTML/CSS/PHP/MySQL."
-      },
-      "meta": {
-        "team": {
-          "fr": "Projet académique",
-          "en": "Academic project"
-        },
-        "duration": {
-          "fr": "Plusieurs semaines",
-          "en": "Several weeks"
-        },
-        "role": {
-          "fr": "Dev Full Stack",
-          "en": "Full Stack Dev"
-        },
-        "result": {
-          "fr": "Site fonctionnel",
-          "en": "Working site"
-        }
-      },
-      "tech": [
-        "HTML",
-        "CSS",
-        "PHP",
-        "MySQL"
-      ],
-      "links": {
-        "github": "https://github.com/adelred78",
-        "demo": null,
-        "certificate": null
-      },
-      "images": {
-        "cover": "/assets/img/projects/epsi-tech/cover.png",
-        "thumb": "/assets/img/projects/epsi-tech/cover.png",
-        "og": "/assets/img/projects/epsi-tech/cover.png",
-        "gallery": []
-      },
-      "content": {
-        "context": {
-          "fr": "Itération sur les compétences e-commerce avec une autre marque fictive : EPSI Tech, spécialiste du matériel informatique.",
-          "en": "Iteration on e-commerce skills with another fictional brand: EPSI Tech, an IT hardware shop."
-        },
-        "problem": {
-          "fr": "Reproduire un parcours d'achat complet sur un catalogue tech, avec gestion des stocks et statuts de commandes.",
-          "en": "Reproduce a full purchase flow on a tech catalog, with stock and order-status handling."
-        },
-        "solution": {
-          "fr": "Architecture PHP classique, base MySQL relationnelle, interface user + interface admin séparées.",
-          "en": "Classic PHP architecture, relational MySQL database, separate user and admin interfaces."
-        },
-        "myWork": {
-          "fr": [
-            "Conception de la base MySQL (produits, catégories, stocks, commandes)",
-            "Implémentation des pages catalogue et fiches produits",
-            "Authentification utilisateur",
-            "Gestion administrateur du catalogue"
-          ],
-          "en": [
-            "Designed MySQL database (products, categories, stock, orders)",
-            "Implemented catalog and product detail pages",
-            "User authentication",
-            "Admin catalog management"
-          ]
-        },
-        "takeaways": [
-          {
-            "icon": "🔁",
-            "title": {
-              "fr": "Pratiquer renforce",
-              "en": "Practice reinforces"
-            },
-            "body": {
-              "fr": "Reprendre les mêmes patterns sur un nouveau contexte ancre vraiment les acquis.",
-              "en": "Reusing the same patterns in a new context really cements what you learned."
-            }
-          }
-        ]
-      }
-    },
-    {
       "slug": "python-algo",
       "featured": false,
-      "order": 8,
+      "order": 10,
       "type": "academic",
       "category": "algorithm",
       "date": "2024",
@@ -1075,7 +1363,7 @@
     {
       "slug": "git-workflow",
       "featured": false,
-      "order": 9,
+      "order": 11,
       "type": "academic",
       "category": "tools",
       "date": "2024",
@@ -1168,6 +1456,105 @@
             "body": {
               "fr": "Bien maîtriser Git et le shell, c'est gagner du temps sur tous les futurs projets.",
               "en": "Mastering Git and the shell saves time on every future project."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "vr-dream",
+      "featured": false,
+      "order": 12,
+      "type": "academic",
+      "category": "vr",
+      "date": "2025",
+      "badge": {
+        "fr": "🥽 VR",
+        "en": "🥽 VR"
+      },
+      "title": {
+        "fr": "VR Dream Experience",
+        "en": "VR Dream Experience"
+      },
+      "subtitle": {
+        "fr": "3 scènes immersives fantastiques conçues pour faire ressentir évasion et émerveillement.",
+        "en": "3 fantasy immersive scenes designed to evoke wonder and escape."
+      },
+      "pitch": {
+        "fr": "3 environnements VR construits sur Delightex pour explorer le storytelling immersif.",
+        "en": "3 VR environments built on Delightex to explore immersive storytelling."
+      },
+      "meta": {
+        "team": {
+          "fr": "Projet académique",
+          "en": "Academic project"
+        },
+        "duration": {
+          "fr": "Plusieurs séances",
+          "en": "Several sessions"
+        },
+        "role": {
+          "fr": "Concepteur VR",
+          "en": "VR designer"
+        },
+        "result": {
+          "fr": "3 scènes livrées",
+          "en": "3 scenes shipped"
+        }
+      },
+      "tech": [
+        "Delightex",
+        "VR",
+        "Storytelling"
+      ],
+      "links": {
+        "github": "https://github.com/adelred78",
+        "demo": null,
+        "certificate": null
+      },
+      "images": {
+        "cover": "/assets/img/projects/vr-dream/cover.png",
+        "thumb": "/assets/img/projects/vr-dream/cover.png",
+        "og": "/assets/img/projects/vr-dream/cover.png",
+        "gallery": []
+      },
+      "content": {
+        "context": {
+          "fr": "Atelier réalité virtuelle EPSI : explorer comment un environnement immersif peut susciter une émotion forte chez l'utilisateur.",
+          "en": "EPSI VR workshop: explore how an immersive environment can spark a strong emotional response in the user."
+        },
+        "problem": {
+          "fr": "Au-delà de la technique, comment construire une atmosphère qui transporte vraiment l'utilisateur ?",
+          "en": "Beyond the technical side, how do you build an atmosphere that truly transports the user?"
+        },
+        "solution": {
+          "fr": "Trois scènes complémentaires sur Delightex, chacune travaillant une émotion : émerveillement, évasion, contemplation. Choix d'éclairages, de palettes et de sons en fonction de l'intention.",
+          "en": "Three complementary scenes on Delightex, each working a different emotion: wonder, escape, contemplation. Lighting, palette and sound chosen to match the intent."
+        },
+        "myWork": {
+          "fr": [
+            "Conception narrative des 3 scènes",
+            "Construction des environnements sur Delightex",
+            "Travail des éclairages et des palettes",
+            "Tests utilisateurs informels"
+          ],
+          "en": [
+            "Narrative design for the 3 scenes",
+            "Built environments in Delightex",
+            "Lighting and palette work",
+            "Informal user testing"
+          ]
+        },
+        "takeaways": [
+          {
+            "icon": "🎨",
+            "title": {
+              "fr": "L'atmosphère prime",
+              "en": "Atmosphere first"
+            },
+            "body": {
+              "fr": "En VR, le détail technique compte moins que l'intention émotionnelle.",
+              "en": "In VR, technical detail matters less than emotional intent."
             }
           }
         ]
