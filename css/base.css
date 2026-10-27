@@ -196,6 +196,7 @@ strong {
 .text-muted { color: var(--text-secondary); }
 .text-accent { color: var(--accent-light); }
 .text-mono { font-family: var(--font-mono); }
+.nowrap { white-space: nowrap; }
 
 .is-hidden { display: none !important; }
 
