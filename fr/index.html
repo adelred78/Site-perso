@@ -287,28 +287,42 @@
         <div class="container">
           <header class="section__heading">
             <h2 class="section__title">Stack technique</h2>
-            <p class="section__subtitle">Ce que j'utilise au quotidien</p>
+            <p class="section__subtitle">
+              Deux axes principaux, la cybersécurité et le développement web, et les outils qui les soutiennent.
+            </p>
           </header>
           <div class="stack-grid">
-            <article class="stack-card">
-              <div class="stack-card__icon">🔒</div>
+            <article class="stack-card stack-card--focus">
+              <span class="stack-card__badge">Axe principal</span>
+              <div class="stack-card__icon" aria-hidden="true">🔒</div>
               <h3>Cybersécurité</h3>
               <ul class="stack-card__list">
-                <li><span>Exegol</span><span>Nmap</span><span>Wireshark</span></li>
-                <li><span>tcpdump</span><span>Analyse de logs</span></li>
-                <li><span>Secured Java</span><span>Hardening</span></li>
+                <li><b class="stack-card__group">Offensif</b><span class="stack-card__items"><span>Exegol</span><span>Nmap</span><span>CTF</span><span>Prompt injection (LLM)</span></span></li>
+                <li><b class="stack-card__group">Analyse</b><span class="stack-card__items"><span>Wireshark</span><span>tcpdump</span><span>Analyse de logs</span></span></li>
+                <li><b class="stack-card__group">Défensif</b><span class="stack-card__items"><span>Java sécurisé</span><span>AES-256-GCM</span><span>PBKDF2</span><span>Hardening</span></span></li>
+              </ul>
+            </article>
+            <article class="stack-card stack-card--focus stack-card--web">
+              <span class="stack-card__badge">Axe principal</span>
+              <div class="stack-card__icon" aria-hidden="true">💻</div>
+              <h3>Développement web</h3>
+              <ul class="stack-card__list">
+                <li><b class="stack-card__group">Front</b><span class="stack-card__items"><span>React</span><span>Next.js (App Router)</span><span>TypeScript</span><span>Tailwind CSS</span></span></li>
+                <li><b class="stack-card__group">Back &amp; données</b><span class="stack-card__items"><span>Supabase (Auth, Storage)</span><span>PostgreSQL</span><span>MySQL</span><span>API REST</span><span>Server Actions</span></span></li>
+                <li><b class="stack-card__group">UX / UI</b><span class="stack-card__items"><span>Figma</span><span>Responsive design</span><span>User stories</span></span></li>
               </ul>
             </article>
             <article class="stack-card">
-              <div class="stack-card__icon">☕</div>
+              <div class="stack-card__icon" aria-hidden="true">☕</div>
               <h3>Programmation</h3>
               <ul class="stack-card__list">
-                <li><span>Java (Priorité)</span><span>Python</span></li>
-                <li><span>JavaScript</span><span>HTML5 / CSS3</span></li>
+                <li><span>JavaScript</span><span>TypeScript</span><span>Java</span></li>
+                <li><span>Python</span><span>PHP</span><span>SQL</span></li>
+                <li><span>HTML5</span><span>CSS3</span></li>
               </ul>
             </article>
             <article class="stack-card">
-              <div class="stack-card__icon">🐧</div>
+              <div class="stack-card__icon" aria-hidden="true">🐧</div>
               <h3>Système &amp; Réseaux</h3>
               <ul class="stack-card__list">
                 <li><span>Linux (Ubuntu, Debian)</span><span>TCP/IP</span></li>
@@ -317,26 +331,28 @@
               </ul>
             </article>
             <article class="stack-card">
-              <div class="stack-card__icon">🛠️</div>
-              <h3>Outils &amp; Services</h3>
+              <div class="stack-card__icon" aria-hidden="true">🛠️</div>
+              <h3>Outils &amp; DevOps</h3>
               <ul class="stack-card__list">
                 <li><span>Git</span><span>GitHub</span><span>VS Code</span></li>
-                <li><span>Vercel</span><span>Supabase</span></li>
+                <li><span>Vercel</span><span>Netlify</span></li>
+                <li><span>Docker (notions)</span><span>Postman</span></li>
               </ul>
             </article>
             <article class="stack-card">
-              <div class="stack-card__icon">🔌</div>
+              <div class="stack-card__icon" aria-hidden="true">🤖</div>
+              <h3>IA &amp; Méthodes</h3>
+              <ul class="stack-card__list">
+                <li><span>Claude Code</span><span>Méthode BMAD</span></li>
+                <li><span>Ollama (LLM local)</span></li>
+                <li><span>Agile (Scrum, Kanban)</span><span>Veille cyber</span></li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <div class="stack-card__icon" aria-hidden="true">🔌</div>
               <h3>Embarqué &amp; IoT</h3>
               <ul class="stack-card__list">
-                <li><span>ESP32</span><span>Node-RED</span></li>
-              </ul>
-            </article>
-            <article class="stack-card">
-              <div class="stack-card__icon">🤖</div>
-              <h3>Systèmes &amp; Méthodes</h3>
-              <ul class="stack-card__list">
-                <li><span>Recherche &amp; Veille Cyber</span></li>
-                <li><span>Méthodologie CTF</span></li>
+                <li><span>ESP32</span><span>Arduino</span><span>Node-RED</span></li>
               </ul>
             </article>
           </div>

@@ -1584,7 +1584,7 @@
 }
 
 /* =========================================
-   STACK — 6 cards compactes, sans glow au hover
+   STACK — 7 cards compactes dont 2 « axe principal » en double largeur
    ========================================= */
 .stack-grid {
   display: grid;
@@ -1648,6 +1648,89 @@
   color: var(--accent-light);
   opacity: 0.55;
   font-weight: 500;
+}
+
+/* Cartes « axe principal » (cybersécurité, développement web) : double largeur, lignes étiquetées */
+@media (min-width: 640px) {
+  .stack-card--focus {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 899px) {
+  /* 2 colonnes : la dernière carte, seule sur sa ligne, prend toute la largeur */
+  .stack-card:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Quinconce : le web passe à droite sur la 2e ligne, les autres cartes comblent les trous */
+  .stack-card--web {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+  }
+}
+
+.stack-card--focus {
+  position: relative;
+  background:
+    radial-gradient(90% 120% at 100% 0%, color-mix(in srgb, var(--accent-main) 10%, transparent), transparent 60%),
+    var(--bg-secondary);
+  border-color: color-mix(in srgb, var(--accent-main) 35%, var(--bg-tertiary));
+}
+
+.stack-card__badge {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  padding: var(--space-1) var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--accent-light);
+  background-color: var(--accent-ghost);
+  border: 1px solid color-mix(in srgb, var(--accent-main) 35%, transparent);
+  border-radius: var(--radius-full);
+}
+
+[data-theme='light'] .stack-card__badge {
+  color: #0369A1;
+}
+
+.stack-card--focus .stack-card__list li {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-1);
+}
+
+.stack-card--focus .stack-card__list li + li {
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--bg-tertiary);
+}
+
+@media (min-width: 480px) {
+  .stack-card--focus .stack-card__list li {
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: var(--space-4);
+    align-items: baseline;
+  }
+}
+
+.stack-card__group {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.stack-card__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* =========================================
