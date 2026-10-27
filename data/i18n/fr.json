@@ -221,7 +221,7 @@
       "blocks": [
         {
           "title": "Du lycée Amara Rachid à l'EPITECH Paris",
-          "body": "J'ai obtenu mon baccalauréat mathématiques avec mention Très Bien (16,28/20) au lycée Amara Rachid à Ben Aknoun (Alger). En parallèle, j'ai suivi une formation initiale en développement web chez Code213 (192 heures de HTML, CSS et JavaScript).\n\nEn 2025, j'ai rejoint le cursus Bachelor en informatique avant d'intégrer l'EPITECH Paris (Bachelor 02 / B02). La réussite de la Piscine Java EPITECH en septembre 2026 a été un point de bascule majeur pour appliquer les concepts de code à des projets de sécurité indépendants."
+          "body": "J'ai obtenu mon baccalauréat mathématiques avec mention Très Bien (16,28/20) au lycée Amara Rachid à Ben Aknoun (Alger). En parallèle, j'ai suivi une formation intensive en développement web chez Code213 à El Biar (192 heures de HTML, CSS et JavaScript).\n\nEn 2025, j'ai démarré mes études supérieures en Bachelor 1 à l'EPSI Paris, où j'ai acquis des bases solides sur l'ensemble de la pile informatique. J'ai ensuite poursuivi mon cursus à l'EPITECH Paris en Bachelor 02 (B02). En septembre 2026, la réussite de la Piscine Java EPITECH a été le déclic pour orienter ma progression vers la cybersécurité et le développement d'outils sécurisés."
         },
         {
           "title": "Pourquoi la cybersécurité",
@@ -240,19 +240,25 @@
           "date": "2026 – Présent",
           "title": "EPITECH Paris — Bachelor 02 & Cybersécurité",
           "institution": "EPITECH Paris",
-          "body": "Études d'informatique avec un axe prioritaire en cybersécurité : Java sécurisé, Linux, réseaux, labs SOC et CTFs."
+          "body": "Poursuite du cursus en Bachelor 02 axé sur la cybersécurité : Java sécurisé, Linux, réseaux, labs SOC et CTFs sous Exegol."
         },
         {
           "date": "Septembre 2026",
           "title": "Piscine Java EPITECH",
           "institution": "EPITECH Paris",
-          "body": "Immersion intensive en Java POO et algorithmique. Déclic pour la création du projet Secure Vault."
+          "body": "Immersion intensive en Java POO et algorithmique. Déclic pour la création du coffre-fort Secure Vault."
+        },
+        {
+          "date": "2025 – 2026",
+          "title": "EPSI Paris — Bachelor 1 Informatique",
+          "institution": "EPSI Paris — Courbevoie (92)",
+          "body": "Première année de fondations : dev web full-stack, algorithmique, réseaux, virtualisation et bases de données."
         },
         {
           "date": "2025",
-          "title": "Formation Développement Web",
+          "title": "Formation Développement Web (192h)",
           "institution": "Code213 — El Biar, Alger",
-          "body": "Formation de 192 heures : fondations HTML, CSS, JavaScript."
+          "body": "Formation intensive : fondations HTML, CSS, JavaScript et initiation au développement d'applications."
         },
         {
           "date": "Juillet 2025",

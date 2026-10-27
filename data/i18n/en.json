@@ -221,7 +221,7 @@
       "blocks": [
         {
           "title": "From Lycée Amara Rachid to EPITECH Paris",
-          "body": "I graduated with a Mathematics Baccalaureate (High Honors, 16.28/20) at Lycée Amara Rachid in Algiers. Alongside high school, I completed a 192-hour web development training program at Code213.\n\nIn 2025, I joined computer science studies before continuing at EPITECH Paris (Bachelor 02 / B02). Completing the EPITECH Java Piscine in September 2026 was a major milestone toward building independent cybersecurity projects."
+          "body": "I graduated with a Mathematics Baccalaureate (High Honors, 16.28/20) at Lycée Amara Rachid in Algiers. Alongside high school, I completed a 192-hour web development training program at Code213 in El Biar.\n\nIn 2025, I began higher education in Bachelor 1 at EPSI Paris, gaining broad foundations across the IT stack. I then continued my studies at EPITECH Paris for Bachelor 02 (B02). In September 2026, successfully completing the EPITECH Java Piscine served as the catalyst to focus my path on cybersecurity and secure tool development."
         },
         {
           "title": "Why Cybersecurity",
@@ -240,19 +240,25 @@
           "date": "2026 – Present",
           "title": "EPITECH Paris — Bachelor 02 & Cybersecurity",
           "institution": "EPITECH Paris",
-          "body": "Computer science studies with a primary focus on cybersecurity: secure Java, Linux, networking, SOC labs, and CTFs."
+          "body": "Continuing in Bachelor 02 with a focus on cybersecurity: secure Java, Linux, networks, SOC labs, and CTFs in Exegol."
         },
         {
           "date": "September 2026",
           "title": "EPITECH Java Piscine",
           "institution": "EPITECH Paris",
-          "body": "Intensive immersion in Java OOP and algorithms. Catalyst for building the Secure Vault project."
+          "body": "Intensive immersion in Java algorithms and OOP. Key catalyst leading to the creation of Secure Vault."
+        },
+        {
+          "date": "2025 – 2026",
+          "title": "EPSI Paris — Bachelor 1 in Computer Science",
+          "institution": "EPSI Paris — Courbevoie (92)",
+          "body": "First foundation year: full-stack web development, algorithms, networking, virtualization, and databases."
         },
         {
           "date": "2025",
-          "title": "Web Development Training",
+          "title": "Web Development Training (192h)",
           "institution": "Code213 — El Biar, Algiers",
-          "body": "192-hour training program: HTML, CSS, JavaScript fundamentals."
+          "body": "Intensive 192-hour training program: HTML, CSS, JavaScript fundamentals."
         },
         {
           "date": "July 2025",
