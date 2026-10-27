@@ -9,6 +9,7 @@ import { initContactForm, initEmailCopy } from './contact.js';
 import { initTheme } from './theme.js';
 import { initBgParticles } from './bg-particles.js';
 import { initFeaturedCertifications, initCertificationsPage } from './certifications.js';
+import { initRecommendations } from './recommendations.js';
 
 function initLightbox() {
   const triggers = document.querySelectorAll('.lightbox-trigger, [data-cert-trigger]');
@@ -147,6 +148,7 @@ function init() {
   initBgParticles();
   initFeaturedCertifications();
   initCertificationsPage();
+  initRecommendations();
   initReveal();
   initJourneyGlow();
 }

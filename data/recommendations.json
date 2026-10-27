@@ -1,0 +1,165 @@
+{
+  "source_url": "https://www.linkedin.com/in/m-redjemi/details/recommendations/",
+  "traits": [
+    {
+      "id": "serious",
+      "label_fr": "Sérieux",
+      "label_en": "Seriousness",
+      "claim_fr": "mon sérieux",
+      "claim_en": "my seriousness",
+      "stems": { "fr": ["sérieu"], "en": ["serious"] }
+    },
+    {
+      "id": "commitment",
+      "label_fr": "Implication",
+      "label_en": "Commitment",
+      "claim_fr": "mon implication",
+      "claim_en": "my commitment",
+      "stems": { "fr": ["impliqu", "implication", "investi"], "en": ["involve", "invest", "commitment"] }
+    },
+    {
+      "id": "motivation",
+      "label_fr": "Motivation",
+      "label_en": "Motivation",
+      "claim_fr": "ma motivation",
+      "claim_en": "my motivation",
+      "stems": { "fr": ["motiv"], "en": ["motivat"] }
+    },
+    {
+      "id": "growth",
+      "label_fr": "Volonté de progresser",
+      "label_en": "Drive to improve",
+      "claim_fr": "ma volonté de progresser",
+      "claim_en": "my drive to improve",
+      "stems": { "fr": ["progress"], "en": ["improv"] }
+    },
+    {
+      "id": "curiosity",
+      "label_fr": "Curiosité",
+      "label_en": "Curiosity",
+      "claim_fr": "ma curiosité",
+      "claim_en": "my curiosity",
+      "stems": { "fr": ["curieu", "curiosit"], "en": ["curious", "curiosit"] }
+    },
+    {
+      "id": "perseverance",
+      "label_fr": "Persévérance",
+      "label_en": "Perseverance",
+      "claim_fr": "ma persévérance",
+      "claim_en": "my perseverance",
+      "stems": { "fr": ["persévéran", "pugnac", "combativ"], "en": ["persever", "tenaci", "fighting spirit"] }
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "keylany-hassine",
+      "name": "Keylany Hassine",
+      "role_fr": "Founder & CEO",
+      "role_en": "Founder & CEO",
+      "organization": "Istya",
+      "relationship_fr": "Était mon professeur à l'EPSI",
+      "relationship_en": "Was my teacher at EPSI",
+      "date": "2026-09-03",
+      "photo": "",
+      "linkedin_url": "",
+      "quote_short": {
+        "lang": "fr",
+        "original": "Il s'est montré sérieux, curieux et particulièrement impliqué dans les échanges, avec une vraie volonté de comprendre et de progresser.",
+        "en": "He proved to be serious, curious and particularly involved in discussions, with a genuine desire to understand and to improve."
+      },
+      "quote_full": {
+        "lang": "fr",
+        "original": "J’ai eu l’occasion d’accompagner Adel dans le cadre d’un cours et d’un projet à l’EPSI. Il s’est montré sérieux, curieux et particulièrement impliqué dans les échanges, avec une vraie volonté de comprendre et de progresser.\n\nSon travail sur le projet HydroTrack était de qualité et son investissement tout au long du TP a été très appréciable. Adel se distingue également par sa capacité à poser des questions pertinentes et à s’intéresser au-delà du simple cadre de l’exercice demandé.\n\nJe lui souhaite une excellente continuation dans son parcours académique et professionnel.",
+        "en": "I had the opportunity to mentor Adel during a course and a project at EPSI. He proved to be serious, curious and particularly involved in discussions, with a genuine desire to understand and to improve.\n\nHis work on the HydroTrack project was of high quality, and his commitment throughout the lab was much appreciated. Adel also stands out for his ability to ask relevant questions and to take an interest beyond the strict scope of the assignment.\n\nI wish him every success as he continues his academic and professional journey."
+      }
+    },
+    {
+      "id": "cedric-adenot",
+      "name": "Cedric Adenot",
+      "role_fr": "CEO",
+      "role_en": "CEO",
+      "organization": "KASIT",
+      "relationship_fr": "Était mon professeur à l'EPSI (infrastructures systèmes et réseaux)",
+      "relationship_en": "Was my teacher at EPSI (systems and network infrastructure)",
+      "date": "2026-08-25",
+      "photo": "",
+      "linkedin_url": "",
+      "quote_short": {
+        "lang": "fr",
+        "original": "Un étudiant sérieux, volontaire, pugnace qui n'hésite pas à vous poser des questions […]",
+        "en": "A serious, driven, tenacious student who never hesitates to ask you questions […]"
+      },
+      "quote_full": {
+        "lang": "fr",
+        "original": "J'ai eu le plaisir d'accompagner Monsieur REDJEMI en sa qualité d'étudiant au sein d'EPSI dans les domaines des infrastructures systèmes et réseaux.\n\nMonsieur REDJEMI est un étudiant sérieux, volontaire, pugnace qui n'hésite pas à vous poser des questions jusqu'à qu'il ai SA représentation du concept que vous lui enseignez.\nMonsieur REDJEMI mêle de très belles qualités humaines couplées à un sérieux qui se ressent dans sa volonté de comprendre et maitriser les concepts techniques quelque soit le domaine.\nÉlement notable, Monsieur REDJEMI, sait travailler de manière ordonnée et comprend les environnements professionnels dans lesquels il se trouve.\n\nJe recommande Monsieur REDJEMI pour ses qualités, son sens de l'organisation et combativité face aux concepts techniques qu'il désire apprivoiser.\nJe suis confiant et je crois en l'intégration professionnelle de Monsieur REDJMI quelque soit la structure, les projets qui lui seront confiés seront assurément bien gérés.",
+        "en": "I had the pleasure of supporting Mr. REDJEMI as a student at EPSI in the fields of systems and network infrastructure.\n\nMr. REDJEMI is a serious, driven, tenacious student who never hesitates to ask you questions until he has formed HIS OWN understanding of the concept you are teaching him.\nMr. REDJEMI combines very fine human qualities with a seriousness that shows in his eagerness to understand and master technical concepts, whatever the field.\nNotably, Mr. REDJEMI knows how to work in an orderly way and understands the professional environments he finds himself in.\n\nI recommend Mr. REDJEMI for his qualities, his sense of organization and his fighting spirit when tackling the technical concepts he wants to master.\nI am confident, and I believe in Mr. REDJEMI's successful integration into the professional world, whatever the organization; the projects entrusted to him will surely be well handled."
+      }
+    },
+    {
+      "id": "esat-bylykbashi",
+      "name": "Esat Bylykbashi",
+      "role_fr": "Founder & CEO",
+      "role_en": "Founder & CEO",
+      "organization": "Peelp.me",
+      "relationship_fr": "Était mon professeur à l'EPSI (SQL et bases de données)",
+      "relationship_en": "Was my teacher at EPSI (SQL and databases)",
+      "date": "2026-08-21",
+      "photo": "",
+      "linkedin_url": "",
+      "quote_short": {
+        "lang": "fr",
+        "original": "Adel s'est distingué par son sérieux, son implication et sa volonté de progresser.",
+        "en": "Adel stood out through his seriousness, his involvement and his willingness to improve."
+      },
+      "quote_full": {
+        "lang": "fr",
+        "original": "J’ai eu le plaisir d’accompagner Adel dans le cadre de mes enseignements en SQL et bases de données à l’EPSI, notamment lors de la réalisation du projet Smartbike.\n\nAdel s’est distingué par son sérieux, son implication et sa volonté de progresser. Curieux et attentif, il a su mettre en pratique les notions abordées en cours et s’investir pleinement dans les différents travaux proposés.\n\nJe recommande Adel pour ses qualités humaines, sa motivation et son intérêt pour les domaines du développement et des bases de données. Je suis convaincu qu’il saura mobiliser ses compétences et continuer à évoluer avec professionnalisme dans ses futurs projets.",
+        "en": "I had the pleasure of supporting Adel through my SQL and database courses at EPSI, notably during the Smartbike project.\n\nAdel stood out through his seriousness, his involvement and his willingness to improve. Curious and attentive, he was able to put the concepts covered in class into practice and to fully invest himself in the various assignments.\n\nI recommend Adel for his human qualities, his motivation and his interest in software development and databases. I am convinced that he will know how to draw on his skills and keep growing professionally in his future projects."
+      }
+    },
+    {
+      "id": "anne-lise-wotin",
+      "name": "Anne-Lise Wotin",
+      "role_fr": "Coordinatrice pédagogique",
+      "role_en": "Academic coordinator",
+      "organization": "EPSI",
+      "relationship_fr": "Était ma responsable directe",
+      "relationship_en": "Was my direct supervisor",
+      "date": "2026-08-16",
+      "photo": "",
+      "linkedin_url": "",
+      "quote_short": {
+        "lang": "fr",
+        "original": "Il se distingue également par sa capacité à travailler de manière autonome, son sens des responsabilités et sa persévérance face aux difficultés.",
+        "en": "He also stands out for his ability to work independently, his sense of responsibility and his perseverance in the face of difficulties."
+      },
+      "quote_full": {
+        "lang": "fr",
+        "original": "Objet : Lettre de recommandation\n\nMadame, Monsieur,\n\nJe me permets de vous recommander vivement Adel, que j’ai eu l’occasion d’encadrer dans le cadre de l encadrement Coordinatrice Pédagogique a l'EPSI.\n\nAu cours de cette période, j’ai pu apprécier son sérieux, sa motivation et son implication dans son travail. Adel est un étudiant assidu, ponctuel et respectueux, qui fait preuve d’une réelle volonté de progresser et d’acquérir de nouvelles compétences.\n\nIl se distingue également par sa capacité à travailler de manière autonome, son sens des responsabilités et sa persévérance face aux difficultés. Il sait écouter les conseils qui lui sont donnés et mettre en œuvre les recommandations afin d’améliorer constamment son travail.\n\nSon comportement, son sérieux et sa motivation font de lui un étudiant digne de confiance, capable de s’investir pleinement dans les projets qui lui sont confiés.\n\nJe suis donc heureuse et  je suis convaincuqu’il saura y faire preuve du même engagement et de la même détermination.\n\nJe reste à votre disposition pour toute information complémentaire concernant son parcours et ses qualités.\n\nAnne-Lise WOTIN\nCoordinatrice Pédagogique",
+        "en": "Subject: Letter of recommendation\n\nDear Sir or Madam,\n\nI am writing to warmly recommend Adel, whom I had the opportunity to supervise in my role as Academic Coordinator at EPSI.\n\nDuring this period, I came to appreciate his seriousness, his motivation and his involvement in his work. Adel is a diligent, punctual and respectful student who shows a genuine willingness to improve and to acquire new skills.\n\nHe also stands out for his ability to work independently, his sense of responsibility and his perseverance in the face of difficulties. He listens to the advice he is given and applies the recommendations in order to constantly refine his work.\n\nHis conduct, seriousness and motivation make him a trustworthy student, able to fully invest himself in the projects entrusted to him.\n\nI am therefore delighted, and I am convinced that he will show the same dedication and the same determination.\n\nI remain at your disposal for any further information about his background and qualities.\n\nAnne-Lise WOTIN\nAcademic Coordinator"
+      }
+    },
+    {
+      "id": "amina-marie",
+      "name": "Amina Marie",
+      "role_fr": "Consultante en transformation digitale",
+      "role_en": "Digital transformation consultant",
+      "organization": "",
+      "relationship_fr": "Était ma professeure",
+      "relationship_en": "Was my teacher",
+      "date": "2026-08-16",
+      "photo": "",
+      "linkedin_url": "",
+      "quote_short": {
+        "lang": "fr",
+        "original": "Élève sérieux, motivé et talentueux.",
+        "en": "A serious, motivated and talented student."
+      },
+      "quote_full": {
+        "lang": "fr",
+        "original": "J'ai eu Adel comme élève et ce que j'en ai retenu : élève sérieux, motivé et talentueux.\nJe le recommande et je n'ai aucune crainte pour lui concernant ses futurs projets.",
+        "en": "I had Adel as a student, and what I remember about him: a serious, motivated and talented student.\nI recommend him and have no worries about him when it comes to his future projects."
+      }
+    }
+  ]
+}
