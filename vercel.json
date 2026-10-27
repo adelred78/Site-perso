@@ -51,6 +51,16 @@
       "source": "/en/projects/dev-environment",
       "destination": "/en/projects/git-workflow",
       "permanent": true
+    },
+    {
+      "source": "/fr/projets/home-soc-lab",
+      "destination": "/fr/projets",
+      "permanent": true
+    },
+    {
+      "source": "/en/projects/home-soc-lab",
+      "destination": "/en/projects",
+      "permanent": true
     }
   ],
   "headers": [

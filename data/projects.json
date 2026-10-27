@@ -130,27 +130,27 @@
       }
     },
     {
-      "slug": "home-soc-lab",
+      "slug": "jobtracker",
       "featured": true,
       "order": 1,
       "type": "personal",
-      "category": "cyber",
+      "category": "web",
       "date": "2026",
       "badge": {
-        "fr": "🛡️ Blue Team / SOC",
-        "en": "🛡️ Blue Team / SOC"
+        "fr": "🚀 SaaS",
+        "en": "🚀 SaaS"
       },
       "title": {
-        "fr": "Home SOC Lab — Analyse & Détection",
-        "en": "Home SOC Lab — Analysis & Detection"
+        "fr": "JobTracker — Suivi de candidatures",
+        "en": "JobTracker — Job Application Tracker"
       },
       "subtitle": {
-        "fr": "Lab de sécurité domestique sur 7 jours axé sur la visibilité réseau, le monitoring SSH, l'analyse de logs et la détection d'attaques.",
-        "en": "7-day home security lab focused on network visibility, SSH monitoring, log analysis, and attack detection."
+        "fr": "Le suivi de candidatures, enfin sous contrôle. Un SaaS full-stack que j'ai conçu et développé seul pour les étudiants en recherche de stage, alternance ou premier emploi.",
+        "en": "Job hunting, finally under control. A full-stack SaaS I designed and built solo for students looking for an internship, apprenticeship or first job."
       },
       "pitch": {
-        "fr": "Environnement virtuel d'expérimentation SOC : capture de trafic Wireshark/tcpdump, énumération Nmap, analyse des journaux SSH et écriture de scripts Bash de détection d'intrusion.",
-        "en": "Virtual SOC experiment environment: Wireshark/tcpdump traffic capture, Nmap enumeration, SSH log investigation, and Bash intrusion detection scripting."
+        "fr": "Application web de suivi de candidatures pour étudiants : centralise stages, alternances et emplois dans un tableau Kanban, gère les CV/lettres, relances et exports — pour ne plus rien perdre dans Excel.",
+        "en": "A job-application tracker for students: internships, apprenticeships and jobs centralized in a Kanban board, with CV/cover-letter management, follow-ups and exports — so nothing gets lost in a spreadsheet again."
       },
       "meta": {
         "team": {
@@ -158,102 +158,147 @@
           "en": "Solo (personal project)"
         },
         "duration": {
-          "fr": "7 jours (projet structuré)",
-          "en": "7 days (structured project)"
+          "fr": "2026 · en continu",
+          "en": "2026 · ongoing"
         },
         "role": {
-          "fr": "Analyse réseau & Détection",
-          "en": "Network Analysis & Detection"
+          "fr": "Conception produit + dev full-stack",
+          "en": "Product design + full-stack dev"
         },
         "result": {
-          "fr": "📊 Lab & Scripts validés",
-          "en": "📊 Lab & Scripts validated"
+          "fr": "🚀 En ligne en bêta",
+          "en": "🚀 Live in beta"
         }
       },
       "tech": [
-        "Linux",
-        "Wireshark",
-        "tcpdump",
-        "Nmap",
-        "SSH",
-        "Bash",
-        "SOC",
-        "Blue Team"
+        "SaaS",
+        "Full-stack",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "Tailwind CSS"
       ],
       "links": {
-        "github": "https://github.com/adelred78",
-        "demo": null,
+        "github": "https://github.com/adelred78/job-application-tracker",
+        "demo": "https://monjobtracker.vercel.app",
         "certificate": null
       },
       "images": {
-        "cover": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80&auto=format&fit=crop",
-        "thumb": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&auto=format&fit=crop",
-        "og": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80&auto=format&fit=crop",
-        "gallery": []
+        "cover": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
+        "thumb": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
+        "og": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
+        "gallery": [
+          {
+            "src": "/assets/img/projects/jobtracker/jobtracker-kanban.png",
+            "alt": {
+              "fr": "Vue Kanban en glisser-déposer des candidatures",
+              "en": "Drag-and-drop Kanban view of applications"
+            }
+          },
+          {
+            "src": "/assets/img/projects/jobtracker/jobtracker-list.png",
+            "alt": {
+              "fr": "Vue liste des candidatures",
+              "en": "List view of applications"
+            }
+          },
+          {
+            "src": "/assets/img/projects/jobtracker/jobtracker-documents.png",
+            "alt": {
+              "fr": "Bibliothèque de documents (CV et lettres de motivation)",
+              "en": "Document library (CVs and cover letters)"
+            }
+          }
+        ]
       },
       "content": {
         "context": {
-          "fr": "Projet pratique de lab de sécurité Blue Team structuré sur une semaine pour développer une expérience directe des outils de réseau et de journalisation sous Linux.",
-          "en": "Hands-on Blue Team security lab structured over one week to gain direct experience with Linux networking and logging tools."
+          "fr": "JobTracker est né d'un constat personnel : quand on est étudiant, suivre ses candidatures de stage et d'alternance dans un fichier Excel devient vite ingérable — colonnes qui débordent, relances oubliées, bonne version du CV introuvable. J'ai voulu un outil unique, pensé pour les étudiants en France, qui remplace ce chaos par un espace clair où chaque candidature se suit de bout en bout : statut, entretiens, relances, documents associés.",
+          "en": "JobTracker started from a personal observation: as a student, tracking internship and apprenticeship applications in a spreadsheet quickly becomes unmanageable — overflowing columns, forgotten follow-ups, the right CV version nowhere to be found. I wanted a single tool, built for students in France, that replaces this chaos with a clear space where every application is tracked end to end: status, interviews, follow-ups, attached documents."
         },
         "problem": {
-          "fr": "Comment observer le comportement d'un attaquant sur le réseau et détecter des tentatives d'intrusion SSH ou de scan de ports en utilisant des outils d'analyse open-source ?",
-          "en": "How to observe attacker behavior on the network and detect SSH intrusion attempts or port scans using open-source analysis tools?"
+          "fr": "Les étudiants jonglent avec des dizaines de candidatures éparpillées entre Excel, mails et dossiers. Résultat : on perd le fil, on oublie de relancer, on ne retrouve plus la bonne version de son CV. Comment centraliser tout ça dans un espace unique et sécurisé, où les données d'un utilisateur restent strictement les siennes ?",
+          "en": "Students juggle dozens of applications scattered across spreadsheets, emails and folders. The result: you lose track, forget to follow up, can't find the right version of your CV. How do you centralize all of it in a single, secure space where each user's data stays strictly their own?"
         },
         "solution": {
-          "fr": "Déploiement d'un lab virtuel (Kali & Ubuntu Server), capture de paquets pcap, analyse d'empreintes Nmap, chronologie des événements dans auth.log et écriture d'alertes automatisées en Bash.",
-          "en": "Deployment of a virtual lab (Kali & Ubuntu Server), pcap packet capture, Nmap fingerprint analysis, timeline reconstruction in auth.log, and Bash automated alerting scripts."
+          "fr": "Un SaaS full-stack bâti sur Next.js 16 (App Router, Server Components & Server Actions) et Supabase (PostgreSQL, Auth, Storage). Chaque candidature vit dans un tableau Kanban en glisser-déposer, avec 5 statuts, historique, documents associés, relances et un tableau de bord statistique. L'isolation des données entre utilisateurs est garantie au niveau de la base via Row Level Security PostgreSQL, et l'ensemble respecte le RGPD (hébergement en Europe, export complet, suppression définitive).",
+          "en": "A full-stack SaaS built on Next.js 16 (App Router, Server Components & Server Actions) and Supabase (PostgreSQL, Auth, Storage). Each application lives in a drag-and-drop Kanban board, with 5 statuses, history, attached documents, follow-ups and a stats dashboard. Data isolation between users is enforced at the database level with PostgreSQL Row Level Security, and the whole thing is GDPR-compliant (EU hosting, full export, permanent deletion)."
         },
         "myWork": {
           "fr": [
-            "Configuration de l'infrastructure du lab (Kali Linux, Ubuntu Target, routage local)",
-            "Capture et inspection de trafic réseau en ligne de commande (tcpdump) et avec Wireshark",
-            "Analyse de scans Nmap et cartographie de la surface d'attaque du serveur cible",
-            "Monitoring et reconstitution d'attaques par force brute SSH à partir des logs (/var/log/auth.log)",
-            "Développement d'un script Bash de détection et d'alerte sur les échecs de connexion répétés",
-            "Documentation de la chronologie d'attaque et recommandations de hardening SSH"
+            "Authentification email + Google OAuth via Supabase Auth",
+            "Vue Kanban en glisser-déposer (dnd-kit) et vue liste, 5 statuts et historique des candidatures",
+            "Gestion des documents CV / lettres : upload PDF ou lien externe, miniatures générées côté client (pdf.js)",
+            "Filtres, recherche, favoris, archivage, import/export CSV et export PDF",
+            "Tableau de bord avec KPIs et répartition par statut",
+            "Conformité RGPD : hébergement en Europe, export complet des données (JSON), suppression de compte définitive",
+            "Onboarding guidé, design responsive et SEO (sitemap, données structurées JSON-LD)"
           ],
           "en": [
-            "Lab infrastructure setup (Kali Linux, Ubuntu Target, local routing)",
-            "Network traffic capture and inspection via command-line (tcpdump) and Wireshark",
-            "Nmap scan analysis and mapping of the target server's attack surface",
-            "Monitoring and timeline reconstruction of SSH brute-force attacks from log files (/var/log/auth.log)",
-            "Development of a Bash detection and alerting script for repeated connection failures",
-            "Attack timeline documentation and SSH hardening recommendations"
+            "Email + Google OAuth authentication via Supabase Auth",
+            "Drag-and-drop Kanban view (dnd-kit) and list view, 5 statuses and application history",
+            "CV / cover-letter document management: PDF upload or external link, thumbnails generated client-side (pdf.js)",
+            "Filters, search, favorites, archiving, CSV import/export and PDF export",
+            "Dashboard with KPIs and status breakdown",
+            "GDPR compliance: EU hosting, full data export (JSON), permanent account deletion",
+            "Guided onboarding, responsive design and SEO (sitemap, JSON-LD structured data)"
           ]
         },
         "takeaways": [
           {
-            "icon": "🌐",
+            "icon": "🔒",
             "title": {
-              "fr": "Visibilité réseau",
-              "en": "Network Visibility"
+              "fr": "Isolation des données",
+              "en": "Data isolation"
             },
             "body": {
-              "fr": "Maîtrise de tcpdump et Wireshark pour analyser les paquets TCP/IP et détecter les anomalies.",
-              "en": "Mastery of tcpdump and Wireshark for TCP/IP packet analysis and anomaly detection."
+              "fr": "Garantir qu'un utilisateur ne voie jamais les données d'un autre, directement au niveau de PostgreSQL via Row Level Security.",
+              "en": "Guaranteeing a user never sees another's data, right at the PostgreSQL level with Row Level Security."
             }
           },
           {
-            "icon": "📊",
+            "icon": "🗂️",
             "title": {
-              "fr": "Analyse de logs",
-              "en": "Log Analysis"
+              "fr": "Kanban persistant",
+              "en": "Persistent Kanban"
             },
             "body": {
-              "fr": "Capacité à reconstruire une chronologie d'incident à partir des journaux système Linux.",
-              "en": "Ability to reconstruct incident timelines from Linux system logs."
+              "fr": "Le glisser-déposer (dnd-kit) impose de persister l'ordre des cartes via une RPC de réordonnancement côté serveur.",
+              "en": "Drag-and-drop (dnd-kit) means persisting card order through a server-side reordering RPC."
+            }
+          },
+          {
+            "icon": "✅",
+            "title": {
+              "fr": "Validation bidirectionnelle",
+              "en": "Two-way validation"
+            },
+            "body": {
+              "fr": "Des Server Actions validées avec Zod côté client ET serveur : une seule source de vérité pour les règles métier.",
+              "en": "Server Actions validated with Zod on both client AND server: a single source of truth for the business rules."
+            }
+          },
+          {
+            "icon": "📄",
+            "title": {
+              "fr": "PDF dans le navigateur",
+              "en": "PDF in the browser"
+            },
+            "body": {
+              "fr": "Générer les miniatures de PDF directement côté client avec pdf.js, sans aucun traitement serveur.",
+              "en": "Generating PDF thumbnails directly client-side with pdf.js, with no server processing."
             }
           },
           {
             "icon": "🛡️",
             "title": {
-              "fr": "Hardening",
-              "en": "Hardening"
+              "fr": "RGPD de bout en bout",
+              "en": "End-to-end GDPR"
             },
             "body": {
-              "fr": "Application de mesures concrètes d'endurcissement système et de filtrage d'accès.",
-              "en": "Implementation of concrete system hardening and access filtering measures."
+              "fr": "Une suppression de compte vraiment définitive, qui purge aussi les fichiers stockés dans le storage.",
+              "en": "Account deletion that's truly permanent, also purging the files held in storage."
             }
           }
         ]
@@ -503,184 +548,9 @@
       }
     },
     {
-      "slug": "jobtracker",
-      "featured": false,
-      "order": 4,
-      "type": "personal",
-      "category": "web",
-      "date": "2026",
-      "badge": {
-        "fr": "🚀 SaaS",
-        "en": "🚀 SaaS"
-      },
-      "title": {
-        "fr": "JobTracker — Suivi de candidatures",
-        "en": "JobTracker — Job Application Tracker"
-      },
-      "subtitle": {
-        "fr": "Le suivi de candidatures, enfin sous contrôle. Un SaaS full-stack que j'ai conçu et développé seul pour les étudiants en recherche de stage, alternance ou premier emploi.",
-        "en": "Job hunting, finally under control. A full-stack SaaS I designed and built solo for students looking for an internship, apprenticeship or first job."
-      },
-      "pitch": {
-        "fr": "Application web de suivi de candidatures pour étudiants : centralise stages, alternances et emplois dans un tableau Kanban, gère les CV/lettres, relances et exports — pour ne plus rien perdre dans Excel.",
-        "en": "A job-application tracker for students: internships, apprenticeships and jobs centralized in a Kanban board, with CV/cover-letter management, follow-ups and exports — so nothing gets lost in a spreadsheet again."
-      },
-      "meta": {
-        "team": {
-          "fr": "Solo (projet perso)",
-          "en": "Solo (personal project)"
-        },
-        "duration": {
-          "fr": "2026 · en continu",
-          "en": "2026 · ongoing"
-        },
-        "role": {
-          "fr": "Conception produit + dev full-stack",
-          "en": "Product design + full-stack dev"
-        },
-        "result": {
-          "fr": "🚀 En ligne en bêta",
-          "en": "🚀 Live in beta"
-        }
-      },
-      "tech": [
-        "SaaS",
-        "Full-stack",
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Supabase",
-        "Tailwind CSS"
-      ],
-      "links": {
-        "github": "https://github.com/adelred78/job-application-tracker",
-        "demo": "https://monjobtracker.vercel.app",
-        "certificate": null
-      },
-      "images": {
-        "cover": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
-        "thumb": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
-        "og": "/assets/img/projects/jobtracker/jobtracker-dashboard.png",
-        "gallery": [
-          {
-            "src": "/assets/img/projects/jobtracker/jobtracker-kanban.png",
-            "alt": {
-              "fr": "Vue Kanban en glisser-déposer des candidatures",
-              "en": "Drag-and-drop Kanban view of applications"
-            }
-          },
-          {
-            "src": "/assets/img/projects/jobtracker/jobtracker-list.png",
-            "alt": {
-              "fr": "Vue liste des candidatures",
-              "en": "List view of applications"
-            }
-          },
-          {
-            "src": "/assets/img/projects/jobtracker/jobtracker-documents.png",
-            "alt": {
-              "fr": "Bibliothèque de documents (CV et lettres de motivation)",
-              "en": "Document library (CVs and cover letters)"
-            }
-          }
-        ]
-      },
-      "content": {
-        "context": {
-          "fr": "JobTracker est né d'un constat personnel : quand on est étudiant, suivre ses candidatures de stage et d'alternance dans un fichier Excel devient vite ingérable — colonnes qui débordent, relances oubliées, bonne version du CV introuvable. J'ai voulu un outil unique, pensé pour les étudiants en France, qui remplace ce chaos par un espace clair où chaque candidature se suit de bout en bout : statut, entretiens, relances, documents associés.",
-          "en": "JobTracker started from a personal observation: as a student, tracking internship and apprenticeship applications in a spreadsheet quickly becomes unmanageable — overflowing columns, forgotten follow-ups, the right CV version nowhere to be found. I wanted a single tool, built for students in France, that replaces this chaos with a clear space where every application is tracked end to end: status, interviews, follow-ups, attached documents."
-        },
-        "problem": {
-          "fr": "Les étudiants jonglent avec des dizaines de candidatures éparpillées entre Excel, mails et dossiers. Résultat : on perd le fil, on oublie de relancer, on ne retrouve plus la bonne version de son CV. Comment centraliser tout ça dans un espace unique et sécurisé, où les données d'un utilisateur restent strictement les siennes ?",
-          "en": "Students juggle dozens of applications scattered across spreadsheets, emails and folders. The result: you lose track, forget to follow up, can't find the right version of your CV. How do you centralize all of it in a single, secure space where each user's data stays strictly their own?"
-        },
-        "solution": {
-          "fr": "Un SaaS full-stack bâti sur Next.js 16 (App Router, Server Components & Server Actions) et Supabase (PostgreSQL, Auth, Storage). Chaque candidature vit dans un tableau Kanban en glisser-déposer, avec 5 statuts, historique, documents associés, relances et un tableau de bord statistique. L'isolation des données entre utilisateurs est garantie au niveau de la base via Row Level Security PostgreSQL, et l'ensemble respecte le RGPD (hébergement en Europe, export complet, suppression définitive).",
-          "en": "A full-stack SaaS built on Next.js 16 (App Router, Server Components & Server Actions) and Supabase (PostgreSQL, Auth, Storage). Each application lives in a drag-and-drop Kanban board, with 5 statuses, history, attached documents, follow-ups and a stats dashboard. Data isolation between users is enforced at the database level with PostgreSQL Row Level Security, and the whole thing is GDPR-compliant (EU hosting, full export, permanent deletion)."
-        },
-        "myWork": {
-          "fr": [
-            "Authentification email + Google OAuth via Supabase Auth",
-            "Vue Kanban en glisser-déposer (dnd-kit) et vue liste, 5 statuts et historique des candidatures",
-            "Gestion des documents CV / lettres : upload PDF ou lien externe, miniatures générées côté client (pdf.js)",
-            "Filtres, recherche, favoris, archivage, import/export CSV et export PDF",
-            "Tableau de bord avec KPIs et répartition par statut",
-            "Conformité RGPD : hébergement en Europe, export complet des données (JSON), suppression de compte définitive",
-            "Onboarding guidé, design responsive et SEO (sitemap, données structurées JSON-LD)"
-          ],
-          "en": [
-            "Email + Google OAuth authentication via Supabase Auth",
-            "Drag-and-drop Kanban view (dnd-kit) and list view, 5 statuses and application history",
-            "CV / cover-letter document management: PDF upload or external link, thumbnails generated client-side (pdf.js)",
-            "Filters, search, favorites, archiving, CSV import/export and PDF export",
-            "Dashboard with KPIs and status breakdown",
-            "GDPR compliance: EU hosting, full data export (JSON), permanent account deletion",
-            "Guided onboarding, responsive design and SEO (sitemap, JSON-LD structured data)"
-          ]
-        },
-        "takeaways": [
-          {
-            "icon": "🔒",
-            "title": {
-              "fr": "Isolation des données",
-              "en": "Data isolation"
-            },
-            "body": {
-              "fr": "Garantir qu'un utilisateur ne voie jamais les données d'un autre, directement au niveau de PostgreSQL via Row Level Security.",
-              "en": "Guaranteeing a user never sees another's data, right at the PostgreSQL level with Row Level Security."
-            }
-          },
-          {
-            "icon": "🗂️",
-            "title": {
-              "fr": "Kanban persistant",
-              "en": "Persistent Kanban"
-            },
-            "body": {
-              "fr": "Le glisser-déposer (dnd-kit) impose de persister l'ordre des cartes via une RPC de réordonnancement côté serveur.",
-              "en": "Drag-and-drop (dnd-kit) means persisting card order through a server-side reordering RPC."
-            }
-          },
-          {
-            "icon": "✅",
-            "title": {
-              "fr": "Validation bidirectionnelle",
-              "en": "Two-way validation"
-            },
-            "body": {
-              "fr": "Des Server Actions validées avec Zod côté client ET serveur : une seule source de vérité pour les règles métier.",
-              "en": "Server Actions validated with Zod on both client AND server: a single source of truth for the business rules."
-            }
-          },
-          {
-            "icon": "📄",
-            "title": {
-              "fr": "PDF dans le navigateur",
-              "en": "PDF in the browser"
-            },
-            "body": {
-              "fr": "Générer les miniatures de PDF directement côté client avec pdf.js, sans aucun traitement serveur.",
-              "en": "Generating PDF thumbnails directly client-side with pdf.js, with no server processing."
-            }
-          },
-          {
-            "icon": "🛡️",
-            "title": {
-              "fr": "RGPD de bout en bout",
-              "en": "End-to-end GDPR"
-            },
-            "body": {
-              "fr": "Une suppression de compte vraiment définitive, qui purge aussi les fichiers stockés dans le storage.",
-              "en": "Account deletion that's truly permanent, also purging the files held in storage."
-            }
-          }
-        ]
-      }
-    },
-    {
       "slug": "hydrotrack",
       "featured": false,
-      "order": 5,
+      "order": 4,
       "type": "academic",
       "category": "iot",
       "date": "2025",
@@ -805,7 +675,7 @@
     {
       "slug": "epsi-tech",
       "featured": false,
-      "order": 6,
+      "order": 5,
       "type": "academic",
       "category": "web",
       "date": "2025",
@@ -905,7 +775,7 @@
     {
       "slug": "smartbike",
       "featured": false,
-      "order": 7,
+      "order": 6,
       "type": "academic",
       "category": "web",
       "date": "2025",
@@ -1032,7 +902,7 @@
     {
       "slug": "snack-o-matic",
       "featured": false,
-      "order": 8,
+      "order": 7,
       "type": "academic",
       "category": "embedded",
       "date": "2025",
@@ -1168,7 +1038,7 @@
     {
       "slug": "arduino-led",
       "featured": false,
-      "order": 9,
+      "order": 8,
       "type": "personal",
       "category": "embedded",
       "date": "2024",
@@ -1264,7 +1134,7 @@
     {
       "slug": "python-algo",
       "featured": false,
-      "order": 10,
+      "order": 9,
       "type": "academic",
       "category": "algorithm",
       "date": "2024",
@@ -1363,7 +1233,7 @@
     {
       "slug": "git-workflow",
       "featured": false,
-      "order": 11,
+      "order": 10,
       "type": "academic",
       "category": "tools",
       "date": "2024",
@@ -1464,7 +1334,7 @@
     {
       "slug": "vr-dream",
       "featured": false,
-      "order": 12,
+      "order": 11,
       "type": "academic",
       "category": "vr",
       "date": "2025",
