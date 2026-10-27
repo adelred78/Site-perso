@@ -2,42 +2,14 @@
   "$schema": "Source unique pour les certifications. status: obtained | planned | learning. Featured = visible sur l'accueil.",
   "certifications": [
     {
-      "slug": "epitech-java-piscine",
-      "status": "obtained",
-      "featured": true,
-      "order": 1,
-      "category": "cyber",
-      "title": {
-        "fr": "EPITECH Java Piscine — Validation & Projets",
-        "en": "EPITECH Java Piscine — Completion & Projects"
-      },
-      "issuer": {
-        "fr": "EPITECH Paris",
-        "en": "EPITECH Paris"
-      },
-      "date": "Septembre 2026",
-      "description": {
-        "fr": "Immersion intensive en programmation Java orientée objet et algorithmique. Déclic majeur ayant mené au développement du coffre-fort Secure Vault.",
-        "en": "Intensive immersion in Java object-oriented programming and algorithms. Major transition milestone leading to the development of Secure Vault."
-      },
-      "verifyUrl": null,
-      "skills": [
-        "Java",
-        "POO",
-        "Algorithmique",
-        "Java NIO",
-        "Cybersecurity Projects"
-      ]
-    },
-    {
       "slug": "linkedin-learning-java",
       "status": "obtained",
       "featured": true,
-      "order": 2,
+      "order": 1,
       "category": "programming",
       "title": {
-        "fr": "Java — Essentials & Fondamentaux",
-        "en": "Java — Essentials & Fundamentals"
+        "fr": "L'essentiel de Java",
+        "en": "Java Essentials (L'essentiel de Java)"
       },
       "issuer": {
         "fr": "LinkedIn Learning",
@@ -48,7 +20,7 @@
         "fr": "Maîtrise de la syntaxe Java, structures de données, POO, gestion des exceptions et manipulation d'E/S.",
         "en": "Mastery of Java syntax, data structures, OOP, exception handling, and I/O manipulation."
       },
-      "verifyUrl": null,
+      "verifyUrl": "https://www.linkedin.com/learning/certificates/3b8f8a24c6e1f07b1885e4f8ad2986188b430b948691c6b4bb643da1b921b356",
       "skills": [
         "Java",
         "POO",
@@ -57,96 +29,40 @@
       ]
     },
     {
-      "slug": "agile-project-management",
-      "status": "obtained",
-      "featured": false,
-      "order": 3,
-      "category": "management",
-      "title": {
-        "fr": "Gestion de Projets Agile",
-        "en": "Agile Project Management"
-      },
-      "issuer": {
-        "fr": "LinkedIn Learning",
-        "en": "LinkedIn Learning"
-      },
-      "date": "2026",
-      "description": {
-        "fr": "Méthodologies Agile (Scrum, Kanban), gestion d'équipe et conduite de projet.",
-        "en": "Agile methodologies (Scrum, Kanban), team management, and project leadership."
-      },
-      "verifyUrl": "https://www.linkedin.com/learning/certificates/90f2cb4c16745b41d55476f54112d8c854a80d4cb1dd6bf47904e8157f0b0b6e?u=43271628",
-      "skills": [
-        "Agile",
-        "Scrum",
-        "Kanban",
-        "Project Management"
-      ]
-    },
-    {
-      "slug": "tryhackme-htb-cyber",
+      "slug": "harvardx-cs50",
       "status": "planned",
       "featured": true,
-      "order": 4,
-      "category": "cyber",
+      "order": 2,
+      "category": "programming",
       "title": {
-        "fr": "TryHackMe & Hack The Box — Practice & Path",
-        "en": "TryHackMe & Hack The Box — Practice & Learning Path"
+        "fr": "CS50's Introduction to Computer Science",
+        "en": "CS50's Introduction to Computer Science"
       },
       "issuer": {
-        "fr": "TryHackMe / HTB Academy",
-        "en": "TryHackMe / HTB Academy"
+        "fr": "HarvardX (Harvard University · edX)",
+        "en": "HarvardX (Harvard University · edX)"
       },
       "targetDate": {
-        "fr": "En cours d'apprentissage",
-        "en": "Currently learning"
+        "fr": "En cours",
+        "en": "Ongoing"
       },
       "description": {
-        "fr": "Entraînement régulier sur les parcours Jr Penetration Tester, Complete Beginner et SOC Level 1 : énumération, Web Security, Linux privilege escalation, et analyse de trafic.",
-        "en": "Regular training on Jr Penetration Tester, Complete Beginner, and SOC Level 1 learning paths: enumeration, Web Security, Linux privilege escalation, and traffic analysis."
+        "fr": "Le cours d'introduction à l'informatique de Harvard : algorithmique, mémoire et structures de données en C, puis Python, SQL, développement web et une introduction à la cybersécurité.",
+        "en": "Harvard's introduction to computer science: algorithms, memory and data structures in C, then Python, SQL, web development and an introduction to cybersecurity."
       },
       "skills": [
-        "TryHackMe",
-        "Hack The Box",
-        "Linux Security",
-        "Web Security",
-        "Networking"
-      ]
-    },
-    {
-      "slug": "portswigger-web-security",
-      "status": "planned",
-      "featured": true,
-      "order": 5,
-      "category": "cyber",
-      "title": {
-        "fr": "PortSwigger Web Security Academy",
-        "en": "PortSwigger Web Security Academy"
-      },
-      "issuer": {
-        "fr": "PortSwigger",
-        "en": "PortSwigger"
-      },
-      "targetDate": {
-        "fr": "En cours d'apprentissage",
-        "en": "Currently learning"
-      },
-      "description": {
-        "fr": "Étude et pratique des vulnérabilités web courantes (OWASP Top 10, SQLi, XSS, CSRF, Path Traversal, Authentication Flaws).",
-        "en": "Study and hands-on practice of common web vulnerabilities (OWASP Top 10, SQLi, XSS, CSRF, Path Traversal, Authentication Flaws)."
-      },
-      "skills": [
-        "Web Security",
-        "OWASP",
-        "Burp Suite",
-        "AppSec"
+        "C",
+        "Python",
+        "SQL",
+        "Algorithmique",
+        "Structures de données"
       ]
     },
     {
       "slug": "cisco-cyber-networking",
       "status": "planned",
       "featured": false,
-      "order": 6,
+      "order": 4,
       "category": "network",
       "title": {
         "fr": "Cisco Networking & Cybersecurity Essentials",
@@ -169,6 +85,33 @@
         "TCP/IP",
         "Réseau",
         "Network Security"
+      ]
+    },
+    {
+      "slug": "agile-project-management",
+      "status": "obtained",
+      "featured": true,
+      "order": 3,
+      "category": "management",
+      "title": {
+        "fr": "Gestion de Projets Agile",
+        "en": "Agile Project Management"
+      },
+      "issuer": {
+        "fr": "LinkedIn Learning",
+        "en": "LinkedIn Learning"
+      },
+      "date": "2026",
+      "description": {
+        "fr": "Méthodologies Agile (Scrum, Kanban), gestion d'équipe et conduite de projet.",
+        "en": "Agile methodologies (Scrum, Kanban), team management, and project leadership."
+      },
+      "verifyUrl": "https://www.linkedin.com/learning/certificates/90f2cb4c16745b41d55476f54112d8c854a80d4cb1dd6bf47904e8157f0b0b6e?u=43271628",
+      "skills": [
+        "Agile",
+        "Scrum",
+        "Kanban",
+        "Project Management"
       ]
     }
   ]
