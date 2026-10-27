@@ -47,7 +47,8 @@ for (const p of data.projects) {
 
     const title = `${loc(p.title, lang)} — ${SUFFIX}`;
     const desc = (loc(p.pitch, lang) || loc(p.subtitle, lang)).replace(/\s+/g, ' ').trim();
-    const ogImg = p.images?.og ? SITE + p.images.og : '';
+    const og = p.images?.og;
+    const ogImg = og ? (/^https?:\/\//.test(og) ? og : SITE + og) : '';
     const canonical = SITE + base(p.slug);
 
     let html = fs.readFileSync(file, 'utf8');
@@ -70,8 +71,10 @@ for (const p of data.projects) {
       /([ \t]*)(<link rel="alternate" hreflang="en" href="[^"]*" \/>)/,
       `$1$2\n$1<link rel="alternate" hreflang="x-default" href="${urlFr}" />\n$1<link rel="canonical" href="${canonical}" />`
     );
+    // og:url après og:image, ou après og:description quand la page n'a pas d'og:image
+    const ogAnchor = /<meta property="og:image"/.test(html) ? 'og:image' : 'og:description';
     html = html.replace(
-      /([ \t]*)(<meta property="og:image"[^>]*>)/,
+      new RegExp(`([ \\t]*)(<meta property="${ogAnchor}"[^>]*>)`),
       `$1$2\n$1<meta property="og:url" content="${canonical}" />`
     );
 
